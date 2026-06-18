@@ -469,6 +469,7 @@ h1,
 }
 
 .release-row .release-name {
+  display: block;
   min-width: 0;
   overflow: hidden;
   color: var(--text);
@@ -476,6 +477,19 @@ h1,
   font-weight: 760;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.release-copy {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.release-desc {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 560;
+  line-height: 1.35;
 }
 
 .release-thumb {
@@ -1253,7 +1267,7 @@ h1,
     width: 74px;
   }
 
-  .release-row .release-name,
+  .release-row .release-copy,
   .release-row a {
     grid-column: 2;
   }
