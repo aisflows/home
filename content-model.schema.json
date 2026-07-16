@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ais-flows-home-content-model",
+  "title": "AIS FLOWS Home content model",
+  "type": "object",
+  "required": ["schema_version", "canonical_brand", "routes", "entities", "links"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "canonical_brand": { "const": "AIS FLOWS" },
+    "routes": { "type": "object" },
+    "entities": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entity" }
+    },
+    "links": { "type": "array" }
+  },
+  "$defs": {
+    "entity": {
+      "type": "object",
+      "required": ["id", "type", "title_en", "title_ru", "status", "page_url", "release_url", "download_url", "payment_url", "version", "last_verified"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "type": { "enum": ["skill", "system", "app", "media", "contact"] },
+        "status": { "type": "string" },
+        "title_en": { "type": "string" },
+        "title_ru": { "type": "string" },
+        "page_url": { "type": ["string", "null"] },
+        "release_url": { "type": ["string", "null"] },
+        "download_url": { "type": ["string", "null"] },
+        "payment_url": { "type": ["string", "null"] },
+        "version": { "type": ["string", "null"] },
+        "last_verified": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

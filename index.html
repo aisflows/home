@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AIS FLOWS Home V0</title>
     <meta name="description" content="AIS FLOWS: AI media production, workflows, and vibe-coded tools by Andrei Spirydovich.">
+    <link rel="canonical" href="https://aisflows.github.io/home/">
+    <link rel="alternate" hreflang="en" href="https://aisflows.github.io/home/">
+    <link rel="alternate" hreflang="ru" href="https://aisflows.github.io/home/ru/">
+    <link rel="alternate" hreflang="x-default" href="https://aisflows.github.io/home/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AIS FLOWS Home V0">
+    <meta property="og:description" content="AI media production, workflows, and vibe-coded tools by Andrei Spirydovich.">
+    <meta property="og:image" content="./assets/proofline-featured.png">
+    <meta property="og:url" content="https://aisflows.github.io/home/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AIS FLOWS Home V0">
+    <meta name="twitter:description" content="AI media production, workflows, and vibe-coded tools by Andrei Spirydovich.">
+    <meta name="twitter:image" content="./assets/proofline-featured.png">
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="./styles.css">
   </head>
-  <body>
+  <body data-page-id="home-en">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <symbol id="icon-github" viewBox="0 0 24 24"><path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.7 11.7 0 0 1 6.2 0c2.4-1.6 3.4-1.2 3.4-1.2.7 1.6.2 2.9.1 3.2.8.9 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"/></symbol>
       <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96ZM3 9.3h4v11.2H3V9.3Zm6.2 0H13v1.5h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.7 2.6 4.7 6v5.6h-4v-5c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7v5.1h-4V9.3Z"/></symbol>
@@ -25,13 +39,14 @@
         <a href="#products">Products</a>
         <a href="#media">Media</a>
         <a href="#links">Links</a>
+        <button class="nav-request button" type="button" data-open-request data-analytics-event="request_form_open" data-action-id="request_open"><span class="topbar-request-full">Start a Project</span><span class="topbar-request-short">Project</span></button>
         <a class="lang" href="./ru/">RU</a>
       </nav>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="shell hero" aria-labelledby="home-title">
-        <div class="hero-copy">
+        <div class="hero-copy" data-motion="hero-copy">
           <div class="status-line"><span class="status-dot" aria-hidden="true"></span>Owned public base</div>
           <h1 id="home-title">AIS FLOWS</h1>
           <p class="lead">AI media production, workflows, and vibe-coded tools by Andrei Spirydovich.</p>
@@ -41,7 +56,7 @@
           </div>
         </div>
 
-        <aside class="proof-panel" aria-label="Current featured product">
+        <aside class="proof-panel" aria-label="Current featured product" data-motion="proof-panel">
           <img class="proof-visual" src="./assets/proofline-featured.png" alt="AIS FLOWS Proofline release poster.">
           <p class="panel-label">LATEST RELEASE</p>
           <h2 class="proof-title">Proofline</h2>
@@ -49,36 +64,36 @@
           <div class="meta-row" aria-label="Proofline status">
             <span class="tag accent">Release</span>
           </div>
-          <a target="_blank" rel="noopener noreferrer" class="card-link" href="https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5">Open Release</a>
+          <a target="_blank" rel="noopener noreferrer" class="card-link" data-analytics-event="release_open" data-action-id="release_open" data-object-id="proofline" href="https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5">Open Release</a>
         </aside>
       </section>
 
       <section id="products" class="shell section" aria-labelledby="products-title">
-        <div class="section-head">
+        <div class="section-head" data-motion="section-head">
           <div>
-            <p class="section-label">Products</p>
+            <p id="products-title" class="section-label">Products</p>
           </div>
         </div>
 
         <div class="category-grid">
-          <article class="category-card">
+          <article class="category-card" data-motion="card">
             <img class="category-media" src="./assets/cards/category-skills-16x9.jpeg" alt="AIS FLOWS Skills category visual.">
             <div class="category-body">
               <details class="category-details" open>
                 <summary>Released skills</summary>
                 <div class="release-list" aria-label="Released skills">
                   <div class="release-row">
-                    <span class="release-copy"><span class="release-name">Proofline</span><span class="release-desc">5-skill pack for checking product readiness with a clear owner/agent report.</span></span>
+                    <span class="release-copy"><span class="release-name">Proofline</span><span class="release-desc">5-skill pack for checking product readiness with a clear owner/agent report.</span><span class="release-chip-row" aria-label="Proofline tags"><span class="release-chip">Release</span><span class="release-chip">5-skill pack</span></span></span>
                     <img class="release-thumb" src="./assets/proofline-square.png" alt="">
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5">Open Release</a>
                   </div>
                   <div class="release-row">
-                    <span class="release-copy"><span class="release-name">Ready Gate</span><span class="release-desc">One-skill readiness gate for checking handoff quality before a product is called ready.</span></span>
+                    <span class="release-copy"><span class="release-name">Ready Gate</span><span class="release-desc">One-skill readiness gate for checking handoff quality before a product is called ready.</span><span class="release-chip-row" aria-label="Ready Gate tags"><span class="release-chip">Release</span><span class="release-chip">1-skill gate</span></span></span>
                     <img class="release-thumb" src="./assets/cards/ready-gate-release-cover-16x9.jpeg" alt="">
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1">Open Release</a>
                   </div>
                   <div class="release-row">
-                    <span class="release-copy"><span class="release-name">Skill Cleaner</span><span class="release-desc">Six-skill workflow pack for turning messy AI-agent skill folders into a clean usable library.</span></span>
+                    <span class="release-copy"><span class="release-name">Skill Cleaner</span><span class="release-desc">Six-skill workflow pack for turning messy AI-agent skill folders into a clean usable library.</span><span class="release-chip-row" aria-label="Skill Cleaner tags"><span class="release-chip">Release</span><span class="release-chip">Workflow pack</span></span></span>
                     <img class="release-thumb" src="./assets/cards/skill-cleaner-github-preview.jpg" alt="">
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001">Open Release</a>
                   </div>
@@ -86,23 +101,46 @@
               </details>
             </div>
           </article>
-          <article class="category-card">
-            <img class="category-media" src="./assets/cards/category-apps-16x9.png" alt="AIS FLOWS Apps category visual.">
+          <article class="category-card systems-card compact-category-card" data-motion="card">
             <div class="category-body">
-              <p class="category-release-label">Released apps</p>
+              <p class="category-release-label">Systems</p>
+              <div class="release-list" aria-label="Systems">
+                <div class="release-row system-row">
+                  <span class="release-copy"><span class="release-name">Video Builder Pack</span><span class="release-desc">Working files for creating AI-video with your own AI chat.</span></span>
+                  <span class="release-status">Preview pending</span>
+                </div>
+                <div class="system-flow" aria-label="Video Builder Pack process">
+                  <span>START_HERE</span>
+                  <span>Files</span>
+                  <span>AI Chat</span>
+                  <span>Video</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="category-card apps-card compact-category-card" data-motion="card">
+            <div class="category-body">
+              <p class="category-release-label">Apps</p>
+              <div class="release-list" aria-label="Apps">
+                <div class="release-row system-row">
+                  <span class="release-copy"><span class="release-name">Local AI Gateway</span><span class="release-desc">Local OpenAI-compatible gateway for AI apps, chats, and agents.</span></span>
+                  <span class="release-status">In development</span>
+                </div>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
       <section id="media" class="shell section" aria-labelledby="media-label">
-        <div class="section-head media-section-head">
+        <div class="section-head media-section-head" data-motion="section-head">
           <p id="media-label" class="section-label">Media</p>
         </div>
-        <div class="trailer-card trailer-card-embed" aria-label="YouTube trailer player">
+        <div class="trailer-card trailer-card-embed" aria-label="YouTube trailer player" data-motion="media">
           <iframe class="youtube-embed" src="https://www.youtube.com/embed/DDpVQ53pnAI?rel=0&modestbranding=1&playsinline=1" title="AIS FLOWS trailer" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <a class="trailer-fallback" target="_blank" rel="noopener noreferrer" data-analytics-event="featured_media_play" data-action-id="featured_media_open" data-object-id="featured-youtube-trailer" href="https://www.youtube.com/watch?v=DDpVQ53pnAI">Open trailer on YouTube</a>
         </div>
-        <div class="media-preview-grid shorts-grid" aria-label="Shorts previews">
+        <div class="media-preview-grid shorts-grid" aria-label="Shorts previews" data-motion="media-grid">
           <button class="media-preview-card poster-a" type="button" aria-label="Open 28 Days Later media preview" data-media-title="28 Days Later" data-media-format="vertical" data-media-src="./assets/media/aisflows-preview-28-days-later-web.mp4"><span class="preview-poster" aria-hidden="true"><img class="preview-image" src="./assets/media/aisflows-preview-28-days-later-poster.jpg" alt=""></span></button>
           <button class="media-preview-card poster-b" type="button" aria-label="Open Dead Space media preview" data-media-title="Dead Space" data-media-format="vertical" data-media-src="./assets/media/aisflows-preview-dead-space-web.mp4"><span class="preview-poster" aria-hidden="true"><img class="preview-image" src="./assets/media/aisflows-preview-dead-space-poster.jpg" alt=""></span></button>
           <button class="media-preview-card poster-c" type="button" aria-label="Open Godzilla media preview" data-media-title="Godzilla" data-media-format="vertical" data-media-src="./assets/media/aisflows-preview-godzilla-web.mp4"><span class="preview-poster" aria-hidden="true"><img class="preview-image" src="./assets/media/aisflows-preview-godzilla-poster.jpg" alt=""></span></button>
@@ -111,13 +149,13 @@
       </section>
 
       <section id="links" class="shell section" aria-labelledby="links-title">
-        <div class="section-head compact-links-head">
+        <div class="section-head compact-links-head" data-motion="section-head">
           <div>
-            <p class="section-label">Links</p>
+            <p id="links-title" class="section-label">Links</p>
           </div>
         </div>
 
-        <div class="social-link-groups social-link-row" aria-label="Official public links">
+        <div class="social-link-groups social-link-row" aria-label="Official public links" data-motion="links">
           <a target="_blank" rel="noopener noreferrer" class="social-chip" href="https://github.com/aisflows"><span class="social-icon"><svg class="social-svg"><use href="#icon-github"></use></svg></span><span>GitHub</span></a>
           <a target="_blank" rel="noopener noreferrer" class="social-chip" href="https://www.linkedin.com/in/andrei-spirydovich-71924b339/"><span class="social-icon"><svg class="social-svg"><use href="#icon-linkedin"></use></svg></span><span>LinkedIn</span></a>
           <a class="social-chip" href="mailto:hitmesound@gmail.com"><span class="social-icon">@</span><span>Email</span></a>
@@ -131,7 +169,7 @@
       </section>
     </main>
 
-    <footer class="shell footer">
+    <footer class="shell footer" data-motion="footer">
       <strong>AIS FLOWS</strong>
       <p>Official contact: hitmesound@gmail.com. No guaranteed results. AI-assisted media is disclosed where relevant.</p>
     </footer>
@@ -141,6 +179,25 @@
         <button class="media-modal-close" type="button" aria-label="Close media player" data-close-modal>×</button>
         <div class="media-modal-frame"><video id="media-modal-video" controls playsinline preload="metadata"></video></div>
         <h3 id="media-modal-title">Media</h3>
+      </div>
+    </div>
+    <div class="request-modal" id="request-modal" role="dialog" aria-modal="true" aria-labelledby="request-modal-title" aria-hidden="true" data-unsaved-warning="Discard this request draft?">
+      <div class="request-modal-backdrop" data-close-request></div>
+      <div class="request-modal-panel">
+        <button class="request-modal-close" type="button" aria-label="Close request form" data-close-request>×</button>
+        <h2 id="request-modal-title" tabindex="-1">Start a Project</h2>
+        <p class="request-modal-lead">Send a short request. No account or upload is required.</p>
+        <form class="request-form" data-request-form data-email-subject="AIS FLOWS project request" data-receiver-unavailable="The request receiver is not configured yet. Use the email fallback below." data-sending="Sending..." data-success="Request sent." data-send-error="The request could not be sent. Use the email fallback below." data-offline="Network unavailable. Use the email fallback below." data-rate-limited="Please wait and try again later." data-email-label="Email" data-telegram-label="Telegram username or URL">
+          <div class="request-field"><label for="modal-request-type">Request type</label><select id="modal-request-type" name="request_type" required><option value="">Select one</option><option value="project_video">Project video</option><option value="audio_music">Audio / music</option><option value="app_tool">App / tool</option><option value="hiring_collaboration">Hiring / collaboration</option><option value="product_support">Product support</option><option value="other">Other</option></select></div>
+          <div class="request-field"><label for="modal-request-summary">Summary <span class="field-note">optional</span></label><textarea id="modal-request-summary" name="summary" rows="3" maxlength="600" placeholder="What should AIS FLOWS help you make or solve?"></textarea></div>
+          <div class="request-field"><label for="modal-contact-method">Preferred contact</label><select id="modal-contact-method" name="contact_method" required><option value="email">Email</option><option value="telegram">Telegram</option></select></div>
+          <div class="request-field"><label for="modal-contact-value" data-contact-label>Email</label><input id="modal-contact-value" name="contact_value" type="email" autocomplete="email" required placeholder="name@example.com"></div>
+          <div class="request-field"><label for="modal-materials-url">Materials URL <span class="field-note">optional</span></label><input id="modal-materials-url" name="materials_url" type="url" inputmode="url" placeholder="https://..."></div>
+          <div class="request-honeypot" aria-hidden="true"><label for="modal-website">Website</label><input id="modal-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <input type="hidden" name="locale" value="en"><input type="hidden" name="source_page" value="home-en">
+          <div class="request-actions"><button class="button primary" type="submit" data-request-submit disabled>Send Request</button><a class="button" data-request-fallback href="mailto:hitmesound@gmail.com?subject=AIS%20FLOWS%20project%20request">Use Email</a></div>
+          <p class="request-status" role="status" aria-live="polite" data-request-status>The request receiver is not configured yet. Use the email fallback below.</p>
+        </form>
       </div>
     </div>
     <script>
@@ -178,6 +235,9 @@
         });
       })();
     </script>
+    <script src="./analytics.js"></script>
+    <script src="./request.js"></script>
+    <script src="./motion.js"></script>
   </body>
 </html>
 

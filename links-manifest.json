@@ -1,0 +1,33 @@
+{
+  "schema_version": "2.0.0",
+  "source": "content-model.json",
+  "status": "public-link-manifest",
+  "public_action_performed": true,
+  "route_links": [
+    { "id": "home-en", "label": "Home EN", "url": "https://aisflows.github.io/home/", "status": "published" },
+    { "id": "home-ru", "label": "Home RU", "url": "https://aisflows.github.io/home/ru/", "status": "published" },
+    { "id": "request-en", "label": "Request EN", "url": "./request/index.html", "status": "local_receiver_unavailable" },
+    { "id": "request-ru", "label": "Request RU", "url": "./ru/request/index.html", "status": "local_receiver_unavailable" },
+    { "id": "products", "label": "Products", "url": "https://aisflows.github.io/home/#products", "status": "published" },
+    { "id": "media", "label": "Media", "url": "https://aisflows.github.io/home/#media", "status": "published" },
+    { "id": "links", "label": "Links", "url": "https://aisflows.github.io/home/#links", "status": "published" }
+  ],
+  "external_links": [
+    { "id": "github-org", "label": "GitHub", "url": "https://github.com/aisflows", "role": "organization", "status": "published" },
+    { "id": "proofline-release", "label": "Proofline Release", "url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5", "role": "product proof", "status": "published" },
+    { "id": "ready-gate-release", "label": "Ready Gate Release", "url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1", "role": "product proof", "status": "published" },
+    { "id": "ready-gate-package", "label": "Ready Gate Package", "url": "https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip", "role": "download artifact", "status": "published" },
+    { "id": "skill-cleaner-release", "label": "Skill Cleaner Release", "url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001", "role": "product proof", "status": "published" },
+    { "id": "telegram-channel", "label": "Telegram", "url": "https://t.me/aisflows", "role": "updates", "status": "published" },
+    { "id": "linkedin-profile", "label": "LinkedIn", "url": "https://www.linkedin.com/in/andrei-spirydovich-71924b339/", "role": "professional profile", "status": "published" },
+    { "id": "youtube-channel", "label": "YouTube", "url": "https://www.youtube.com/@aisflows", "role": "media", "status": "published" },
+    { "id": "instagram-profile", "label": "Instagram", "url": "https://www.instagram.com/aisflows.ai/", "role": "visuals", "status": "published" },
+    { "id": "tiktok-profile", "label": "TikTok", "url": "https://www.tiktok.com/@alt.trailers?lang=ru-RU", "role": "short-form media", "status": "published" },
+    { "id": "x-profile", "label": "X", "url": "https://x.com/aisflows", "role": "signals", "status": "published" },
+    { "id": "facebook-page", "label": "Facebook", "url": "https://www.facebook.com/AISFLOWS/", "role": "public archive", "status": "published" },
+    { "id": "youtube-trailer", "label": "AIS FLOWS trailer", "url": "https://www.youtube.com/watch?v=DDpVQ53pnAI", "role": "featured media", "status": "published_on_provider" }
+  ],
+  "contact_links": [
+    { "id": "email-fallback", "label": "Email", "url": "mailto:hitmesound@gmail.com", "role": "request fallback", "status": "fallback" }
+  ]
+}

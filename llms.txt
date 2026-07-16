@@ -1,0 +1,33 @@
+# AIS FLOWS
+
+AIS FLOWS is a compact public showcase for AI media production, workflows, skills, systems, and tools by Andrei Spirydovich.
+
+## Home routes
+
+- EN Home: `./index.html`
+- RU Home: `./ru/index.html`
+- EN request: `./request/index.html`
+- RU request: `./ru/request/index.html`
+- Canonical machine-readable model: `./content-model.json`
+- Agent discovery: `./AI_AGENT_DISCOVERY.md`
+
+## Products
+
+- Proofline: released; GitHub release route is verified in `content-model.json`.
+- Ready Gate: released; GitHub release and package artifact routes are verified in `content-model.json`.
+- Skill Cleaner: released; GitHub release route is verified in `content-model.json`.
+- Video Builder Pack: `preview_pending`; no public package, download, payment, or product page is active.
+- Local AI Gateway: `in_development`; no public release, download, or app page is active.
+
+## Media
+
+- Featured trailer: YouTube video `DDpVQ53pnAI`, embedded on the Home Media section.
+
+## Contact
+
+- Request form is present as a local UI contract, but the external receiver is not configured or proven.
+- Use the email fallback in the request route when contacting AIS FLOWS.
+
+## Limits
+
+This is the public Home V0 implementation on GitHub Pages. External analytics, receiver provisioning, payment, and custom-domain metadata are not claimed here.
