@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "id": "failure-diagnosis",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Диагностика поломок",
+  "summary_ru": "07. Диагностика Ошибок",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "07_FAILURE_DIAGNOSIS.md",
+  "source_sha256": "9e9733dd4e231641ff3be746f1955ff8bb5d7e4513bb59497298b96f283439fb",
+  "content_sha256": "9e9733dd4e231641ff3be746f1955ff8bb5d7e4513bb59497298b96f283439fb",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "prompt-reference-library"
+  ],
+  "next_id": "final-production",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/failure-diagnosis.html",
+  "content_url": "./content/failure-diagnosis.md",
+  "content_json_url": "./content/failure-diagnosis.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/failure-diagnosis.html",
+  "citation": "AIS FLOWS AI-video course, “Диагностика поломок”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "07. Диагностика Ошибок",
+      "07.0. Карта Урока",
+      "07.1. Главное Правило",
+      "07.2. Что Значит \"Сломалось\"",
+      "07.3. Частые Поломки",
+      "07.3.1. Лицо Или Персонаж Изменился",
+      "07.3.2. Объект Деформировался",
+      "07.3.3. Текст Или Логотип Сломался",
+      "07.3.4. Камера Хаосит",
+      "07.3.5. Движение Стало Кашей",
+      "07.3.6. Реплика Или Рот Поплыли",
+      "07.3.7. Seedance-Подобные Поломки Из Source-Аудита",
+      "07.4. Карточка Ошибки",
+      "07.5. Когда Остановиться",
+      "07.6. Остановка: Разбор Поломки",
+      "07.7. Новые Частые Поломки"
+    ],
+    "heading_count": 16,
+    "unordered_list_item_count": 60,
+    "ordered_list_item_count": 5,
+    "code_fence_count": 6,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "deployment_status": "local_candidate_not_deployed",
+  "artifacts": [
+    {
+      "id": "ready-gate-rc1-zip",
+      "owner_object_id": "ready-gate",
+      "status": "published",
+      "version": "v0.1.0-ready-gate-rc1",
+      "file_name": "ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip",
+      "content_type": "application/zip",
+      "size_bytes": 30297,
+      "sha256": "ecd790ad2a0cfe77feb168dbc9c48bc89cb041cffbb9bf397dfa83240f8ed1f5",
+      "download_url": "https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip",
+      "license_url": null,
+      "published_at": "2026-06-02T00:00:00Z",
+      "last_verified": "2026-07-22"
+    },
+    {
+      "id": "media-28-days-later-mp4",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-06-18",
+      "file_name": "aisflows-preview-28-days-later-web.mp4",
+      "content_type": "video/mp4",
+      "size_bytes": 7156952,
+      "sha256": "9e7015447c61abcd7ef1a4750231f03cacc7ad06862afbff7e9bd67d9490455a",
+      "download_url": "./assets/media/aisflows-preview-28-days-later-web.mp4",
+      "license_url": null,
+      "published_at": "2026-06-18T00:00:00Z",
+      "last_verified": "2026-07-22"
+    },
+    {
+      "id": "media-dead-space-mp4",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-06-18",
+      "file_name": "aisflows-preview-dead-space-web.mp4",
+      "content_type": "video/mp4",
+      "size_bytes": 12118825,
+      "sha256": "eb7f71d526becac3493c0758b42718f09019c5698ee7ab29215535b5df93cd6f",
+      "download_url": "./assets/media/aisflows-preview-dead-space-web.mp4",
+      "license_url": null,
+      "published_at": "2026-06-18T00:00:00Z",
+      "last_verified": "2026-07-22"
+    },
+    {
+      "id": "media-godzilla-mp4",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-06-18",
+      "file_name": "aisflows-preview-godzilla-web.mp4",
+      "content_type": "video/mp4",
+      "size_bytes": 8863587,
+      "sha256": "86f5ea1973a9fb9a50c0b0280ee3206f0e238f9c1a6226adfee64f623325d658",
+      "download_url": "./assets/media/aisflows-preview-godzilla-web.mp4",
+      "license_url": null,
+      "published_at": "2026-06-18T00:00:00Z",
+      "last_verified": "2026-07-22"
+    },
+    {
+      "id": "media-predator-mp4",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-06-18",
+      "file_name": "aisflows-preview-predator-web.mp4",
+      "content_type": "video/mp4",
+      "size_bytes": 9735844,
+      "sha256": "9c4dde43e6b5e48f7b77616793d9d9355ea3c8b8f72614392e140a3bee4c1809",
+      "download_url": "./assets/media/aisflows-preview-predator-web.mp4",
+      "license_url": null,
+      "published_at": "2026-06-18T00:00:00Z",
+      "last_verified": "2026-07-22"
+    }
+  ]
+}

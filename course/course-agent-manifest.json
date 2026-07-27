@@ -1,0 +1,258 @@
+{
+  "schema_version": "2.0.0",
+  "version": "0.1.0-local-preview",
+  "updated_at": "2026-07-22T12:00:00Z",
+  "name": "AIS FLOWS AI-video course",
+  "locale": "ru",
+  "canonical_base_url": "https://aisflows.github.io/home/course/",
+  "deployment_status": "local_candidate_not_deployed",
+  "course_status": "draft",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "entry": "./index.html",
+  "lesson_index": "./course-content.json",
+  "schema": "./course-schema.json",
+  "map": "./course-map.json",
+  "artifacts": "./artifacts.json",
+  "updates": "../updates.json",
+  "progress_storage": "browser_localStorage_only_not_server_state",
+  "public_write_api": null,
+  "payment_route": null,
+  "account_route": null,
+  "rules": [
+    "Use direct content_url for exact lesson text.",
+    "Use only non-null routes.",
+    "not_public lessons expose no content or human route.",
+    "Browser progress is not server state.",
+    "This is a local candidate and has not been publicly deployed."
+  ],
+  "lessons": [
+    {
+      "id": "workspace-and-preparation",
+      "title_ru": "Рабочее место и предподготовка",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/workspace-and-preparation.html",
+      "content_url": "./content/workspace-and-preparation.md",
+      "content_json_url": "./content/workspace-and-preparation.json",
+      "source_sha256": "9194530035249762ebaf9dff45ae5abc7f3074eb6782847cab66724a1f214eed",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "start-with-intent",
+      "title_ru": "С чего начинается AI-видео",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/start-with-intent.html",
+      "content_url": "./content/start-with-intent.md",
+      "content_json_url": "./content/start-with-intent.json",
+      "source_sha256": "7674e81244da2198bc4dc5dda04c00800046ac3573daf19e33146fffbe3ebd57",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "production-card",
+      "title_ru": "Production Card до промпта",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/production-card.html",
+      "content_url": "./content/production-card.md",
+      "content_json_url": "./content/production-card.json",
+      "source_sha256": "30419400e229bb16fa336cf982dcf4911cdac49da72d0e4fa4a72a741de92af6",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "story-and-timing",
+      "title_ru": "История, тайминг и управляемые сегменты",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/story-and-timing.html",
+      "content_url": "./content/story-and-timing.md",
+      "content_json_url": "./content/story-and-timing.json",
+      "source_sha256": "e39bc4fa61796407ce74aec74fbe933fb567c90c80fc6031a594cf474f854550",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "references-and-visual-control",
+      "title_ru": "Референсы и контроль внешнего вида",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/references-and-visual-control.html",
+      "content_url": "./content/references-and-visual-control.md",
+      "content_json_url": "./content/references-and-visual-control.json",
+      "source_sha256": "99ec75c2b21c2d99069dab785d2597d9570d38b7f5b155170d6421354af194b1",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "image-and-video-prompts",
+      "title_ru": "Промпты изображения и видео",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/image-and-video-prompts.html",
+      "content_url": "./content/image-and-video-prompts.md",
+      "content_json_url": "./content/image-and-video-prompts.json",
+      "source_sha256": "1e2b55a56b4d229049a900ae3b607349ba0b67dccf31112da90d30dfa389e148",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "generation-routes",
+      "title_ru": "Маршруты моделей и генерации",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/generation-routes.html",
+      "content_url": "./content/generation-routes.md",
+      "content_json_url": "./content/generation-routes.json",
+      "source_sha256": "23947045a77e467916dc7a6dbfb096030502a03b08c035e8ebff2fed45c98633",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "prompt-reference-library",
+      "title_ru": "Библиотека примеров промптов",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/prompt-reference-library.html",
+      "content_url": "./content/prompt-reference-library.md",
+      "content_json_url": "./content/prompt-reference-library.json",
+      "source_sha256": "1a0b3b95ed26d5231cb832e1c33059649a414f782deddc22abed80514908ab43",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "failure-diagnosis",
+      "title_ru": "Диагностика поломок",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/failure-diagnosis.html",
+      "content_url": "./content/failure-diagnosis.md",
+      "content_json_url": "./content/failure-diagnosis.json",
+      "source_sha256": "9e9733dd4e231641ff3be746f1955ff8bb5d7e4513bb59497298b96f283439fb",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "final-production",
+      "title_ru": "Winners, монтаж и финальная проверка",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/final-production.html",
+      "content_url": "./content/final-production.md",
+      "content_json_url": "./content/final-production.json",
+      "source_sha256": "ceeb3d8f381104959736845592a76148be516faeec0dc3000af7f677623d9729",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "tool-stack",
+      "title_ru": "Минимальный набор инструментов",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/tool-stack.html",
+      "content_url": "./content/tool-stack.md",
+      "content_json_url": "./content/tool-stack.json",
+      "source_sha256": "5b8ebf0b8b2faec94d788ba3a1d69bf2394c15c074b81048e5112ce8c3e11322",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "templates-and-worksheets",
+      "title_ru": "Шаблоны и рабочие листы",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/templates-and-worksheets.html",
+      "content_url": "./content/templates-and-worksheets.md",
+      "content_json_url": "./content/templates-and-worksheets.json",
+      "source_sha256": "50e3d6d07668bf03213207931c27cf68172bee4a20010794b121f83b7c89fa82",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "full-case-study",
+      "title_ru": "Полный кейс: от идеи до финала",
+      "lifecycle": "preview_pending",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/full-case-study.html",
+      "content_url": "./content/full-case-study.md",
+      "content_json_url": "./content/full-case-study.json",
+      "source_sha256": "431b24365291642c5439c1f304128599c54af48e8eb642156c14c47b2c6ab0de",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "course-packaging",
+      "title_ru": "Честная упаковка курса и будущего набора",
+      "lifecycle": "not_public",
+      "visibility": "not_public",
+      "version": null,
+      "human_lesson_url": null,
+      "content_url": null,
+      "content_json_url": null,
+      "source_sha256": null,
+      "access": {
+        "mode": "unavailable",
+        "purchase_url": null
+      }
+    },
+    {
+      "id": "source-backed-lessons",
+      "title_ru": "Производственные уроки и личная библиотека",
+      "lifecycle": "draft",
+      "visibility": "public_preview",
+      "version": "0.1.0-local-preview",
+      "human_lesson_url": "./lessons/source-backed-lessons.html",
+      "content_url": "./content/source-backed-lessons.md",
+      "content_json_url": "./content/source-backed-lessons.json",
+      "source_sha256": "ac0277d9e5b71a11de45b2cdaceb8a535c51ba7b256fdc3dd66b894b61e5a6c8",
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null
+      }
+    }
+  ]
+}

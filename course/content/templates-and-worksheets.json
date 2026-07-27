@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "id": "templates-and-worksheets",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Шаблоны и рабочие листы",
+  "summary_ru": "10. Шаблоны И Рабочие Листы",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "10_TEMPLATES_AND_WORKSHEETS.md",
+  "source_sha256": "50e3d6d07668bf03213207931c27cf68172bee4a20010794b121f83b7c89fa82",
+  "content_sha256": "50e3d6d07668bf03213207931c27cf68172bee4a20010794b121f83b7c89fa82",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "tool-stack"
+  ],
+  "next_id": "full-case-study",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/templates-and-worksheets.html",
+  "content_url": "./content/templates-and-worksheets.md",
+  "content_json_url": "./content/templates-and-worksheets.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/templates-and-worksheets.html",
+  "citation": "AIS FLOWS AI-video course, “Шаблоны и рабочие листы”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "10. Шаблоны И Рабочие Листы",
+      "10.0. Карта Главы",
+      "1. Вопросы Замысла Ролика",
+      "2. Подготовительный Пакет Проекта",
+      "3. Смысловая Правда Сцены",
+      "4. Таблица Точек Тайминга",
+      "5. Лист Управляемого Отрезка",
+      "5A. Shot Plan / Storyboard Map",
+      "6. Чеклист Референсов",
+      "7. Лист Персонажа",
+      "8. Шаблон Промпта Для Изображения",
+      "9. Шаблон Промпта Для Видео",
+      "10. Карточка Seedance-Подобной Модели",
+      "10A. Лист Ролей Референсов",
+      "11. Шаблон Адаптации Под Модель",
+      "11A. Карточка Prompt Reference",
+      "12. Шаблон Final-Frame-First",
+      "13. Карточка Ошибки",
+      "14. Выбор Лучшего Результата",
+      "14A. Лист Категории Enhancement",
+      "15. Журнал Выводов",
+      "16. Пакет Музыкальных Промптов",
+      "17. Лист Выбора Инструментов",
+      "10.16. Лист Фактов И Неясностей",
+      "10.17. Лист Ролей Референсов",
+      "10.18. Лист Одной Правки",
+      "10.19. Лист Сценария Из Готового Видео"
+    ],
+    "heading_count": 27,
+    "unordered_list_item_count": 30,
+    "ordered_list_item_count": 0,
+    "code_fence_count": 41,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

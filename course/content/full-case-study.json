@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "id": "full-case-study",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Полный кейс: от идеи до финала",
+  "summary_ru": "11. Кейс: От Идеи До Финального Ролика",
+  "lifecycle": "preview_pending",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "11_CASE_STUDY_FROM_IDEA_TO_FINAL_VIDEO.md",
+  "source_sha256": "431b24365291642c5439c1f304128599c54af48e8eb642156c14c47b2c6ab0de",
+  "content_sha256": "431b24365291642c5439c1f304128599c54af48e8eb642156c14c47b2c6ab0de",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "templates-and-worksheets"
+  ],
+  "next_id": "course-packaging",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/full-case-study.html",
+  "content_url": "./content/full-case-study.md",
+  "content_json_url": "./content/full-case-study.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/full-case-study.html",
+  "citation": "AIS FLOWS AI-video course, “Полный кейс: от идеи до финала”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "11. Кейс: От Идеи До Финального Ролика",
+      "11.0. Карта Кейса",
+      "1. Идея",
+      "2. Смысловая Правда Сцены",
+      "3. Замысел Ролика",
+      "4. Точки Тайминга",
+      "5. Управляемые Отрезки",
+      "6. Нужные Референсы",
+      "7. Первый Production-Риск",
+      "8. Стратегия Промптов",
+      "9. Чему Этот Кейс Должен Научить",
+      "10. Что Нужно Добавить После Реального Теста",
+      "10.1. Финальный Story Contract",
+      "10.2. Пакет Референсов",
+      "10.3. Промпты Изображений",
+      "10.4. Промпты Видео",
+      "10.5. Ошибки, Диагностика И Фиксы",
+      "10.6. Финальная Сборка"
+    ],
+    "heading_count": 18,
+    "unordered_list_item_count": 25,
+    "ordered_list_item_count": 18,
+    "code_fence_count": 10,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

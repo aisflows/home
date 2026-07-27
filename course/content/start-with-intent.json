@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "id": "start-with-intent",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "С чего начинается AI-видео",
+  "summary_ru": "01. С Чего Начинается AI-Видео",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "01_START_HERE.md",
+  "source_sha256": "7674e81244da2198bc4dc5dda04c00800046ac3573daf19e33146fffbe3ebd57",
+  "content_sha256": "7674e81244da2198bc4dc5dda04c00800046ac3573daf19e33146fffbe3ebd57",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "workspace-and-preparation"
+  ],
+  "next_id": "production-card",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/start-with-intent.html",
+  "content_url": "./content/start-with-intent.md",
+  "content_json_url": "./content/start-with-intent.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/start-with-intent.html",
+  "citation": "AIS FLOWS AI-video course, “С чего начинается AI-видео”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "01. С Чего Начинается AI-Видео",
+      "01.0. Карта Урока",
+      "01.1. Почему Ролик Не Начинается С Промпта",
+      "01.2. Что Такое Промпт Простыми Словами",
+      "01.2.1. Промпт Для Изображения",
+      "01.2.2. Промпт Для Видео",
+      "01.3. Что Значит \"Сломалось\"",
+      "01.4. Плохой И Нормальный Путь",
+      "01.4.1. Плохой Путь",
+      "01.4.2. Нормальный Путь",
+      "01.5. Первый Рабочий Результат: Понять Замысел",
+      "01.6. Пример Разбора Замысла",
+      "01.7. Типичные Ошибки На Старте",
+      "01.7.1. Ошибка: Начинать С \"Напиши Промпт\"",
+      "01.7.2. Ошибка: Не Защитить Главное",
+      "01.7.3. Ошибка: Путать Красивый Кадр И Рабочий Кадр",
+      "01.7.4. Ошибка: Просить Слишком Много За Один Раз",
+      "01.8. Остановка: Проверьте Замысел",
+      "01.9. Итог: Замысел Понятен"
+    ],
+    "heading_count": 19,
+    "unordered_list_item_count": 40,
+    "ordered_list_item_count": 0,
+    "code_fence_count": 8,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "id": "generation-routes",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Маршруты моделей и генерации",
+  "summary_ru": "06. Работа С Разными Типами Моделей",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "06_MODEL_WORKFLOWS_AND_ADAPTATION.md",
+  "source_sha256": "23947045a77e467916dc7a6dbfb096030502a03b08c035e8ebff2fed45c98633",
+  "content_sha256": "23947045a77e467916dc7a6dbfb096030502a03b08c035e8ebff2fed45c98633",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "image-and-video-prompts"
+  ],
+  "next_id": "prompt-reference-library",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/generation-routes.html",
+  "content_url": "./content/generation-routes.md",
+  "content_json_url": "./content/generation-routes.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/generation-routes.html",
+  "citation": "AIS FLOWS AI-video course, “Маршруты моделей и генерации”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "06. Работа С Разными Типами Моделей",
+      "06.0. Карта Урока",
+      "06.1. Что Это За Подход",
+      "06.2. Четыре Разных Типа Задач",
+      "06.3. Канва-Маршрут Для Моделей",
+      "06.4. Подготовка Персонажа, Если Персонаж Нужен",
+      "06.5. Адаптация Промпта Под Модель",
+      "06.5A. Карточка Режима Seedance-Подобной Модели",
+      "06.6. Как Использовать Manual/PDF Как Правила Модели",
+      "06.7. Как Использовать Чужой Сильный Промпт",
+      "06.8. Улучшение Качества",
+      "06.9. Остановка: Режим Модели И Адаптация",
+      "06.10. Сначала Универсальная Задача, Потом Конкретный Сервис"
+    ],
+    "heading_count": 13,
+    "unordered_list_item_count": 38,
+    "ordered_list_item_count": 0,
+    "code_fence_count": 14,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

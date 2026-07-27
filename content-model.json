@@ -1,13 +1,21 @@
 {
-  "schema_version": "2.0.0",
-  "status": "public-github-pages",
-  "public_action_performed": true,
+  "schema_version": "3.0.0",
   "canonical_brand": "AIS FLOWS",
+  "deployment": {
+    "status": "local_candidate_not_deployed",
+    "public_deploy_allowed": false,
+    "base_url": "https://aisflows.github.io/home/"
+  },
   "routes": {
     "en": "./index.html",
     "ru": "./ru/index.html",
     "request_en": "./request/index.html",
-    "request_ru": "./ru/request/index.html"
+    "request_ru": "./ru/request/index.html",
+    "course": "./course/index.html",
+    "manifest": "./agent-manifest.json",
+    "artifacts": "./artifacts.json",
+    "updates": "./updates.json",
+    "feed": "./feed.xml"
   },
   "entities": [
     {
@@ -15,75 +23,297 @@
       "type": "skill",
       "title_en": "Proofline",
       "title_ru": "Proofline",
-      "short_description_en": "Five-skill pack for checking product readiness before a handoff is called ready.",
-      "short_description_ru": "Пакет из пяти skill для проверки готовности продукта перед handoff.",
-      "description_en": "Five-skill pack for agent chats: check product readiness before fake ready.",
-      "description_ru": "Пакет из пяти skill для агентского чата: проверяет готовность продукта до фальшивого готово.",
+      "short_description_en": "Five-skill readiness check for agent chats.",
+      "short_description_ru": "Пакет из 5 skill для проверки готовности продукта.",
+      "description_en": "Five-skill pack for checking product readiness with a clear owner/agent report.",
+      "description_ru": "Пакет из 5 skill для проверки готовности продукта с понятным отчётом для владельца и агента.",
+      "lifecycle": "released",
       "status": "released",
-      "image": "./assets/proofline-featured.png",
+      "route_status": "verified",
+      "version": "v0.2.0-rc5",
+      "updated_at": "2026-07-22T12:00:00Z",
+      "last_verified": "2026-07-22",
+      "language": [
+        "en",
+        "ru"
+      ],
+      "available_languages": [
+        "en",
+        "ru"
+      ],
+      "human_page_url": null,
       "page_url": null,
+      "machine_index_url": null,
+      "content_url": null,
       "release_url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5",
+      "artifact_manifest_url": null,
       "download_url": null,
       "payment_url": null,
-      "contact_url": "./request/",
-      "route": null,
+      "contact_url": null,
+      "route_unavailable_reasons": {
+        "human_page_url": "No verified public route is available for this field.",
+        "machine_index_url": "No verified public route is available for this field.",
+        "content_url": "No verified public route is available for this field.",
+        "release_url": null,
+        "artifact_manifest_url": "No verified public route is available for this field.",
+        "download_url": "No verified public route is available for this field.",
+        "purchase_url": "No verified public route is available for this field."
+      },
+      "access": {
+        "mode": "public_free",
+        "purchase_url": null,
+        "price": null,
+        "currency": null,
+        "user_confirmation_required": false
+      },
+      "license": {
+        "name": null,
+        "url": null,
+        "summary": "No public reuse license has been independently verified."
+      },
+      "citation": {
+        "canonical_url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5",
+        "attribution_text": "AIS FLOWS Proofline v0.2.0-rc5 by Andrei Spirydovich."
+      },
+      "updates": {
+        "changelog_url": "./CHANGELOG_PUBLIC.md",
+        "feed_url": "./feed.xml"
+      },
+      "support_actions": [],
       "primary_action": "open_release",
       "action_url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5",
       "action_target": "_blank",
-      "version": "v0.2.0-rc5",
-      "available_languages": ["en", "ru"],
-      "language": "en,ru",
-      "last_verified": "2026-07-15"
+      "display": {
+        "category": "skills",
+        "order": 1,
+        "status_label_en": "Release",
+        "status_label_ru": "Релиз",
+        "action_label_en": "Open Release",
+        "action_label_ru": "Открыть релиз",
+        "tags_en": [
+          "Release",
+          "5-skill pack"
+        ],
+        "tags_ru": [
+          "Релиз",
+          "5-skill pack"
+        ],
+        "image": "./assets/proofline-square.png",
+        "image_alt_en": "AIS FLOWS Proofline release cover.",
+        "image_alt_ru": "Обложка релиза AIS FLOWS Proofline.",
+        "image_metadata": {
+          "classification": "public_media",
+          "width": 2048,
+          "height": 2048,
+          "size_bytes": 5683533,
+          "sha256": "c6e1c68e34b479b54289278598c1dddfa907f865449be1621ba3774ad912bfe8",
+          "caption_en": "AIS FLOWS Proofline release cover.",
+          "caption_ru": "Обложка релиза AIS FLOWS Proofline.",
+          "credit": "AIS FLOWS / Andrei Spirydovich",
+          "license": "All rights reserved; no public reuse license is granted."
+        },
+        "flow_en": [],
+        "flow_ru": []
+      },
+      "media": null
     },
     {
       "id": "ready-gate",
       "type": "skill",
       "title_en": "Ready Gate",
       "title_ru": "Ready Gate",
-      "short_description_en": "A one-skill gate for checking handoff quality before release.",
-      "short_description_ru": "Один skill для проверки качества handoff перед релизом.",
+      "short_description_en": "One-skill handoff readiness gate.",
+      "short_description_ru": "Один skill для проверки готовности handoff.",
       "description_en": "One-skill readiness gate for checking handoff quality before a product is called ready.",
       "description_ru": "Один skill для проверки качества handoff перед тем, как продукт назвать готовым.",
+      "lifecycle": "released",
       "status": "released",
-      "image": "./assets/cards/ready-gate-release-cover-16x9.jpeg",
+      "route_status": "verified",
+      "version": "v0.1.0-ready-gate-rc1",
+      "updated_at": "2026-07-22T12:00:00Z",
+      "last_verified": "2026-07-22",
+      "language": [
+        "en",
+        "ru"
+      ],
+      "available_languages": [
+        "en",
+        "ru"
+      ],
+      "human_page_url": null,
       "page_url": null,
+      "machine_index_url": null,
+      "content_url": null,
       "release_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1",
+      "artifact_manifest_url": "./artifacts.json",
       "download_url": "https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip",
       "payment_url": null,
-      "contact_url": "./request/",
-      "route": null,
+      "contact_url": null,
+      "route_unavailable_reasons": {
+        "human_page_url": "No verified public route is available for this field.",
+        "machine_index_url": "No verified public route is available for this field.",
+        "content_url": "No verified public route is available for this field.",
+        "release_url": null,
+        "artifact_manifest_url": null,
+        "download_url": null,
+        "purchase_url": "No verified public route is available for this field."
+      },
+      "access": {
+        "mode": "public_free",
+        "purchase_url": null,
+        "price": null,
+        "currency": null,
+        "user_confirmation_required": false
+      },
+      "license": {
+        "name": null,
+        "url": null,
+        "summary": "No public reuse license has been independently verified."
+      },
+      "citation": {
+        "canonical_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1",
+        "attribution_text": "AIS FLOWS Ready Gate v0.1.0-ready-gate-rc1 by Andrei Spirydovich."
+      },
+      "updates": {
+        "changelog_url": "./CHANGELOG_PUBLIC.md",
+        "feed_url": "./feed.xml"
+      },
+      "support_actions": [],
       "primary_action": "open_release",
       "action_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1",
       "action_target": "_blank",
-      "version": "v0.1.0-ready-gate-rc1",
-      "available_languages": ["en", "ru"],
-      "language": "en,ru",
-      "last_verified": "2026-07-15"
+      "display": {
+        "category": "skills",
+        "order": 2,
+        "status_label_en": "Release",
+        "status_label_ru": "Релиз",
+        "action_label_en": "Open Release",
+        "action_label_ru": "Открыть релиз",
+        "tags_en": [
+          "Release",
+          "1-skill gate"
+        ],
+        "tags_ru": [
+          "Релиз",
+          "1-skill gate"
+        ],
+        "image": "./assets/cards/ready-gate-release-cover-16x9.jpeg",
+        "image_alt_en": "AIS FLOWS Ready Gate release cover.",
+        "image_alt_ru": "Обложка релиза AIS FLOWS Ready Gate.",
+        "image_metadata": {
+          "classification": "public_media",
+          "width": 2752,
+          "height": 1536,
+          "size_bytes": 3265119,
+          "sha256": "eb9f253aa63a33ee157a1c852db95508e7f0b0297ced7d5e90238c62063a4cca",
+          "caption_en": "AIS FLOWS Ready Gate release cover.",
+          "caption_ru": "Обложка релиза AIS FLOWS Ready Gate.",
+          "credit": "AIS FLOWS / Andrei Spirydovich",
+          "license": "All rights reserved; no public reuse license is granted."
+        },
+        "flow_en": [],
+        "flow_ru": []
+      },
+      "media": null
     },
     {
       "id": "skill-cleaner",
       "type": "skill",
       "title_en": "Skill Cleaner",
       "title_ru": "Skill Cleaner",
-      "short_description_en": "A workflow pack for turning messy skill folders into a usable library.",
-      "short_description_ru": "Пакет для превращения хаотичной папки skills в рабочую библиотеку.",
+      "short_description_en": "Workflow pack for cleaning AI-agent skill folders.",
+      "short_description_ru": "Пакет workflow для очистки папок агентских skill.",
       "description_en": "Six-skill workflow pack for turning messy AI-agent skill folders into a clean usable library.",
-      "description_ru": "Пакет из шести skill: превращает хаотичные папки агентских скиллов в чистую рабочую библиотеку.",
+      "description_ru": "Пакет из 6 skill: превращает хаотичные папки агентских скиллов в чистую рабочую библиотеку.",
+      "lifecycle": "released",
       "status": "released",
-      "image": "./assets/cards/skill-cleaner-github-preview.jpg",
+      "route_status": "verified",
+      "version": "v0.1.0-release-001",
+      "updated_at": "2026-07-22T12:00:00Z",
+      "last_verified": "2026-07-22",
+      "language": [
+        "en",
+        "ru"
+      ],
+      "available_languages": [
+        "en",
+        "ru"
+      ],
+      "human_page_url": null,
       "page_url": null,
+      "machine_index_url": null,
+      "content_url": null,
       "release_url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001",
+      "artifact_manifest_url": null,
       "download_url": null,
       "payment_url": null,
-      "contact_url": "./request/",
-      "route": null,
+      "contact_url": null,
+      "route_unavailable_reasons": {
+        "human_page_url": "No verified public route is available for this field.",
+        "machine_index_url": "No verified public route is available for this field.",
+        "content_url": "No verified public route is available for this field.",
+        "release_url": null,
+        "artifact_manifest_url": "No verified public route is available for this field.",
+        "download_url": "No verified public route is available for this field.",
+        "purchase_url": "No verified public route is available for this field."
+      },
+      "access": {
+        "mode": "public_free",
+        "purchase_url": null,
+        "price": null,
+        "currency": null,
+        "user_confirmation_required": false
+      },
+      "license": {
+        "name": null,
+        "url": null,
+        "summary": "No public reuse license has been independently verified."
+      },
+      "citation": {
+        "canonical_url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001",
+        "attribution_text": "AIS FLOWS Skill Cleaner v0.1.0-release-001 by Andrei Spirydovich."
+      },
+      "updates": {
+        "changelog_url": "./CHANGELOG_PUBLIC.md",
+        "feed_url": "./feed.xml"
+      },
+      "support_actions": [],
       "primary_action": "open_release",
       "action_url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001",
       "action_target": "_blank",
-      "version": "v0.1.0-release-001",
-      "available_languages": ["en", "ru"],
-      "language": "en,ru",
-      "last_verified": "2026-07-15"
+      "display": {
+        "category": "skills",
+        "order": 3,
+        "status_label_en": "Release",
+        "status_label_ru": "Релиз",
+        "action_label_en": "Open Release",
+        "action_label_ru": "Открыть релиз",
+        "tags_en": [
+          "Release",
+          "Workflow pack"
+        ],
+        "tags_ru": [
+          "Релиз",
+          "Workflow pack"
+        ],
+        "image": "./assets/cards/skill-cleaner-github-preview.jpg",
+        "image_alt_en": "AIS FLOWS Skill Cleaner release cover.",
+        "image_alt_ru": "Обложка релиза AIS FLOWS Skill Cleaner.",
+        "image_metadata": {
+          "classification": "public_media",
+          "width": 1280,
+          "height": 640,
+          "size_bytes": 162884,
+          "sha256": "8f9587490b915a07ca43d9b382d6b656c93ed4c8d704453e3cf6769dd361c1f9",
+          "caption_en": "AIS FLOWS Skill Cleaner release cover.",
+          "caption_ru": "Обложка релиза AIS FLOWS Skill Cleaner.",
+          "credit": "AIS FLOWS / Andrei Spirydovich",
+          "license": "All rights reserved; no public reuse license is granted."
+        },
+        "flow_en": [],
+        "flow_ru": []
+      },
+      "media": null
     },
     {
       "id": "video-builder-pack",
@@ -94,24 +324,89 @@
       "short_description_ru": "Рабочие файлы, которые можно открыть самому или загрузить в свой чат с ИИ.",
       "description_en": "START_HERE, working files, and guided AI-chat workflow for building a video. Public package preview is pending.",
       "description_ru": "START_HERE, рабочие файлы и маршрут через AI-чат для создания видео. Публичный пример готовится.",
+      "lifecycle": "draft",
       "status": "preview_pending",
-      "image": null,
+      "route_status": "unavailable",
+      "version": null,
+      "updated_at": "2026-07-22T12:00:00Z",
+      "last_verified": "2026-07-22",
+      "language": [
+        "en",
+        "ru"
+      ],
+      "available_languages": [
+        "en",
+        "ru"
+      ],
+      "human_page_url": null,
       "page_url": null,
+      "machine_index_url": null,
+      "content_url": null,
       "release_url": null,
+      "artifact_manifest_url": null,
       "download_url": null,
       "payment_url": null,
-      "contact_url": "./request/",
-      "route": null,
+      "contact_url": null,
+      "route_unavailable_reasons": {
+        "human_page_url": "No verified public route is available for this field.",
+        "machine_index_url": "No verified public route is available for this field.",
+        "content_url": "No verified public route is available for this field.",
+        "release_url": "No verified public route is available for this field.",
+        "artifact_manifest_url": "No verified public route is available for this field.",
+        "download_url": "No verified public route is available for this field.",
+        "purchase_url": "No verified public route is available for this field."
+      },
+      "access": {
+        "mode": "unavailable",
+        "purchase_url": null,
+        "price": null,
+        "currency": null,
+        "user_confirmation_required": false
+      },
+      "license": {
+        "name": null,
+        "url": null,
+        "summary": "No public reuse license has been independently verified."
+      },
+      "citation": {
+        "canonical_url": "https://aisflows.github.io/home/#products",
+        "attribution_text": "AIS FLOWS Video Builder Pack status by Andrei Spirydovich."
+      },
+      "updates": {
+        "changelog_url": "./CHANGELOG_PUBLIC.md",
+        "feed_url": "./feed.xml"
+      },
+      "support_actions": [],
       "primary_action": "status_only",
       "action_url": null,
       "action_target": null,
-      "version": null,
-      "available_languages": ["en", "ru"],
-      "language": "en,ru",
-      "last_verified": "2026-07-15",
-      "artifact_status": "not_public",
-      "payment_status": "not_selected",
-      "delivery_status": "not_selected"
+      "display": {
+        "category": "systems",
+        "order": 1,
+        "status_label_en": "Preview pending",
+        "status_label_ru": "Пример готовится",
+        "action_label_en": null,
+        "action_label_ru": null,
+        "tags_en": [],
+        "tags_ru": [],
+        "image": null,
+        "image_alt_en": "",
+        "image_alt_ru": "",
+        "image_metadata": null,
+        "flow_en": [
+          "START_HERE",
+          "Files",
+          "AI Chat",
+          "Video"
+        ],
+        "flow_ru": [
+          "START_HERE",
+          "Файлы",
+          "AI-чат",
+          "Видео"
+        ]
+      },
+      "media": null
     },
     {
       "id": "local-ai-gateway",
@@ -120,53 +415,271 @@
       "title_ru": "Local AI Gateway",
       "short_description_en": "Local OpenAI-compatible gateway for AI apps, chats, and agents.",
       "short_description_ru": "Локальный OpenAI-compatible шлюз для AI-приложений, чатов и агентов.",
-      "description_en": "A local OpenAI-compatible gateway for AI apps, chats, and agents. Public release is in development.",
-      "description_ru": "Локальный OpenAI-compatible шлюз для AI-приложений, чатов и агентов. Публичный релиз в разработке.",
+      "description_en": "A local OpenAI-compatible gateway. Public release is in development.",
+      "description_ru": "Локальный OpenAI-compatible шлюз. Публичный релиз в разработке.",
+      "lifecycle": "in_development",
       "status": "in_development",
-      "image": "./assets/cards/category-apps-16x9.png",
+      "route_status": "unavailable",
+      "version": null,
+      "updated_at": "2026-07-22T12:00:00Z",
+      "last_verified": "2026-07-22",
+      "language": [
+        "en",
+        "ru"
+      ],
+      "available_languages": [
+        "en",
+        "ru"
+      ],
+      "human_page_url": null,
       "page_url": null,
+      "machine_index_url": null,
+      "content_url": null,
       "release_url": null,
+      "artifact_manifest_url": null,
       "download_url": null,
       "payment_url": null,
-      "contact_url": "./request/",
-      "route": null,
+      "contact_url": null,
+      "route_unavailable_reasons": {
+        "human_page_url": "No verified public route is available for this field.",
+        "machine_index_url": "No verified public route is available for this field.",
+        "content_url": "No verified public route is available for this field.",
+        "release_url": "No verified public route is available for this field.",
+        "artifact_manifest_url": "No verified public route is available for this field.",
+        "download_url": "No verified public route is available for this field.",
+        "purchase_url": "No verified public route is available for this field."
+      },
+      "access": {
+        "mode": "unavailable",
+        "purchase_url": null,
+        "price": null,
+        "currency": null,
+        "user_confirmation_required": false
+      },
+      "license": {
+        "name": null,
+        "url": null,
+        "summary": "No public reuse license has been independently verified."
+      },
+      "citation": {
+        "canonical_url": "https://aisflows.github.io/home/#products",
+        "attribution_text": "AIS FLOWS Local AI Gateway development status by Andrei Spirydovich."
+      },
+      "updates": {
+        "changelog_url": "./CHANGELOG_PUBLIC.md",
+        "feed_url": "./feed.xml"
+      },
+      "support_actions": [],
       "primary_action": "status_only",
       "action_url": null,
       "action_target": null,
-      "version": null,
-      "available_languages": ["en", "ru"],
-      "language": "en,ru",
-      "last_verified": "2026-07-15",
-      "release_status": "not_public",
-      "runtime_status": "local_only",
-      "platforms": ["Windows"],
-      "limitations": ["No public download or release route is configured."]
+      "display": {
+        "category": "apps",
+        "order": 1,
+        "status_label_en": "In development",
+        "status_label_ru": "В разработке",
+        "action_label_en": null,
+        "action_label_ru": null,
+        "tags_en": [],
+        "tags_ru": [],
+        "image": "./assets/cards/category-apps-16x9.png",
+        "image_alt_en": "AIS FLOWS Apps category visual.",
+        "image_alt_ru": "Визуал категории приложений AIS FLOWS.",
+        "image_metadata": {
+          "classification": "public_media",
+          "width": 2752,
+          "height": 1536,
+          "size_bytes": 5818362,
+          "sha256": "cfff61dd2d0af86aac9bb924434e0bc5fe1a04fb640d5e697b400dd4c8ab477d",
+          "caption_en": "AIS FLOWS Apps category visual.",
+          "caption_ru": "Визуал категории приложений AIS FLOWS.",
+          "credit": "AIS FLOWS / Andrei Spirydovich",
+          "license": "All rights reserved; no public reuse license is granted."
+        },
+        "flow_en": [],
+        "flow_ru": []
+      },
+      "media": null
     },
     {
       "id": "featured-youtube-trailer",
       "type": "media",
       "title_en": "AIS FLOWS trailer",
       "title_ru": "Трейлер AIS FLOWS",
-      "short_description_en": "Featured YouTube trailer.",
-      "short_description_ru": "Главный трейлер на YouTube.",
-      "description_en": "Featured YouTube trailer embedded on the Home media surface.",
-      "description_ru": "Главный трейлер YouTube, встроенный в блок медиа на Home.",
+      "short_description_en": "Featured YouTube trailer and local media previews.",
+      "short_description_ru": "Главный YouTube-трейлер и локальные медиапревью.",
+      "description_en": "Featured trailer plus four local vertical media previews on the Home media surface.",
+      "description_ru": "Главный трейлер и четыре локальных вертикальных медиапревью на Home.",
+      "lifecycle": "published",
       "status": "published_on_provider",
-      "image": null,
+      "route_status": "verified",
+      "version": null,
+      "updated_at": "2026-07-22T12:00:00Z",
+      "last_verified": "2026-07-22",
+      "language": [
+        "en",
+        "ru"
+      ],
+      "available_languages": [
+        "en",
+        "ru"
+      ],
+      "human_page_url": "./index.html#media",
       "page_url": "./index.html#media",
+      "machine_index_url": null,
+      "content_url": null,
       "release_url": null,
+      "artifact_manifest_url": "./artifacts.json",
       "download_url": null,
       "payment_url": null,
       "contact_url": null,
-      "route": "https://www.youtube.com/watch?v=DDpVQ53pnAI",
+      "route_unavailable_reasons": {
+        "human_page_url": null,
+        "machine_index_url": "No verified public route is available for this field.",
+        "content_url": "No verified public route is available for this field.",
+        "release_url": "No verified public route is available for this field.",
+        "artifact_manifest_url": null,
+        "download_url": "No verified public route is available for this field.",
+        "purchase_url": "No verified public route is available for this field."
+      },
+      "access": {
+        "mode": "public_free",
+        "purchase_url": null,
+        "price": null,
+        "currency": null,
+        "user_confirmation_required": false
+      },
+      "license": {
+        "name": null,
+        "url": null,
+        "summary": "No public reuse license has been independently verified."
+      },
+      "citation": {
+        "canonical_url": "https://aisflows.github.io/home/#media",
+        "attribution_text": "AIS FLOWS media by Andrei Spirydovich."
+      },
+      "updates": {
+        "changelog_url": "./CHANGELOG_PUBLIC.md",
+        "feed_url": "./feed.xml"
+      },
+      "support_actions": [],
       "primary_action": "play",
       "action_url": "https://www.youtube.com/watch?v=DDpVQ53pnAI",
       "action_target": "_blank",
-      "version": null,
-      "available_languages": ["en", "ru"],
-      "language": "en,ru",
-      "last_verified": "2026-07-15",
-      "media_id": "DDpVQ53pnAI"
+      "display": {
+        "category": "media",
+        "order": 1,
+        "status_label_en": "Published",
+        "status_label_ru": "Опубликовано",
+        "action_label_en": "Open trailer on YouTube",
+        "action_label_ru": "Открыть трейлер на YouTube",
+        "tags_en": [],
+        "tags_ru": [],
+        "image": "./assets/media/aisflows-youtube-trailer-poster.jpg",
+        "image_alt_en": "AIS FLOWS YouTube trailer poster.",
+        "image_alt_ru": "Постер трейлера AIS FLOWS на YouTube.",
+        "image_metadata": {
+          "classification": "public_media",
+          "width": 1280,
+          "height": 720,
+          "size_bytes": 182387,
+          "sha256": "dcd7d652a61e825cce140d257cbed3a8b500930de5fa1ae2ca0046f8f2b0ca5b",
+          "caption_en": "AIS FLOWS YouTube trailer poster.",
+          "caption_ru": "Постер трейлера AIS FLOWS на YouTube.",
+          "credit": "AIS FLOWS / Andrei Spirydovich",
+          "license": "All rights reserved; no public reuse license is granted."
+        },
+        "flow_en": [],
+        "flow_ru": []
+      },
+      "media": {
+        "kind": "youtube",
+        "provider_id": "DDpVQ53pnAI",
+        "preview_media_url": null,
+        "format": "wide",
+        "previews": [
+          {
+            "id": "28-days-later",
+            "title": "28 Days Later",
+            "poster": "./assets/media/aisflows-preview-28-days-later-poster.jpg",
+            "preview_media_url": "./assets/media/aisflows-preview-28-days-later-web.mp4",
+            "format": "vertical",
+            "poster_alt_en": "28 Days Later AIS FLOWS media preview poster.",
+            "poster_alt_ru": "Постер медиапревью AIS FLOWS «28 Days Later».",
+            "poster_metadata": {
+              "classification": "public_media",
+              "width": 720,
+              "height": 1280,
+              "size_bytes": 94116,
+              "sha256": "0713e28d0205a87f17b90ea4c5c7dabbb09e1bd5784bba40ee9bbf18fbc3c122",
+              "caption_en": "28 Days Later AIS FLOWS media preview poster.",
+              "caption_ru": "Постер медиапревью AIS FLOWS «28 Days Later».",
+              "credit": "AIS FLOWS / Andrei Spirydovich",
+              "license": "All rights reserved; no public reuse license is granted."
+            }
+          },
+          {
+            "id": "dead-space",
+            "title": "Dead Space",
+            "poster": "./assets/media/aisflows-preview-dead-space-poster.jpg",
+            "preview_media_url": "./assets/media/aisflows-preview-dead-space-web.mp4",
+            "format": "vertical",
+            "poster_alt_en": "Dead Space AIS FLOWS media preview poster.",
+            "poster_alt_ru": "Постер медиапревью AIS FLOWS «Dead Space».",
+            "poster_metadata": {
+              "classification": "public_media",
+              "width": 720,
+              "height": 1280,
+              "size_bytes": 54933,
+              "sha256": "05c74e595db2b00d59777cb469a868e31b4af4c24c8b7d0da85bde5b654bac30",
+              "caption_en": "Dead Space AIS FLOWS media preview poster.",
+              "caption_ru": "Постер медиапревью AIS FLOWS «Dead Space».",
+              "credit": "AIS FLOWS / Andrei Spirydovich",
+              "license": "All rights reserved; no public reuse license is granted."
+            }
+          },
+          {
+            "id": "godzilla",
+            "title": "Godzilla",
+            "poster": "./assets/media/aisflows-preview-godzilla-poster.jpg",
+            "preview_media_url": "./assets/media/aisflows-preview-godzilla-web.mp4",
+            "format": "vertical",
+            "poster_alt_en": "Godzilla AIS FLOWS media preview poster.",
+            "poster_alt_ru": "Постер медиапревью AIS FLOWS «Godzilla».",
+            "poster_metadata": {
+              "classification": "public_media",
+              "width": 720,
+              "height": 1280,
+              "size_bytes": 91709,
+              "sha256": "c0b5b717716977463494df5f12c7e07cfaebce99071aff4822a5d2d26ea363d2",
+              "caption_en": "Godzilla AIS FLOWS media preview poster.",
+              "caption_ru": "Постер медиапревью AIS FLOWS «Godzilla».",
+              "credit": "AIS FLOWS / Andrei Spirydovich",
+              "license": "All rights reserved; no public reuse license is granted."
+            }
+          },
+          {
+            "id": "predator",
+            "title": "Predator",
+            "poster": "./assets/media/aisflows-preview-predator-poster.jpg",
+            "preview_media_url": "./assets/media/aisflows-preview-predator-web.mp4",
+            "format": "vertical",
+            "poster_alt_en": "Predator AIS FLOWS media preview poster.",
+            "poster_alt_ru": "Постер медиапревью AIS FLOWS «Predator».",
+            "poster_metadata": {
+              "classification": "public_media",
+              "width": 720,
+              "height": 1280,
+              "size_bytes": 26932,
+              "sha256": "03d5ac49360f172925dbcbd333fa2418156b2dc4a0ea65b42b7726c887f9a37a",
+              "caption_en": "Predator AIS FLOWS media preview poster.",
+              "caption_ru": "Постер медиапревью AIS FLOWS «Predator».",
+              "credit": "AIS FLOWS / Andrei Spirydovich",
+              "license": "All rights reserved; no public reuse license is granted."
+            }
+          }
+        ]
+      }
     },
     {
       "id": "request",
@@ -175,41 +688,337 @@
       "title_ru": "Оставить заявку",
       "short_description_en": "Short project request form with an email fallback.",
       "short_description_ru": "Короткая форма заявки с запасным email-маршрутом.",
-      "description_en": "Request route for project video, audio/music, app/tool, collaboration, product support, or other requests.",
-      "description_ru": "Маршрут для заявки по видео, аудио/музыке, приложениям/инструментам, сотрудничеству, поддержке продукта или другой теме.",
-      "status": "receiver_unavailable",
-      "image": null,
+      "description_en": "The Formspree receiver is configured and has local live-delivery acceptance evidence. This Home candidate is not publicly deployed; email remains the explicit fallback.",
+      "description_ru": "Получатель Formspree настроен и имеет локальное подтверждение реальной доставки. Этот кандидат Home публично не развёрнут; email остаётся явным запасным маршрутом.",
+      "lifecycle": "published",
+      "status": "receiver_configured_local_acceptance_not_deployed",
+      "route_status": "verified",
+      "version": null,
+      "updated_at": "2026-07-26T16:01:40Z",
+      "last_verified": "2026-07-26",
+      "language": [
+        "en",
+        "ru"
+      ],
+      "available_languages": [
+        "en",
+        "ru"
+      ],
+      "human_page_url": "./request/index.html",
       "page_url": "./request/index.html",
+      "machine_index_url": null,
+      "content_url": null,
       "release_url": null,
+      "artifact_manifest_url": null,
       "download_url": null,
       "payment_url": null,
       "contact_url": "mailto:hitmesound@gmail.com",
-      "route": "./request/index.html",
+      "route_unavailable_reasons": {
+        "human_page_url": null,
+        "machine_index_url": "No verified public route is available for this field.",
+        "content_url": "No verified public route is available for this field.",
+        "release_url": "No verified public route is available for this field.",
+        "artifact_manifest_url": "No verified public route is available for this field.",
+        "download_url": "No verified public route is available for this field.",
+        "purchase_url": "No verified public route is available for this field."
+      },
+      "access": {
+        "mode": "public_free",
+        "purchase_url": null,
+        "price": null,
+        "currency": null,
+        "user_confirmation_required": true
+      },
+      "license": {
+        "name": null,
+        "url": null,
+        "summary": "No public reuse license has been independently verified."
+      },
+      "citation": {
+        "canonical_url": "https://aisflows.github.io/home/request/",
+        "attribution_text": "AIS FLOWS project request route."
+      },
+      "updates": {
+        "changelog_url": "./CHANGELOG_PUBLIC.md",
+        "feed_url": "./feed.xml"
+      },
+      "support_actions": [
+        {
+          "id": "email-fallback",
+          "label_en": "Use email",
+          "label_ru": "Использовать email",
+          "url": "mailto:hitmesound@gmail.com",
+          "requires_user_confirmation": true
+        }
+      ],
       "primary_action": "open_form",
       "action_url": "./request/index.html",
       "action_target": null,
-      "version": null,
-      "available_languages": ["en", "ru"],
-      "language": "en,ru",
-      "last_verified": "2026-07-15"
+      "display": {
+        "category": "contact",
+        "order": 1,
+        "status_label_en": "Configured locally",
+        "status_label_ru": "Настроено локально",
+        "action_label_en": "Open request",
+        "action_label_ru": "Открыть заявку",
+        "tags_en": [],
+        "tags_ru": [],
+        "image": null,
+        "image_alt_en": "",
+        "image_alt_ru": "",
+        "image_metadata": null,
+        "flow_en": [],
+        "flow_ru": []
+      },
+      "media": null
+    },
+    {
+      "id": "ais-flows-ai-video-course",
+      "type": "course",
+      "title_en": "AIS FLOWS AI-video course",
+      "title_ru": "Курс AIS FLOWS по AI-видео",
+      "short_description_en": "Working course route from intent to assembled AI-video.",
+      "short_description_ru": "Рабочий маршрут курса от замысла до собранного AI-видео.",
+      "description_en": "Local candidate of the working AIS FLOWS course with direct no-JS lesson routes. It is not a finished SaaS or paid pack.",
+      "description_ru": "Локальный кандидат рабочего курса AIS FLOWS с прямыми no-JS маршрутами уроков. Это не готовый SaaS и не опубликованный платный набор.",
+      "lifecycle": "draft",
+      "status": "draft",
+      "route_status": "verified",
+      "version": "0.1.0-local-preview",
+      "updated_at": "2026-07-22T12:00:00Z",
+      "last_verified": "2026-07-22",
+      "language": [
+        "en",
+        "ru"
+      ],
+      "available_languages": [
+        "en",
+        "ru"
+      ],
+      "human_page_url": "./course/index.html",
+      "page_url": "./course/index.html",
+      "machine_index_url": "./course/course-agent-manifest.json",
+      "content_url": "./course/course-content.json",
+      "release_url": null,
+      "artifact_manifest_url": "./course/artifacts.json",
+      "download_url": null,
+      "payment_url": null,
+      "contact_url": null,
+      "route_unavailable_reasons": {
+        "human_page_url": null,
+        "machine_index_url": null,
+        "content_url": null,
+        "release_url": "No verified public route is available for this field.",
+        "artifact_manifest_url": null,
+        "download_url": "No verified public route is available for this field.",
+        "purchase_url": "No verified public route is available for this field."
+      },
+      "access": {
+        "mode": "public_preview",
+        "purchase_url": null,
+        "price": null,
+        "currency": null,
+        "user_confirmation_required": false
+      },
+      "license": {
+        "name": null,
+        "url": null,
+        "summary": "No public reuse license has been independently verified."
+      },
+      "citation": {
+        "canonical_url": "https://aisflows.github.io/home/course/",
+        "attribution_text": "AIS FLOWS AI-video course by Andrei Spirydovich."
+      },
+      "updates": {
+        "changelog_url": "./CHANGELOG_PUBLIC.md",
+        "feed_url": "./feed.xml"
+      },
+      "support_actions": [],
+      "primary_action": "read_course",
+      "action_url": "./course/index.html",
+      "action_target": null,
+      "display": {
+        "category": "course",
+        "order": 1,
+        "status_label_en": "Working draft",
+        "status_label_ru": "Рабочий черновик",
+        "action_label_en": "Open course",
+        "action_label_ru": "Открыть курс",
+        "tags_en": [],
+        "tags_ru": [],
+        "image": null,
+        "image_alt_en": "",
+        "image_alt_ru": "",
+        "image_metadata": null,
+        "flow_en": [],
+        "flow_ru": []
+      },
+      "media": null
     }
   ],
   "links": [
-    { "id": "github-org", "type": "link", "title": "GitHub", "url": "https://github.com/aisflows", "status": "published" },
-    { "id": "telegram-channel", "type": "link", "title": "Telegram", "url": "https://t.me/aisflows", "status": "published" },
-    { "id": "linkedin-profile", "type": "link", "title": "LinkedIn", "url": "https://www.linkedin.com/in/andrei-spirydovich-71924b339/", "status": "published" },
-    { "id": "youtube-channel", "type": "link", "title": "YouTube", "url": "https://www.youtube.com/@aisflows", "status": "published" },
-    { "id": "instagram-profile", "type": "link", "title": "Instagram", "url": "https://www.instagram.com/aisflows.ai/", "status": "published" },
-    { "id": "tiktok-profile", "type": "link", "title": "TikTok", "url": "https://www.tiktok.com/@alt.trailers?lang=ru-RU", "status": "published" },
-    { "id": "x-profile", "type": "link", "title": "X", "url": "https://x.com/aisflows", "status": "published" },
-    { "id": "facebook-page", "type": "link", "title": "Facebook", "url": "https://www.facebook.com/AISFLOWS/", "status": "published" },
-    { "id": "email", "type": "contact", "title": "Email", "url": "mailto:hitmesound@gmail.com", "status": "fallback" }
+    {
+      "id": "github-org",
+      "type": "link",
+      "title": "GitHub",
+      "url": "https://github.com/aisflows",
+      "status": "published",
+      "order": 1
+    },
+    {
+      "id": "linkedin-profile",
+      "type": "link",
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/andrei-spirydovich-71924b339/",
+      "status": "published",
+      "order": 2
+    },
+    {
+      "id": "email",
+      "type": "contact",
+      "title": "Email",
+      "url": "mailto:hitmesound@gmail.com",
+      "status": "fallback",
+      "order": 3
+    },
+    {
+      "id": "telegram-channel",
+      "type": "link",
+      "title": "Telegram",
+      "url": "https://t.me/aisflows",
+      "status": "published",
+      "order": 4
+    },
+    {
+      "id": "facebook-page",
+      "type": "link",
+      "title": "Facebook",
+      "url": "https://www.facebook.com/AISFLOWS/",
+      "status": "published",
+      "order": 5
+    },
+    {
+      "id": "x-profile",
+      "type": "link",
+      "title": "X",
+      "url": "https://x.com/aisflows",
+      "status": "published",
+      "order": 6
+    },
+    {
+      "id": "youtube-channel",
+      "type": "link",
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@aisflows",
+      "status": "published",
+      "order": 7
+    },
+    {
+      "id": "instagram-profile",
+      "type": "link",
+      "title": "Instagram",
+      "url": "https://www.instagram.com/aisflows.ai/",
+      "status": "published",
+      "order": 8
+    },
+    {
+      "id": "tiktok-profile",
+      "type": "link",
+      "title": "TikTok",
+      "url": "https://www.tiktok.com/@alt.trailers?lang=ru-RU",
+      "status": "published",
+      "order": 9
+    }
   ],
   "constraints": {
-    "public_deploy": "github_pages",
-    "request_receiver": "not_selected_not_proven",
-    "analytics_provider": "not_selected_not_proven",
+    "public_deploy": "github_pages_owner_approval_required",
+    "request_receiver": "formspree_live_delivery_confirmed_local_not_deployed",
+    "analytics_provider": "umami_configured_remote_control_event_observed_public_site_not_deployed",
     "payment_and_delivery": "not_selected_not_proven",
-    "production_base_url": "https://aisflows.github.io/home/"
-  }
+    "production_base_url": "https://aisflows.github.io/home/",
+    "server_agent_analytics": "unavailable_static_host_does_not_observe_direct_agent_fetches"
+  },
+  "state_machines": {
+    "owner_job": [
+      "received",
+      "classified",
+      "prepared",
+      "preview_ready",
+      "awaiting_owner_approval",
+      "approved",
+      "deployed",
+      "live_verified",
+      "validation_failed",
+      "blocked_source_missing",
+      "blocked_publication_decision",
+      "cancelled"
+    ],
+    "public_object": [
+      "draft",
+      "in_development",
+      "released",
+      "published",
+      "superseded",
+      "withdrawn",
+      "not_public"
+    ],
+    "artifact": [
+      "unavailable",
+      "prepared",
+      "verified",
+      "published",
+      "withdrawn"
+    ],
+    "route": [
+      "unavailable",
+      "verified",
+      "stale",
+      "superseded"
+    ],
+    "paid_route": [
+      "not_selected",
+      "checkout_configured",
+      "entitlement_issued",
+      "signed_url_ready",
+      "access_verified"
+    ]
+  },
+  "change_log": [
+    {
+      "id": "update-2026-07-26-request-analytics-truth",
+      "object_id": "request",
+      "item_id": null,
+      "change_type": "updated",
+      "version": null,
+      "updated_at": "2026-07-26T16:01:40Z",
+      "summary_en": "Recorded the configured Formspree receiver and privacy-safe Umami browser contract as locally accepted, while keeping the Home candidate explicitly not deployed.",
+      "summary_ru": "Зафиксированы настроенный Formspree и privacy-safe контракт браузерной аналитики Umami как локально принятые; кандидат Home явно остаётся неразвёрнутым.",
+      "content_url": "./request-schema.json",
+      "canonical_url": "https://aisflows.github.io/home/request/"
+    },
+    {
+      "id": "update-2026-07-22-course-preview",
+      "object_id": "ais-flows-ai-video-course",
+      "item_id": null,
+      "change_type": "created",
+      "version": "0.1.0-local-preview",
+      "updated_at": "2026-07-22T12:00:00Z",
+      "summary_en": "Added a local agent-readable course candidate with direct lesson routes.",
+      "summary_ru": "Добавлен локальный агент-читаемый кандидат курса с прямыми маршрутами уроков.",
+      "content_url": "./course/course-content.json",
+      "canonical_url": "https://aisflows.github.io/home/course/"
+    },
+    {
+      "id": "update-2026-07-22-ready-gate-artifact",
+      "object_id": "ready-gate",
+      "item_id": "ready-gate-rc1-zip",
+      "change_type": "updated",
+      "version": "v0.1.0-ready-gate-rc1",
+      "updated_at": "2026-07-22T12:00:00Z",
+      "summary_en": "Verified Ready Gate artifact size and SHA256 for the local candidate.",
+      "summary_ru": "Для локального кандидата проверены размер и SHA256 артефакта Ready Gate.",
+      "content_url": null,
+      "canonical_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1"
+    }
+  ]
 }

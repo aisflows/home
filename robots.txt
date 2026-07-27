@@ -1,3 +1,3 @@
 User-agent: *
-Allow: /
-Sitemap: http://127.0.0.1:8799/sitemap.xml
+Allow: /home/
+Sitemap: https://aisflows.github.io/home/sitemap.xml

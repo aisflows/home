@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aisflows.github.io/home/course/course-schema.json",
+  "title": "AIS FLOWS course content schema",
+  "type": "object",
+  "required": ["version", "updated", "locale", "course", "blocks", "lessons", "glossary"],
+  "properties": {
+    "version": {"type": "string", "minLength": 1},
+    "updated": {"type": "string", "format": "date"},
+    "locale": {"const": "ru"},
+    "course": {
+      "type": "object",
+      "required": ["id", "title", "promise", "summary", "audience", "outcome", "status", "first_lesson_id"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1},
+        "eyebrow": {"type": "string"},
+        "promise": {"type": "string", "minLength": 1},
+        "summary": {"type": "string", "minLength": 1},
+        "audience": {"type": "string", "minLength": 1},
+        "outcome": {"type": "string", "minLength": 1},
+        "status": {"enum": ["draft", "published", "preview_pending", "not_public"]},
+        "status_label": {"type": "string"},
+        "first_lesson_id": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "blocks": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {"$ref": "#/$defs/block"}
+    },
+    "lessons": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/lesson"}
+    },
+    "glossary": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/glossaryTerm"}
+    }
+  },
+  "$defs": {
+    "nonEmptyText": {"type": "string", "minLength": 1},
+    "textList": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonEmptyText"}},
+    "block": {
+      "type": "object",
+      "required": ["id", "slug", "title_ru", "summary_ru", "understand_ru", "do_ru", "result_ru", "lesson_ids", "prerequisites", "unlocks"],
+      "properties": {
+        "id": {"type": "integer", "minimum": 1, "maximum": 6},
+        "slug": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "title_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "summary_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "understand_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "do_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "result_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "lesson_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}},
+        "prerequisites": {"type": "array", "uniqueItems": true, "items": {"type": "integer", "minimum": 1, "maximum": 6}},
+        "unlocks": {"type": "array", "uniqueItems": true, "items": {"type": "integer", "minimum": 1, "maximum": 6}}
+      },
+      "additionalProperties": false
+    },
+    "lesson": {
+      "type": "object",
+      "required": ["id", "block", "order", "title_ru", "status", "type", "keywords_ru", "summary_ru", "why_ru", "understand_ru", "do_steps_ru", "check_ru", "result_ru", "inputs_ru", "artifact", "builder_step", "prerequisites", "next_id", "visibility", "source_file", "source_version", "source_sha256", "content_sha256", "human_lesson_url", "content_url", "content_json_url", "canonical_human_url"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "block": {"type": "integer", "minimum": 1, "maximum": 6},
+        "order": {"type": "integer", "minimum": 1},
+        "title_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "status": {"enum": ["draft", "published", "preview_pending", "not_public"]},
+        "type": {"enum": ["understand", "do", "verify", "build"]},
+        "keywords_ru": {"$ref": "#/$defs/textList"},
+        "summary_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "why_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "understand_ru": {"$ref": "#/$defs/textList"},
+        "do_steps_ru": {"$ref": "#/$defs/textList"},
+        "check_ru": {"$ref": "#/$defs/textList"},
+        "result_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "inputs_ru": {"$ref": "#/$defs/textList"},
+        "artifact": {
+          "type": "object",
+          "required": ["label_ru", "status", "url"],
+          "properties": {
+            "label_ru": {"$ref": "#/$defs/nonEmptyText"},
+            "status": {"enum": ["published", "preview_pending", "not_public"]},
+            "url": {"type": ["string", "null"]}
+          },
+          "additionalProperties": false
+        },
+        "visibility": {"enum": ["public_preview", "not_public"]},
+        "source_file": {"type": ["string", "null"]},
+        "source_version": {"type": ["string", "null"]},
+        "source_sha256": {"type": ["string", "null"]},
+        "content_sha256": {"type": ["string", "null"]},
+        "human_lesson_url": {"type": ["string", "null"]},
+        "content_url": {"type": ["string", "null"]},
+        "content_json_url": {"type": ["string", "null"]},
+        "canonical_human_url": {"type": ["string", "null"]},
+        "builder_step": {"$ref": "#/$defs/nonEmptyText"},
+        "prerequisites": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}},
+        "next_id": {"type": ["string", "null"], "pattern": "^[a-z0-9-]+$"}
+      },
+      "additionalProperties": false
+    },
+    "glossaryTerm": {
+      "type": "object",
+      "required": ["id", "term_ru", "common_ru", "ais_ru", "lesson_id"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "term_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "common_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "ais_ru": {"$ref": "#/$defs/nonEmptyText"},
+        "lesson_id": {"type": "string", "pattern": "^[a-z0-9-]+$"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

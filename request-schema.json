@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aisflows.github.io/home/request-schema.json",
+  "title": "AIS FLOWS public request contract",
+  "description": "Public fields sent by the AIS FLOWS request form. The Formspree receiver is configured and has local live-delivery acceptance evidence; this Home candidate is not publicly deployed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "request_type",
+    "contact_method",
+    "contact_value",
+    "locale",
+    "source_page",
+    "idempotency_key",
+    "human_confirmation"
+  ],
+  "properties": {
+    "request_type": {
+      "type": "string",
+      "enum": ["project_video", "audio_music", "app_tool", "hiring_collaboration", "product_support", "other"]
+    },
+    "summary": { "type": "string", "maxLength": 1200 },
+    "contact_method": { "type": "string", "enum": ["email", "telegram"] },
+    "contact_value": { "type": "string", "minLength": 3, "maxLength": 320 },
+    "materials_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "_gotcha": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Formspree-compatible honeypot. A normal human submission leaves it empty; a populated value marks automated input."
+    },
+    "locale": { "type": "string", "enum": ["en", "ru"] },
+    "source_page": { "type": "string", "pattern": "^/" },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 128,
+      "description": "Client-generated correlation key for tracing one submission attempt. It is not proof of persistent server storage, deduplication, safe automatic retry, or exactly-once delivery.",
+      "x-ais-flows-correlation-only": true
+    },
+    "human_confirmation": {
+      "const": true,
+      "description": "An agent must receive explicit confirmation from its user before submission."
+    }
+  },
+  "delivery": {
+    "provider": "formspree",
+    "status": "live_delivery_confirmed",
+    "verification_scope": "local_candidate_to_live_formspree_receiver",
+    "public_home_delivery_verified": false,
+    "endpoint": "https://formspree.io/f/mqerwzgq",
+    "endpoint_template": "https://formspree.io/f/{FORM_ID}",
+    "configuration_point": "request.js REQUEST_RECEIVER_CONFIG.endpoint",
+    "method": "POST",
+    "headers": {
+      "Accept": "application/json",
+      "Content-Type": "application/json"
+    },
+    "timeout_ms": 15000,
+    "success_contract": "Any HTTP 2xx response is success; request_id is not required.",
+    "error_contract": {
+      "validation": "HTTP 4xx except 429",
+      "rate_limited": "HTTP 429",
+      "receiver": "HTTP 5xx",
+      "network": "timeout or fetch failure"
+    },
+    "correlation_contract": {
+      "field": "idempotency_key",
+      "scope": "client_generated_correlation_only",
+      "persistent_gateway_present": false,
+      "server_side_deduplication_proven": false,
+      "exactly_once_delivery_proven": false,
+      "automatic_retry_after_ambiguous_timeout_allowed": false
+    },
+    "fallback": "mailto:hitmesound@gmail.com",
+    "registration_required": false,
+    "file_upload_supported": false,
+    "automated_bulk_submission_allowed": false
+  },
+  "deployment_status": "local_candidate_not_deployed"
+}

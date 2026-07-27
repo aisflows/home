@@ -1,77 +1,93 @@
-# AIS FLOWS Home V0 Source / Prototype Bundle
+# AIS FLOWS
 
-Date: 2026-07-16
-Status: public Home V0 source; deployed to GitHub Pages at `https://aisflows.github.io/home/`
+**AI media production, released agent skills, an AI-video course preview, and tools in development by Andrei Spirydovich.**
 
-## Purpose
+[Open AIS FLOWS Home](https://aisflows.github.io/home/) ·
+[Russian version](https://aisflows.github.io/home/ru/) ·
+[Open the course preview](https://aisflows.github.io/home/course/) ·
+[Read the agent index](./AI_AGENT_DISCOVERY.md)
 
-Compact owned public base for AIS FLOWS Home V0 and its static source/prototype files.
+[![AIS FLOWS Home with the Proofline release, released skills, systems, apps, and media](./assets/readme/home-overview.png)](https://aisflows.github.io/home/)
 
-It follows:
+## What Is Available
 
-- Framer / Dashfolio as compact control-panel lens;
-- Lucas as secondary visual confidence lens;
-- Top Tech as restrained dark technical accent lens.
+### Released agent skills
 
-It does not copy a template and does not authorize account, deploy, runtime, or package actions.
+- **[Proofline](https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5)** checks product readiness before handoff.
+- **[Ready Gate](https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1)** checks whether a handoff is ready. Its release includes a verified ZIP artifact.
+- **[Skill Cleaner](https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001)** turns disorganized agent-skill folders into a cleaner working library.
 
-## Open Locally
+### AI-video course preview
 
-Open directly in a browser:
+The public preview contains 15 Russian-language lessons, a route view, catalog, glossary, direct Markdown and JSON lesson files, and static lesson pages.
 
-```text
-index.html
-ru/index.html
-```
+[Open the course](https://aisflows.github.io/home/course/) ·
+[Browse the catalog](https://aisflows.github.io/home/course/catalog.html) ·
+[Read the course manifest](https://aisflows.github.io/home/course/course-agent-manifest.json)
 
-No dev server is required.
+### Media
 
-## Files
+The Home includes an AIS FLOWS trailer and four AI-assisted video previews.
 
-- `index.html` - EN-first prototype.
-- `ru/index.html` - RU route/copy prototype.
-- `styles.css` - shared compact dark visual system.
-- `content-model.json` - static content/status model.
-- `content-model.schema.json` - JSON Schema for the canonical content model.
-- `links-manifest.json` - external/local route manifest.
-- `AI_AGENT_DISCOVERY.md` - machine-readable object and route index.
-- `llms.txt`, `robots.txt`, `sitemap.xml` - local discovery and crawl surfaces.
-- `request/index.html`, `ru/request/index.html` - compact request routes.
-- `analytics.js`, `request.js` - provider-neutral event and request contracts.
-- `assets/cards/skill-cleaner-github-preview.jpg` - confirmed Skill Cleaner card visual copied from release/GitHub asset.
-- `assets/cards/ready-gate-release-cover-16x9.jpeg` - Ready Gate release-ready cover.
-- `QA_ACCEPTANCE_2026-06-09.md` - static validation evidence.
+[Watch on the Home](https://aisflows.github.io/home/#media) ·
+[Open the featured trailer on YouTube](https://www.youtube.com/watch?v=DDpVQ53pnAI)
 
-## Visible V0 Decisions
+### In development
 
-- Products contains Skills, Systems, and Apps simultaneously.
-- Proofline, Ready Gate, and Skill Cleaner are visible with their verified GitHub release routes.
-- Video Builder Pack is visible as `preview_pending` with no fake page/download/payment route.
-- Local AI Gateway is visible as `in_development` with no fake page/download/release route.
-- Regular social posts, carousels, and quick subscriber info cards are not Home content.
-- Routes are proof/media/follow paths plus a short request route.
-- The request form is a UI contract only: its submit is disabled until an HTTPS receiver is configured and verified; the email fallback is available.
-- No checkout, payment, account, password, upload, or fake success state.
-- No external fonts, providers, or analytics network calls without explicit configuration.
+- **Video Builder Pack** is a preview only. No public package or payment route exists yet.
+- **Local AI Gateway** is in development. No public release or download exists yet.
 
-## Card Image Rule
+Unavailable products are shown as statuses, not as fake download or purchase buttons.
 
-- Public product/media/proof cards must have an approved or published image asset.
-- If a future skill, app, video, generation, or post has no approved image, it stays hidden or internal-only.
-- Prefer reusing the same asset family used in public posts and release packages.
-- Product/card images must not be cropped in a way that cuts labels, titles, UI text, faces, or proof details.
-- Skill Cleaner uses its native `2:1` image ratio with `object-fit: contain`; do not force it into `16:9 cover`.
+## How It Works
 
-## Known Limits
+AIS FLOWS Home is a static bilingual site published through GitHub Pages.
 
-- Final human/media hero asset is not selected.
-- Future cards need approved/published image assets before they become visible.
-- Ready Gate social publication remains outside Home scope; Home links only to the public GitHub release/artifact.
-- Canonical public naming remains AIS FLOWS.
-- Facebook Page route is visible because fresh S-Post reports verify posts under `https://www.facebook.com/AISFLOWS/...`.
-- TikTok and LinkedIn public route targets need confirmation before adding to the visible page.
-- Final browser visual QA and owner acceptance are required before any new launch/update decision.
-- Request receiver is not selected, configured, or verified.
-- The production route is GitHub Pages; no custom domain is configured.
-- External analytics provider is not selected or verified.
-- Public Systems package and public Apps release routes are not available.
+- `index.html` and `ru/index.html` are the human-facing pages.
+- `agent-manifest.json` is the machine entry point.
+- `content-model.json` is the canonical public catalog.
+- `artifacts.json` carries version, MIME type, size, and SHA256 for verified downloads.
+- `updates.json`, `feed.xml`, and `CHANGELOG_PUBLIC.md` expose public changes.
+- `course/` provides the human and machine-readable course preview.
+- `request/` provides a short project-request form with an email fallback.
+
+The human pages and machine-readable files use the same object IDs, states, routes, and availability rules.
+
+## First Use
+
+### For a person
+
+1. Open [AIS FLOWS Home](https://aisflows.github.io/home/).
+2. Use **Products** to inspect released skills and current product status.
+3. Use **Media** to watch published work.
+4. Use **Start a Project** to send a short request without creating an account.
+
+### For an AI agent
+
+1. Start with [`agent-manifest.json`](./agent-manifest.json).
+2. Read [`content-model.json`](./content-model.json).
+3. Follow only verified, non-null routes.
+4. Check [`artifacts.json`](./artifacts.json) before downloading a file.
+5. Require explicit user confirmation before sending request data.
+
+No account is required for public reading or verified free downloads.
+
+## Current Boundaries
+
+- No checkout, payment, account, password, or public upload system is active.
+- Direct agent file requests cannot be measured by browser JavaScript on static GitHub Pages.
+- Browser analytics uses a privacy-safe allowlist and does not send request text, contact values, material URLs, secrets, or file contents.
+- The request form uses Formspree; email remains the fallback.
+- Systems and apps remain status-only until a real public artifact exists.
+- GitHub Pages is the current production route. No custom domain is claimed.
+
+## Public Links
+
+[GitHub](https://github.com/aisflows) ·
+[Telegram](https://t.me/aisflows) ·
+[YouTube](https://www.youtube.com/@aisflows) ·
+[LinkedIn](https://www.linkedin.com/in/andrei-spirydovich-71924b339/) ·
+[Instagram](https://www.instagram.com/aisflows.ai/) ·
+[X](https://x.com/aisflows)
+
+Contact: [hitmesound@gmail.com](mailto:hitmesound@gmail.com)

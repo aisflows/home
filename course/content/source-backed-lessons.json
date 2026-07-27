@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "id": "source-backed-lessons",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Производственные уроки и личная библиотека",
+  "summary_ru": "14. Производственные Уроки Из Источников",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "14_SOURCE_BACKED_PRODUCTION_LESSONS.md",
+  "source_sha256": "ac0277d9e5b71a11de45b2cdaceb8a535c51ba7b256fdc3dd66b894b61e5a6c8",
+  "content_sha256": "ac0277d9e5b71a11de45b2cdaceb8a535c51ba7b256fdc3dd66b894b61e5a6c8",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "course-packaging"
+  ],
+  "next_id": null,
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/source-backed-lessons.html",
+  "content_url": "./content/source-backed-lessons.md",
+  "content_json_url": "./content/source-backed-lessons.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/source-backed-lessons.html",
+  "citation": "AIS FLOWS AI-video course, “Производственные уроки и личная библиотека”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "14. Производственные Уроки Из Источников",
+      "14.1. Промпт Не Начинает Производство",
+      "14.2. Референс Нужно Называть Точно",
+      "14.3. Мудборд Помогает Вкусу, Но Не Делает Ролик За Вас",
+      "14.4. AI-Материал — Это Сырьё",
+      "14.5. Камера — Это Не Украшение",
+      "14.6. Модели Выбираются По Задаче, А Не По Хайпу",
+      "14.7. Деньги И Подписки: Сначала Задача, Потом Оплата",
+      "14.8. Публикация — Это Тоже Тест",
+      "14.9. Что Мы Не Тащим В Курс",
+      "14.10. Главное Правило Главы",
+      "14.11. Три Вещи, Которые Не Являются Доказательством"
+    ],
+    "heading_count": 12,
+    "unordered_list_item_count": 51,
+    "ordered_list_item_count": 0,
+    "code_fence_count": 1,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

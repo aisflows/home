@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aisflows.github.io/home/analytics-event.schema.json",
+  "title": "AIS FLOWS privacy-safe browser runtime event",
+  "description": "Exact allowlisted event object emitted to window.AIS_FLOWS_ANALYTICS_EVENTS and aisflows:event by analytics.js. Umami is configured and has controlled local acceptance evidence; the current Home candidate is not publicly deployed and browser analytics do not observe direct agent fetches.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "collection_status",
+    "event_id",
+    "event_name",
+    "occurred_at",
+    "page_id",
+    "language",
+    "action_id",
+    "object_id",
+    "destination_host",
+    "result",
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "referrer_host"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "collection_status": {
+      "const": "configured_remote_control_event_observed_public_site_not_deployed"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 128
+    },
+    "event_name": {
+      "enum": [
+        "page_view",
+        "section_view",
+        "product_open",
+        "release_open",
+        "download",
+        "media_open",
+        "external_link",
+        "request_form_open",
+        "request_submit_success",
+        "request_submit_error"
+      ]
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "page_id": {
+      "$ref": "#/$defs/requiredToken"
+    },
+    "language": {
+      "enum": ["en", "ru"]
+    },
+    "action_id": {
+      "$ref": "#/$defs/nullableToken"
+    },
+    "object_id": {
+      "$ref": "#/$defs/nullableToken"
+    },
+    "destination_host": {
+      "$ref": "#/$defs/nullableHost"
+    },
+    "result": {
+      "$ref": "#/$defs/nullableShortToken"
+    },
+    "utm_source": {
+      "$ref": "#/$defs/nullableCampaignToken"
+    },
+    "utm_medium": {
+      "$ref": "#/$defs/nullableCampaignToken"
+    },
+    "utm_campaign": {
+      "$ref": "#/$defs/nullableCampaignToken"
+    },
+    "referrer_host": {
+      "$ref": "#/$defs/nullableHost"
+    }
+  },
+  "$defs": {
+    "requiredToken": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:~-]*$"
+    },
+    "nullableToken": {
+      "type": ["string", "null"],
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:~-]*$"
+    },
+    "nullableShortToken": {
+      "type": ["string", "null"],
+      "maxLength": 64,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:~-]*$"
+    },
+    "nullableCampaignToken": {
+      "type": ["string", "null"],
+      "maxLength": 64,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:~-]*$"
+    },
+    "nullableHost": {
+      "type": ["string", "null"],
+      "maxLength": 253,
+      "pattern": "^[A-Za-z0-9.:[\\]-]+$"
+    },
+    "umamiPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action_id", "object_id", "result", "locale", "destination_host"],
+      "properties": {
+        "action_id": {
+          "$ref": "#/$defs/nullableToken"
+        },
+        "object_id": {
+          "$ref": "#/$defs/nullableToken"
+        },
+        "result": {
+          "$ref": "#/$defs/nullableShortToken"
+        },
+        "locale": {
+          "enum": ["en", "ru"]
+        },
+        "destination_host": {
+          "$ref": "#/$defs/nullableHost"
+        }
+      }
+    }
+  },
+  "x-ais-flows-runtime": {
+    "local_event_target": "window.AIS_FLOWS_ANALYTICS_EVENTS and aisflows:event",
+    "provider_call": "window.umami.track(event_name, providerPayload)",
+    "provider_payload_schema": "#/$defs/umamiPayload",
+    "collection_status": "configured_remote_control_event_observed_public_site_not_deployed"
+  },
+  "x-ais-flows-privacy": {
+    "allowlisted_runtime_fields_only": true,
+    "forbidden_fields": [
+      "prompt",
+      "request_text",
+      "summary",
+      "email",
+      "telegram",
+      "contact_value",
+      "materials_url",
+      "destination_url",
+      "cookies",
+      "tokens",
+      "secrets",
+      "full_ip"
+    ],
+    "direct_agent_get_observable_on_github_pages": false
+  }
+}

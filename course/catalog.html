@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Каталог уроков AIS FLOWS по AI-видео.">
+    <title>Каталог уроков · AIS FLOWS</title><link rel="icon" href="data:,"><link rel="stylesheet" href="./styles.css"><script src="./app.js" defer></script>
+  </head>
+  <body data-page="catalog">
+    <a class="skip-link" href="#main-content">Перейти к каталогу</a>
+    <header class="site-header"><div class="shell header-inner"><a class="brand" href="./index.html"><span>AIS FLOWS</span><small>AI-video course</small></a><nav class="main-nav" aria-label="Навигация курса"><a aria-current="page" href="./catalog.html">Каталог</a><a href="./route.html">Маршрут</a><a href="./glossary.html">Словарь</a><a href="../index.html">Home</a></nav></div></header>
+    <main id="main-content" class="shell page-main">
+      <header class="page-intro"><p class="eyebrow">Все материалы</p><h1>Уроки по порядку</h1><p>Начните с первого урока и двигайтесь вниз. Каждый блок — отдельный этап создания AI-видео.</p></header>
+      <section class="filter-panel" aria-label="Фильтры каталога">
+        <label class="search-field"><span>Поиск</span><input type="search" placeholder="Например: тайминг, референсы, монтаж" data-catalog-search></label>
+        <label><span>Блок</span><select data-block-filter><option value="all">Все шесть блоков</option></select></label>
+        <label class="filter-advanced"><span>Задача урока</span><select data-type-filter><option value="all">Любая задача</option><option value="understand">Разобраться</option><option value="do">Выполнить</option><option value="verify">Проверить</option><option value="build">Собрать результат</option></select></label>
+        <button class="button compact" type="button" data-clear-filters>Очистить</button>
+      </section>
+      <div class="catalog-summary"><strong data-catalog-count>0 уроков</strong><span data-progress-summary>0 из 15 пройдено</span></div>
+      <section class="lesson-grid" aria-live="polite" data-catalog-results></section>
+      <section class="empty-state" data-catalog-empty hidden><h2>Совпадений пока нет</h2><p>Измените запрос или вернитесь ко всему каталогу — список уроков не потерян.</p><button class="button primary" type="button" data-empty-reset>Показать все уроки</button></section>
+    </main>
+    <footer class="site-footer"><div class="shell"><strong>AIS FLOWS</strong><button class="text-button" type="button" data-reset-progress>Сбросить локальный прогресс</button></div></footer>
+  </body>
+</html>

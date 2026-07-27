@@ -1,0 +1,27 @@
+# AIS FLOWS AI-video course
+
+Deployment: local candidate, not public.
+Course manifest: ./course-agent-manifest.json
+Lesson index: ./course-content.json
+Route map: ./course-map.json
+Artifacts: ./artifacts.json
+
+## Lessons
+
+- workspace-and-preparation: Рабочее место и предподготовка; visibility=public_preview; content=./content/workspace-and-preparation.md; human=./lessons/workspace-and-preparation.html
+- start-with-intent: С чего начинается AI-видео; visibility=public_preview; content=./content/start-with-intent.md; human=./lessons/start-with-intent.html
+- production-card: Production Card до промпта; visibility=public_preview; content=./content/production-card.md; human=./lessons/production-card.html
+- story-and-timing: История, тайминг и управляемые сегменты; visibility=public_preview; content=./content/story-and-timing.md; human=./lessons/story-and-timing.html
+- references-and-visual-control: Референсы и контроль внешнего вида; visibility=public_preview; content=./content/references-and-visual-control.md; human=./lessons/references-and-visual-control.html
+- image-and-video-prompts: Промпты изображения и видео; visibility=public_preview; content=./content/image-and-video-prompts.md; human=./lessons/image-and-video-prompts.html
+- generation-routes: Маршруты моделей и генерации; visibility=public_preview; content=./content/generation-routes.md; human=./lessons/generation-routes.html
+- prompt-reference-library: Библиотека примеров промптов; visibility=public_preview; content=./content/prompt-reference-library.md; human=./lessons/prompt-reference-library.html
+- failure-diagnosis: Диагностика поломок; visibility=public_preview; content=./content/failure-diagnosis.md; human=./lessons/failure-diagnosis.html
+- final-production: Winners, монтаж и финальная проверка; visibility=public_preview; content=./content/final-production.md; human=./lessons/final-production.html
+- tool-stack: Минимальный набор инструментов; visibility=public_preview; content=./content/tool-stack.md; human=./lessons/tool-stack.html
+- templates-and-worksheets: Шаблоны и рабочие листы; visibility=public_preview; content=./content/templates-and-worksheets.md; human=./lessons/templates-and-worksheets.html
+- full-case-study: Полный кейс: от идеи до финала; visibility=public_preview; content=./content/full-case-study.md; human=./lessons/full-case-study.html
+- course-packaging: Честная упаковка курса и будущего набора; visibility=not_public; content=null; human=null
+- source-backed-lessons: Производственные уроки и личная библиотека; visibility=public_preview; content=./content/source-backed-lessons.md; human=./lessons/source-backed-lessons.html
+
+Never invent a route for a null field. Browser progress is local and is not server state.

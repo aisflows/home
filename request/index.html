@@ -38,30 +38,30 @@
         <h1 id="request-page-title">Start a Project</h1>
         <p class="request-page-lead">A short route for a video, audio/music, app/tool, collaboration, product support, or another clear request.</p>
       </section>
-      <form class="request-form request-form-page" data-request-form data-email-subject="AIS FLOWS project request" data-receiver-unavailable="The request receiver is not configured yet. Use the email fallback below." data-sending="Sending..." data-success="Request sent." data-send-error="The request could not be sent. Use the email fallback below." data-offline="Network unavailable. Use the email fallback below." data-rate-limited="Please wait and try again later." data-email-label="Email" data-telegram-label="Telegram username or URL">
+      <form class="request-form request-form-page" data-request-form data-email-subject="AIS FLOWS project request" data-email-body="Hello AIS FLOWS,&#10;&#10;I would like to discuss a project.&#10;&#10;Request type: " data-receiver-ready="Online request delivery is configured. Email fallback remains available." data-receiver-unavailable="The request receiver is not configured yet. Use the email fallback below." data-configuration-error="The request receiver configuration is invalid. Use the email fallback below." data-sending="Sending..." data-success="Request sent." data-validation-error="Please check the request details and try again." data-rate-limited="Please wait and try again later." data-server-error="The receiver is temporarily unavailable. Use the email fallback below." data-timeout="The request timed out. Use the email fallback below." data-send-error="The request could not be sent. Use the email fallback below." data-offline="Network unavailable. Use the email fallback below." data-email-label="Email" data-telegram-label="Telegram username or URL">
         <div class="request-field">
-          <label for="request-type">Request type</label>
-          <select id="request-type" name="request_type" required>
-            <option value="">Select one</option>
-            <option value="project_video">Project video</option>
-            <option value="audio_music">Audio / music</option>
-            <option value="app_tool">App / tool</option>
-            <option value="hiring_collaboration">Hiring / collaboration</option>
-            <option value="product_support">Product support</option>
-            <option value="other">Other</option>
-          </select>
+          <span class="request-field-label" id="request-type-label">Request type</span>
+          <div class="request-select" data-request-select>
+            <input type="hidden" name="request_type" value="">
+            <button class="request-select-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="request-type-label request-type-value" aria-controls="request-type-list" data-request-select-trigger data-placeholder="true"><span id="request-type-value" data-request-select-value>Select one</span></button>
+            <div class="request-select-list" id="request-type-list" role="listbox" aria-labelledby="request-type-label" data-request-select-list hidden>
+              <button class="request-select-option" type="button" role="option" aria-selected="false" data-value="project_video">Project video</button>
+              <button class="request-select-option" type="button" role="option" aria-selected="false" data-value="audio_music">Audio / music</button>
+              <button class="request-select-option" type="button" role="option" aria-selected="false" data-value="app_tool">App / tool</button>
+              <button class="request-select-option" type="button" role="option" aria-selected="false" data-value="hiring_collaboration">Hiring / collaboration</button>
+              <button class="request-select-option" type="button" role="option" aria-selected="false" data-value="product_support">Product support</button>
+              <button class="request-select-option" type="button" role="option" aria-selected="false" data-value="other">Other</button>
+            </div>
+          </div>
         </div>
         <div class="request-field">
           <label for="request-summary">Summary <span class="field-note">optional, 1-3 sentences</span></label>
           <textarea id="request-summary" name="summary" rows="5" maxlength="600" placeholder="What should AIS FLOWS help you make or solve?"></textarea>
         </div>
-        <div class="request-field">
-          <label for="contact-method">Preferred contact</label>
-          <select id="contact-method" name="contact_method" required>
-            <option value="email">Email</option>
-            <option value="telegram">Telegram</option>
-          </select>
-        </div>
+        <fieldset class="request-field request-method">
+          <legend>Preferred contact</legend>
+          <div class="request-segmented"><label><input type="radio" name="contact_method" value="email" checked><span>Email</span></label><label><input type="radio" name="contact_method" value="telegram"><span>Telegram</span></label></div>
+        </fieldset>
         <div class="request-field">
           <label for="contact-value" data-contact-label>Email</label>
           <input id="contact-value" name="contact_value" type="email" autocomplete="email" required placeholder="name@example.com">

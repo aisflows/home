@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "id": "production-card",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Production Card до промпта",
+  "summary_ru": "02. Подготовка До Промпта",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "02_PREPARATION_BEFORE_PROMPT.md",
+  "source_sha256": "30419400e229bb16fa336cf982dcf4911cdac49da72d0e4fa4a72a741de92af6",
+  "content_sha256": "30419400e229bb16fa336cf982dcf4911cdac49da72d0e4fa4a72a741de92af6",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "start-with-intent"
+  ],
+  "next_id": "story-and-timing",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/production-card.html",
+  "content_url": "./content/production-card.md",
+  "content_json_url": "./content/production-card.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/production-card.html",
+  "citation": "AIS FLOWS AI-video course, “Production Card до промпта”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "02. Подготовка До Промпта",
+      "02.0. Карта Урока",
+      "02.1. Зачем Нужен Подготовительный Пакет",
+      "02.2. Плохой И Нормальный Путь",
+      "02.2.1. Плохой Путь",
+      "02.2.2. Нормальный Путь",
+      "02.3. Смысл Сцены",
+      "02.4. Где Что Происходит По Времени",
+      "02.5. Какие Куски Можно Делать Вместе",
+      "02.6. Как Сохранить Один Внешний Вид Ролика",
+      "02.7. Какие Примеры Показать Модели",
+      "02.8. Пример Подготовительного Пакета",
+      "02.9. Типичные Ловушки",
+      "02.9.1. Думать, Что Каждую Временную Строку Обязательно Нужно Генерировать Отдельно",
+      "02.9.2. Писать Промпт Без Смысла Сцены",
+      "02.9.3. Не Договориться О Внешнем Виде",
+      "02.9.4. Просить Модель Удержать Персонажа Без Примера",
+      "02.10. Остановка: Подготовка До Промпта",
+      "02.11. Итог: Что Готовить Перед Генерацией"
+    ],
+    "heading_count": 19,
+    "unordered_list_item_count": 73,
+    "ordered_list_item_count": 11,
+    "code_fence_count": 17,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

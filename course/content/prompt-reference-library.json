@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "prompt-reference-library",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Библиотека примеров промптов",
+  "summary_ru": "13. Библиотека Примеров Промптов",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "13_PROMPT_REFERENCE_LIBRARY.md",
+  "source_sha256": "1a0b3b95ed26d5231cb832e1c33059649a414f782deddc22abed80514908ab43",
+  "content_sha256": "1a0b3b95ed26d5231cb832e1c33059649a414f782deddc22abed80514908ab43",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "generation-routes"
+  ],
+  "next_id": "failure-diagnosis",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/prompt-reference-library.html",
+  "content_url": "./content/prompt-reference-library.md",
+  "content_json_url": "./content/prompt-reference-library.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/prompt-reference-library.html",
+  "citation": "AIS FLOWS AI-video course, “Библиотека примеров промптов”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "13. Библиотека Примеров Промптов",
+      "13.1. Что Уже Есть В Библиотеке",
+      "13.1A. Как Читать Архив Референсов Промптов",
+      "13.2. Пример Для Изображения",
+      "13.3. Пример Для Видео",
+      "13.4. Большой Seedance-Промпт: Как Его Читать",
+      "13.4A. Viral Seedance-Примеры: Что В Них Полезного",
+      "13.4B. Большой Seedance-Гайд: Что В Нём Полезного",
+      "13.4C. Карточка Правил Seedance: Что В Ней Полезно",
+      "13.4D. Owner Instagram / SeaArt Примеры: Что Мы Из Них Взяли",
+      "13.4E. Как Помощник Должен Объяснять Controlled Segment Человеку",
+      "13.5. Промпт Карты Персонажа",
+      "13.6. Обходы Face Detected И Source Prep",
+      "13.7. Seedance Prompt Adapter",
+      "13.8. Универсальный Промпт Улучшения Изображения",
+      "13.8A. AIS-Safe Адаптированные Seedance-Примеры",
+      "Пример 1. Персонаж Движется Через Архитектуру",
+      "Пример 2. Появление Продукта Через Воду",
+      "Пример 3. Переход между первым и последним кадром",
+      "Пример 4. Точная замена объекта в существующем видео",
+      "13.9. Чего Пока Не Хватает",
+      "13.10. Форматные Слова Не Магические Заклинания",
+      "13.11. Камера: Не Список Слов, А Выбор Смысла",
+      "13.12. Как Хранить Внешние Примеры"
+    ],
+    "heading_count": 24,
+    "unordered_list_item_count": 104,
+    "ordered_list_item_count": 7,
+    "code_fence_count": 56,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0.0",
+  "site": {
+    "name": "AIS FLOWS",
+    "canonical_url": "https://aisflows.github.io/home/",
+    "languages": [
+      "en",
+      "ru"
+    ],
+    "deployment_status": "local_candidate_not_deployed"
+  },
+  "discovery": {
+    "canonical_catalog": "./content-model.json",
+    "catalog_schema": "./content-model.schema.json",
+    "artifacts": "./artifacts.json",
+    "artifact_schema": "./artifacts.schema.json",
+    "updates": "./updates.json",
+    "update_schema": "./updates.schema.json",
+    "feed": "./feed.xml",
+    "public_changelog": "./CHANGELOG_PUBLIC.md",
+    "analytics_event_schema": "./analytics-event.schema.json",
+    "link_manifest": "./links-manifest.json",
+    "human_agent_index": "./AI_AGENT_DISCOVERY.md",
+    "llm_index": "./llms.txt",
+    "request_schema": "./request-schema.json",
+    "course_manifest": "./course/course-agent-manifest.json",
+    "sitemap": "./sitemap.xml"
+  },
+  "public_capabilities": [
+    "read_catalog",
+    "search_entities",
+    "read_direct_content_when_non_null",
+    "read_updates",
+    "follow_verified_links",
+    "download_verified_artifacts",
+    "open_request_page_after_user_confirmation"
+  ],
+  "measurement_capabilities": {
+    "browser_events": "umami_configured_remote_control_event_observed_public_site_not_deployed",
+    "direct_agent_fetches": "not_observable_on_static_github_pages",
+    "server_aggregate_events": false
+  },
+  "rules": {
+    "null_route": "Unavailable. Read route_unavailable_reasons and do not invent a route.",
+    "private_content": "not_public and withdrawn objects must not expose content or download URLs.",
+    "downloads": "Use artifacts.json and verify version, MIME, size, and SHA256 before retrieval.",
+    "purchase": "No purchase route is active. purchase_url is null.",
+    "request_submission": "Obtain explicit end-user confirmation before sending any request data.",
+    "request_delivery": "formspree_live_delivery_confirmed_local_not_deployed",
+    "registration": "Not required for public reading or verified free downloads.",
+    "write_access": "No public write or administration API is exposed."
+  },
+  "owner_operations": {
+    "mode": "local_source_controlled",
+    "source_of_truth": "./content-model.json",
+    "command": "node home-tools/site-content.mjs build",
+    "validation": "node home-tools/site-content.mjs validate",
+    "required_state_before_deploy": "approved",
+    "current_state": "preview_ready",
+    "deploy_requires_explicit_owner_approval": true,
+    "object_hashes": {
+      "ais-flows-ai-video-course": "5de12c796bb5230888e55c52c6943e14131a78446e8aaeb6318c30272574d721",
+      "featured-youtube-trailer": "135bac2e32b448c089e09cd962f4d164b0fac2d4b7649e8d3bb7a42e09686bbc",
+      "local-ai-gateway": "7215b5fcacd680dcae3efb983196440798df064dd818728a20adfb4790e51313",
+      "proofline": "ea3646b09a4fdb71d143e051ea076328f98291f9d232690823127e3c67fcd372",
+      "ready-gate": "a181f94ac4e1031132ac73b59bf78cac40bf19c7b4804668adfe2eab8e3c161f",
+      "request": "617f4242b0344efa8b277b1d40d7f1093c2882ae942100cc2ed6ffbd7043065d",
+      "skill-cleaner": "6af0404f66dc865327c71f36e62042cc2178f570e7b03fe7c05138463f61df91",
+      "video-builder-pack": "dc6865583755ab90baf9b3587624dd67905e18a08275ae375ec96b3441cad166"
+    }
+  },
+  "state_machines": {
+    "owner_job": [
+      "received",
+      "classified",
+      "prepared",
+      "preview_ready",
+      "awaiting_owner_approval",
+      "approved",
+      "deployed",
+      "live_verified",
+      "validation_failed",
+      "blocked_source_missing",
+      "blocked_publication_decision",
+      "cancelled"
+    ],
+    "public_object": [
+      "draft",
+      "in_development",
+      "released",
+      "published",
+      "superseded",
+      "withdrawn",
+      "not_public"
+    ],
+    "artifact": [
+      "unavailable",
+      "prepared",
+      "verified",
+      "published",
+      "withdrawn"
+    ],
+    "route": [
+      "unavailable",
+      "verified",
+      "stale",
+      "superseded"
+    ],
+    "paid_route": [
+      "not_selected",
+      "checkout_configured",
+      "entitlement_issued",
+      "signed_url_ready",
+      "access_verified"
+    ]
+  },
+  "updated_at": "2026-07-26T13:25:37Z"
+}

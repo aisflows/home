@@ -1,31 +1,33 @@
-# AIS FLOWS Home Agent Discovery
+# AIS FLOWS Agent Discovery
 
-This file is the machine-readable companion to `content-model.json` for the public Home V0 surface. `null` means that a public route or artifact has not been verified and must not be presented as active.
+Start with [agent-manifest.json](./agent-manifest.json), then read [content-model.json](./content-model.json). A null route is unavailable and its reason is stored in `route_unavailable_reasons`. This candidate is local and not deployed.
 
 ## Objects
 
-| id | type | name | status | short_description | page_url | release_url | download_url | payment_url | contact_url | language | last_verified |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| proofline | skill | Proofline | released | Five-skill readiness check for agent chats. | null | https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5 | null | null | ./request/ | en,ru | 2026-07-15 |
-| ready-gate | skill | Ready Gate | released | One-skill handoff readiness gate. | null | https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1 | https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip | null | ./request/ | en,ru | 2026-07-15 |
-| skill-cleaner | skill | Skill Cleaner | released | Workflow pack for cleaning AI-agent skill folders. | null | https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001 | null | null | ./request/ | en,ru | 2026-07-15 |
-| video-builder-pack | system | Video Builder Pack / Набор для AI-видео | preview_pending | Working files for creating AI-video with your own AI chat. | null | null | null | null | ./request/ | en,ru | 2026-07-15 |
-| local-ai-gateway | app | Local AI Gateway | in_development | Local OpenAI-compatible gateway for AI apps, chats, and agents. | null | null | null | null | ./request/ | en,ru | 2026-07-15 |
-| featured-youtube-trailer | media | AIS FLOWS trailer | published_on_provider | Featured YouTube trailer. | ./index.html#media | https://www.youtube.com/watch?v=DDpVQ53pnAI | null | null | null | en,ru | 2026-07-15 |
-| request | contact | Start a Project / Оставить заявку | receiver_unavailable | Short request form with an email fallback. | ./request/index.html | null | null | null | mailto:hitmesound@gmail.com | en,ru | 2026-07-15 |
+| id | type | title | lifecycle | route | access | machine index | content | download | version |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| proofline | skill | Proofline / Proofline | released | verified | public_free | null | null | null | v0.2.0-rc5 |
+| ready-gate | skill | Ready Gate / Ready Gate | released | verified | public_free | null | null | https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip | v0.1.0-ready-gate-rc1 |
+| skill-cleaner | skill | Skill Cleaner / Skill Cleaner | released | verified | public_free | null | null | null | v0.1.0-release-001 |
+| video-builder-pack | system | Video Builder Pack / Набор для AI-видео | draft | unavailable | unavailable | null | null | null | null |
+| local-ai-gateway | app | Local AI Gateway / Local AI Gateway | in_development | unavailable | unavailable | null | null | null | null |
+| featured-youtube-trailer | media | AIS FLOWS trailer / Трейлер AIS FLOWS | published | verified | public_free | null | null | null | null |
+| request | contact | Start a Project / Оставить заявку | published | verified | public_free | null | null | null | null |
+| ais-flows-ai-video-course | course | AIS FLOWS AI-video course / Курс AIS FLOWS по AI-видео | draft | verified | public_preview | ./course/course-agent-manifest.json | ./course/course-content.json | null | 0.1.0-local-preview |
 
-## Request route
+## Direct indexes
 
-- EN: `./request/index.html`
-- RU: `./ru/request/index.html`
-- Request types: `project_video`, `audio_music`, `app_tool`, `hiring_collaboration`, `product_support`, `other`.
-- Fields: request type, optional 1-3 sentence summary, contact method, required contact value, optional HTTP/HTTPS materials URL.
-- Delivery: `receiver_unavailable` until an HTTPS receiver is configured and independently verified.
-- Submit behavior: disabled in the static build; no success state is emitted without a verified receiver response containing a nonempty `request_id`.
-- Fallback: `mailto:hitmesound@gmail.com` with a short prefilled subject/body and no user values in the URL.
+- Course: [course-agent-manifest.json](./course/course-agent-manifest.json)
+- Artifacts: [artifacts.json](./artifacts.json)
+- Updates: [updates.json](./updates.json) or [feed.xml](./feed.xml)
+- Public changelog: [CHANGELOG_PUBLIC.md](./CHANGELOG_PUBLIC.md)
 
-## Discovery constraints
+## Agent rules
 
-- No public price, checkout, payment, account, password, upload, or fake download route is advertised.
-- The Systems and Apps objects remain status-only until approved public artifacts and routes exist.
-- `content-model.json` is the canonical source; this file is a human-readable mirror and must stay in parity with it.
+- Follow only non-null routes with `route_status: verified`.
+- Check artifact SHA256, size, MIME, and version before download.
+- Do not infer purchase, private content, or unavailable routes.
+- Browser progress is local user state, not server state.
+- Request delivery: `formspree_live_delivery_confirmed_local_not_deployed`.
+- Browser analytics: `umami_configured_remote_control_event_observed_public_site_not_deployed`.
+- No public write/admin API or payment route is active.

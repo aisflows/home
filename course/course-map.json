@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "updated": "2026-07-22",
+  "course_id": "ais-flows-ai-video-course",
+  "sequence": [
+    {"order": 1, "label_ru": "Идея", "block_id": 1, "lesson_id": "start-with-intent"},
+    {"order": 2, "label_ru": "Подготовка", "block_id": 1, "lesson_id": "production-card"},
+    {"order": 3, "label_ru": "Тайминг", "block_id": 2, "lesson_id": "story-and-timing"},
+    {"order": 4, "label_ru": "Референсы", "block_id": 2, "lesson_id": "references-and-visual-control"},
+    {"order": 5, "label_ru": "Промпты", "block_id": 3, "lesson_id": "image-and-video-prompts"},
+    {"order": 6, "label_ru": "Генерация", "block_id": 3, "lesson_id": "generation-routes"},
+    {"order": 7, "label_ru": "Сборка", "block_id": 4, "lesson_id": "final-production"}
+  ],
+  "blocks": [
+    {"id": 1, "prerequisites": [], "unlocks": [2], "entry_lesson_id": "workspace-and-preparation"},
+    {"id": 2, "prerequisites": [1], "unlocks": [3], "entry_lesson_id": "story-and-timing"},
+    {"id": 3, "prerequisites": [2], "unlocks": [4], "entry_lesson_id": "image-and-video-prompts"},
+    {"id": 4, "prerequisites": [3], "unlocks": [5], "entry_lesson_id": "failure-diagnosis"},
+    {"id": 5, "prerequisites": [4], "unlocks": [6], "entry_lesson_id": "tool-stack"},
+    {"id": 6, "prerequisites": [5], "unlocks": [], "entry_lesson_id": "course-packaging"}
+  ],
+  "rules": [
+    "Курс поддерживает текущий шаг, но не требует прочитать всё до начала работы.",
+    "Если человек хочет делать ролик сейчас, используйте соответствующий шаг Video Builder и открывайте урок только для объяснения.",
+    "Controlled segments используют Full Timed Script и Shot Plan, но не заменяют их.",
+    "Недоступный рабочий файл не получает активную ссылку."
+  ]
+}

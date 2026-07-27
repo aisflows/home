@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "id": "workspace-and-preparation",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Рабочее место и предподготовка",
+  "summary_ru": "Рабочее место и предподготовка",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "00A_WORKSPACE_AND_PREPREPARATION.md",
+  "source_sha256": "9194530035249762ebaf9dff45ae5abc7f3074eb6782847cab66724a1f214eed",
+  "content_sha256": "9194530035249762ebaf9dff45ae5abc7f3074eb6782847cab66724a1f214eed",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [],
+  "next_id": "start-with-intent",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/workspace-and-preparation.html",
+  "content_url": "./content/workspace-and-preparation.md",
+  "content_json_url": "./content/workspace-and-preparation.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/workspace-and-preparation.html",
+  "citation": "AIS FLOWS AI-video course, “Рабочее место и предподготовка”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "Рабочее место и предподготовка",
+      "Перед промптом нужен порядок",
+      "Зачем нужна предподготовка",
+      "Два типа подготовки: заранее и под ролик",
+      "Тип 1. Готовится Заранее",
+      "Тип 2. Готовится Под Конкретный Ролик",
+      "Базовое рабочее место",
+      "Быстрый чек материалов",
+      "Папка или канва-поле",
+      "Типичные ошибки",
+      "00A.6.1. Сразу Бежать В Генерацию",
+      "00A.6.2. Готовить Всё Подряд",
+      "00A.6.3. Использовать Случайные Исходники",
+      "00A.6.4. Хранить Всё В Случайных Местах",
+      "Остановка: Проверка Стартового Набора",
+      "Итог: Рабочее Место Не Мешает Ролику"
+    ],
+    "heading_count": 16,
+    "unordered_list_item_count": 53,
+    "ordered_list_item_count": 0,
+    "code_fence_count": 5,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

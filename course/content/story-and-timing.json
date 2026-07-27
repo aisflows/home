@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "id": "story-and-timing",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "История, тайминг и управляемые сегменты",
+  "summary_ru": "03. История, Тайминг И Управляемые Сегменты",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "03_STORY_AND_TIMING.md",
+  "source_sha256": "e39bc4fa61796407ce74aec74fbe933fb567c90c80fc6031a594cf474f854550",
+  "content_sha256": "e39bc4fa61796407ce74aec74fbe933fb567c90c80fc6031a594cf474f854550",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "production-card"
+  ],
+  "next_id": "references-and-visual-control",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/story-and-timing.html",
+  "content_url": "./content/story-and-timing.md",
+  "content_json_url": "./content/story-and-timing.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/story-and-timing.html",
+  "citation": "AIS FLOWS AI-video course, “История, тайминг и управляемые сегменты”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "03. История, Тайминг И Управляемые Сегменты",
+      "03.0. Карта Урока",
+      "03.1. Сценарий Не Равен Промпту",
+      "03.2. Что Такое Точки Тайминга",
+      "03.3. Почему Точки Тайминга Не Равны Генерациям",
+      "03.4. Что Такое Управляемый Сегмент",
+      "03.5. Когда Объединять, А Когда Делить",
+      "03.5.1. Можно Объединять",
+      "03.5.2. Лучше Делить",
+      "03.5A. Shot Plan / Storyboard Map",
+      "03.5.3. Film Stills Для Расстановки Кадров",
+      "03.6. Таблица Сегмента",
+      "03.7. Пример Сегмента",
+      "03.8. Остановка: Тайминг И Отрезки",
+      "03.11. Если Сценарий Собирается Из Готового Видео"
+    ],
+    "heading_count": 15,
+    "unordered_list_item_count": 42,
+    "ordered_list_item_count": 0,
+    "code_fence_count": 17,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

@@ -1,35 +1,179 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "ais-flows-home-content-model",
-  "title": "AIS FLOWS Home content model",
+  "$id": "https://aisflows.github.io/home/content-model.schema.json",
+  "title": "AIS FLOWS Home canonical content model",
   "type": "object",
-  "required": ["schema_version", "canonical_brand", "routes", "entities", "links"],
+  "additionalProperties": false,
+  "required": ["schema_version", "canonical_brand", "deployment", "routes", "entities", "links", "constraints", "state_machines", "change_log"],
   "properties": {
-    "schema_version": { "type": "string" },
-    "canonical_brand": { "const": "AIS FLOWS" },
-    "routes": { "type": "object" },
-    "entities": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/entity" }
-    },
-    "links": { "type": "array" }
+    "schema_version": {"const": "3.0.0"},
+    "canonical_brand": {"const": "AIS FLOWS"},
+    "deployment": {"$ref": "#/$defs/deployment"},
+    "routes": {"$ref": "#/$defs/routes"},
+    "entities": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/entity"}},
+    "links": {"type": "array", "items": {"$ref": "#/$defs/link"}},
+    "constraints": {"$ref": "#/$defs/constraints"},
+    "state_machines": {"$ref": "#/$defs/stateMachines"},
+    "change_log": {"type": "array", "items": {"$ref": "#/$defs/update"}}
   },
   "$defs": {
-    "entity": {
-      "type": "object",
-      "required": ["id", "type", "title_en", "title_ru", "status", "page_url", "release_url", "download_url", "payment_url", "version", "last_verified"],
+    "nullableUrl": {"type": ["string", "null"]},
+    "deployment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "public_deploy_allowed", "base_url"],
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-        "type": { "enum": ["skill", "system", "app", "media", "contact"] },
-        "status": { "type": "string" },
-        "title_en": { "type": "string" },
-        "title_ru": { "type": "string" },
-        "page_url": { "type": ["string", "null"] },
-        "release_url": { "type": ["string", "null"] },
-        "download_url": { "type": ["string", "null"] },
-        "payment_url": { "type": ["string", "null"] },
-        "version": { "type": ["string", "null"] },
-        "last_verified": { "type": "string", "format": "date" }
+        "status": {"enum": ["local_candidate_not_deployed", "public"]},
+        "public_deploy_allowed": {"type": "boolean"},
+        "base_url": {"type": "string", "minLength": 1}
+      }
+    },
+    "routes": {
+      "type": "object", "additionalProperties": false,
+      "required": ["en", "ru", "request_en", "request_ru", "course", "manifest", "artifacts", "updates", "feed"],
+      "properties": {
+        "en": {"type": "string"}, "ru": {"type": "string"}, "request_en": {"type": "string"}, "request_ru": {"type": "string"},
+        "course": {"type": "string"}, "manifest": {"type": "string"}, "artifacts": {"type": "string"}, "updates": {"type": "string"}, "feed": {"type": "string"}
+      }
+    },
+    "routeReasons": {
+      "type": "object", "additionalProperties": false,
+      "required": ["human_page_url", "machine_index_url", "content_url", "release_url", "artifact_manifest_url", "download_url", "purchase_url"],
+      "properties": {
+        "human_page_url": {"type": ["string", "null"]}, "machine_index_url": {"type": ["string", "null"]},
+        "content_url": {"type": ["string", "null"]}, "release_url": {"type": ["string", "null"]},
+        "artifact_manifest_url": {"type": ["string", "null"]}, "download_url": {"type": ["string", "null"]},
+        "purchase_url": {"type": ["string", "null"]}
+      }
+    },
+    "access": {
+      "type": "object", "additionalProperties": false,
+      "required": ["mode", "purchase_url", "price", "currency", "user_confirmation_required"],
+      "properties": {
+        "mode": {"enum": ["public_free", "public_preview", "paid", "private", "unavailable"]},
+        "purchase_url": {"$ref": "#/$defs/nullableUrl"}, "price": {"type": ["number", "null"]},
+        "currency": {"type": ["string", "null"]}, "user_confirmation_required": {"type": "boolean"}
+      }
+    },
+    "license": {
+      "type": "object", "additionalProperties": false, "required": ["name", "url", "summary"],
+      "properties": {"name": {"type": ["string", "null"]}, "url": {"$ref": "#/$defs/nullableUrl"}, "summary": {"type": ["string", "null"]}}
+    },
+    "citation": {
+      "type": "object", "additionalProperties": false, "required": ["canonical_url", "attribution_text"],
+      "properties": {"canonical_url": {"$ref": "#/$defs/nullableUrl"}, "attribution_text": {"type": ["string", "null"]}}
+    },
+    "updatesMeta": {
+      "type": "object", "additionalProperties": false, "required": ["changelog_url", "feed_url"],
+      "properties": {"changelog_url": {"$ref": "#/$defs/nullableUrl"}, "feed_url": {"$ref": "#/$defs/nullableUrl"}}
+    },
+    "supportAction": {
+      "type": "object", "additionalProperties": false, "required": ["id", "label_en", "label_ru", "url", "requires_user_confirmation"],
+      "properties": {"id": {"type": "string", "pattern": "^[a-z0-9-]+$"}, "label_en": {"type": "string"}, "label_ru": {"type": "string"}, "url": {"type": "string"}, "requires_user_confirmation": {"type": "boolean"}}
+    },
+    "display": {
+      "type": "object", "additionalProperties": false,
+      "required": ["category", "order", "status_label_en", "status_label_ru", "action_label_en", "action_label_ru", "tags_en", "tags_ru", "image", "image_alt_en", "image_alt_ru", "image_metadata", "flow_en", "flow_ru"],
+      "properties": {
+        "category": {"enum": ["skills", "systems", "apps", "media", "contact", "course", "discovery"]}, "order": {"type": "number", "minimum": 0},
+        "status_label_en": {"type": "string"}, "status_label_ru": {"type": "string"},
+        "action_label_en": {"type": ["string", "null"]}, "action_label_ru": {"type": ["string", "null"]},
+        "tags_en": {"type": "array", "items": {"type": "string"}}, "tags_ru": {"type": "array", "items": {"type": "string"}},
+        "image": {"type": ["string", "null"]}, "image_alt_en": {"type": "string"}, "image_alt_ru": {"type": "string"},
+        "image_metadata": {"oneOf": [{"$ref": "#/$defs/publicImageMetadata"}, {"type": "null"}]},
+        "flow_en": {"type": "array", "items": {"type": "string"}}, "flow_ru": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "media": {
+      "type": ["object", "null"], "additionalProperties": false,
+      "required": ["kind", "provider_id", "preview_media_url", "format", "previews"],
+      "properties": {
+        "kind": {"enum": ["youtube", "local_preview"]}, "provider_id": {"type": ["string", "null"]},
+        "preview_media_url": {"$ref": "#/$defs/nullableUrl"}, "format": {"enum": ["wide", "vertical"]},
+        "previews": {"type": "array", "items": {"$ref": "#/$defs/mediaPreview"}}
+      }
+    },
+    "mediaPreview": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "title", "poster", "poster_alt_en", "poster_alt_ru", "poster_metadata", "preview_media_url", "format"],
+      "properties": {"id": {"type": "string", "pattern": "^[a-z0-9-]+$"}, "title": {"type": "string"}, "poster": {"type": "string"}, "poster_alt_en": {"type": "string", "minLength": 1}, "poster_alt_ru": {"type": "string", "minLength": 1}, "poster_metadata": {"$ref": "#/$defs/publicImageMetadata"}, "preview_media_url": {"type": "string"}, "format": {"enum": ["wide", "vertical"]}}
+    },
+    "publicImageMetadata": {
+      "type": "object", "additionalProperties": false,
+      "required": ["classification", "width", "height", "size_bytes", "sha256", "caption_en", "caption_ru", "credit", "license"],
+      "properties": {
+        "classification": {"const": "public_media"},
+        "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1},
+        "size_bytes": {"type": "integer", "minimum": 1}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "caption_en": {"type": "string", "minLength": 1}, "caption_ru": {"type": "string", "minLength": 1},
+        "credit": {"type": "string", "minLength": 1}, "license": {"type": "string", "minLength": 1}
+      }
+    },
+    "entity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "type", "title_en", "title_ru", "short_description_en", "short_description_ru", "description_en", "description_ru", "lifecycle", "status", "route_status", "version", "updated_at", "last_verified", "language", "available_languages", "human_page_url", "page_url", "machine_index_url", "content_url", "release_url", "artifact_manifest_url", "download_url", "payment_url", "contact_url", "route_unavailable_reasons", "access", "license", "citation", "updates", "support_actions", "primary_action", "action_url", "action_target", "display", "media"],
+      "allOf": [
+        {
+          "if": {
+            "required": ["id"],
+            "properties": {"id": {"const": "request"}}
+          },
+          "then": {
+            "properties": {
+              "status": {"const": "receiver_configured_local_acceptance_not_deployed"}
+            }
+          }
+        }
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "type": {"enum": ["skill", "system", "app", "media", "course", "document", "contact"]},
+        "title_en": {"type": "string", "minLength": 1}, "title_ru": {"type": "string", "minLength": 1},
+        "short_description_en": {"type": "string"}, "short_description_ru": {"type": "string"}, "description_en": {"type": "string"}, "description_ru": {"type": "string"},
+        "lifecycle": {"enum": ["released", "published", "draft", "in_development", "withdrawn", "superseded", "not_public"]},
+        "status": {"type": "string"}, "route_status": {"enum": ["verified", "unavailable", "stale", "superseded"]},
+        "version": {"type": ["string", "null"]}, "updated_at": {"type": "string", "format": "date-time"}, "last_verified": {"type": "string", "format": "date"},
+        "language": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["en", "ru"]}},
+        "available_languages": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["en", "ru"]}},
+        "human_page_url": {"$ref": "#/$defs/nullableUrl"}, "page_url": {"$ref": "#/$defs/nullableUrl"}, "machine_index_url": {"$ref": "#/$defs/nullableUrl"}, "content_url": {"$ref": "#/$defs/nullableUrl"},
+        "release_url": {"$ref": "#/$defs/nullableUrl"}, "artifact_manifest_url": {"$ref": "#/$defs/nullableUrl"}, "download_url": {"$ref": "#/$defs/nullableUrl"},
+        "payment_url": {"$ref": "#/$defs/nullableUrl"}, "contact_url": {"$ref": "#/$defs/nullableUrl"},
+        "route_unavailable_reasons": {"$ref": "#/$defs/routeReasons"}, "access": {"$ref": "#/$defs/access"}, "license": {"$ref": "#/$defs/license"}, "citation": {"$ref": "#/$defs/citation"}, "updates": {"$ref": "#/$defs/updatesMeta"},
+        "support_actions": {"type": "array", "items": {"$ref": "#/$defs/supportAction"}},
+        "primary_action": {"enum": ["open_release", "read_course", "open_form", "play", "open_media", "read_index", "status_only"]},
+        "action_url": {"$ref": "#/$defs/nullableUrl"}, "action_target": {"enum": ["_blank", null]}, "display": {"$ref": "#/$defs/display"}, "media": {"$ref": "#/$defs/media"}
+      }
+    },
+    "link": {
+      "type": "object", "additionalProperties": false, "required": ["id", "type", "title", "url", "status", "order"],
+      "properties": {"id": {"type": "string", "pattern": "^[a-z0-9-]+$"}, "type": {"enum": ["link", "contact"]}, "title": {"type": "string"}, "url": {"type": "string"}, "status": {"enum": ["published", "fallback"]}, "order": {"type": "number", "minimum": 0}}
+    },
+    "constraints": {
+      "type": "object", "additionalProperties": false,
+      "required": ["public_deploy", "request_receiver", "analytics_provider", "payment_and_delivery", "production_base_url", "server_agent_analytics"],
+      "properties": {
+        "public_deploy": {"const": "github_pages_owner_approval_required"},
+        "request_receiver": {"const": "formspree_live_delivery_confirmed_local_not_deployed"},
+        "analytics_provider": {"const": "umami_configured_remote_control_event_observed_public_site_not_deployed"},
+        "payment_and_delivery": {"const": "not_selected_not_proven"},
+        "production_base_url": {"const": "https://aisflows.github.io/home/"},
+        "server_agent_analytics": {"const": "unavailable_static_host_does_not_observe_direct_agent_fetches"}
+      }
+    },
+    "stateMachines": {
+      "type": "object", "additionalProperties": false, "required": ["owner_job", "public_object", "artifact", "route", "paid_route"],
+      "properties": {
+        "owner_job": {"type": "array", "items": {"type": "string"}}, "public_object": {"type": "array", "items": {"type": "string"}},
+        "artifact": {"type": "array", "items": {"type": "string"}}, "route": {"type": "array", "items": {"type": "string"}}, "paid_route": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "update": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "object_id", "item_id", "change_type", "version", "updated_at", "summary_en", "summary_ru", "content_url", "canonical_url"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"}, "object_id": {"type": "string"}, "item_id": {"type": ["string", "null"]},
+        "change_type": {"enum": ["created", "updated", "released", "superseded", "withdrawn"]}, "version": {"type": ["string", "null"]},
+        "updated_at": {"type": "string", "format": "date-time"}, "summary_en": {"type": "string"}, "summary_ru": {"type": "string"},
+        "content_url": {"$ref": "#/$defs/nullableUrl"}, "canonical_url": {"$ref": "#/$defs/nullableUrl"}
       }
     }
   }

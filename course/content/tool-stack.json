@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "id": "tool-stack",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Минимальный набор инструментов",
+  "summary_ru": "09. Инструменты И Настройка Рабочего Места",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "09_TOOL_STACK_AND_SETUP.md",
+  "source_sha256": "5b8ebf0b8b2faec94d788ba3a1d69bf2394c15c074b81048e5112ce8c3e11322",
+  "content_sha256": "5b8ebf0b8b2faec94d788ba3a1d69bf2394c15c074b81048e5112ce8c3e11322",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "final-production"
+  ],
+  "next_id": "templates-and-worksheets",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/tool-stack.html",
+  "content_url": "./content/tool-stack.md",
+  "content_json_url": "./content/tool-stack.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/tool-stack.html",
+  "citation": "AIS FLOWS AI-video course, “Минимальный набор инструментов”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "09. Инструменты И Настройка Рабочего Места",
+      "09.0. Как Читать Эту Главу",
+      "09.0.1. Зачем Нужен Стек Инструментов",
+      "09.0.2. Важное Предупреждение",
+      "09.0.3. Таблица Свежести Инструментов",
+      "09.0.4. Как Выбирать Сервисы, Не Покупая Всё Подряд",
+      "09.1. Базовая Карта Инструментов",
+      "09.2. Канва-Поле Или Доска Проекта",
+      "09.3. Агент Или Промпт-Мозг",
+      "Вариант A: Codex / ChatGPT-агент",
+      "Вариант B: Claude / Claude Code",
+      "09.4. Подготовка Референсов И Изображений",
+      "Инструменты подготовки изображений",
+      "09.5. Генерация Видео",
+      "Видео-модели и сервисы генерации",
+      "Другие видео-модели",
+      "Быстрый клип из изображения со звуком",
+      "Переработка существующего видео",
+      "09.6. Улучшение Качества",
+      "Topaz Labs",
+      "Upscayl",
+      "09.7. Монтаж И Финальная Сборка",
+      "09.8. Архив Выводов",
+      "09.9. Минимальный Стек Для Ученика",
+      "09.10. Будущий AIS FLOWS Набор Промпт-Навыков"
+    ],
+    "heading_count": 25,
+    "unordered_list_item_count": 109,
+    "ordered_list_item_count": 5,
+    "code_fence_count": 3,
+    "blockquote_count": 6,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

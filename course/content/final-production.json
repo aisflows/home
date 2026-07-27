@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "id": "final-production",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Winners, монтаж и финальная проверка",
+  "summary_ru": "08. Финальная Сборка И Выводы После Проекта",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "08_FINAL_PRODUCTION_AND_LEARNING.md",
+  "source_sha256": "ceeb3d8f381104959736845592a76148be516faeec0dc3000af7f677623d9729",
+  "content_sha256": "ceeb3d8f381104959736845592a76148be516faeec0dc3000af7f677623d9729",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "failure-diagnosis"
+  ],
+  "next_id": "tool-stack",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/final-production.html",
+  "content_url": "./content/final-production.md",
+  "content_json_url": "./content/final-production.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/final-production.html",
+  "citation": "AIS FLOWS AI-video course, “Winners, монтаж и финальная проверка”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "08. Финальная Сборка И Выводы После Проекта",
+      "08.0. Карта Урока",
+      "08.1. Как Выбрать Лучший Результат",
+      "08.2. Когда Улучшать Качество",
+      "08.3. Сборка Ролика",
+      "08.4. Выводы После Проекта",
+      "08.5. Остановка: Отбор, Улучшение И Сборка",
+      "08.8. Технически Собирается И Можно Публиковать — Не Одно И То Же"
+    ],
+    "heading_count": 8,
+    "unordered_list_item_count": 48,
+    "ordered_list_item_count": 18,
+    "code_fence_count": 4,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

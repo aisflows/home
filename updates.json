@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "deployment_status": "local_candidate_not_deployed",
+  "feed_url": "./feed.xml",
+  "changelog_url": "./CHANGELOG_PUBLIC.md",
+  "updates": [
+    {
+      "id": "update-2026-07-26-request-analytics-truth",
+      "object_id": "request",
+      "item_id": null,
+      "change_type": "updated",
+      "version": null,
+      "updated_at": "2026-07-26T16:01:40Z",
+      "summary_en": "Recorded the configured Formspree receiver and privacy-safe Umami browser contract as locally accepted, while keeping the Home candidate explicitly not deployed.",
+      "summary_ru": "Зафиксированы настроенный Formspree и privacy-safe контракт браузерной аналитики Umami как локально принятые; кандидат Home явно остаётся неразвёрнутым.",
+      "content_url": "./request-schema.json",
+      "canonical_url": "https://aisflows.github.io/home/request/"
+    },
+    {
+      "id": "update-2026-07-22-course-preview",
+      "object_id": "ais-flows-ai-video-course",
+      "item_id": null,
+      "change_type": "created",
+      "version": "0.1.0-local-preview",
+      "updated_at": "2026-07-22T12:00:00Z",
+      "summary_en": "Added a local agent-readable course candidate with direct lesson routes.",
+      "summary_ru": "Добавлен локальный агент-читаемый кандидат курса с прямыми маршрутами уроков.",
+      "content_url": "./course/course-content.json",
+      "canonical_url": "https://aisflows.github.io/home/course/"
+    },
+    {
+      "id": "update-2026-07-22-ready-gate-artifact",
+      "object_id": "ready-gate",
+      "item_id": "ready-gate-rc1-zip",
+      "change_type": "updated",
+      "version": "v0.1.0-ready-gate-rc1",
+      "updated_at": "2026-07-22T12:00:00Z",
+      "summary_en": "Verified Ready Gate artifact size and SHA256 for the local candidate.",
+      "summary_ru": "Для локального кандидата проверены размер и SHA256 артефакта Ready Gate.",
+      "content_url": null,
+      "canonical_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1"
+    }
+  ]
+}

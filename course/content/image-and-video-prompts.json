@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "id": "image-and-video-prompts",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Промпты изображения и видео",
+  "summary_ru": "05. Промпт Для Изображения И Промпт Для Видео",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "05_IMAGE_AND_VIDEO_PROMPTS.md",
+  "source_sha256": "1e2b55a56b4d229049a900ae3b607349ba0b67dccf31112da90d30dfa389e148",
+  "content_sha256": "1e2b55a56b4d229049a900ae3b607349ba0b67dccf31112da90d30dfa389e148",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "references-and-visual-control"
+  ],
+  "next_id": "generation-routes",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/image-and-video-prompts.html",
+  "content_url": "./content/image-and-video-prompts.md",
+  "content_json_url": "./content/image-and-video-prompts.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/image-and-video-prompts.html",
+  "citation": "AIS FLOWS AI-video course, “Промпты изображения и видео”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "05. Промпт Для Изображения И Промпт Для Видео",
+      "05.0. Карта Урока",
+      "05.1. Главное Различие",
+      "05.2. Промпт Для Изображения",
+      "05.3. Промпт Для Видео",
+      "Длительность выбирается по содержанию",
+      "05.4. Seedance: Короткая Карточка Правил",
+      "05.4A. Режим Сначала, Текст Потом",
+      "05.5. Плохой Пример",
+      "05.6. Нормальный Пример",
+      "05.7. Остановка: Промпт Кадра И Промпт Движения",
+      "05.8. Где Смотреть Больше Примеров",
+      "05.10. Промпт Не Заменяет Производственный План"
+    ],
+    "heading_count": 13,
+    "unordered_list_item_count": 41,
+    "ordered_list_item_count": 0,
+    "code_fence_count": 24,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}

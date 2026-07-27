@@ -1,33 +1,32 @@
 # AIS FLOWS
 
-AIS FLOWS is a compact public showcase for AI media production, workflows, skills, systems, and tools by Andrei Spirydovich.
+Canonical agent entry: ./agent-manifest.json
+Canonical catalog: ./content-model.json
+Catalog schema: ./content-model.schema.json
+Artifacts: ./artifacts.json
+Updates: ./updates.json
+Feed: ./feed.xml
+Course manifest: ./course/course-agent-manifest.json
+Course lesson index: ./course/course-content.json
+Human discovery guide: ./AI_AGENT_DISCOVERY.md
 
-## Home routes
+## Rules
 
-- EN Home: `./index.html`
-- RU Home: `./ru/index.html`
-- EN request: `./request/index.html`
-- RU request: `./ru/request/index.html`
-- Canonical machine-readable model: `./content-model.json`
-- Agent discovery: `./AI_AGENT_DISCOVERY.md`
+- Follow only verified non-null routes.
+- Validate artifact version, MIME, size, and SHA256 before download.
+- No account is required for public reading or verified free downloads.
+- Request delivery: formspree_live_delivery_confirmed_local_not_deployed.
+- Browser analytics: umami_configured_remote_control_event_observed_public_site_not_deployed.
+- No payment or public write API is active in this local candidate.
+- Direct agent GET requests are not observable by browser JavaScript on static GitHub Pages.
 
-## Products
+## Objects
 
-- Proofline: released; GitHub release route is verified in `content-model.json`.
-- Ready Gate: released; GitHub release and package artifact routes are verified in `content-model.json`.
-- Skill Cleaner: released; GitHub release route is verified in `content-model.json`.
-- Video Builder Pack: `preview_pending`; no public package, download, payment, or product page is active.
-- Local AI Gateway: `in_development`; no public release, download, or app page is active.
-
-## Media
-
-- Featured trailer: YouTube video `DDpVQ53pnAI`, embedded on the Home Media section.
-
-## Contact
-
-- Request form is present as a local UI contract, but the external receiver is not configured or proven.
-- Use the email fallback in the request route when contacting AIS FLOWS.
-
-## Limits
-
-This is the public Home V0 implementation on GitHub Pages. External analytics, receiver provisioning, payment, and custom-domain metadata are not claimed here.
+- proofline: Proofline; released; public_free; content=null; download=null
+- ready-gate: Ready Gate; released; public_free; content=null; download=https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip
+- skill-cleaner: Skill Cleaner; released; public_free; content=null; download=null
+- video-builder-pack: Video Builder Pack; draft; unavailable; content=null; download=null
+- local-ai-gateway: Local AI Gateway; in_development; unavailable; content=null; download=null
+- featured-youtube-trailer: AIS FLOWS trailer; published; public_free; content=null; download=null
+- request: Start a Project; published; public_free; content=null; download=null
+- ais-flows-ai-video-course: AIS FLOWS AI-video course; draft; public_preview; content=./course/course-content.json; download=null

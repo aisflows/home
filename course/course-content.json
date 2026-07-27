@@ -1,0 +1,1042 @@
+{
+  "version": "0.1.0-local-preview",
+  "updated": "2026-07-22",
+  "locale": "ru",
+  "course": {
+    "id": "ais-flows-ai-video-course",
+    "title": "AIS FLOWS: курс по AI-видео",
+    "eyebrow": "Рабочая система обучения",
+    "promise": "От идеи до собранного AI-видео",
+    "summary": "Пошаговый маршрут для тех, кто хочет подготовить замысел, удержать визуальную логику, сгенерировать управляемые фрагменты и собрать финальный ролик.",
+    "audience": "Авторы, AI-креаторы и команды, которым нужен повторяемый процесс вместо одного случайного промпта.",
+    "outcome": "К концу маршрута у вас будет комплект рабочих решений: production card, тайминг, референсы, план кадров, промпты, выбранные варианты и план финальной сборки.",
+    "status": "draft",
+    "status_label": "Рабочий черновик · обновляется",
+    "first_lesson_id": "workspace-and-preparation"
+  },
+  "blocks": [
+    {
+      "id": 1,
+      "slug": "intent-and-preparation",
+      "title_ru": "Предподготовка и замысел",
+      "summary_ru": "Навести порядок, сформулировать задачу и зафиксировать, что ролик не имеет права потерять.",
+      "understand_ru": "Почему AI-видео начинается не с большого промпта, а с ясного замысла и минимального набора входов.",
+      "do_ru": "Собрать рабочее место, короткую карточку ролика и подготовительный пакет.",
+      "result_ru": "Production card и понятный стартовый набор проекта.",
+      "lesson_ids": [
+        "workspace-and-preparation",
+        "start-with-intent",
+        "production-card"
+      ],
+      "prerequisites": [],
+      "unlocks": [
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "timing-and-visual-control",
+      "title_ru": "История, тайминг и визуальный контроль",
+      "summary_ru": "Превратить замысел в порядок событий, временную карту и устойчивую систему визуальных опор.",
+      "understand_ru": "Чем сценарий отличается от промпта, а тайминг — от списка генераций.",
+      "do_ru": "Собрать timing map, shot plan и reference system для повторяющихся сущностей.",
+      "result_ru": "Карта времени, план кадров и набор визуальных опор.",
+      "lesson_ids": [
+        "story-and-timing",
+        "references-and-visual-control"
+      ],
+      "prerequisites": [
+        1
+      ],
+      "unlocks": [
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "prompts-models-generation",
+      "title_ru": "Промпты, модели и видеогенерация",
+      "summary_ru": "Выбрать маршрут генерации и превратить подготовленные кадры и сегменты в точные инструкции модели.",
+      "understand_ru": "Почему промпт изображения и промпт видео решают разные задачи, и когда нужен text-to-video, image-to-video или reference route.",
+      "do_ru": "Подготовить Frame Pack, выбрать режим и написать generator-facing промпты.",
+      "result_ru": "Стартовые кадры, промпты и управляемый план генерации draft-вариантов.",
+      "lesson_ids": [
+        "image-and-video-prompts",
+        "generation-routes",
+        "prompt-reference-library"
+      ],
+      "prerequisites": [
+        2
+      ],
+      "unlocks": [
+        4
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "diagnosis-selection-assembly",
+      "title_ru": "Диагностика, отбор и финальная сборка",
+      "summary_ru": "Проверить варианты, перестать чинить всё подряд и собрать только пригодные фрагменты.",
+      "understand_ru": "Как отличить красивый draft от usable take и как формулировать следующий тест после ошибки.",
+      "do_ru": "Провести winner gate, описать поломки, собрать монтаж и финальную проверку.",
+      "result_ru": "Список winners, план ремонта, монтаж и чек-лист экспорта.",
+      "lesson_ids": [
+        "failure-diagnosis",
+        "final-production"
+      ],
+      "prerequisites": [
+        3
+      ],
+      "unlocks": [
+        5
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "tools-worksheets-case",
+      "title_ru": "Инструменты, рабочие листы и полный кейс",
+      "summary_ru": "Собрать среду, использовать рабочие формы и увидеть весь процесс на одном учебном кейсе.",
+      "understand_ru": "Какие инструменты нужны конкретному маршруту и зачем рабочие листы снижают стоимость ошибок.",
+      "do_ru": "Настроить минимальный tool stack, заполнить листы и пройти каркас полного проекта.",
+      "result_ru": "Собственная рабочая система и карта полного производственного прохода.",
+      "lesson_ids": [
+        "tool-stack",
+        "templates-and-worksheets",
+        "full-case-study"
+      ],
+      "prerequisites": [
+        4
+      ],
+      "unlocks": [
+        6
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "packaging-library-practice",
+      "title_ru": "Упаковка, библиотека и практический слой",
+      "summary_ru": "Сохранить выводы, пользоваться библиотекой как справочником и отделять рабочий курс от будущего продукта.",
+      "understand_ru": "Как превращать опыт проекта в повторяемую систему и не выдавать черновик за готовый коммерческий продукт.",
+      "do_ru": "Собрать библиотеку выводов, определить следующий практический проход и правила честной упаковки.",
+      "result_ru": "Обновляемая личная библиотека и понятный маршрут следующего ролика.",
+      "lesson_ids": [
+        "course-packaging",
+        "source-backed-lessons"
+      ],
+      "prerequisites": [
+        5
+      ],
+      "unlocks": []
+    }
+  ],
+  "lessons": [
+    {
+      "id": "workspace-and-preparation",
+      "block": 1,
+      "order": 1,
+      "title_ru": "Рабочее место и предподготовка",
+      "status": "draft",
+      "type": "do",
+      "keywords_ru": [
+        "папка проекта",
+        "исходники",
+        "версии",
+        "подготовка"
+      ],
+      "summary_ru": "Разложить исходники, версии и рабочие материалы так, чтобы производство не начиналось с поиска потерянного файла.",
+      "why_ru": "Порядок до генерации снижает повторные прогоны и помогает сохранить лучший результат.",
+      "understand_ru": [
+        "Какой минимальный набор нужен до первого промпта.",
+        "Чем постоянное рабочее место отличается от материалов конкретного ролика."
+      ],
+      "do_steps_ru": [
+        "Создайте папку проекта и разделите исходники, референсы, draft, winners и export.",
+        "Запишите длительность, формат и главный объект ролика.",
+        "Проверьте, что важные исходники имеют понятные имена и не смешаны с тестами."
+      ],
+      "check_ru": [
+        "Лучший файл можно найти без просмотра всей папки.",
+        "Понятно, где лежат исходники и куда сохранять новые варианты."
+      ],
+      "result_ru": "Подготовленная структура проекта и короткая стартовая карточка.",
+      "inputs_ru": [
+        "Идея ролика",
+        "Доступные исходники",
+        "Желаемый формат"
+      ],
+      "artifact": {
+        "label_ru": "Структура папки проекта",
+        "status": "not_public",
+        "url": null
+      },
+      "builder_step": "1. Создать папку проекта",
+      "prerequisites": [],
+      "next_id": "start-with-intent",
+      "visibility": "public_preview",
+      "source_file": "00A_WORKSPACE_AND_PREPREPARATION.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "9194530035249762ebaf9dff45ae5abc7f3074eb6782847cab66724a1f214eed",
+      "content_sha256": "9194530035249762ebaf9dff45ae5abc7f3074eb6782847cab66724a1f214eed",
+      "human_lesson_url": "./lessons/workspace-and-preparation.html",
+      "content_url": "./content/workspace-and-preparation.md",
+      "content_json_url": "./content/workspace-and-preparation.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/workspace-and-preparation.html"
+    },
+    {
+      "id": "start-with-intent",
+      "block": 1,
+      "order": 2,
+      "title_ru": "С чего начинается AI-видео",
+      "status": "draft",
+      "type": "understand",
+      "keywords_ru": [
+        "идея",
+        "замысел",
+        "смысл",
+        "промпт"
+      ],
+      "summary_ru": "Понять главный обман старта: хороший ролик начинается с решений о смысле и контроле, а не с магической формулировки.",
+      "why_ru": "Без ясного замысла модель начинает сама выбирать режиссуру, ритм и детали, которые для вас важны.",
+      "understand_ru": [
+        "Что зритель должен увидеть и понять.",
+        "Что модель не имеет права менять.",
+        "Почему один большой промпт не заменяет производство."
+      ],
+      "do_steps_ru": [
+        "Сформулируйте идею ролика одним предложением.",
+        "Запишите главный визуальный образ и финальную мысль.",
+        "Назовите три вещи, которые должны оставаться стабильными."
+      ],
+      "check_ru": [
+        "Замысел можно объяснить человеку за 20 секунд.",
+        "В формулировке нет списка сервисов вместо смысла ролика."
+      ],
+      "result_ru": "Короткий замысел и список критичных элементов.",
+      "inputs_ru": [
+        "Идея или задача",
+        "Целевая аудитория",
+        "Желаемое впечатление"
+      ],
+      "artifact": {
+        "label_ru": "Карточка замысла",
+        "status": "preview_pending",
+        "url": null
+      },
+      "builder_step": "0. Принцип: не начинать с промпта",
+      "prerequisites": [
+        "workspace-and-preparation"
+      ],
+      "next_id": "production-card",
+      "visibility": "public_preview",
+      "source_file": "01_START_HERE.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "7674e81244da2198bc4dc5dda04c00800046ac3573daf19e33146fffbe3ebd57",
+      "content_sha256": "7674e81244da2198bc4dc5dda04c00800046ac3573daf19e33146fffbe3ebd57",
+      "human_lesson_url": "./lessons/start-with-intent.html",
+      "content_url": "./content/start-with-intent.md",
+      "content_json_url": "./content/start-with-intent.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/start-with-intent.html"
+    },
+    {
+      "id": "production-card",
+      "block": 1,
+      "order": 3,
+      "title_ru": "Production Card до промпта",
+      "status": "draft",
+      "type": "do",
+      "keywords_ru": [
+        "production card",
+        "подготовительный пакет",
+        "ограничения",
+        "формат"
+      ],
+      "summary_ru": "Собрать короткий набор решений, чтобы промпт не превращался в контейнер для всего проекта.",
+      "why_ru": "Production Card отделяет задачу, ограничения и визуальные опоры от инструкции конкретной модели.",
+      "understand_ru": [
+        "Какие решения должны быть приняты до генерации.",
+        "Почему подготовительный пакет — не бюрократия, а граница задачи."
+      ],
+      "do_steps_ru": [
+        "Запишите смысл, длительность, формат и главный объект.",
+        "Зафиксируйте, что сохранить и чего избегать.",
+        "Определите тип ролика: музыкальный, dialogue/lipsync, product, UGC, trailer или другой."
+      ],
+      "check_ru": [
+        "Карточка помещается на одном экране.",
+        "Из неё понятно, какой маршрут производства выбрать."
+      ],
+      "result_ru": "Заполненная Production Card.",
+      "inputs_ru": [
+        "Карточка замысла",
+        "Ограничения бренда или проекта"
+      ],
+      "artifact": {
+        "label_ru": "Шаблон Production Card",
+        "status": "preview_pending",
+        "url": null
+      },
+      "builder_step": "2–3. Production Card и тип видео",
+      "prerequisites": [
+        "start-with-intent"
+      ],
+      "next_id": "story-and-timing",
+      "visibility": "public_preview",
+      "source_file": "02_PREPARATION_BEFORE_PROMPT.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "30419400e229bb16fa336cf982dcf4911cdac49da72d0e4fa4a72a741de92af6",
+      "content_sha256": "30419400e229bb16fa336cf982dcf4911cdac49da72d0e4fa4a72a741de92af6",
+      "human_lesson_url": "./lessons/production-card.html",
+      "content_url": "./content/production-card.md",
+      "content_json_url": "./content/production-card.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/production-card.html"
+    },
+    {
+      "id": "story-and-timing",
+      "block": 2,
+      "order": 4,
+      "title_ru": "История, тайминг и управляемые сегменты",
+      "status": "draft",
+      "type": "do",
+      "keywords_ru": [
+        "история",
+        "тайминг",
+        "full timed script",
+        "shot plan",
+        "сегменты"
+      ],
+      "summary_ru": "Перевести историю в реальное время и решить, какие события нужно объединять или разделять для генерации.",
+      "why_ru": "Строка тайминга описывает смысл во времени, но не обязана становиться отдельной генерацией.",
+      "understand_ru": [
+        "Разницу между сценарием, timing map и controlled segment.",
+        "Почему shot plan появляется до Frame Pack и видеопромптов."
+      ],
+      "do_steps_ru": [
+        "Выберите источник тайминга: аудио, речь, монтажный референс или длительность сцены.",
+        "Разметьте события и смысловые повороты по времени.",
+        "Сгруппируйте соседние действия в управляемые сегменты и соберите shot plan."
+      ],
+      "check_ru": [
+        "Каждое событие имеет источник времени.",
+        "Сегменты не дублируют Full Timed Script и покрывают всю историю."
+      ],
+      "result_ru": "Timing map, Full Timed Script при необходимости и Shot Plan.",
+      "inputs_ru": [
+        "Production Card",
+        "Аудио или другой источник времени",
+        "Сценарная последовательность"
+      ],
+      "artifact": {
+        "label_ru": "Карта тайминга",
+        "status": "preview_pending",
+        "url": null
+      },
+      "builder_step": "4 и 6. Источник тайминга и controlled segments",
+      "prerequisites": [
+        "production-card"
+      ],
+      "next_id": "references-and-visual-control",
+      "visibility": "public_preview",
+      "source_file": "03_STORY_AND_TIMING.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "e39bc4fa61796407ce74aec74fbe933fb567c90c80fc6031a594cf474f854550",
+      "content_sha256": "e39bc4fa61796407ce74aec74fbe933fb567c90c80fc6031a594cf474f854550",
+      "human_lesson_url": "./lessons/story-and-timing.html",
+      "content_url": "./content/story-and-timing.md",
+      "content_json_url": "./content/story-and-timing.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/story-and-timing.html"
+    },
+    {
+      "id": "references-and-visual-control",
+      "block": 2,
+      "order": 5,
+      "title_ru": "Референсы и контроль внешнего вида",
+      "status": "draft",
+      "type": "do",
+      "keywords_ru": [
+        "референсы",
+        "identity",
+        "персонаж",
+        "продукт",
+        "локация"
+      ],
+      "summary_ru": "Собрать визуальные опоры так, чтобы разные сегменты оставались частью одного ролика.",
+      "why_ru": "Слово «референс» слишком широкое: модели нужны конкретные роли файлов, а человеку — понятная карта того, что сохранять.",
+      "understand_ru": [
+        "Чем reference для модели отличается от mood reference для человека.",
+        "Какие сущности требуют identity-карты и нескольких ракурсов."
+      ],
+      "do_steps_ru": [
+        "Выпишите повторяющиеся сущности: персонажи, продукт, локация, логотип и стиль.",
+        "Для каждой сущности укажите, что должно сохраняться.",
+        "Соберите минимальные изображения и карту их ролей без лишнего архива."
+      ],
+      "check_ru": [
+        "Для каждого важного файла понятна его роль.",
+        "Визуальная система покрывает все повторяющиеся сущности Shot Plan."
+      ],
+      "result_ru": "Reference System и карты визуальной идентичности.",
+      "inputs_ru": [
+        "Shot Plan",
+        "Доступные изображения и видео-примеры"
+      ],
+      "artifact": {
+        "label_ru": "Карта референсов",
+        "status": "preview_pending",
+        "url": null
+      },
+      "builder_step": "5. Собрать минимальные материалы",
+      "prerequisites": [
+        "story-and-timing"
+      ],
+      "next_id": "image-and-video-prompts",
+      "visibility": "public_preview",
+      "source_file": "04_REFERENCES_AND_VISUAL_CONTROL.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "99ec75c2b21c2d99069dab785d2597d9570d38b7f5b155170d6421354af194b1",
+      "content_sha256": "99ec75c2b21c2d99069dab785d2597d9570d38b7f5b155170d6421354af194b1",
+      "human_lesson_url": "./lessons/references-and-visual-control.html",
+      "content_url": "./content/references-and-visual-control.md",
+      "content_json_url": "./content/references-and-visual-control.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/references-and-visual-control.html"
+    },
+    {
+      "id": "image-and-video-prompts",
+      "block": 3,
+      "order": 6,
+      "title_ru": "Промпты изображения и видео",
+      "status": "draft",
+      "type": "do",
+      "keywords_ru": [
+        "image prompt",
+        "video prompt",
+        "frame pack",
+        "движение",
+        "камера"
+      ],
+      "summary_ru": "Разделить описание статичного кадра и изменение во времени, а затем выдать модели чистую инструкцию для каждого артефакта.",
+      "why_ru": "Если смешать изображение и движение в одном неясном запросе, модель сама решит, что считать главным.",
+      "understand_ru": [
+        "Image prompt фиксирует кадр; video prompt описывает изменение во времени.",
+        "Служебные поля проверки не должны попадать внутрь Prompt to paste."
+      ],
+      "do_steps_ru": [
+        "Выберите кадры из Shot Plan, которым нужен start/key/final frame.",
+        "Напишите отдельный image prompt для каждого выбранного кадра.",
+        "После проверки кадра напишите video prompt для действия, камеры и финального состояния."
+      ],
+      "check_ru": [
+        "В image prompt нет монтажа нескольких событий.",
+        "В video prompt явно указано, что меняется и что должно сохраниться."
+      ],
+      "result_ru": "Frame Pack и набор image/video prompts.",
+      "inputs_ru": [
+        "Reference System",
+        "Shot Plan",
+        "Требования формата"
+      ],
+      "artifact": {
+        "label_ru": "Шаблон Frame Pack",
+        "status": "preview_pending",
+        "url": null
+      },
+      "builder_step": "8–9. Стартовые кадры и prompts",
+      "prerequisites": [
+        "references-and-visual-control"
+      ],
+      "next_id": "generation-routes",
+      "visibility": "public_preview",
+      "source_file": "05_IMAGE_AND_VIDEO_PROMPTS.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "1e2b55a56b4d229049a900ae3b607349ba0b67dccf31112da90d30dfa389e148",
+      "content_sha256": "1e2b55a56b4d229049a900ae3b607349ba0b67dccf31112da90d30dfa389e148",
+      "human_lesson_url": "./lessons/image-and-video-prompts.html",
+      "content_url": "./content/image-and-video-prompts.md",
+      "content_json_url": "./content/image-and-video-prompts.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/image-and-video-prompts.html"
+    },
+    {
+      "id": "generation-routes",
+      "block": 3,
+      "order": 7,
+      "title_ru": "Маршруты моделей и генерации",
+      "status": "draft",
+      "type": "understand",
+      "keywords_ru": [
+        "text-to-video",
+        "image-to-video",
+        "video-to-video",
+        "lipsync",
+        "модель"
+      ],
+      "summary_ru": "Выбрать тип генерации по задаче и входным материалам, а не по модному названию сервиса.",
+      "why_ru": "Один режим не одинаково хорошо удерживает лицо, продукт, точный финальный кадр, текст и сложное движение.",
+      "understand_ru": [
+        "Когда нужен image-to-video, text-to-video, reference route или video-to-video.",
+        "Почему точный продукт и повторяющийся персонаж требуют более контролируемого входа."
+      ],
+      "do_steps_ru": [
+        "Для каждого сегмента отметьте главный риск: identity, действие, камера, текст или финальный кадр.",
+        "Выберите маршрут, который использует уже подготовленные опоры.",
+        "Запишите один дешёвый тест до серии генераций."
+      ],
+      "check_ru": [
+        "Выбранный режим принимает нужные входы.",
+        "Нет обещания, что один сервис решит все сцены одинаково."
+      ],
+      "result_ru": "Карта маршрутов генерации по сегментам.",
+      "inputs_ru": [
+        "Frame Pack",
+        "Controlled segments",
+        "Ограничения доступных моделей"
+      ],
+      "artifact": {
+        "label_ru": "Карта маршрутов моделей",
+        "status": "not_public",
+        "url": null
+      },
+      "builder_step": "7. Выбрать маршрут генерации",
+      "prerequisites": [
+        "image-and-video-prompts"
+      ],
+      "next_id": "prompt-reference-library",
+      "visibility": "public_preview",
+      "source_file": "06_MODEL_WORKFLOWS_AND_ADAPTATION.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "23947045a77e467916dc7a6dbfb096030502a03b08c035e8ebff2fed45c98633",
+      "content_sha256": "23947045a77e467916dc7a6dbfb096030502a03b08c035e8ebff2fed45c98633",
+      "human_lesson_url": "./lessons/generation-routes.html",
+      "content_url": "./content/generation-routes.md",
+      "content_json_url": "./content/generation-routes.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/generation-routes.html"
+    },
+    {
+      "id": "prompt-reference-library",
+      "block": 3,
+      "order": 8,
+      "title_ru": "Библиотека примеров промптов",
+      "status": "draft",
+      "type": "understand",
+      "keywords_ru": [
+        "пример",
+        "адаптация",
+        "prompt to paste",
+        "камера",
+        "reference roles"
+      ],
+      "summary_ru": "Читать примеры как разбор механики и адаптировать их под свою сцену, а не копировать чужой ролик.",
+      "why_ru": "Готовая формулировка без понимания ролей референсов, тайминга и ограничений быстро ломается на другой задаче.",
+      "understand_ru": [
+        "Как отделить чистый prompt body от настроек и проверки.",
+        "Какие элементы примера можно переносить, а какие привязаны к конкретной сцене."
+      ],
+      "do_steps_ru": [
+        "Выберите пример того же artifact type, а не просто похожего настроения.",
+        "Замените сущности, действие, камеру и ограничения данными своей сцены.",
+        "Проверьте итог как самостоятельный Prompt to paste."
+      ],
+      "check_ru": [
+        "В промпте нет чужих персонажей или скрытой логики исходного примера.",
+        "Настройки и validation остаются снаружи prompt body."
+      ],
+      "result_ru": "Адаптированный prompt и список перенесённых принципов.",
+      "inputs_ru": [
+        "Собственный сегмент",
+        "Подходящий пример",
+        "Reference System"
+      ],
+      "artifact": {
+        "label_ru": "Публичная библиотека примеров",
+        "status": "not_public",
+        "url": null
+      },
+      "builder_step": "9. Написать prompts",
+      "prerequisites": [
+        "generation-routes"
+      ],
+      "next_id": "failure-diagnosis",
+      "visibility": "public_preview",
+      "source_file": "13_PROMPT_REFERENCE_LIBRARY.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "1a0b3b95ed26d5231cb832e1c33059649a414f782deddc22abed80514908ab43",
+      "content_sha256": "1a0b3b95ed26d5231cb832e1c33059649a414f782deddc22abed80514908ab43",
+      "human_lesson_url": "./lessons/prompt-reference-library.html",
+      "content_url": "./content/prompt-reference-library.md",
+      "content_json_url": "./content/prompt-reference-library.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/prompt-reference-library.html"
+    },
+    {
+      "id": "failure-diagnosis",
+      "block": 4,
+      "order": 9,
+      "title_ru": "Диагностика поломок",
+      "status": "draft",
+      "type": "verify",
+      "keywords_ru": [
+        "ошибка",
+        "ремонт",
+        "диагностика",
+        "следующий тест",
+        "stop rule"
+      ],
+      "summary_ru": "Превратить «мне не нравится» в наблюдаемую поломку, вероятную причину и один следующий тест.",
+      "why_ru": "Случайные переписывания промпта часто меняют несколько переменных сразу и не дают понять, что помогло.",
+      "understand_ru": [
+        "Разницу между наблюдением, причиной и исправлением.",
+        "Когда нужно остановить три одинаково неудачных прогона и сменить маршрут."
+      ],
+      "do_steps_ru": [
+        "Опишите, что видно на результате без оценочных слов.",
+        "Назовите одну наиболее вероятную причину.",
+        "Измените одну крупную переменную и запишите следующий тест."
+      ],
+      "check_ru": [
+        "Исправление связано с конкретной поломкой.",
+        "Следующий тест можно сравнить с предыдущим."
+      ],
+      "result_ru": "Карточка диагностики и следующий контролируемый тест.",
+      "inputs_ru": [
+        "Draft-варианты",
+        "Ожидаемый кадр или сегмент",
+        "Критерии Production Card"
+      ],
+      "artifact": {
+        "label_ru": "Карточка диагностики",
+        "status": "preview_pending",
+        "url": null
+      },
+      "builder_step": "11–12. Проверить draft и диагностировать поломку",
+      "prerequisites": [
+        "prompt-reference-library"
+      ],
+      "next_id": "final-production",
+      "visibility": "public_preview",
+      "source_file": "07_FAILURE_DIAGNOSIS.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "9e9733dd4e231641ff3be746f1955ff8bb5d7e4513bb59497298b96f283439fb",
+      "content_sha256": "9e9733dd4e231641ff3be746f1955ff8bb5d7e4513bb59497298b96f283439fb",
+      "human_lesson_url": "./lessons/failure-diagnosis.html",
+      "content_url": "./content/failure-diagnosis.md",
+      "content_json_url": "./content/failure-diagnosis.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/failure-diagnosis.html"
+    },
+    {
+      "id": "final-production",
+      "block": 4,
+      "order": 10,
+      "title_ru": "Winners, монтаж и финальная проверка",
+      "status": "draft",
+      "type": "build",
+      "keywords_ru": [
+        "winners",
+        "монтаж",
+        "экспорт",
+        "финальная проверка",
+        "ритм"
+      ],
+      "summary_ru": "Отобрать пригодные варианты, собрать их по источнику тайминга и проверить ролик перед экспортом.",
+      "why_ru": "Улучшение каждого draft тратит время; в монтаж должны попадать только варианты, которые уже держат смысл и continuity.",
+      "understand_ru": [
+        "Что проверяет winner gate.",
+        "Почему монтаж начинается с timing source, а не с случайного порядка красивых кадров."
+      ],
+      "do_steps_ru": [
+        "Перенесите в winners только прошедшие проверку варианты.",
+        "Разложите их по маркерам timing map и добавьте необходимые перебивки.",
+        "Проверьте смысл, ритм, identity, текст, звук и формат перед экспортом."
+      ],
+      "check_ru": [
+        "Ролик понятен без устного объяснения.",
+        "Финальный файл и рабочие документы сохранены отдельно от draft."
+      ],
+      "result_ru": "Собранный ролик, чек-лист экспорта и архив проекта.",
+      "inputs_ru": [
+        "Winners",
+        "Timing map",
+        "Аудио и титры"
+      ],
+      "artifact": {
+        "label_ru": "Чек-лист финального экспорта",
+        "status": "preview_pending",
+        "url": null
+      },
+      "builder_step": "13–16. Winners, монтаж, проверка, экспорт",
+      "prerequisites": [
+        "failure-diagnosis"
+      ],
+      "next_id": "tool-stack",
+      "visibility": "public_preview",
+      "source_file": "08_FINAL_PRODUCTION_AND_LEARNING.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "ceeb3d8f381104959736845592a76148be516faeec0dc3000af7f677623d9729",
+      "content_sha256": "ceeb3d8f381104959736845592a76148be516faeec0dc3000af7f677623d9729",
+      "human_lesson_url": "./lessons/final-production.html",
+      "content_url": "./content/final-production.md",
+      "content_json_url": "./content/final-production.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/final-production.html"
+    },
+    {
+      "id": "tool-stack",
+      "block": 5,
+      "order": 11,
+      "title_ru": "Минимальный набор инструментов",
+      "status": "draft",
+      "type": "understand",
+      "keywords_ru": [
+        "инструменты",
+        "сервисы",
+        "монтаж",
+        "хранение",
+        "workflow"
+      ],
+      "summary_ru": "Выбрать инструменты под шаги процесса и не превращать обучение в каталог подписок.",
+      "why_ru": "Инструмент полезен только тогда, когда понятно, какой вход он принимает и какой артефакт должен вернуть.",
+      "understand_ru": [
+        "Какие роли нужны: планирование, изображения, видео, звук, монтаж и архив.",
+        "Почему названия сервисов могут меняться, а производственные роли остаются."
+      ],
+      "do_steps_ru": [
+        "Для каждой роли выберите один доступный инструмент и один fallback.",
+        "Запишите ограничения форматов, длительности и референсов.",
+        "Проверьте весь минимальный маршрут на одном коротком тесте."
+      ],
+      "check_ru": [
+        "Нет дублирующих сервисов без явной причины.",
+        "Каждый инструмент привязан к конкретному выходному артефакту."
+      ],
+      "result_ru": "Минимальная карта инструментов и fallback-маршрутов.",
+      "inputs_ru": [
+        "Доступные сервисы",
+        "Бюджет и ограничения",
+        "Тип ролика"
+      ],
+      "artifact": {
+        "label_ru": "Актуальная tool matrix",
+        "status": "not_public",
+        "url": null
+      },
+      "builder_step": "Выбор инструментов для шагов 1–16",
+      "prerequisites": [
+        "final-production"
+      ],
+      "next_id": "templates-and-worksheets",
+      "visibility": "public_preview",
+      "source_file": "09_TOOL_STACK_AND_SETUP.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "5b8ebf0b8b2faec94d788ba3a1d69bf2394c15c074b81048e5112ce8c3e11322",
+      "content_sha256": "5b8ebf0b8b2faec94d788ba3a1d69bf2394c15c074b81048e5112ce8c3e11322",
+      "human_lesson_url": "./lessons/tool-stack.html",
+      "content_url": "./content/tool-stack.md",
+      "content_json_url": "./content/tool-stack.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/tool-stack.html"
+    },
+    {
+      "id": "templates-and-worksheets",
+      "block": 5,
+      "order": 12,
+      "title_ru": "Шаблоны и рабочие листы",
+      "status": "draft",
+      "type": "build",
+      "keywords_ru": [
+        "шаблон",
+        "рабочий лист",
+        "production card",
+        "журнал",
+        "чек-лист"
+      ],
+      "summary_ru": "Превратить решения курса в короткие формы, которые можно заполнять самому или вместе с AI-чатом.",
+      "why_ru": "Хороший лист не добавляет бюрократию, а удерживает решения, которые иначе придётся вспоминать после каждой ошибки.",
+      "understand_ru": [
+        "Какая форма нужна на каждом этапе.",
+        "Почему один гигантский документ хуже нескольких коротких артефактов."
+      ],
+      "do_steps_ru": [
+        "Выберите формы для замысла, тайминга, референсов, сегментов, prompts и диагностики.",
+        "Заполняйте только поля, которые влияют на следующий шаг.",
+        "После проекта сохраните выводы отдельно от разовых данных сцены."
+      ],
+      "check_ru": [
+        "Каждая форма имеет понятный выход и следующий шаг.",
+        "Нет пустых полей, созданных только «на будущее»."
+      ],
+      "result_ru": "Комплект заполненных рабочих листов проекта.",
+      "inputs_ru": [
+        "Решения предыдущих уроков",
+        "Материалы конкретного проекта"
+      ],
+      "artifact": {
+        "label_ru": "Публичный набор шаблонов",
+        "status": "preview_pending",
+        "url": null
+      },
+      "builder_step": "Артефакты шагов 1–16",
+      "prerequisites": [
+        "tool-stack"
+      ],
+      "next_id": "full-case-study",
+      "visibility": "public_preview",
+      "source_file": "10_TEMPLATES_AND_WORKSHEETS.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "50e3d6d07668bf03213207931c27cf68172bee4a20010794b121f83b7c89fa82",
+      "content_sha256": "50e3d6d07668bf03213207931c27cf68172bee4a20010794b121f83b7c89fa82",
+      "human_lesson_url": "./lessons/templates-and-worksheets.html",
+      "content_url": "./content/templates-and-worksheets.md",
+      "content_json_url": "./content/templates-and-worksheets.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/templates-and-worksheets.html"
+    },
+    {
+      "id": "full-case-study",
+      "block": 5,
+      "order": 13,
+      "title_ru": "Полный кейс: от идеи до финала",
+      "status": "preview_pending",
+      "type": "build",
+      "keywords_ru": [
+        "кейс",
+        "полный процесс",
+        "video lab",
+        "производственный тест"
+      ],
+      "summary_ru": "Проследить весь маршрут на одном проекте и увидеть, где решения курса выдерживают реальное производство.",
+      "why_ru": "Теория кажется простой по частям; кейс показывает её нагрузку, ошибки и связи между артефактами.",
+      "understand_ru": [
+        "Как один проект проходит все этапы.",
+        "Какие части кейса пока являются каркасом, а не подтверждённым proof."
+      ],
+      "do_steps_ru": [
+        "Сопоставьте этапы кейса со своими рабочими документами.",
+        "Отметьте место первой поломки и способ её диагностики.",
+        "Не используйте незавершённый кейс как обещание гарантированного результата."
+      ],
+      "check_ru": [
+        "Понятно, какие данные кейса подтверждены, а какие ещё требуют Video Lab прохода.",
+        "Маршрут переносится на другой тип ролика."
+      ],
+      "result_ru": "Карта полного прохода и список недоказанных участков.",
+      "inputs_ru": [
+        "Все артефакты блоков 1–4"
+      ],
+      "artifact": {
+        "label_ru": "Завершённый публичный кейс",
+        "status": "preview_pending",
+        "url": null
+      },
+      "builder_step": "Полный маршрут 0–16",
+      "prerequisites": [
+        "templates-and-worksheets"
+      ],
+      "next_id": "course-packaging",
+      "visibility": "public_preview",
+      "source_file": "11_CASE_STUDY_FROM_IDEA_TO_FINAL_VIDEO.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "431b24365291642c5439c1f304128599c54af48e8eb642156c14c47b2c6ab0de",
+      "content_sha256": "431b24365291642c5439c1f304128599c54af48e8eb642156c14c47b2c6ab0de",
+      "human_lesson_url": "./lessons/full-case-study.html",
+      "content_url": "./content/full-case-study.md",
+      "content_json_url": "./content/full-case-study.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/full-case-study.html"
+    },
+    {
+      "id": "course-packaging",
+      "block": 6,
+      "order": 14,
+      "title_ru": "Честная упаковка курса и будущего набора",
+      "status": "not_public",
+      "type": "understand",
+      "keywords_ru": [
+        "упаковка",
+        "продукт",
+        "рабочий набор",
+        "доказательства",
+        "статус"
+      ],
+      "summary_ru": "Отделить текущий рабочий черновик от будущего набора файлов и не обещать несуществующий SaaS, оплату или готовую выдачу.",
+      "why_ru": "Сильный продукт строится на маршруте, формах, диагностике и доказанных кейсах, а не на обещании секретного промпта.",
+      "understand_ru": [
+        "Что уже существует как курс, а что остаётся кандидатом будущего продукта.",
+        "Какие доказательства нужны до публичного обещания."
+      ],
+      "do_steps_ru": [
+        "Разделите бесплатный учебный слой, рабочие файлы и недоступные материалы.",
+        "Проверьте каждый CTA и ссылку на реальное существование.",
+        "Сформулируйте статус без слов «готово», если acceptance ещё не пройдена."
+      ],
+      "check_ru": [
+        "Нет цены, оплаты или активной выдачи без утверждённого маршрута.",
+        "Черновые материалы помечены явно."
+      ],
+      "result_ru": "Карта честных статусов и требований к будущей упаковке.",
+      "inputs_ru": [
+        "Каталог курса",
+        "Статусы материалов",
+        "Результаты реальных кейсов"
+      ],
+      "artifact": {
+        "label_ru": "Полный рабочий набор",
+        "status": "not_public",
+        "url": null
+      },
+      "builder_step": "После экспорта: упаковка и следующий маршрут",
+      "prerequisites": [
+        "full-case-study"
+      ],
+      "next_id": "source-backed-lessons",
+      "visibility": "not_public",
+      "source_file": null,
+      "source_version": null,
+      "source_sha256": null,
+      "content_sha256": null,
+      "human_lesson_url": null,
+      "content_url": null,
+      "content_json_url": null,
+      "canonical_human_url": null
+    },
+    {
+      "id": "source-backed-lessons",
+      "block": 6,
+      "order": 15,
+      "title_ru": "Производственные уроки и личная библиотека",
+      "status": "draft",
+      "type": "verify",
+      "keywords_ru": [
+        "источники",
+        "выводы",
+        "библиотека",
+        "повторяемость",
+        "следующий проект"
+      ],
+      "summary_ru": "Отбирать из источников только повторяемые производственные сигналы и сохранять выводы после каждого проекта.",
+      "why_ru": "Новости и модные названия быстро стареют; рабочее правило должно помогать принять решение в следующем ролике.",
+      "understand_ru": [
+        "Как отличить производственный сигнал от временного шума.",
+        "Как фиксировать вывод так, чтобы он не превращался в универсальное обещание."
+      ],
+      "do_steps_ru": [
+        "После проекта запишите одну подтверждённую закономерность и её границы.",
+        "Свяжите вывод с этапом Video Builder.",
+        "Выберите следующий короткий ролик для повторной проверки процесса."
+      ],
+      "check_ru": [
+        "Вывод основан на наблюдаемом результате.",
+        "Понятно, когда правило применять и когда оно не доказано."
+      ],
+      "result_ru": "Личная библиотека проверенных выводов и следующий практический маршрут.",
+      "inputs_ru": [
+        "Архив проекта",
+        "Карточки диагностики",
+        "Финальный экспорт"
+      ],
+      "artifact": {
+        "label_ru": "Журнал производственных выводов",
+        "status": "preview_pending",
+        "url": null
+      },
+      "builder_step": "16 и 18. Архив и Stop Rules",
+      "prerequisites": [
+        "course-packaging"
+      ],
+      "next_id": null,
+      "visibility": "public_preview",
+      "source_file": "14_SOURCE_BACKED_PRODUCTION_LESSONS.md",
+      "source_version": "0.1.0-local-preview",
+      "source_sha256": "ac0277d9e5b71a11de45b2cdaceb8a535c51ba7b256fdc3dd66b894b61e5a6c8",
+      "content_sha256": "ac0277d9e5b71a11de45b2cdaceb8a535c51ba7b256fdc3dd66b894b61e5a6c8",
+      "human_lesson_url": "./lessons/source-backed-lessons.html",
+      "content_url": "./content/source-backed-lessons.md",
+      "content_json_url": "./content/source-backed-lessons.json",
+      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/source-backed-lessons.html"
+    }
+  ],
+  "glossary": [
+    {
+      "id": "prompt",
+      "term_ru": "Промпт",
+      "common_ru": "Текстовый запрос к AI-модели.",
+      "ais_ru": "Чистая инструкция для конкретного артефакта: изображения, движения или управляемого сегмента. Она появляется после подготовки сцены.",
+      "lesson_id": "start-with-intent"
+    },
+    {
+      "id": "production-card",
+      "term_ru": "Production Card",
+      "common_ru": "Короткое описание проекта.",
+      "ais_ru": "Карточка смысла, длительности, формата, главного объекта, неизменных элементов и запретов до выбора генерации.",
+      "lesson_id": "production-card"
+    },
+    {
+      "id": "timing-map",
+      "term_ru": "Timing Map",
+      "common_ru": "Разметка ролика по времени.",
+      "ais_ru": "Карта событий по реальному источнику времени: аудио, речи, ритму, референсу монтажа или заявленной длительности сцены.",
+      "lesson_id": "story-and-timing"
+    },
+    {
+      "id": "full-timed-script",
+      "term_ru": "Full Timed Script",
+      "common_ru": "Подробный сценарий с таймкодами.",
+      "ais_ru": "Главный story/timing-документ production-задачи. Сегменты используют его строки, но не заменяют его.",
+      "lesson_id": "story-and-timing"
+    },
+    {
+      "id": "reference-system",
+      "term_ru": "Reference System",
+      "common_ru": "Набор картинок для вдохновения.",
+      "ais_ru": "Карта конкретных визуальных опор и их ролей: лицо, продукт, локация, стиль, движение, логотип или другая контролируемая сущность.",
+      "lesson_id": "references-and-visual-control"
+    },
+    {
+      "id": "shot-plan",
+      "term_ru": "Shot Plan / Storyboard Map",
+      "common_ru": "Список кадров будущего ролика.",
+      "ais_ru": "Производственная карта шотов из истории и тайминга: что видно, когда, зачем нужна камера и какие опоры использовать дальше.",
+      "lesson_id": "story-and-timing"
+    },
+    {
+      "id": "frame-pack",
+      "term_ru": "Frame Pack",
+      "common_ru": "Набор красивых кадров.",
+      "ais_ru": "Проверенные start, key и final frames для выбранных шотов. Они фиксируют композицию и identity до видеогенерации.",
+      "lesson_id": "image-and-video-prompts"
+    },
+    {
+      "id": "controlled-segment",
+      "term_ru": "Controlled Segment",
+      "common_ru": "Короткий кусок видео.",
+      "ais_ru": "Производственный фрагмент, который модель может выполнить как одно управляемое действие. Он может объединять несколько строк тайминга.",
+      "lesson_id": "story-and-timing"
+    },
+    {
+      "id": "generation-route",
+      "term_ru": "Маршрут генерации",
+      "common_ru": "Выбранный AI-сервис.",
+      "ais_ru": "Связка типа входа и режима: text-to-video, image-to-video, reference route, start/final frame, video-to-video или lipsync.",
+      "lesson_id": "generation-routes"
+    },
+    {
+      "id": "draft",
+      "term_ru": "Draft",
+      "common_ru": "Черновой результат.",
+      "ais_ru": "Быстрый вариант для проверки действия, identity, камеры и смысла до дорогого улучшения качества.",
+      "lesson_id": "failure-diagnosis"
+    },
+    {
+      "id": "winner",
+      "term_ru": "Winner",
+      "common_ru": "Самый красивый вариант.",
+      "ais_ru": "Вариант, прошедший проверку по таймингу, смыслу, continuity, объекту, камере и пригодности к монтажу.",
+      "lesson_id": "final-production"
+    },
+    {
+      "id": "artifact",
+      "term_ru": "Артефакт",
+      "common_ru": "Любой файл, созданный в процессе.",
+      "ais_ru": "Конкретный проверяемый результат шага: карточка, карта, кадр, промпт, список winners, монтаж или чек-лист.",
+      "lesson_id": "templates-and-worksheets"
+    },
+    {
+      "id": "stop-rule",
+      "term_ru": "Stop Rule",
+      "common_ru": "Причина остановить работу.",
+      "ais_ru": "Условие, после которого нельзя повторять тот же случайный фикс: например, три генерации подряд ломают одну и ту же вещь.",
+      "lesson_id": "failure-diagnosis"
+    }
+  ]
+}

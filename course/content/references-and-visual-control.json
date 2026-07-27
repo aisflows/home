@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "id": "references-and-visual-control",
+  "course_id": "ais-flows-ai-video-course",
+  "title_ru": "Референсы и контроль внешнего вида",
+  "summary_ru": "04. Референсы И Контроль Внешнего Вида",
+  "lifecycle": "draft",
+  "visibility": "public_preview",
+  "access": {
+    "mode": "public_preview",
+    "purchase_url": null
+  },
+  "version": "0.1.0-local-preview",
+  "source_file": "04_REFERENCES_AND_VISUAL_CONTROL.md",
+  "source_sha256": "99ec75c2b21c2d99069dab785d2597d9570d38b7f5b155170d6421354af194b1",
+  "content_sha256": "99ec75c2b21c2d99069dab785d2597d9570d38b7f5b155170d6421354af194b1",
+  "language": [
+    "ru"
+  ],
+  "prerequisites": [
+    "story-and-timing"
+  ],
+  "next_id": "image-and-video-prompts",
+  "related_artifacts": [],
+  "human_lesson_url": "./lessons/references-and-visual-control.html",
+  "content_url": "./content/references-and-visual-control.md",
+  "content_json_url": "./content/references-and-visual-control.json",
+  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/references-and-visual-control.html",
+  "citation": "AIS FLOWS AI-video course, “Референсы и контроль внешнего вида”, 0.1.0-local-preview.",
+  "license": {
+    "name": null,
+    "url": null,
+    "summary": "No public reuse license has been declared."
+  },
+  "structure": {
+    "headings": [
+      "04. Референсы И Контроль Внешнего Вида",
+      "04.0. Карта Урока",
+      "04.1. Зачем Нужны Референсы",
+      "04.2. Что Можно Удерживать Картинкой Или Контрольным Кадром",
+      "04.3. Мудборды И Банк Насмотренности",
+      "04.3.1. Как Снять Визуальные Правила С Референса",
+      "04.4. Канва-Поле Проекта",
+      "04.5. Персонаж",
+      "04.6. Объект, Продукт, Логотип",
+      "04.7. Локация",
+      "04.8. Визуальная Склейка",
+      "04.9. Уровни контроля видео",
+      "04.10. Проверка Перед Промптами",
+      "04.12. Кто За Что Отвечает В Наборе Референсов"
+    ],
+    "heading_count": 14,
+    "unordered_list_item_count": 74,
+    "ordered_list_item_count": 9,
+    "code_fence_count": 15,
+    "blockquote_count": 0,
+    "image_count": 0,
+    "link_count": 0
+  }
+}
