@@ -1,9 +1,21 @@
 {
   "schema_version": "1.0.0",
-  "deployment_status": "local_candidate_not_deployed",
+  "deployment_status": "public",
   "feed_url": "./feed.xml",
   "changelog_url": "./CHANGELOG_PUBLIC.md",
   "updates": [
+    {
+      "id": "update-2026-07-27-public-home-live",
+      "object_id": "request",
+      "item_id": null,
+      "change_type": "updated",
+      "version": null,
+      "updated_at": "2026-07-27T10:53:18Z",
+      "summary_en": "Published AIS FLOWS Home and verified the public Formspree request route, Umami browser events, agent discovery chain, and downloadable artifact integrity.",
+      "summary_ru": "Опубликован AIS FLOWS Home; на публичном сайте проверены заявка Formspree, браузерные события Umami, агентный маршрут обнаружения и целостность скачиваемого артефакта.",
+      "content_url": "./agent-manifest.json",
+      "canonical_url": "https://aisflows.github.io/home/"
+    },
     {
       "id": "update-2026-07-26-request-analytics-truth",
       "object_id": "request",

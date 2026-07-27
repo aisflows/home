@@ -4,7 +4,7 @@
     websiteId: "48b4db88-8e85-436c-96f3-fc975d3b2f36",
     scriptUrl: "https://cloud.umami.is/script.js",
     domains: ["aisflows.github.io"],
-    status: "configured_remote_control_event_observed_public_site_not_deployed",
+    status: "public_home_collection_verified",
   });
   const loopbackHosts = new Set(["127.0.0.1", "localhost"]);
   const testConfig = loopbackHosts.has(window.location.hostname)

@@ -5,7 +5,7 @@
   "name": "AIS FLOWS AI-video course",
   "locale": "ru",
   "canonical_base_url": "https://aisflows.github.io/home/course/",
-  "deployment_status": "local_candidate_not_deployed",
+  "deployment_status": "public",
   "course_status": "draft",
   "access": {
     "mode": "public_preview",
@@ -26,7 +26,7 @@
     "Use only non-null routes.",
     "not_public lessons expose no content or human route.",
     "Browser progress is not server state.",
-    "This is a local candidate and has not been publicly deployed."
+    "This public preview is live and verified."
   ],
   "lessons": [
     {

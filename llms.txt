@@ -15,9 +15,10 @@ Human discovery guide: ./AI_AGENT_DISCOVERY.md
 - Follow only verified non-null routes.
 - Validate artifact version, MIME, size, and SHA256 before download.
 - No account is required for public reading or verified free downloads.
-- Request delivery: formspree_live_delivery_confirmed_local_not_deployed.
-- Browser analytics: umami_configured_remote_control_event_observed_public_site_not_deployed.
-- No payment or public write API is active in this local candidate.
+- Deployment status: public.
+- Request delivery: formspree_public_home_delivery_verified.
+- Browser analytics: umami_public_home_collection_verified.
+- No payment or public write API is active.
 - Direct agent GET requests are not observable by browser JavaScript on static GitHub Pages.
 
 ## Objects

@@ -1,6 +1,6 @@
 # AIS FLOWS AI-video course
 
-Deployment: local candidate, not public.
+Deployment: public.
 Course manifest: ./course-agent-manifest.json
 Lesson index: ./course-content.json
 Route map: ./course-map.json

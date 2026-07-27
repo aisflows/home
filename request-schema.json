@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://aisflows.github.io/home/request-schema.json",
   "title": "AIS FLOWS public request contract",
-  "description": "Public fields sent by the AIS FLOWS request form. The Formspree receiver is configured and has local live-delivery acceptance evidence; this Home candidate is not publicly deployed.",
+  "description": "Public fields sent by the AIS FLOWS request form. The Formspree receiver and delivery from the public AIS FLOWS Home are verified.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -49,8 +49,8 @@
   "delivery": {
     "provider": "formspree",
     "status": "live_delivery_confirmed",
-    "verification_scope": "local_candidate_to_live_formspree_receiver",
-    "public_home_delivery_verified": false,
+    "verification_scope": "public_home_to_live_formspree_receiver",
+    "public_home_delivery_verified": true,
     "endpoint": "https://formspree.io/f/mqerwzgq",
     "endpoint_template": "https://formspree.io/f/{FORM_ID}",
     "configuration_point": "request.js REQUEST_RECEIVER_CONFIG.endpoint",
@@ -80,5 +80,5 @@
     "file_upload_supported": false,
     "automated_bulk_submission_allowed": false
   },
-  "deployment_status": "local_candidate_not_deployed"
+  "deployment_status": "public"
 }

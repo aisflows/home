@@ -2,8 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://aisflows.github.io/home/feed.xml</id>
   <title>AIS FLOWS public updates</title>
-  <updated>2026-07-26T16:01:40Z</updated>
+  <updated>2026-07-27T10:53:18Z</updated>
   <link href="https://aisflows.github.io/home/feed.xml" rel="self"/>
+  <entry>
+    <id>https://aisflows.github.io/home/#update-2026-07-27-public-home-live</id>
+    <title>Published AIS FLOWS Home and verified the public Formspree request route, Umami browser events, agent discovery chain, and downloadable artifact integrity.</title>
+    <updated>2026-07-27T10:53:18Z</updated>
+    <link href="https://aisflows.github.io/home/"/>
+    <summary>Published AIS FLOWS Home and verified the public Formspree request route, Umami browser events, agent discovery chain, and downloadable artifact integrity.</summary>
+  </entry>
   <entry>
     <id>https://aisflows.github.io/home/#update-2026-07-26-request-analytics-truth</id>
     <title>Recorded the configured Formspree receiver and privacy-safe Umami browser contract as locally accepted, while keeping the Home candidate explicitly not deployed.</title>

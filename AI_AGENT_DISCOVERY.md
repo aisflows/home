@@ -1,6 +1,6 @@
 # AIS FLOWS Agent Discovery
 
-Start with [agent-manifest.json](./agent-manifest.json), then read [content-model.json](./content-model.json). A null route is unavailable and its reason is stored in `route_unavailable_reasons`. This candidate is local and not deployed.
+Start with [agent-manifest.json](./agent-manifest.json), then read [content-model.json](./content-model.json). A null route is unavailable and its reason is stored in `route_unavailable_reasons`. The canonical public deployment is live and verified.
 
 ## Objects
 
@@ -28,6 +28,6 @@ Start with [agent-manifest.json](./agent-manifest.json), then read [content-mode
 - Check artifact SHA256, size, MIME, and version before download.
 - Do not infer purchase, private content, or unavailable routes.
 - Browser progress is local user state, not server state.
-- Request delivery: `formspree_live_delivery_confirmed_local_not_deployed`.
-- Browser analytics: `umami_configured_remote_control_event_observed_public_site_not_deployed`.
+- Request delivery: `formspree_public_home_delivery_verified`.
+- Browser analytics: `umami_public_home_collection_verified`.
 - No public write/admin API or payment route is active.

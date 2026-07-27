@@ -1,61 +1,61 @@
 {
   "schema_version": "3.0.0",
   "source": "content-model.json",
-  "deployment_status": "local_candidate_not_deployed",
+  "deployment_status": "public",
   "route_links": [
     {
       "id": "en",
       "label": "en",
       "url": "./index.html",
-      "status": "local_candidate_not_deployed"
+      "status": "verified"
     },
     {
       "id": "ru",
       "label": "ru",
       "url": "./ru/index.html",
-      "status": "local_candidate_not_deployed"
+      "status": "verified"
     },
     {
       "id": "request-en",
       "label": "request_en",
       "url": "./request/index.html",
-      "status": "local_candidate_not_deployed"
+      "status": "verified"
     },
     {
       "id": "request-ru",
       "label": "request_ru",
       "url": "./ru/request/index.html",
-      "status": "local_candidate_not_deployed"
+      "status": "verified"
     },
     {
       "id": "course",
       "label": "course",
       "url": "./course/index.html",
-      "status": "local_candidate_not_deployed"
+      "status": "verified"
     },
     {
       "id": "manifest",
       "label": "manifest",
       "url": "./agent-manifest.json",
-      "status": "local_candidate_not_deployed"
+      "status": "verified"
     },
     {
       "id": "artifacts",
       "label": "artifacts",
       "url": "./artifacts.json",
-      "status": "local_candidate_not_deployed"
+      "status": "verified"
     },
     {
       "id": "updates",
       "label": "updates",
       "url": "./updates.json",
-      "status": "local_candidate_not_deployed"
+      "status": "verified"
     },
     {
       "id": "feed",
       "label": "feed",
       "url": "./feed.xml",
-      "status": "local_candidate_not_deployed"
+      "status": "verified"
     }
   ],
   "external_links": [

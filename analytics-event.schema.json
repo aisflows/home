@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://aisflows.github.io/home/analytics-event.schema.json",
   "title": "AIS FLOWS privacy-safe browser runtime event",
-  "description": "Exact allowlisted event object emitted to window.AIS_FLOWS_ANALYTICS_EVENTS and aisflows:event by analytics.js. Umami is configured and has controlled local acceptance evidence; the current Home candidate is not publicly deployed and browser analytics do not observe direct agent fetches.",
+  "description": "Exact allowlisted event object emitted to window.AIS_FLOWS_ANALYTICS_EVENTS and aisflows:event by analytics.js. Umami browser collection is verified from the public Home; browser analytics do not observe direct agent fetches.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -27,7 +27,7 @@
       "const": "2.0.0"
     },
     "collection_status": {
-      "const": "configured_remote_control_event_observed_public_site_not_deployed"
+      "const": "public_home_collection_verified"
     },
     "event_id": {
       "type": "string",
@@ -137,7 +137,7 @@
     "local_event_target": "window.AIS_FLOWS_ANALYTICS_EVENTS and aisflows:event",
     "provider_call": "window.umami.track(event_name, providerPayload)",
     "provider_payload_schema": "#/$defs/umamiPayload",
-    "collection_status": "configured_remote_control_event_observed_public_site_not_deployed"
+    "collection_status": "public_home_collection_verified"
   },
   "x-ais-flows-privacy": {
     "allowlisted_runtime_fields_only": true,

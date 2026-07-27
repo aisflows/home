@@ -1,6 +1,14 @@
 # AIS FLOWS Public Changelog
 
-Deployment status: `local_candidate_not_deployed`. Entries describe the local candidate and are not proof of public deployment.
+Deployment status: `public`.
+
+## 2026-07-27 · update-2026-07-27-public-home-live
+
+- Object: `request`
+- Change: `updated`
+- Version: `unversioned`
+- EN: Published AIS FLOWS Home and verified the public Formspree request route, Umami browser events, agent discovery chain, and downloadable artifact integrity.
+- RU: Опубликован AIS FLOWS Home; на публичном сайте проверены заявка Formspree, браузерные события Umami, агентный маршрут обнаружения и целостность скачиваемого артефакта.
 
 ## 2026-07-26 · update-2026-07-26-request-analytics-truth
 

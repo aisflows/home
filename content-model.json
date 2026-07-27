@@ -2,7 +2,7 @@
   "schema_version": "3.0.0",
   "canonical_brand": "AIS FLOWS",
   "deployment": {
-    "status": "local_candidate_not_deployed",
+    "status": "public",
     "public_deploy_allowed": false,
     "base_url": "https://aisflows.github.io/home/"
   },
@@ -688,14 +688,14 @@
       "title_ru": "Оставить заявку",
       "short_description_en": "Short project request form with an email fallback.",
       "short_description_ru": "Короткая форма заявки с запасным email-маршрутом.",
-      "description_en": "The Formspree receiver is configured and has local live-delivery acceptance evidence. This Home candidate is not publicly deployed; email remains the explicit fallback.",
-      "description_ru": "Получатель Formspree настроен и имеет локальное подтверждение реальной доставки. Этот кандидат Home публично не развёрнут; email остаётся явным запасным маршрутом.",
+      "description_en": "The Formspree receiver is configured and verified from the public Home. Email remains the explicit fallback.",
+      "description_ru": "Получатель Formspree настроен и проверен с публичного Home. Email остаётся явным запасным маршрутом.",
       "lifecycle": "published",
-      "status": "receiver_configured_local_acceptance_not_deployed",
+      "status": "receiver_public_home_delivery_verified",
       "route_status": "verified",
       "version": null,
-      "updated_at": "2026-07-26T16:01:40Z",
-      "last_verified": "2026-07-26",
+      "updated_at": "2026-07-27T10:53:18Z",
+      "last_verified": "2026-07-27",
       "language": [
         "en",
         "ru"
@@ -757,8 +757,8 @@
       "display": {
         "category": "contact",
         "order": 1,
-        "status_label_en": "Configured locally",
-        "status_label_ru": "Настроено локально",
+        "status_label_en": "Public delivery verified",
+        "status_label_ru": "Публичная отправка проверена",
         "action_label_en": "Open request",
         "action_label_ru": "Открыть заявку",
         "tags_en": [],
@@ -931,9 +931,9 @@
     }
   ],
   "constraints": {
-    "public_deploy": "github_pages_owner_approval_required",
-    "request_receiver": "formspree_live_delivery_confirmed_local_not_deployed",
-    "analytics_provider": "umami_configured_remote_control_event_observed_public_site_not_deployed",
+    "public_deploy": "github_pages_public_live_verified",
+    "request_receiver": "formspree_public_home_delivery_verified",
+    "analytics_provider": "umami_public_home_collection_verified",
     "payment_and_delivery": "not_selected_not_proven",
     "production_base_url": "https://aisflows.github.io/home/",
     "server_agent_analytics": "unavailable_static_host_does_not_observe_direct_agent_fetches"
@@ -984,6 +984,18 @@
     ]
   },
   "change_log": [
+    {
+      "id": "update-2026-07-27-public-home-live",
+      "object_id": "request",
+      "item_id": null,
+      "change_type": "updated",
+      "version": null,
+      "updated_at": "2026-07-27T10:53:18Z",
+      "summary_en": "Published AIS FLOWS Home and verified the public Formspree request route, Umami browser events, agent discovery chain, and downloadable artifact integrity.",
+      "summary_ru": "Опубликован AIS FLOWS Home; на публичном сайте проверены заявка Formspree, браузерные события Umami, агентный маршрут обнаружения и целостность скачиваемого артефакта.",
+      "content_url": "./agent-manifest.json",
+      "canonical_url": "https://aisflows.github.io/home/"
+    },
     {
       "id": "update-2026-07-26-request-analytics-truth",
       "object_id": "request",
