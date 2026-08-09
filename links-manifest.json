@@ -19,13 +19,13 @@
       "id": "skills-en",
       "label": "skills_en",
       "url": "./skills/index.html",
-      "status": "local_candidate_not_deployed"
+      "status": "verified"
     },
     {
       "id": "skills-ru",
       "label": "skills_ru",
       "url": "./ru/skills/index.html",
-      "status": "local_candidate_not_deployed"
+      "status": "verified"
     },
     {
       "id": "media-en",
