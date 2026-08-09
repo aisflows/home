@@ -12,12 +12,13 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="AIS FLOWS Home V0">
     <meta property="og:description" content="AI media production, workflows, and vibe-coded tools by Andrei Spirydovich.">
-    <meta property="og:image" content="./assets/proofline-featured.png">
+    <meta property="og:image" content="https://aisflows.github.io/home/assets/founder/ais-flows-founder-hero-approved-desktop-1920x1080.jpg">
+    <meta property="og:image:alt" content="Andrei Spirydovich in the AIS FLOWS studio.">
     <meta property="og:url" content="https://aisflows.github.io/home/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AIS FLOWS Home V0">
     <meta name="twitter:description" content="AI media production, workflows, and vibe-coded tools by Andrei Spirydovich.">
-    <meta name="twitter:image" content="./assets/proofline-featured.png">
+    <meta name="twitter:image" content="https://aisflows.github.io/home/assets/founder/ais-flows-founder-hero-approved-desktop-1920x1080.jpg">
     <link rel="alternate" type="application/json" title="AIS FLOWS Agent Manifest" href="./agent-manifest.json">
     <link rel="alternate" type="text/plain" title="AIS FLOWS LLM Index" href="./llms.txt">
     <link rel="icon" href="data:,">
@@ -38,12 +39,24 @@
     <header class="shell topbar" aria-label="Primary">
       <a class="brand" href="./index.html">AIS FLOWS</a>
       <nav class="nav" aria-label="Main routes">
+          <a href="#media">Media</a>
         <a href="#products">Products</a>
-        <a href="#media">Media</a>
+        <a href="#course">Course</a>
         <a href="#links">Links</a>
         <button class="nav-request button" type="button" data-open-request data-analytics-event="request_form_open" data-action-id="request_open"><span class="topbar-request-full">Start a Project</span><span class="topbar-request-short">Project</span></button>
         <a class="lang" href="./ru/">RU</a>
       </nav>
+      <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-controls="mobile-nav-menu" aria-expanded="false" data-mobile-menu-toggle>
+        <span class="mobile-menu-icon" aria-hidden="true"></span>
+      </button>
+      <div class="mobile-nav-panel" id="mobile-nav-menu" data-mobile-menu hidden>
+          <a href="#media">Media</a>
+        <a href="#products">Products</a>
+        <a href="#course">Course</a>
+        <a href="#links">Links</a>
+        <button type="button" data-open-request data-analytics-event="request_form_open" data-action-id="request_open_mobile">Start a Project</button>
+        <a href="./ru/">RU</a>
+      </div>
     </header>
 
     <main id="main-content">
@@ -58,16 +71,33 @@
           </div>
         </div>
 
-        <aside class="proof-panel" aria-label="Current featured product" data-motion="proof-panel">
-          <img class="proof-visual" src="./assets/proofline-featured.png" alt="AIS FLOWS Proofline release poster.">
-          <p class="panel-label">LATEST RELEASE</p>
-          <h2 class="proof-title">Proofline</h2>
-          <p class="proof-text">5-skill pack for agent chats: check product readiness before fake "ready".</p>
-          <div class="meta-row" aria-label="Proofline status">
-            <span class="tag accent">Release</span>
-          </div>
-          <a target="_blank" rel="noopener noreferrer" class="card-link" data-analytics-event="release_open" data-action-id="release_open" data-object-id="proofline" href="https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5">Open Release</a>
-        </aside>
+        <figure class="hero-portrait" data-motion="hero-visual">
+          <picture>
+            <source media="(max-width: 880px)" srcset="./assets/founder/ais-flows-founder-hero-approved-mobile-1600x2000.webp" type="image/webp">
+            <source media="(max-width: 880px)" srcset="./assets/founder/ais-flows-founder-hero-approved-mobile-1080x1350.jpg" type="image/jpeg">
+            <source srcset="./assets/founder/ais-flows-founder-hero-approved-desktop-2560x1440.webp" type="image/webp">
+            <img class="proof-visual hero-portrait-image" src="./assets/founder/ais-flows-founder-hero-approved-desktop-1920x1080.jpg" alt="Andrei Spirydovich in the AIS FLOWS studio." width="1920" height="1080" fetchpriority="high" decoding="async">
+          </picture>
+        </figure>
+      </section>
+
+      <section id="media" class="shell section" aria-labelledby="media-label">
+        <div class="section-head media-section-head" data-motion="section-head">
+          <p id="media-label" class="section-label">Media</p>
+        </div>
+        <!-- GENERATED:media:start -->
+        <div class="trailer-card trailer-card-embed" aria-label="YouTube trailer player" data-motion="media">
+          <button class="youtube-poster" type="button" aria-label="Play AIS FLOWS trailer" data-youtube-embed="https://www.youtube.com/embed/DDpVQ53pnAI?rel=0&modestbranding=1&playsinline=1&autoplay=1" data-youtube-title="AIS FLOWS trailer"><img src="./assets/media/aisflows-youtube-trailer-poster.jpg" alt=""><span class="trailer-play" aria-hidden="true"></span></button>
+          <a class="trailer-fallback" target="_blank" rel="noopener noreferrer" data-analytics-event="featured_media_play" data-action-id="featured_media_open" data-object-id="featured-youtube-trailer" href="https://www.youtube.com/watch?v=DDpVQ53pnAI">Open trailer on YouTube</a>
+        </div>
+        <div class="media-preview-grid shorts-grid" aria-label="Media previews" data-motion="media-grid">
+          <button class="media-preview-card poster-a" type="button" aria-label="Open JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising media preview" data-media-id="jbl-jurassic-park" data-media-title="JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising" data-media-format="vertical" data-media-src="./assets/media/aisflows-media-jbl-jurassic-park-web.mp4"><span class="preview-poster"><img class="preview-image" src="./assets/media/aisflows-media-jbl-jurassic-park-poster.jpg" alt="JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising poster."></span><span class="media-card-copy"><strong class="media-card-title">JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising</strong><span class="media-card-role">FULL</span></span></button>
+          <button class="media-preview-card poster-b" type="button" aria-label="Open Interstellar: Miller&#039;s Planet Is the Worst Resort in the Universe | AI Fan Trailer media preview" data-media-id="interstellar-millers-planet" data-media-title="Interstellar: Miller&#039;s Planet Is the Worst Resort in the Universe | AI Fan Trailer" data-media-format="vertical" data-media-src="./assets/media/aisflows-media-interstellar-millers-planet-web.mp4"><span class="preview-poster"><img class="preview-image" src="./assets/media/aisflows-media-interstellar-millers-planet-poster.jpg" alt="Interstellar: Miller&#039;s Planet Is the Worst Resort in the Universe | AI Fan Trailer poster."></span><span class="media-card-copy"><strong class="media-card-title">Interstellar: Miller&#039;s Planet Is the Worst Resort in the Universe | AI Fan Trailer</strong><span class="media-card-role">FULL</span></span></button>
+          <button class="media-preview-card poster-c" type="button" aria-label="Open DOOM: THE BATTLEFIELD IS EARTH | AI Fan Trailer media preview" data-media-id="doom-battlefield-earth" data-media-title="DOOM: THE BATTLEFIELD IS EARTH | AI Fan Trailer" data-media-format="vertical" data-media-src="./assets/media/aisflows-media-doom-battlefield-earth-web.mp4"><span class="preview-poster"><img class="preview-image" src="./assets/media/aisflows-media-doom-battlefield-earth-poster.jpg" alt="DOOM: THE BATTLEFIELD IS EARTH | AI Fan Trailer poster."></span><span class="media-card-copy"><strong class="media-card-title">DOOM: THE BATTLEFIELD IS EARTH | AI Fan Trailer</strong><span class="media-card-role">FULL</span></span></button>
+          <button class="media-preview-card poster-d" type="button" aria-label="Open THE WITCHER: Monsters &amp; Men | AI Fan Trailer media preview" data-media-id="witcher-monsters-men" data-media-title="THE WITCHER: Monsters &amp; Men | AI Fan Trailer" data-media-format="vertical" data-media-src="./assets/media/aisflows-media-witcher-monsters-men-web.mp4"><span class="preview-poster"><img class="preview-image" src="./assets/media/aisflows-media-witcher-monsters-men-poster.jpg" alt="THE WITCHER: Monsters &amp; Men | AI Fan Trailer poster."></span><span class="media-card-copy"><strong class="media-card-title">THE WITCHER: Monsters &amp; Men | AI Fan Trailer</strong><span class="media-card-role">FULL</span></span></button>
+        </div>
+        <a class="media-catalog-link" href="./media/">View all media<span aria-hidden="true">→</span></a>
+<!-- GENERATED:media:end -->
       </section>
 
       <section id="products" class="shell section" aria-labelledby="products-title">
@@ -79,16 +109,22 @@
 
         <div class="category-grid">
           <!-- GENERATED:skills:start -->
-          <article class="category-card" data-motion="card">
+          <article class="category-card skills-card" data-motion="card">
+            <p class="category-release-label">Skills</p>
             <img class="category-media" src="./assets/cards/category-skills-16x9.jpeg" alt="AIS FLOWS Skills category visual.">
             <div class="category-body">
               <details class="category-details" open>
                 <summary>Released skills</summary>
                 <div class="release-list" aria-label="Released skills">
                   <div class="release-row">
-                    <span class="release-copy"><span class="release-name">Proofline</span><span class="release-desc">Five-skill pack for checking product readiness with a clear owner/agent report.</span><span class="release-chip-row" aria-label="Proofline tags"><span class="release-chip">Release</span><span class="release-chip">5-skill pack</span></span></span>
-                    <img class="release-thumb" src="./assets/proofline-square.png" alt="">
-                    <a target="_blank" rel="noopener noreferrer" data-analytics-event="release_open" data-object-id="proofline" href="https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5">Open Release</a>
+                    <span class="release-copy"><span class="release-name">Skill Operations Pack</span><span class="release-desc">Decide what an approved discovery should become before it enters your skill library.</span><span class="release-chip-row" aria-label="Skill Operations Pack tags"><span class="release-chip">Release</span><span class="release-chip">0.1.0-rc6</span></span></span>
+                    <img class="release-thumb" src="./assets/cards/skill-operations-pack-release-cover-16x9.png" alt="">
+                    <a target="_blank" rel="noopener noreferrer" data-analytics-event="release_open" data-object-id="skill-operations-pack" href="https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6">Open Release</a>
+                  </div>
+                  <div class="release-row">
+                    <span class="release-copy"><span class="release-name">Skill Cleaner</span><span class="release-desc">Six-skill workflow pack for turning messy AI-agent skill folders into a clean usable library.</span><span class="release-chip-row" aria-label="Skill Cleaner tags"><span class="release-chip">Release</span><span class="release-chip">Workflow pack</span></span></span>
+                    <img class="release-thumb" src="./assets/cards/skill-cleaner-github-preview.jpg" alt="">
+                    <a target="_blank" rel="noopener noreferrer" data-analytics-event="release_open" data-object-id="skill-cleaner" href="https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001">Open Release</a>
                   </div>
                   <div class="release-row">
                     <span class="release-copy"><span class="release-name">Ready Gate</span><span class="release-desc">One-skill readiness gate for checking handoff quality before a product is called ready.</span><span class="release-chip-row" aria-label="Ready Gate tags"><span class="release-chip">Release</span><span class="release-chip">1-skill gate</span></span></span>
@@ -96,12 +132,13 @@
                     <a target="_blank" rel="noopener noreferrer" data-analytics-event="release_open" data-object-id="ready-gate" href="https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1">Open Release</a>
                   </div>
                   <div class="release-row">
-                    <span class="release-copy"><span class="release-name">Skill Cleaner</span><span class="release-desc">Six-skill workflow pack for turning messy AI-agent skill folders into a clean usable library.</span><span class="release-chip-row" aria-label="Skill Cleaner tags"><span class="release-chip">Release</span><span class="release-chip">Workflow pack</span></span></span>
-                    <img class="release-thumb" src="./assets/cards/skill-cleaner-github-preview.jpg" alt="">
-                    <a target="_blank" rel="noopener noreferrer" data-analytics-event="release_open" data-object-id="skill-cleaner" href="https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001">Open Release</a>
+                    <span class="release-copy"><span class="release-name">Proofline</span><span class="release-desc">Five-skill pack for checking product readiness with a clear owner/agent report.</span><span class="release-chip-row" aria-label="Proofline tags"><span class="release-chip">Release</span><span class="release-chip">5-skill pack</span></span></span>
+                    <img class="release-thumb" src="./assets/proofline-square.png" alt="">
+                    <a target="_blank" rel="noopener noreferrer" data-analytics-event="release_open" data-object-id="proofline" href="https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5">Open Release</a>
                   </div>
                 </div>
               </details>
+              <a class="category-catalog-link" href="./skills/">View all skills<span aria-hidden="true">→</span></a>
             </div>
           </article>
 <!-- GENERATED:skills:end -->
@@ -140,22 +177,58 @@
         </div>
       </section>
 
-      <section id="media" class="shell section" aria-labelledby="media-label">
-        <div class="section-head media-section-head" data-motion="section-head">
-          <p id="media-label" class="section-label">Media</p>
+      <section id="course" class="shell section course-section" aria-labelledby="course-title">
+        <p class="section-label">Course</p>
+        <div class="course-band" data-motion="card">
+          <div class="surface-copy">
+            <p class="surface-kicker">Public learning route</p>
+            <h2 id="course-title">AI Video Course — Public Preview</h2>
+            <p>15 lessons covering the current AIS FLOWS AI-video workflow. The course is still being refined.</p>
+          </div>
+          <div class="surface-actions">
+            <span class="surface-meta">15 lessons</span>
+            <a class="button primary" href="./course/index.html">Open course</a>
+          </div>
         </div>
-        <!-- GENERATED:media:start -->
-        <div class="trailer-card trailer-card-embed" aria-label="YouTube trailer player" data-motion="media">
-          <button class="youtube-poster" type="button" aria-label="Play AIS FLOWS trailer" data-youtube-embed="https://www.youtube.com/embed/DDpVQ53pnAI?rel=0&modestbranding=1&playsinline=1&autoplay=1" data-youtube-title="AIS FLOWS trailer"><img src="./assets/media/aisflows-youtube-trailer-poster.jpg" alt=""><span class="trailer-play" aria-hidden="true"></span></button>
-          <a class="trailer-fallback" target="_blank" rel="noopener noreferrer" data-analytics-event="featured_media_play" data-action-id="featured_media_open" data-object-id="featured-youtube-trailer" href="https://www.youtube.com/watch?v=DDpVQ53pnAI">Open trailer on YouTube</a>
+      </section>
+
+      <section id="founder" class="shell section founder-section" aria-labelledby="founder-title">
+        <p class="section-label">Founder</p>
+        <div class="founder-band" data-motion="card">
+          <div class="surface-copy">
+            <p class="surface-kicker">Authored working system</p>
+            <h2 id="founder-title">Andrei Spirydovich</h2>
+            <p>Almost 20 years across sound, music, sound design, and multimedia. In recent years, his work has expanded into AI media production. AIS FLOWS is his authored working system for AI media, workflows, and tools.</p>
+          </div>
+          <div class="founder-links" aria-label="Founder profiles">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/aisflows">GitHub</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/andrei-spirydovich-71924b339/">LinkedIn</a>
+          </div>
         </div>
-        <div class="media-preview-grid shorts-grid" aria-label="Shorts previews" data-motion="media-grid">
-          <button class="media-preview-card poster-a" type="button" aria-label="Open 28 Days Later media preview" data-media-title="28 Days Later" data-media-format="vertical" data-media-src="./assets/media/aisflows-preview-28-days-later-web.mp4"><span class="preview-poster" aria-hidden="true"><img class="preview-image" src="./assets/media/aisflows-preview-28-days-later-poster.jpg" alt=""></span></button>
-          <button class="media-preview-card poster-b" type="button" aria-label="Open Dead Space media preview" data-media-title="Dead Space" data-media-format="vertical" data-media-src="./assets/media/aisflows-preview-dead-space-web.mp4"><span class="preview-poster" aria-hidden="true"><img class="preview-image" src="./assets/media/aisflows-preview-dead-space-poster.jpg" alt=""></span></button>
-          <button class="media-preview-card poster-c" type="button" aria-label="Open Godzilla media preview" data-media-title="Godzilla" data-media-format="vertical" data-media-src="./assets/media/aisflows-preview-godzilla-web.mp4"><span class="preview-poster" aria-hidden="true"><img class="preview-image" src="./assets/media/aisflows-preview-godzilla-poster.jpg" alt=""></span></button>
-          <button class="media-preview-card poster-d" type="button" aria-label="Open Predator media preview" data-media-title="Predator" data-media-format="vertical" data-media-src="./assets/media/aisflows-preview-predator-web.mp4"><span class="preview-poster" aria-hidden="true"><img class="preview-image" src="./assets/media/aisflows-preview-predator-poster.jpg" alt=""></span></button>
+      </section>
+
+      <section id="faq" class="shell section faq-section" aria-labelledby="faq-title">
+        <div class="section-head" data-motion="section-head">
+          <p id="faq-title" class="section-label">FAQ</p>
         </div>
-<!-- GENERATED:media:end -->
+        <div class="faq-list">
+          <details><summary>What is AIS FLOWS?</summary><p>AIS FLOWS is Andrei Spirydovich's authored working system for AI media production, workflows, and vibe-coded tools.</p></details>
+          <details><summary>What is available now?</summary><p>The Home currently provides Media, the public course preview, released skills, and the Start a Project request route.</p></details>
+          <details><summary>Is the course finished?</summary><p>No. It is a public preview with 15 lessons and is still being refined.</p></details>
+          <details><summary>Can I download Systems or Apps?</summary><p>Not yet. Systems and Apps remain status-only until real public release files and verified routes exist.</p></details>
+          <details><summary>How do I start a project?</summary><p>Use Start a Project and choose email or Telegram. You can add a materials URL; no account or file upload is required.</p></details>
+        </div>
+      </section>
+
+      <section id="contact" class="shell section contact-section" aria-labelledby="contact-title">
+        <div class="contact-band" data-motion="card">
+          <div class="surface-copy">
+            <p class="section-label">Contact</p>
+            <h2 id="contact-title">Have a concrete project?</h2>
+            <p>Send a short request without an account or file upload. Email fallback remains available.</p>
+          </div>
+          <button class="button primary" type="button" data-open-request data-analytics-event="request_form_open" data-action-id="request_open_lower">Start a Project</button>
+        </div>
       </section>
 
       <section id="links" class="shell section" aria-labelledby="links-title">
@@ -184,7 +257,7 @@
     <footer class="shell footer" data-motion="footer">
       <strong>AIS FLOWS</strong>
       <p>Official contact: hitmesound@gmail.com. No guaranteed results. AI-assisted media is disclosed where relevant.</p>
-      <a data-agent-discovery href="./AI_AGENT_DISCOVERY.md">For AI agents</a>
+      <div class="footer-routes"><a href="./privacy/">Privacy</a><a data-agent-discovery href="./AI_AGENT_DISCOVERY.md">For AI agents</a></div>
     </footer>
     <div class="media-modal" id="media-modal" aria-hidden="true">
       <div class="media-modal-backdrop" data-close-modal></div>
