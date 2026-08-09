@@ -4,8 +4,57 @@
   const finePointer = window.matchMedia("(pointer: fine)");
   const motionItems = [...document.querySelectorAll("[data-motion]")];
   const hero = document.querySelector(".hero");
-  const proofPanel = document.querySelector(".proof-panel");
-  const proofVisual = proofPanel?.querySelector(".proof-visual");
+  const topbar = document.querySelector(".topbar");
+  const menuToggle = document.querySelector("[data-mobile-menu-toggle]");
+  const mobileMenu = document.querySelector("[data-mobile-menu]");
+
+  const syncTopbar = () => {
+    topbar?.classList.toggle("is-scrolled", window.scrollY > 8);
+  };
+  syncTopbar();
+  window.addEventListener("scroll", syncTopbar, { passive: true });
+
+  const closeMobileMenu = (restoreFocus = false) => {
+    if (!menuToggle || !mobileMenu) return;
+    menuToggle.setAttribute("aria-expanded", "false");
+    mobileMenu.hidden = true;
+    document.body.classList.remove("nav-open");
+    if (restoreFocus) menuToggle.focus();
+  };
+
+  const openMobileMenu = () => {
+    if (!menuToggle || !mobileMenu) return;
+    menuToggle.setAttribute("aria-expanded", "true");
+    mobileMenu.hidden = false;
+    document.body.classList.add("nav-open");
+  };
+
+  menuToggle?.addEventListener("click", () => {
+    if (menuToggle.getAttribute("aria-expanded") === "true") {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  });
+
+  mobileMenu?.addEventListener("click", (event) => {
+    const target = event.target;
+    if (target instanceof Element && target.closest("a, button")) {
+      closeMobileMenu();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!mobileMenu || !menuToggle || mobileMenu.hidden) return;
+    const target = event.target;
+    if (target instanceof Node && !mobileMenu.contains(target) && !menuToggle.contains(target)) {
+      closeMobileMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && mobileMenu && !mobileMenu.hidden) closeMobileMenu(true);
+  });
 
   if (reducedMotion.matches) {
     root.classList.add("motion-reduced");
@@ -37,14 +86,9 @@
   );
 
   let heroFrame = 0;
-  let proofFrame = 0;
   const scheduleHero = (callback) => {
     window.cancelAnimationFrame(heroFrame);
     heroFrame = window.requestAnimationFrame(callback);
-  };
-  const scheduleProof = (callback) => {
-    window.cancelAnimationFrame(proofFrame);
-    proofFrame = window.requestAnimationFrame(callback);
   };
 
   hero?.addEventListener("pointermove", (event) => {
@@ -61,25 +105,5 @@
   hero?.addEventListener("pointerleave", () => {
     hero.style.removeProperty("--signal-shift-x");
     hero.style.removeProperty("--signal-shift-y");
-  });
-
-  proofPanel?.addEventListener("pointermove", (event) => {
-    if (!finePointer.matches) return;
-    const bounds = proofPanel.getBoundingClientRect();
-    const x = (event.clientX - bounds.left) / bounds.width - 0.5;
-    const y = (event.clientY - bounds.top) / bounds.height - 0.5;
-    scheduleProof(() => {
-      proofPanel.style.setProperty("--proof-rotate-x", `${(-y * 3).toFixed(2)}deg`);
-      proofPanel.style.setProperty("--proof-rotate-y", `${(x * 3).toFixed(2)}deg`);
-      proofVisual?.style.setProperty("--proof-image-x", `${(x * 12).toFixed(2)}px`);
-      proofVisual?.style.setProperty("--proof-image-y", `${(y * 12).toFixed(2)}px`);
-    });
-  });
-
-  proofPanel?.addEventListener("pointerleave", () => {
-    proofPanel.style.removeProperty("--proof-rotate-x");
-    proofPanel.style.removeProperty("--proof-rotate-y");
-    proofVisual?.style.removeProperty("--proof-image-x");
-    proofVisual?.style.removeProperty("--proof-image-y");
   });
 })();

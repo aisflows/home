@@ -12,6 +12,8 @@
   "discovery": {
     "canonical_catalog": "./content-model.json",
     "catalog_schema": "./content-model.schema.json",
+    "skills_catalog": "./skills/skills-index.json",
+    "media_catalog": "./media/media-index.json",
     "artifacts": "./artifacts.json",
     "artifact_schema": "./artifacts.schema.json",
     "updates": "./updates.json",
@@ -23,11 +25,15 @@
     "human_agent_index": "./AI_AGENT_DISCOVERY.md",
     "llm_index": "./llms.txt",
     "request_schema": "./request-schema.json",
+    "privacy_en": "./privacy/index.html",
+    "privacy_ru": "./ru/privacy/index.html",
     "course_manifest": "./course/course-agent-manifest.json",
     "sitemap": "./sitemap.xml"
   },
   "public_capabilities": [
     "read_catalog",
+    "read_skills_catalog",
+    "read_media_catalog",
     "search_entities",
     "read_direct_content_when_non_null",
     "read_updates",
@@ -35,6 +41,305 @@
     "download_verified_artifacts",
     "open_request_page_after_user_confirmation"
   ],
+  "skills_catalog": {
+    "deployment_status": "local_candidate_not_deployed",
+    "catalog_en": "./skills/index.html",
+    "catalog_ru": "./ru/skills/index.html",
+    "machine_index": "./skills/skills-index.json",
+    "skills": [
+      {
+        "id": "skill-operations-pack",
+        "title_en": "Skill Operations Pack",
+        "title_ru": "Skill Operations Pack",
+        "version": "0.1.0-rc6",
+        "lifecycle": "released",
+        "status": "released",
+        "route_status": "verified",
+        "primary_action": "open_release",
+        "release_url": "https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6",
+        "action_url": "https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6",
+        "download_url": "https://github.com/aisflows/skill-operations-pack/releases/download/v0.1.0-rc6/ais-flows-skill-operations-pack-0.1.0-rc6.zip",
+        "image_url": "https://aisflows.github.io/home/assets/cards/skill-operations-pack-release-cover-16x9.png",
+        "unavailable_reason": null
+      },
+      {
+        "id": "skill-cleaner",
+        "title_en": "Skill Cleaner",
+        "title_ru": "Skill Cleaner",
+        "version": "v0.1.0-release-001",
+        "lifecycle": "released",
+        "status": "released",
+        "route_status": "verified",
+        "primary_action": "open_release",
+        "release_url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001",
+        "action_url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001",
+        "download_url": null,
+        "image_url": "https://aisflows.github.io/home/assets/cards/skill-cleaner-github-preview.jpg",
+        "unavailable_reason": null
+      },
+      {
+        "id": "ready-gate",
+        "title_en": "Ready Gate",
+        "title_ru": "Ready Gate",
+        "version": "v0.1.0-ready-gate-rc1",
+        "lifecycle": "released",
+        "status": "released",
+        "route_status": "verified",
+        "primary_action": "open_release",
+        "release_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1",
+        "action_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1",
+        "download_url": "https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip",
+        "image_url": "https://aisflows.github.io/home/assets/cards/ready-gate-release-cover-16x9.jpeg",
+        "unavailable_reason": null
+      },
+      {
+        "id": "proofline",
+        "title_en": "Proofline",
+        "title_ru": "Proofline",
+        "version": "v0.2.0-rc5",
+        "lifecycle": "released",
+        "status": "released",
+        "route_status": "verified",
+        "primary_action": "open_release",
+        "release_url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5",
+        "action_url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5",
+        "download_url": null,
+        "image_url": "https://aisflows.github.io/home/assets/proofline-square.png",
+        "unavailable_reason": null
+      }
+    ]
+  },
+  "media_catalog": {
+    "deployment_status": "local_candidate_not_deployed",
+    "catalog_en": "./media/index.html",
+    "catalog_ru": "./ru/media/index.html",
+    "machine_index": "./media/media-index.json",
+    "featured_trailer": {
+      "id": "featured-youtube-trailer",
+      "route_slug": "featured-youtube-trailer",
+      "title_en": "AIS FLOWS trailer",
+      "title_ru": "Трейлер AIS FLOWS",
+      "description_en": "Featured trailer and eight confirmed AIS FLOWS media works.",
+      "description_ru": "Главный трейлер и восемь подтверждённых медиаработ AIS FLOWS.",
+      "media_kind": "youtube",
+      "mime_type": null,
+      "asset_url": null,
+      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-youtube-trailer-poster.jpg",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": "16:9",
+      "duration_ms": null,
+      "lifecycle": "published",
+      "status": "published_on_provider",
+      "public_or_private": "public",
+      "provider_url": "https://www.youtube.com/watch?v=DDpVQ53pnAI",
+      "provider_id": "DDpVQ53pnAI",
+      "download_url": null,
+      "size_bytes": null,
+      "sha256": null,
+      "alt_en": "AIS FLOWS YouTube trailer poster.",
+      "alt_ru": "Постер трейлера AIS FLOWS на YouTube.",
+      "attribution": "AIS FLOWS / Andrei Spirydovich",
+      "license_boundary": "All rights reserved; no public reuse license is granted.",
+      "primary_action": "provider",
+      "markers": [],
+      "prompt_url": null,
+      "social_urls": {
+        "youtube": "https://www.youtube.com/watch?v=DDpVQ53pnAI",
+        "instagram": null,
+        "tiktok": null
+      },
+      "order": -1,
+      "human_page_url_en": "https://aisflows.github.io/home/media/featured-youtube-trailer/",
+      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/featured-youtube-trailer/"
+    },
+    "works": [
+      {
+        "id": "jbl-jurassic-park",
+        "title_en": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising",
+        "title_ru": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising",
+        "media_kind": "local_video",
+        "status": "published",
+        "dimensions": "720x1280",
+        "duration_ms": 41215,
+        "markers": [
+          "FULL"
+        ],
+        "social_urls": {
+          "youtube": "https://youtube.com/shorts/dCX4VlgEkk8",
+          "instagram": "https://www.instagram.com/p/DbUUtnpK1yq/",
+          "tiktok": "https://www.tiktok.com/@aisflows/video/7667387333196434708"
+        },
+        "primary_action": "playback",
+        "human_page_url_en": "https://aisflows.github.io/home/media/jbl-jurassic-park/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/jbl-jurassic-park/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-jbl-jurassic-park-web.mp4",
+        "provider_url": null,
+        "download_url": null
+      },
+      {
+        "id": "interstellar-millers-planet",
+        "title_en": "Interstellar: Miller's Planet Is the Worst Resort in the Universe | AI Fan Trailer",
+        "title_ru": "Interstellar: Miller's Planet Is the Worst Resort in the Universe | AI Fan Trailer",
+        "media_kind": "local_video",
+        "status": "published",
+        "dimensions": "720x1280",
+        "duration_ms": 43305,
+        "markers": [
+          "FULL"
+        ],
+        "social_urls": {
+          "youtube": "https://youtube.com/shorts/XCmDNhmmp00",
+          "instagram": "https://www.instagram.com/p/DbEDQq2KJHB/",
+          "tiktok": "https://www.tiktok.com/@aisflows/video/7665036218937167125"
+        },
+        "primary_action": "playback",
+        "human_page_url_en": "https://aisflows.github.io/home/media/interstellar-millers-planet/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/interstellar-millers-planet/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-interstellar-millers-planet-web.mp4",
+        "provider_url": null,
+        "download_url": null
+      },
+      {
+        "id": "doom-battlefield-earth",
+        "title_en": "DOOM: THE BATTLEFIELD IS EARTH | AI Fan Trailer",
+        "title_ru": "DOOM: THE BATTLEFIELD IS EARTH | AI Fan Trailer",
+        "media_kind": "local_video",
+        "status": "published",
+        "dimensions": "720x1280",
+        "duration_ms": 49876,
+        "markers": [
+          "FULL"
+        ],
+        "social_urls": {
+          "youtube": "https://youtube.com/shorts/iyqO3Sel4eA",
+          "instagram": "https://www.instagram.com/p/DU6gNXRim2Y/",
+          "tiktok": "https://www.tiktok.com/@aisflows/video/7608327208469417236"
+        },
+        "primary_action": "playback",
+        "human_page_url_en": "https://aisflows.github.io/home/media/doom-battlefield-earth/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/doom-battlefield-earth/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-doom-battlefield-earth-web.mp4",
+        "provider_url": null,
+        "download_url": null
+      },
+      {
+        "id": "witcher-monsters-men",
+        "title_en": "THE WITCHER: Monsters & Men | AI Fan Trailer",
+        "title_ru": "THE WITCHER: Monsters & Men | AI Fan Trailer",
+        "media_kind": "local_video",
+        "status": "published",
+        "dimensions": "720x1280",
+        "duration_ms": 54010,
+        "markers": [
+          "FULL"
+        ],
+        "social_urls": {
+          "youtube": "https://youtube.com/shorts/MBIVxINnkNY",
+          "instagram": "https://www.instagram.com/p/DVyzeVsig2q/",
+          "tiktok": "https://www.tiktok.com/@aisflows/video/7616440679534726420"
+        },
+        "primary_action": "playback",
+        "human_page_url_en": "https://aisflows.github.io/home/media/witcher-monsters-men/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/witcher-monsters-men/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-witcher-monsters-men-web.mp4",
+        "provider_url": null,
+        "download_url": null
+      },
+      {
+        "id": "28-days-later",
+        "title_en": "28 DAYS LATER: USA | AI Fan Trailer",
+        "title_ru": "28 DAYS LATER: USA | AI Fan Trailer",
+        "media_kind": "local_video",
+        "status": "published",
+        "dimensions": "720x1280",
+        "duration_ms": 46200,
+        "markers": [
+          "FULL"
+        ],
+        "social_urls": {
+          "youtube": "https://youtube.com/shorts/68T1UU4WXdg",
+          "instagram": "https://www.instagram.com/p/DULPeiuioZ9/",
+          "tiktok": "https://www.tiktok.com/@aisflows/video/7601510848963579157"
+        },
+        "primary_action": "playback",
+        "human_page_url_en": "https://aisflows.github.io/home/media/28-days-later/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/28-days-later/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-28-days-later-web.mp4",
+        "provider_url": null,
+        "download_url": null
+      },
+      {
+        "id": "dead-space",
+        "title_en": "DEAD SPACE: THE SIGNAL | AI Fan Trailer",
+        "title_ru": "DEAD SPACE: THE SIGNAL | AI Fan Trailer",
+        "media_kind": "local_video",
+        "status": "published",
+        "dimensions": "720x1280",
+        "duration_ms": 67800,
+        "markers": [
+          "FULL"
+        ],
+        "social_urls": {
+          "youtube": "https://youtube.com/shorts/H8Mdi7AubC8",
+          "instagram": "https://www.instagram.com/p/DPl9pu9CkWm/",
+          "tiktok": "https://www.tiktok.com/@aisflows/photo/7560619174192581900"
+        },
+        "primary_action": "playback",
+        "human_page_url_en": "https://aisflows.github.io/home/media/dead-space/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/dead-space/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-dead-space-web.mp4",
+        "provider_url": null,
+        "download_url": null
+      },
+      {
+        "id": "godzilla",
+        "title_en": "GODZILLA: D-DAY | AI Fan Trailer",
+        "title_ru": "GODZILLA: D-DAY | AI Fan Trailer",
+        "media_kind": "local_video",
+        "status": "published",
+        "dimensions": "720x1280",
+        "duration_ms": 51767,
+        "markers": [
+          "FULL"
+        ],
+        "social_urls": {
+          "youtube": "https://youtube.com/shorts/ONyqpXtHnkA",
+          "instagram": "https://www.instagram.com/p/DTbg-CSipB4/",
+          "tiktok": "https://www.tiktok.com/@aisflows/video/7594633448740900108"
+        },
+        "primary_action": "playback",
+        "human_page_url_en": "https://aisflows.github.io/home/media/godzilla/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/godzilla/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-godzilla-web.mp4",
+        "provider_url": null,
+        "download_url": null
+      },
+      {
+        "id": "predator",
+        "title_en": "PREDATOR: ABYSS | AI Fan Traile",
+        "title_ru": "PREDATOR: ABYSS | AI Fan Traile",
+        "media_kind": "local_video",
+        "status": "published",
+        "dimensions": "720x1280",
+        "duration_ms": 62400,
+        "markers": [
+          "FULL"
+        ],
+        "social_urls": {
+          "youtube": "https://youtube.com/shorts/lLuDRp7LSM8",
+          "instagram": "https://www.instagram.com/p/DPUBM3vDM_O/",
+          "tiktok": "https://www.tiktok.com/@aisflows/video/7556656857746574603"
+        },
+        "primary_action": "playback",
+        "human_page_url_en": "https://aisflows.github.io/home/media/predator/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/predator/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-predator-web.mp4",
+        "provider_url": null,
+        "download_url": null
+      }
+    ]
+  },
   "measurement_capabilities": {
     "browser_events": "umami_public_home_collection_verified",
     "direct_agent_fetches": "not_observable_on_static_github_pages",
@@ -60,12 +365,13 @@
     "deploy_requires_explicit_owner_approval": true,
     "object_hashes": {
       "ais-flows-ai-video-course": "5de12c796bb5230888e55c52c6943e14131a78446e8aaeb6318c30272574d721",
-      "featured-youtube-trailer": "135bac2e32b448c089e09cd962f4d164b0fac2d4b7649e8d3bb7a42e09686bbc",
+      "featured-youtube-trailer": "8a20dd2f45d5c42399162b1d3aeb623a51f9083cd8eabe81f93dadbc008a61ac",
       "local-ai-gateway": "7215b5fcacd680dcae3efb983196440798df064dd818728a20adfb4790e51313",
-      "proofline": "ea3646b09a4fdb71d143e051ea076328f98291f9d232690823127e3c67fcd372",
-      "ready-gate": "a181f94ac4e1031132ac73b59bf78cac40bf19c7b4804668adfe2eab8e3c161f",
+      "proofline": "1a45dfcb2e1e679ef75f378c463d67d7bfa9a67b50a7916029183276da2eb371",
+      "ready-gate": "5190dc7b8d5cb56c8f6d15339ab934332acf0e7759c9de141169c73439ae6658",
       "request": "8bff4c685c9232b59a8c302fc2cd7c449290bed74dcb009ad9fdfc7a45a04882",
-      "skill-cleaner": "6af0404f66dc865327c71f36e62042cc2178f570e7b03fe7c05138463f61df91",
+      "skill-cleaner": "f01ed9266548cea5ec14c3b655bbcd627cd1c00fd970ca3a8cd36254df68ac4d",
+      "skill-operations-pack": "07fdff5b1358a01709bccdbb7e4b57d1df714300e1f3dfcd4350b30a73d0675b",
       "video-builder-pack": "dc6865583755ab90baf9b3587624dd67905e18a08275ae375ec96b3441cad166"
     }
   },
@@ -114,5 +420,5 @@
       "access_verified"
     ]
   },
-  "updated_at": "2026-07-27T10:53:18Z"
+  "updated_at": "2026-08-09T13:37:52Z"
 }

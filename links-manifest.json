@@ -16,6 +16,30 @@
       "status": "verified"
     },
     {
+      "id": "skills-en",
+      "label": "skills_en",
+      "url": "./skills/index.html",
+      "status": "local_candidate_not_deployed"
+    },
+    {
+      "id": "skills-ru",
+      "label": "skills_ru",
+      "url": "./ru/skills/index.html",
+      "status": "local_candidate_not_deployed"
+    },
+    {
+      "id": "media-en",
+      "label": "media_en",
+      "url": "./media/index.html",
+      "status": "verified"
+    },
+    {
+      "id": "media-ru",
+      "label": "media_ru",
+      "url": "./ru/media/index.html",
+      "status": "verified"
+    },
+    {
       "id": "request-en",
       "label": "request_en",
       "url": "./request/index.html",
@@ -25,6 +49,18 @@
       "id": "request-ru",
       "label": "request_ru",
       "url": "./ru/request/index.html",
+      "status": "verified"
+    },
+    {
+      "id": "privacy-en",
+      "label": "privacy_en",
+      "url": "./privacy/index.html",
+      "status": "verified"
+    },
+    {
+      "id": "privacy-ru",
+      "label": "privacy_ru",
+      "url": "./ru/privacy/index.html",
       "status": "verified"
     },
     {
@@ -55,6 +91,114 @@
       "id": "feed",
       "label": "feed",
       "url": "./feed.xml",
+      "status": "verified"
+    },
+    {
+      "id": "media-featured-youtube-trailer-en",
+      "label": "featured-youtube-trailer EN",
+      "url": "./media/featured-youtube-trailer/",
+      "status": "verified"
+    },
+    {
+      "id": "media-featured-youtube-trailer-ru",
+      "label": "featured-youtube-trailer RU",
+      "url": "./ru/media/featured-youtube-trailer/",
+      "status": "verified"
+    },
+    {
+      "id": "media-jbl-jurassic-park-en",
+      "label": "jbl-jurassic-park EN",
+      "url": "./media/jbl-jurassic-park/",
+      "status": "verified"
+    },
+    {
+      "id": "media-jbl-jurassic-park-ru",
+      "label": "jbl-jurassic-park RU",
+      "url": "./ru/media/jbl-jurassic-park/",
+      "status": "verified"
+    },
+    {
+      "id": "media-interstellar-millers-planet-en",
+      "label": "interstellar-millers-planet EN",
+      "url": "./media/interstellar-millers-planet/",
+      "status": "verified"
+    },
+    {
+      "id": "media-interstellar-millers-planet-ru",
+      "label": "interstellar-millers-planet RU",
+      "url": "./ru/media/interstellar-millers-planet/",
+      "status": "verified"
+    },
+    {
+      "id": "media-doom-battlefield-earth-en",
+      "label": "doom-battlefield-earth EN",
+      "url": "./media/doom-battlefield-earth/",
+      "status": "verified"
+    },
+    {
+      "id": "media-doom-battlefield-earth-ru",
+      "label": "doom-battlefield-earth RU",
+      "url": "./ru/media/doom-battlefield-earth/",
+      "status": "verified"
+    },
+    {
+      "id": "media-witcher-monsters-men-en",
+      "label": "witcher-monsters-men EN",
+      "url": "./media/witcher-monsters-men/",
+      "status": "verified"
+    },
+    {
+      "id": "media-witcher-monsters-men-ru",
+      "label": "witcher-monsters-men RU",
+      "url": "./ru/media/witcher-monsters-men/",
+      "status": "verified"
+    },
+    {
+      "id": "media-28-days-later-en",
+      "label": "28-days-later EN",
+      "url": "./media/28-days-later/",
+      "status": "verified"
+    },
+    {
+      "id": "media-28-days-later-ru",
+      "label": "28-days-later RU",
+      "url": "./ru/media/28-days-later/",
+      "status": "verified"
+    },
+    {
+      "id": "media-dead-space-en",
+      "label": "dead-space EN",
+      "url": "./media/dead-space/",
+      "status": "verified"
+    },
+    {
+      "id": "media-dead-space-ru",
+      "label": "dead-space RU",
+      "url": "./ru/media/dead-space/",
+      "status": "verified"
+    },
+    {
+      "id": "media-godzilla-en",
+      "label": "godzilla EN",
+      "url": "./media/godzilla/",
+      "status": "verified"
+    },
+    {
+      "id": "media-godzilla-ru",
+      "label": "godzilla RU",
+      "url": "./ru/media/godzilla/",
+      "status": "verified"
+    },
+    {
+      "id": "media-predator-en",
+      "label": "predator EN",
+      "url": "./media/predator/",
+      "status": "verified"
+    },
+    {
+      "id": "media-predator-ru",
+      "label": "predator RU",
+      "url": "./ru/media/predator/",
       "status": "verified"
     }
   ],

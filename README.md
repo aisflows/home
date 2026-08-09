@@ -13,6 +13,7 @@
 
 ### Released agent skills
 
+- **[AIS FLOWS Skill Operations Pack](https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6)** decides what belongs in a working skill library before you install it. The release includes a verified ZIP artifact and SHA256.
 - **[Proofline](https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5)** checks product readiness before handoff.
 - **[Ready Gate](https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1)** checks whether a handoff is ready. Its release includes a verified ZIP artifact.
 - **[Skill Cleaner](https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001)** turns disorganized agent-skill folders into a cleaner working library.
