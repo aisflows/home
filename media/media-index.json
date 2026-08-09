@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "source": "../content-model.json",
-  "deployment_status": "local_candidate_not_deployed",
+  "deployment_status": "public",
   "current_public_home_status": "public",
   "catalog_routes": {
     "en": "https://aisflows.github.io/home/media/index.html",

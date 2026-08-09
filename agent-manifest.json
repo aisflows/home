@@ -42,7 +42,7 @@
     "open_request_page_after_user_confirmation"
   ],
   "skills_catalog": {
-    "deployment_status": "local_candidate_not_deployed",
+    "deployment_status": "public",
     "catalog_en": "./skills/index.html",
     "catalog_ru": "./ru/skills/index.html",
     "machine_index": "./skills/skills-index.json",
@@ -110,7 +110,7 @@
     ]
   },
   "media_catalog": {
-    "deployment_status": "local_candidate_not_deployed",
+    "deployment_status": "public",
     "catalog_en": "./media/index.html",
     "catalog_ru": "./ru/media/index.html",
     "machine_index": "./media/media-index.json",
