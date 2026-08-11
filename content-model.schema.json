@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://aisflows-home-preview.pages.dev/content-model.schema.json",
+  "$id": "https://aisflows.github.io/home/content-model.schema.json",
   "title": "AIS FLOWS Home canonical content model",
   "type": "object",
   "additionalProperties": false,
@@ -203,11 +203,11 @@
       "type": "object", "additionalProperties": false,
       "required": ["public_deploy", "request_receiver", "analytics_provider", "payment_and_delivery", "production_base_url", "server_agent_analytics"],
       "properties": {
-        "public_deploy": {"const": "cloudflare_pages_preview_deployed_not_cutover"},
+        "public_deploy": {"const": "github_pages_public_deployed"},
         "request_receiver": {"const": "formspree_public_home_delivery_verified"},
         "analytics_provider": {"const": "umami_public_home_collection_verified"},
         "payment_and_delivery": {"const": "not_selected_not_proven"},
-        "production_base_url": {"const": "https://aisflows-home-preview.pages.dev/"},
+        "production_base_url": {"const": "https://aisflows.github.io/home/"},
         "server_agent_analytics": {"const": "unavailable_static_host_does_not_observe_direct_agent_fetches"}
       }
     },

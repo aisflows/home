@@ -364,15 +364,15 @@
     "current_state": "live_verified",
     "deploy_requires_explicit_owner_approval": true,
     "object_hashes": {
-      "ais-flows-ai-video-course": "9c72738c916bb3e9141bf00af647efffcc177d81f9055629865b65cf8ced938a",
-      "featured-youtube-trailer": "99b35f7ab58e180903de0c6668a5f77fe1eb577d3bc2f1895a2aeced21391d97",
-      "local-ai-gateway": "a405c3c3593fa137745051ef0d1cbf7d95ac373ad91856f85cf0d86df6ca39dc",
+      "ais-flows-ai-video-course": "5de12c796bb5230888e55c52c6943e14131a78446e8aaeb6318c30272574d721",
+      "featured-youtube-trailer": "8a20dd2f45d5c42399162b1d3aeb623a51f9083cd8eabe81f93dadbc008a61ac",
+      "local-ai-gateway": "7215b5fcacd680dcae3efb983196440798df064dd818728a20adfb4790e51313",
       "proofline": "41567b03129a561321f1fa7a06dd55590a656fd6340e0593d2b1a8fe92690d61",
       "ready-gate": "4a5b4a7f4afe00b20a3c1f5eae741f411c66181ca46b956a92b6d41da4f5d4db",
-      "request": "2bf70b24e8527107148c61eaa28a913cc54618dc0408c77e61e084973ab24454",
+      "request": "8bff4c685c9232b59a8c302fc2cd7c449290bed74dcb009ad9fdfc7a45a04882",
       "skill-cleaner": "d825e582f064e6336270b870b938427088f16ab1d576090b0512519ecf115189",
-      "skill-operations-pack": "3e3b8c91dc4deaac71c10b3083b9f1f9258a386857f6fb3d759e9772dd40f402",
-      "video-builder-pack": "586a1ac932a1e10d9ae3971f78f023c9a0d9d4db6ed5c8ab29351d4704d1f2b3"
+      "skill-operations-pack": "2f797b7ac1daf81afee4ff48c2840bab158ba3ac1546ef9e67bdfd45795093c5",
+      "video-builder-pack": "dc6865583755ab90baf9b3587624dd67905e18a08275ae375ec96b3441cad166"
     }
   },
   "state_machines": {
