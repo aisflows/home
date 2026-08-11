@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://aisflows-home-preview.pages.dev/feed.xml</id>
+  <id>https://aisflows.github.io/home/feed.xml</id>
   <title>AIS FLOWS public updates</title>
   <updated>2026-08-09T13:37:52Z</updated>
-  <link href="https://aisflows-home-preview.pages.dev/feed.xml" rel="self"/>
+  <link href="https://aisflows.github.io/home/feed.xml" rel="self"/>
   <entry>
-    <id>https://aisflows-home-preview.pages.dev/#update-2026-08-09-skill-operations-pack-rc6-released</id>
+    <id>https://aisflows.github.io/home/#update-2026-08-09-skill-operations-pack-rc6-released</id>
     <title>Published AIS FLOWS Skill Operations Pack 0.1.0-rc6 on GitHub with a verified ZIP and SHA256.</title>
     <updated>2026-08-09T13:37:52Z</updated>
     <link href="https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6"/>
     <summary>Published AIS FLOWS Skill Operations Pack 0.1.0-rc6 on GitHub with a verified ZIP and SHA256.</summary>
   </entry>
   <entry>
-    <id>https://aisflows-home-preview.pages.dev/#update-2026-08-09-media-catalog-routes</id>
+    <id>https://aisflows.github.io/home/#update-2026-08-09-media-catalog-routes</id>
     <title>Added canonical EN/RU Media catalog and stable work routes for the five confirmed AIS FLOWS media works.</title>
     <updated>2026-08-09T00:00:00Z</updated>
     <link href="https://aisflows-home-preview.pages.dev/media/"/>
     <summary>Added canonical EN/RU Media catalog and stable work routes for the five confirmed AIS FLOWS media works.</summary>
   </entry>
   <entry>
-    <id>https://aisflows-home-preview.pages.dev/#update-2026-08-09-media-wall-revision</id>
+    <id>https://aisflows.github.io/home/#update-2026-08-09-media-wall-revision</id>
     <title>Added four web-safe media works, exact social metadata and a dense curated wall.</title>
     <updated>2026-08-09T00:00:00Z</updated>
     <link href="https://aisflows-home-preview.pages.dev/media/"/>
     <summary>Added four web-safe media works, exact social metadata and a dense curated wall.</summary>
   </entry>
   <entry>
-    <id>https://aisflows-home-preview.pages.dev/#update-2026-08-09-skills-catalog-local</id>
+    <id>https://aisflows.github.io/home/#update-2026-08-09-skills-catalog-local</id>
     <title>Added local EN/RU Skills catalogs and one machine-readable Skills index without changing release availability.</title>
     <updated>2026-08-09T00:00:00Z</updated>
     <link href="https://aisflows-home-preview.pages.dev/skills/"/>
     <summary>Added local EN/RU Skills catalogs and one machine-readable Skills index without changing release availability.</summary>
   </entry>
   <entry>
-    <id>https://aisflows-home-preview.pages.dev/#update-2026-08-03-skill-operations-pack-rc6-prepared</id>
+    <id>https://aisflows.github.io/home/#update-2026-08-03-skill-operations-pack-rc6-prepared</id>
     <title>Added AIS FLOWS Skill Operations Pack 0.1.0-rc6 as a prepared local public release candidate without a public download route.</title>
     <updated>2026-08-03T00:00:00Z</updated>
     <link href="https://aisflows-home-preview.pages.dev/#products"/>
     <summary>Added AIS FLOWS Skill Operations Pack 0.1.0-rc6 as a prepared local public release candidate without a public download route.</summary>
   </entry>
   <entry>
-    <id>https://aisflows-home-preview.pages.dev/#update-2026-07-28-home-visual-evidence</id>
+    <id>https://aisflows.github.io/home/#update-2026-07-28-home-visual-evidence</id>
     <title>Added factual labels for the four Home media previews and direct EN/RU privacy routes.</title>
     <updated>2026-07-28T18:00:00Z</updated>
     <link href="https://aisflows-home-preview.pages.dev/#media"/>
     <summary>Added factual labels for the four Home media previews and direct EN/RU privacy routes.</summary>
   </entry>
   <entry>
-    <id>https://aisflows-home-preview.pages.dev/#update-2026-07-27-public-home-live</id>
+    <id>https://aisflows.github.io/home/#update-2026-07-27-public-home-live</id>
     <title>Published AIS FLOWS Home and verified the public Formspree request route, Umami browser events, agent discovery chain, and downloadable artifact integrity.</title>
     <updated>2026-07-27T10:53:18Z</updated>
     <link href="https://aisflows-home-preview.pages.dev/"/>
     <summary>Published AIS FLOWS Home and verified the public Formspree request route, Umami browser events, agent discovery chain, and downloadable artifact integrity.</summary>
   </entry>
   <entry>
-    <id>https://aisflows-home-preview.pages.dev/#update-2026-07-26-request-analytics-truth</id>
+    <id>https://aisflows.github.io/home/#update-2026-07-26-request-analytics-truth</id>
     <title>Recorded the configured Formspree receiver and privacy-safe Umami browser contract as locally accepted, while keeping the Home candidate explicitly not deployed.</title>
     <updated>2026-07-26T16:01:40Z</updated>
     <link href="https://aisflows-home-preview.pages.dev/request/"/>
     <summary>Recorded the configured Formspree receiver and privacy-safe Umami browser contract as locally accepted, while keeping the Home candidate explicitly not deployed.</summary>
   </entry>
   <entry>
-    <id>https://aisflows-home-preview.pages.dev/#update-2026-07-22-course-preview</id>
+    <id>https://aisflows.github.io/home/#update-2026-07-22-course-preview</id>
     <title>Added a local agent-readable course candidate with direct lesson routes.</title>
     <updated>2026-07-22T12:00:00Z</updated>
     <link href="https://aisflows-home-preview.pages.dev/course/"/>
     <summary>Added a local agent-readable course candidate with direct lesson routes.</summary>
   </entry>
   <entry>
-    <id>https://aisflows-home-preview.pages.dev/#update-2026-07-22-ready-gate-artifact</id>
+    <id>https://aisflows.github.io/home/#update-2026-07-22-ready-gate-artifact</id>
     <title>Verified Ready Gate artifact size and SHA256 for the local candidate.</title>
     <updated>2026-07-22T12:00:00Z</updated>
     <link href="https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1"/>

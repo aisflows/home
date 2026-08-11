@@ -2,7 +2,7 @@
   "schema_version": "2.0.0",
   "site": {
     "name": "AIS FLOWS",
-    "canonical_url": "https://aisflows-home-preview.pages.dev/",
+    "canonical_url": "https://aisflows.github.io/home/",
     "languages": [
       "en",
       "ru"
@@ -59,7 +59,7 @@
         "release_url": "https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6",
         "action_url": "https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6",
         "download_url": "https://github.com/aisflows/skill-operations-pack/releases/download/v0.1.0-rc6/ais-flows-skill-operations-pack-0.1.0-rc6.zip",
-        "image_url": "https://aisflows-home-preview.pages.dev/assets/cards/skill-operations-pack-release-cover-16x9.png",
+        "image_url": "https://aisflows.github.io/home/assets/cards/skill-operations-pack-release-cover-16x9.png",
         "unavailable_reason": null
       },
       {
@@ -74,7 +74,7 @@
         "release_url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001",
         "action_url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001",
         "download_url": null,
-        "image_url": "https://aisflows-home-preview.pages.dev/assets/cards/skill-cleaner-github-preview.jpg",
+        "image_url": "https://aisflows.github.io/home/assets/cards/skill-cleaner-github-preview.jpg",
         "unavailable_reason": null
       },
       {
@@ -89,7 +89,7 @@
         "release_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1",
         "action_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1",
         "download_url": "https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip",
-        "image_url": "https://aisflows-home-preview.pages.dev/assets/cards/ready-gate-release-cover-16x9.jpeg",
+        "image_url": "https://aisflows.github.io/home/assets/cards/ready-gate-release-cover-16x9.jpeg",
         "unavailable_reason": null
       },
       {
@@ -104,7 +104,7 @@
         "release_url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5",
         "action_url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5",
         "download_url": null,
-        "image_url": "https://aisflows-home-preview.pages.dev/assets/proofline-square.png",
+        "image_url": "https://aisflows.github.io/home/assets/proofline-square.png",
         "unavailable_reason": null
       }
     ]
@@ -124,7 +124,7 @@
       "media_kind": "youtube",
       "mime_type": null,
       "asset_url": null,
-      "poster_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-youtube-trailer-poster.jpg",
+      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-youtube-trailer-poster.jpg",
       "width": 1280,
       "height": 720,
       "aspect_ratio": "16:9",
@@ -150,8 +150,8 @@
         "tiktok": null
       },
       "order": -1,
-      "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/featured-youtube-trailer/",
-      "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/featured-youtube-trailer/"
+      "human_page_url_en": "https://aisflows.github.io/home/media/featured-youtube-trailer/",
+      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/featured-youtube-trailer/"
     },
     "works": [
       {
@@ -171,9 +171,9 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7667387333196434708"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/jbl-jurassic-park/",
-        "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/jbl-jurassic-park/",
-        "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-jbl-jurassic-park-web.mp4",
+        "human_page_url_en": "https://aisflows.github.io/home/media/jbl-jurassic-park/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/jbl-jurassic-park/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-jbl-jurassic-park-web.mp4",
         "provider_url": null,
         "download_url": null
       },
@@ -194,9 +194,9 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7665036218937167125"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/interstellar-millers-planet/",
-        "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/interstellar-millers-planet/",
-        "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-interstellar-millers-planet-web.mp4",
+        "human_page_url_en": "https://aisflows.github.io/home/media/interstellar-millers-planet/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/interstellar-millers-planet/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-interstellar-millers-planet-web.mp4",
         "provider_url": null,
         "download_url": null
       },
@@ -217,9 +217,9 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7608327208469417236"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/doom-battlefield-earth/",
-        "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/doom-battlefield-earth/",
-        "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-doom-battlefield-earth-web.mp4",
+        "human_page_url_en": "https://aisflows.github.io/home/media/doom-battlefield-earth/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/doom-battlefield-earth/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-doom-battlefield-earth-web.mp4",
         "provider_url": null,
         "download_url": null
       },
@@ -240,9 +240,9 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7616440679534726420"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/witcher-monsters-men/",
-        "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/witcher-monsters-men/",
-        "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-witcher-monsters-men-web.mp4",
+        "human_page_url_en": "https://aisflows.github.io/home/media/witcher-monsters-men/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/witcher-monsters-men/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-witcher-monsters-men-web.mp4",
         "provider_url": null,
         "download_url": null
       },
@@ -263,9 +263,9 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7601510848963579157"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/28-days-later/",
-        "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/28-days-later/",
-        "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-28-days-later-web.mp4",
+        "human_page_url_en": "https://aisflows.github.io/home/media/28-days-later/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/28-days-later/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-28-days-later-web.mp4",
         "provider_url": null,
         "download_url": null
       },
@@ -286,9 +286,9 @@
           "tiktok": "https://www.tiktok.com/@aisflows/photo/7560619174192581900"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/dead-space/",
-        "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/dead-space/",
-        "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-dead-space-web.mp4",
+        "human_page_url_en": "https://aisflows.github.io/home/media/dead-space/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/dead-space/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-dead-space-web.mp4",
         "provider_url": null,
         "download_url": null
       },
@@ -309,9 +309,9 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7594633448740900108"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/godzilla/",
-        "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/godzilla/",
-        "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-godzilla-web.mp4",
+        "human_page_url_en": "https://aisflows.github.io/home/media/godzilla/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/godzilla/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-godzilla-web.mp4",
         "provider_url": null,
         "download_url": null
       },
@@ -332,9 +332,9 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7556656857746574603"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/predator/",
-        "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/predator/",
-        "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-predator-web.mp4",
+        "human_page_url_en": "https://aisflows.github.io/home/media/predator/",
+        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/predator/",
+        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-predator-web.mp4",
         "provider_url": null,
         "download_url": null
       }
