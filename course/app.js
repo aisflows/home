@@ -27,6 +27,12 @@
     .replaceAll("ё", "е")
     .trim();
 
+  const revealCourseMotion = (root = document) => {
+    window.requestAnimationFrame(() => {
+      root.querySelectorAll("[data-motion]").forEach((item) => item.classList.add("is-visible"));
+    });
+  };
+
   const readProgress = () => {
     try {
       const value = JSON.parse(localStorage.getItem(progressKey) || "[]");
@@ -110,7 +116,7 @@
     grid.innerHTML = content.blocks.map((block) => {
       const completed = block.lesson_ids.filter((id) => progress.has(id)).length;
       const firstLesson = block.lesson_ids.map(lessonById).find((lesson) => lessonHref(lesson));
-      return `<article class="block-card">
+      return `<article class="block-card" data-motion="card">
         <span class="block-index">Блок ${String(block.id).padStart(2, "0")} · ${completed}/${block.lesson_ids.length}</span>
         <h3>${escapeHtml(block.title_ru)}</h3>
         <p>${escapeHtml(block.summary_ru)}</p>
@@ -118,6 +124,7 @@
         <div class="block-links">${firstLesson ? `<a href="${escapeHtml(lessonHref(firstLesson))}">Начать блок</a>` : '<span class="release-status">Материалы готовятся</span>'}<a href="./route.html?block=${block.id}">Зависимости</a></div>
       </article>`;
     }).join("");
+    revealCourseMotion(grid);
   };
 
   const renderHome = () => {
@@ -149,7 +156,7 @@
     results.innerHTML = content.blocks.map((block) => {
       const lessons = filtered.filter((lesson) => lesson.block === block.id);
       if (!lessons.length) return "";
-      return `<section class="catalog-block-group" aria-labelledby="catalog-block-${block.id}">
+      return `<section class="catalog-block-group" aria-labelledby="catalog-block-${block.id}" data-motion="card">
         <header class="catalog-block-header">
           <span class="catalog-block-number">${String(block.id).padStart(2, "0")}</span>
           <div><p>Блок ${block.id} из ${content.blocks.length}</p><h2 id="catalog-block-${block.id}">${escapeHtml(block.title_ru)}</h2></div>
@@ -167,6 +174,7 @@
         }).join("")}</div>
       </section>`;
     }).join("");
+    revealCourseMotion(results);
   };
 
   const clearCatalogFilters = () => {
@@ -205,7 +213,7 @@
     });
     const detail = document.querySelector("[data-route-detail]");
     const firstLesson = block.lesson_ids.map(lessonById).find((lesson) => lessonHref(lesson));
-    detail.innerHTML = `<header class="route-detail-header">
+    detail.innerHTML = `<div data-motion="card"><header class="route-detail-header">
         <span class="route-detail-number">${String(block.id).padStart(2, "0")}</span>
         <div><p class="eyebrow">Блок ${block.id} из ${content.blocks.length}</p><h2>${escapeHtml(block.title_ru)}</h2><p>${escapeHtml(block.summary_ru)}</p></div>
       </header>
@@ -221,7 +229,8 @@
         const href = lessonHref(lesson);
         return href ? `<a class="route-lesson-link" href="${escapeHtml(href)}"><span class="route-lesson-number">${String(lesson.order).padStart(2, "0")}</span><strong>${escapeHtml(lesson.title_ru)}</strong><span>Открыть →</span></a>` : `<div class="route-lesson-link is-unavailable" aria-disabled="true"><span class="route-lesson-number">${String(lesson.order).padStart(2, "0")}</span><strong>${escapeHtml(lesson.title_ru)}</strong><span>Не опубликован</span></div>`;
       }).join("")}</div>
-      <p class="route-dependencies">Перед этим: ${escapeHtml(routeDependencyLabel(block.prerequisites, "можно начинать сразу"))}. Дальше: ${escapeHtml(routeDependencyLabel(block.unlocks, "курс завершён"))}.</p>`;
+      <p class="route-dependencies">Перед этим: ${escapeHtml(routeDependencyLabel(block.prerequisites, "можно начинать сразу"))}. Дальше: ${escapeHtml(routeDependencyLabel(block.unlocks, "курс завершён"))}.</p></div>`;
+    revealCourseMotion(detail);
     history.replaceState(null, "", `${location.pathname}?block=${block.id}`);
   };
 
@@ -266,7 +275,7 @@
       ? `<a class="button" href="${escapeHtml(artifact.url)}">Открыть материал</a>`
       : `<span class="status-chip" data-status="${escapeHtml(artifact.status)}">${escapeHtml(statusLabels[artifact.status])}</span>`;
     root.innerHTML = `<nav class="lesson-breadcrumbs" aria-label="Хлебные крошки"><a href="./index.html">Курс</a><span>/</span><a href="./route.html?block=${block.id}">Блок ${block.id}</a><span>/</span><span>${escapeHtml(lesson.title_ru)}</span></nav>
-      <header class="lesson-header"><div class="lesson-position"><span>Блок ${block.id} из ${content.blocks.length}</span><b>Урок ${lesson.order} из ${content.lessons.length}</b>${progress.has(lesson.id) ? '<span class="complete-chip">Пройден</span>' : ""}</div><h1>${escapeHtml(lesson.title_ru)}</h1><p class="lesson-summary">${escapeHtml(lesson.summary_ru)}</p></header>
+      <header class="lesson-header" data-motion="section-head"><div class="lesson-position"><span>Блок ${block.id} из ${content.blocks.length}</span><b>Урок ${lesson.order} из ${content.lessons.length}</b>${progress.has(lesson.id) ? '<span class="complete-chip">Пройден</span>' : ""}</div><h1>${escapeHtml(lesson.title_ru)}</h1><p class="lesson-summary">${escapeHtml(lesson.summary_ru)}</p></header>
       <div class="lesson-layout">
         <div class="lesson-flow">
           <section class="lesson-step" data-step="1"><p class="eyebrow">Сначала</p><h2>Разберитесь, зачем это нужно</h2><p>${escapeHtml(lesson.why_ru)}</p>${listHtml(lesson.understand_ru)}</section>
@@ -276,9 +285,10 @@
           <section class="lesson-step" data-step="5"><p class="eyebrow">Следующий шаг</p><h2>${next ? escapeHtml(next.title_ru) : "Курс завершён"}</h2><p>${next ? "Откройте следующий урок и продолжайте по порядку." : "Все уроки пройдены. Сохраните результат и повторите маршрут на новом проекте."}</p>${next ? `<a class="button primary" href="${escapeHtml(lessonHref(next))}">Перейти к следующему уроку</a>` : '<a class="button primary" href="./route.html">Вернуться к маршруту</a>'}</section>
           <nav class="lesson-navigation" aria-label="Переходы между уроками">${previous ? `<a class="lesson-nav-link" href="${escapeHtml(lessonHref(previous))}"><span>Назад</span><strong>${escapeHtml(previous.title_ru)}</strong></a>` : '<a class="lesson-nav-link" href="./catalog.html"><span>Назад</span><strong>Каталог курса</strong></a>'}${next ? `<a class="lesson-nav-link next" href="${escapeHtml(lessonHref(next))}"><span>Дальше</span><strong>${escapeHtml(next.title_ru)}</strong></a>` : '<a class="lesson-nav-link next" href="./route.html"><span>Дальше</span><strong>Карта курса</strong></a>'}</nav>
         </div>
-        <aside class="lesson-aside"><h2>Перед началом</h2><dl><div><dt>Раздел курса</dt><dd>${block.id}. ${escapeHtml(block.title_ru)}</dd></div><div><dt>Что понадобится</dt><dd>${escapeHtml(lesson.inputs_ru.join(" · "))}</dd></div><div><dt>Что пройти раньше</dt><dd>${prereqTitles.length ? escapeHtml(prereqTitles.join(" · ")) : "Ничего. Можно начинать."}</dd></div></dl><button class="button complete-button" type="button" data-complete-lesson aria-pressed="false"></button><button class="text-button" type="button" data-reset-progress>Сбросить весь прогресс</button></aside>
+        <aside class="lesson-aside" data-motion="card"><h2>Перед началом</h2><dl><div><dt>Раздел курса</dt><dd>${block.id}. ${escapeHtml(block.title_ru)}</dd></div><div><dt>Что понадобится</dt><dd>${escapeHtml(lesson.inputs_ru.join(" · "))}</dd></div><div><dt>Что пройти раньше</dt><dd>${prereqTitles.length ? escapeHtml(prereqTitles.join(" · ")) : "Ничего. Можно начинать."}</dd></div></dl><button class="button complete-button" type="button" data-complete-lesson aria-pressed="false"></button><button class="text-button" type="button" data-reset-progress>Сбросить весь прогресс</button></aside>
       </div>`;
     document.title = `${lesson.title_ru} · AIS FLOWS`;
+    revealCourseMotion(root);
     updateLessonButton(lesson);
     root.querySelector("[data-complete-lesson]").addEventListener("click", () => {
       if (progress.has(lesson.id)) progress.delete(lesson.id);
@@ -295,7 +305,8 @@
     const list = document.querySelector("[data-glossary-list]");
     const needle = normalize(query);
     const terms = content.glossary.filter((item) => !needle || normalize([item.term_ru, item.common_ru, item.ais_ru].join(" ")).includes(needle));
-    list.innerHTML = terms.length ? terms.map((item) => `<article class="glossary-item"><h2>${escapeHtml(item.term_ru)}</h2><p><strong>Обычно</strong>${escapeHtml(item.common_ru)}</p><p><strong>В AIS FLOWS</strong>${escapeHtml(item.ais_ru)}</p><a href="${escapeHtml(lessonHref(item.lesson_id))}">Первый урок по теме</a></article>`).join("") : '<div class="empty-state"><h2>Термин не найден</h2><p>Попробуйте более короткое слово. Полный словарь остаётся доступен после очистки поиска.</p></div>';
+    list.innerHTML = terms.length ? terms.map((item) => `<article class="glossary-item" data-motion="card"><h2>${escapeHtml(item.term_ru)}</h2><p><strong>Обычно</strong>${escapeHtml(item.common_ru)}</p><p><strong>В AIS FLOWS</strong>${escapeHtml(item.ais_ru)}</p><a href="${escapeHtml(lessonHref(item.lesson_id))}">Первый урок по теме</a></article>`).join("") : '<div class="empty-state"><h2>Термин не найден</h2><p>Попробуйте более короткое слово. Полный словарь остаётся доступен после очистки поиска.</p></div>';
+    revealCourseMotion(list);
   };
 
   const renderGlossary = () => {

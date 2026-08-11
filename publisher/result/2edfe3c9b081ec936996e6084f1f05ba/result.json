@@ -1,0 +1,159 @@
+{
+  "packet_type": "ai_publisher.result_packet",
+  "schema_version": "ai_publisher.result_packet.renderer.v1",
+  "contract_version": "ai_publisher.human_agent_cross_product.v1",
+  "producer": "AI Publisher",
+  "consumer": "AIS FLOWS renderer",
+  "status": "PARTIAL",
+  "result": {
+    "result_id": "rp_cinematic_frame_v3_0001",
+    "result_kind": "analysis",
+    "analysis_id": "analysis-v1-synthetic-cinematic-frame-v3-0001",
+    "revision": 1,
+    "generated_at": "2026-07-26T18:00:00Z",
+    "display_locale": "ru-RU",
+    "source_timing_scope": "original_video_only",
+    "content_digest": "cc489572ae1292e9ca0d0defeff40e62f70894965f61d4a058d1a91c1eb171c3",
+    "source": {
+      "display_title": "Synthetic cinematic passage",
+      "declared_title": null,
+      "duration_ms": 8375,
+      "duration_display": "8.375 с",
+      "width_px": 1920,
+      "height_px": 1080,
+      "aspect_ratio": "16:9",
+      "format_label": "Горизонтальное видео · 16:9"
+    },
+    "content": {
+      "summary": "A six-shot synthetic passage moves from an intimate warm-lit point of view to a daylight wide frame, a backlit macro detail, layered depth, an uncertain subjective angle, and a final deliberately under-described frame.",
+      "viewer_path": "Warm close-up establishes the viewer-position detail → Wide daylight scale gives way to a backlit macro detail → Layered depth exposes the reader and exit → A bounded uncertain reflection changes the viewpoint → The final under-exposed frame remains deliberately unresolved",
+      "timescript": [
+        {
+          "row_id": "source-row-0001",
+          "source_start_ms": 0,
+          "source_end_ms": 1375,
+          "source_timecode_display": "00:00.000–00:01.375",
+          "what_visible": "A gloved hand and compass fill a close-up from the viewer's eye line. The hand steadies the compass beside the doorway. The opening establishes an intimate viewer-position frame.",
+          "text_in_frame": null,
+          "speech_sound": null,
+          "moment_note": "Shot 1 advances the bounded synthetic visual progression."
+        },
+        {
+          "row_id": "source-row-0002",
+          "source_start_ms": 1375,
+          "source_end_ms": 2860,
+          "source_timecode_display": "00:01.375–00:02.860",
+          "what_visible": "A wide daylight courtyard is seen from above with a small figure near the center. The figure crosses the open space. The view cuts from intimate interior detail to exterior scale.",
+          "text_in_frame": null,
+          "speech_sound": null,
+          "moment_note": "Shot 2 advances the bounded synthetic visual progression."
+        },
+        {
+          "row_id": "source-row-0003",
+          "source_start_ms": 2860,
+          "source_end_ms": 4125,
+          "source_timecode_display": "00:02.860–00:04.125",
+          "what_visible": "A macro detail isolates the compass needle as a bright rim outlines its silhouette. The needle settles toward one engraved mark. Scale collapses from the courtyard to a single mechanical detail.",
+          "text_in_frame": "37",
+          "speech_sound": null,
+          "moment_note": "Shot 3 advances the bounded synthetic visual progression."
+        },
+        {
+          "row_id": "source-row-0004",
+          "source_start_ms": 4125,
+          "source_end_ms": 5630,
+          "source_timecode_display": "00:04.125–00:05.630",
+          "what_visible": "A chain occupies the foreground, the reader and map sit in the midground, and a bright doorway closes the background. The reader traces a route across the map. The image expands into three observable depth planes.",
+          "text_in_frame": "Текст виден, но не читается",
+          "speech_sound": null,
+          "moment_note": "Shot 4 advances the bounded synthetic visual progression."
+        },
+        {
+          "row_id": "source-row-0005",
+          "source_start_ms": 5630,
+          "source_end_ms": 7010,
+          "source_timecode_display": "00:05.630–00:07.010",
+          "what_visible": "A tilted reflection suggests a subjective view, but the exact camera position remains uncertain. The reader turns toward the mirror. The stable objective view gives way to a bounded uncertain viewpoint.",
+          "text_in_frame": null,
+          "speech_sound": null,
+          "moment_note": "Shot 5 advances the bounded synthetic visual progression."
+        },
+        {
+          "row_id": "source-row-0006",
+          "source_start_ms": 7010,
+          "source_end_ms": 8375,
+          "source_timecode_display": "00:07.010–00:08.375",
+          "what_visible": "The final frame shows an indistinct figure near a dark doorway; cinematography details are unavailable. The figure remains indistinct as the passage ends. The sequence ends without inventing unavailable visual detail.",
+          "text_in_frame": null,
+          "speech_sound": null,
+          "moment_note": "Shot 6 advances the bounded synthetic visual progression."
+        }
+      ],
+      "limitations": [
+        "Speech and transcript were not inspected.",
+        "Audio and music semantics were not inspected.",
+        "Identity and rightsholder status are unproven.",
+        "Final-frame cinematography detail is unavailable.",
+        "Source timestamps describe the source video only and are not target timestamps."
+      ],
+      "adaptation_boundary": {
+        "reusable": [
+          "story mechanics",
+          "rhythm",
+          "shot density",
+          "camera grammar",
+          "lighting/color grammar",
+          "transition language",
+          "abstract action progression",
+          "intimate-to-wide scale change",
+          "layered depth reveal",
+          "bounded uncertain viewpoint"
+        ],
+        "not_copyable": [
+          "unproven identity",
+          "unread OCR",
+          "untranscribed speech",
+          "uninspected audio/music",
+          "legal/rightsholder status",
+          "source timestamps as target timing",
+          "No title, brand, person, official status, or rightsholder is proven.",
+          "Use only abstract structure and visual grammar; do not copy a protected identity or scene."
+        ]
+      }
+    },
+    "artifacts": {
+      "agent_json": {
+        "relative_path": "agent/01_VIDEO_ANALYSIS_AGENT.json",
+        "filename": "Synthetic-cinematic-passage-agent.json",
+        "mime_type": "application/json",
+        "sha256": "4a91010657aa7f81d7a4ff51f9ab7e575747640cdf936d48b4da4f7771d37d64",
+        "bytes": 45875,
+        "analysis_id": "analysis-v1-synthetic-cinematic-frame-v3-0001",
+        "revision": 1,
+        "content_digest": "cc489572ae1292e9ca0d0defeff40e62f70894965f61d4a058d1a91c1eb171c3"
+      },
+      "docx": {
+        "relative_path": "human/Synthetic-cinematic-passage-analysis.docx",
+        "filename": "Synthetic-cinematic-passage-analysis.docx",
+        "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "sha256": "2139c6190d50144891dd717587738831d1b427cea8dc80d2316e4b4866c83199",
+        "bytes": 40699,
+        "analysis_id": "analysis-v1-synthetic-cinematic-frame-v3-0001",
+        "revision": 1,
+        "content_digest": "cc489572ae1292e9ca0d0defeff40e62f70894965f61d4a058d1a91c1eb171c3"
+      }
+    },
+    "artifact_pair": {
+      "status": "matching_pair",
+      "receipt_relative_path": "artifact_parity_receipt.json",
+      "receipt_mime_type": "application/json",
+      "receipt_sha256": "75629f19eeacb0aa93fef081e83336aa2a5c52cd245526a4c0db1440d8983134"
+    },
+    "renderer": {
+      "renderer_contract": "ais_flows.result_renderer.v1",
+      "surface": "analysis",
+      "mobile_supported": true,
+      "source_of_truth": "result.content"
+    }
+  }
+}

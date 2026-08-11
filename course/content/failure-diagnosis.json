@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/failure-diagnosis.html",
   "content_url": "./content/failure-diagnosis.md",
   "content_json_url": "./content/failure-diagnosis.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/failure-diagnosis.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/failure-diagnosis.html",
   "citation": "AIS FLOWS AI-video course, “Диагностика поломок”, 0.1.0-local-preview.",
   "license": {
     "name": null,

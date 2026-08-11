@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/tool-stack.html",
   "content_url": "./content/tool-stack.md",
   "content_json_url": "./content/tool-stack.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/tool-stack.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/tool-stack.html",
   "citation": "AIS FLOWS AI-video course, “Минимальный набор инструментов”, 0.1.0-local-preview.",
   "license": {
     "name": null,

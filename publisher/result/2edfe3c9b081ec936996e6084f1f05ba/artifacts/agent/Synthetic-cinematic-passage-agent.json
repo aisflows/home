@@ -1,0 +1,1512 @@
+{
+  "document_type": "ai_publisher.video_analysis_agent",
+  "schema_version": "ai_publisher_ai3.video_scenario_analysis.v1",
+  "contract_version": "ai_publisher.human_agent_cross_product.v1",
+  "analysis_id": "analysis-v1-synthetic-cinematic-frame-v3-0001",
+  "revision": 1,
+  "generated_at": "2026-07-26T18:00:00Z",
+  "source_timing_scope": "original_video_only",
+  "document_role": "source_evidence_for_adaptation",
+  "downstream_primary_cell": "AI3-CELL-01_SOURCE_EVIDENCE",
+  "content_digest": "cc489572ae1292e9ca0d0defeff40e62f70894965f61d4a058d1a91c1eb171c3",
+  "digest_algorithm": "sha256",
+  "digest_canonicalization": "RFC8785",
+  "digest_scope": "canonical_normalized_analysis.v1",
+  "source_identity": {
+    "safe_display_label": {
+      "value": "Synthetic cinematic passage",
+      "evidence_state": "USER_SUPPLIED",
+      "evidence_refs": []
+    },
+    "title": {
+      "value": null,
+      "evidence_state": "UNPROVEN",
+      "evidence_refs": []
+    },
+    "brand": {
+      "value": null,
+      "evidence_state": "UNPROVEN",
+      "evidence_refs": []
+    },
+    "person": {
+      "value": null,
+      "evidence_state": "UNPROVEN",
+      "evidence_refs": []
+    },
+    "official_status": {
+      "value": null,
+      "evidence_state": "UNPROVEN",
+      "evidence_refs": []
+    },
+    "rightsholder": {
+      "value": null,
+      "evidence_state": "UNPROVEN",
+      "evidence_refs": []
+    }
+  },
+  "evidence_access": {
+    "video": {
+      "status": "SAMPLED_LOCAL_VIDEO",
+      "evidence_state": "OBSERVED",
+      "evidence_refs": [
+        "ev_v1_je5wbamapgxkaujomobqztjkhi",
+        "ev_v1_pumfuphbz5jhijqcffif4w4via",
+        "ev_v1_l2iwb52pxwirlbel6xgdx7mgim",
+        "ev_v1_wys6hptwrfrmgnbw4fivjfmtie",
+        "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq",
+        "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+      ]
+    },
+    "ocr": {
+      "status": "partial",
+      "evidence_state": "APPROXIMATE",
+      "evidence_refs": [
+        "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+      ]
+    },
+    "speech_stt": {
+      "status": "not_run",
+      "evidence_state": "NOT_INSPECTED",
+      "evidence_refs": []
+    },
+    "audio_music": {
+      "status": "not_run",
+      "evidence_state": "NOT_INSPECTED",
+      "evidence_refs": []
+    },
+    "shot_boundaries": {
+      "status": "approximate",
+      "evidence_state": "APPROXIMATE",
+      "evidence_refs": [
+        "ev_v1_je5wbamapgxkaujomobqztjkhi",
+        "ev_v1_pumfuphbz5jhijqcffif4w4via",
+        "ev_v1_l2iwb52pxwirlbel6xgdx7mgim",
+        "ev_v1_wys6hptwrfrmgnbw4fivjfmtie",
+        "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq",
+        "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+      ]
+    },
+    "identity_legal_rightsholder": {
+      "status": "unproven",
+      "evidence_state": "UNPROVEN",
+      "evidence_refs": []
+    }
+  },
+  "technical_metadata": {
+    "duration_ms": 8375,
+    "width_px": 1920,
+    "height_px": 1080,
+    "aspect_label": "16:9",
+    "frame_rate": {
+      "value": null,
+      "evidence_state": "NOT_INSPECTED",
+      "evidence_refs": []
+    }
+  },
+  "public_reference_copy": {
+    "safe_summary": {
+      "value": "A six-shot synthetic passage moves from an intimate warm-lit point of view to a daylight wide frame, a backlit macro detail, layered depth, an uncertain subjective angle, and a final deliberately under-described frame.",
+      "evidence_state": "OBSERVED",
+      "evidence_refs": [
+        "ev_v1_je5wbamapgxkaujomobqztjkhi",
+        "ev_v1_pumfuphbz5jhijqcffif4w4via",
+        "ev_v1_l2iwb52pxwirlbel6xgdx7mgim",
+        "ev_v1_wys6hptwrfrmgnbw4fivjfmtie",
+        "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq",
+        "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+      ]
+    }
+  },
+  "raw_timed_observation_map": [
+    {
+      "row_id": "source-row-0001",
+      "source_start_ms": 0,
+      "source_end_ms": 1375,
+      "source_timecode_display": "00:00.000–00:01.375",
+      "observation": {
+        "visible_subject": {
+          "value": "A gloved hand and a brass compass fill the viewer's foreground",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ]
+        },
+        "visible_object": {
+          "value": "A brass compass",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ]
+        },
+        "place_environment": {
+          "value": "A dim workshop threshold",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ]
+        },
+        "frame_description": {
+          "value": "A gloved hand and compass fill a close-up from the viewer's eye line.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ]
+        },
+        "action": {
+          "value": "The hand steadies the compass beside the doorway.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ]
+        },
+        "visible_change": {
+          "value": "The opening establishes an intimate viewer-position frame.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ]
+        }
+      },
+      "cinematography": {
+        "shot_size": {
+          "value": "close_up",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.shot_size.v2"
+        },
+        "angle": {
+          "value": "angle=eye_level;viewpoint=pov",
+          "confidence": "medium",
+          "evidence_state": "APPROXIMATE",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ],
+          "source_role": "cinematography.angle_viewpoint.v2"
+        },
+        "camera_motion": {
+          "value": null,
+          "evidence_state": "NOT_INSPECTED",
+          "evidence_refs": [],
+          "confidence": "low",
+          "source_role": "cinematography.camera_motion.explicit.v1"
+        },
+        "composition": {
+          "value": "Hand and compass dominate the foreground; doorway sits in the background",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.composition.v2"
+        },
+        "lighting": {
+          "value": "soft warm side light",
+          "evidence_state": "APPROXIMATE",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ],
+          "confidence": "medium",
+          "source_role": "cinematography.lighting.v2"
+        },
+        "color": {
+          "value": "warm amber and dark brown palette",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.color.v2"
+        }
+      },
+      "text_in_frame": {
+        "status": "absent",
+        "exact_text": null,
+        "language": null,
+        "confidence": "high",
+        "evidence_refs": [
+          "ev_v1_je5wbamapgxkaujomobqztjkhi"
+        ]
+      },
+      "speech": {
+        "status": "not_inspected",
+        "exact_transcript": null,
+        "evidence_refs": []
+      },
+      "audio": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "music": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "interpretation": {
+        "story_function_candidate": {
+          "value": "Shot 1 advances the bounded synthetic visual progression.",
+          "evidence_state": "INFERRED",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ]
+        },
+        "uncertainty": "Interpretive function only; no source identity or target timing is inferred.",
+        "evidence_refs": [
+          "ev_v1_je5wbamapgxkaujomobqztjkhi"
+        ]
+      },
+      "evidence": {
+        "provenance": "synthetic_cinematic_frame_review",
+        "evidence_state": "OBSERVED",
+        "confidence": "high",
+        "evidence_refs": [
+          "ev_v1_je5wbamapgxkaujomobqztjkhi"
+        ]
+      }
+    },
+    {
+      "row_id": "source-row-0002",
+      "source_start_ms": 1375,
+      "source_end_ms": 2860,
+      "source_timecode_display": "00:01.375–00:02.860",
+      "observation": {
+        "visible_subject": {
+          "value": "A lone figure crosses a broad courtyard",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ]
+        },
+        "visible_object": {
+          "value": "Long geometric shadows",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ]
+        },
+        "place_environment": {
+          "value": "An open stone courtyard in daylight",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ]
+        },
+        "frame_description": {
+          "value": "A wide daylight courtyard is seen from above with a small figure near the center.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ]
+        },
+        "action": {
+          "value": "The figure crosses the open space.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ]
+        },
+        "visible_change": {
+          "value": "The view cuts from intimate interior detail to exterior scale.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ]
+        }
+      },
+      "cinematography": {
+        "shot_size": {
+          "value": "wide",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.shot_size.v2"
+        },
+        "angle": {
+          "value": "angle=high_angle;viewpoint=objective",
+          "confidence": "high",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ],
+          "source_role": "cinematography.angle_viewpoint.v2"
+        },
+        "camera_motion": {
+          "value": null,
+          "evidence_state": "NOT_INSPECTED",
+          "evidence_refs": [],
+          "confidence": "low",
+          "source_role": "cinematography.camera_motion.explicit.v1"
+        },
+        "composition": {
+          "value": "Small centered figure surrounded by broad negative space",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.composition.v2"
+        },
+        "lighting": {
+          "value": "clear daylight",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.lighting.v2"
+        },
+        "color": {
+          "value": "pale stone and cool blue shadows",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.color.v2"
+        }
+      },
+      "text_in_frame": {
+        "status": "absent",
+        "exact_text": null,
+        "language": null,
+        "confidence": "high",
+        "evidence_refs": [
+          "ev_v1_pumfuphbz5jhijqcffif4w4via"
+        ]
+      },
+      "speech": {
+        "status": "not_inspected",
+        "exact_transcript": null,
+        "evidence_refs": []
+      },
+      "audio": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "music": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "interpretation": {
+        "story_function_candidate": {
+          "value": "Shot 2 advances the bounded synthetic visual progression.",
+          "evidence_state": "INFERRED",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ]
+        },
+        "uncertainty": "Interpretive function only; no source identity or target timing is inferred.",
+        "evidence_refs": [
+          "ev_v1_pumfuphbz5jhijqcffif4w4via"
+        ]
+      },
+      "evidence": {
+        "provenance": "synthetic_cinematic_frame_review",
+        "evidence_state": "OBSERVED",
+        "confidence": "high",
+        "evidence_refs": [
+          "ev_v1_pumfuphbz5jhijqcffif4w4via"
+        ]
+      }
+    },
+    {
+      "row_id": "source-row-0003",
+      "source_start_ms": 2860,
+      "source_end_ms": 4125,
+      "source_timecode_display": "00:02.860–00:04.125",
+      "observation": {
+        "visible_subject": {
+          "value": "The compass needle",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+          ]
+        },
+        "visible_object": {
+          "value": "A narrow metal needle against a luminous dial",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+          ]
+        },
+        "place_environment": {
+          "value": "The compass face",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+          ]
+        },
+        "frame_description": {
+          "value": "A macro detail isolates the compass needle as a bright rim outlines its silhouette.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+          ]
+        },
+        "action": {
+          "value": "The needle settles toward one engraved mark.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+          ]
+        },
+        "visible_change": {
+          "value": "Scale collapses from the courtyard to a single mechanical detail.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+          ]
+        }
+      },
+      "cinematography": {
+        "shot_size": {
+          "value": "macro",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.shot_size.v2"
+        },
+        "angle": {
+          "value": null,
+          "confidence": "low",
+          "evidence_state": "UNPROVEN",
+          "evidence_refs": [],
+          "source_role": "cinematography.angle_viewpoint.v2"
+        },
+        "camera_motion": {
+          "value": null,
+          "evidence_state": "NOT_INSPECTED",
+          "evidence_refs": [],
+          "confidence": "low",
+          "source_role": "cinematography.camera_motion.explicit.v1"
+        },
+        "composition": {
+          "value": "Needle crosses the dial on a strong diagonal",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.composition.v2"
+        },
+        "lighting": {
+          "value": "backlight silhouette",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.lighting.v2"
+        },
+        "color": {
+          "value": "black metal edged with pale gold",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.color.v2"
+        }
+      },
+      "text_in_frame": {
+        "status": "exact_readable",
+        "exact_text": "37",
+        "language": "und",
+        "confidence": "high",
+        "evidence_refs": [
+          "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+        ]
+      },
+      "speech": {
+        "status": "not_inspected",
+        "exact_transcript": null,
+        "evidence_refs": []
+      },
+      "audio": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "music": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "interpretation": {
+        "story_function_candidate": {
+          "value": "Shot 3 advances the bounded synthetic visual progression.",
+          "evidence_state": "INFERRED",
+          "evidence_refs": [
+            "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+          ]
+        },
+        "uncertainty": "Interpretive function only; no source identity or target timing is inferred.",
+        "evidence_refs": [
+          "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+        ]
+      },
+      "evidence": {
+        "provenance": "synthetic_cinematic_frame_review",
+        "evidence_state": "OBSERVED",
+        "confidence": "high",
+        "evidence_refs": [
+          "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+        ]
+      }
+    },
+    {
+      "row_id": "source-row-0004",
+      "source_start_ms": 4125,
+      "source_end_ms": 5630,
+      "source_timecode_display": "00:04.125–00:05.630",
+      "observation": {
+        "visible_subject": {
+          "value": "A seated map reader",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ]
+        },
+        "visible_object": {
+          "value": "A hanging chain and an open map",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ]
+        },
+        "place_environment": {
+          "value": "A long room with an open doorway",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ]
+        },
+        "frame_description": {
+          "value": "A chain occupies the foreground, the reader and map sit in the midground, and a bright doorway closes the background.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ]
+        },
+        "action": {
+          "value": "The reader traces a route across the map.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ]
+        },
+        "visible_change": {
+          "value": "The image expands into three observable depth planes.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ]
+        }
+      },
+      "cinematography": {
+        "shot_size": {
+          "value": "medium_wide",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.shot_size.v2"
+        },
+        "angle": {
+          "value": "angle=eye_level;viewpoint=objective",
+          "confidence": "high",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ],
+          "source_role": "cinematography.angle_viewpoint.v2"
+        },
+        "camera_motion": {
+          "value": null,
+          "evidence_state": "NOT_INSPECTED",
+          "evidence_refs": [],
+          "confidence": "low",
+          "source_role": "cinematography.camera_motion.explicit.v1"
+        },
+        "composition": {
+          "value": "Chain in foreground, reader in midground, open doorway in background",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.composition.v2"
+        },
+        "lighting": {
+          "value": "soft interior fill with bright doorway separation",
+          "evidence_state": "APPROXIMATE",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ],
+          "confidence": "medium",
+          "source_role": "cinematography.lighting.v2"
+        },
+        "color": {
+          "value": "muted green, charcoal, and pale exterior light",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.color.v2"
+        }
+      },
+      "text_in_frame": {
+        "status": "present_unreadable",
+        "exact_text": null,
+        "language": null,
+        "confidence": "low",
+        "evidence_refs": [
+          "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+        ]
+      },
+      "speech": {
+        "status": "not_inspected",
+        "exact_transcript": null,
+        "evidence_refs": []
+      },
+      "audio": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "music": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "interpretation": {
+        "story_function_candidate": {
+          "value": "Shot 4 advances the bounded synthetic visual progression.",
+          "evidence_state": "INFERRED",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ]
+        },
+        "uncertainty": "Interpretive function only; no source identity or target timing is inferred.",
+        "evidence_refs": [
+          "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+        ]
+      },
+      "evidence": {
+        "provenance": "synthetic_cinematic_frame_review",
+        "evidence_state": "OBSERVED",
+        "confidence": "high",
+        "evidence_refs": [
+          "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+        ]
+      }
+    },
+    {
+      "row_id": "source-row-0005",
+      "source_start_ms": 5630,
+      "source_end_ms": 7010,
+      "source_timecode_display": "00:05.630–00:07.010",
+      "observation": {
+        "visible_subject": {
+          "value": "The map reader turns toward a reflected shape",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ]
+        },
+        "visible_object": {
+          "value": "A fractured mirror edge",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ]
+        },
+        "place_environment": {
+          "value": "The same long room",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ]
+        },
+        "frame_description": {
+          "value": "A tilted reflection suggests a subjective view, but the exact camera position remains uncertain.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ]
+        },
+        "action": {
+          "value": "The reader turns toward the mirror.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ]
+        },
+        "visible_change": {
+          "value": "The stable objective view gives way to a bounded uncertain viewpoint.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ]
+        }
+      },
+      "cinematography": {
+        "shot_size": {
+          "value": "medium_close_up",
+          "evidence_state": "APPROXIMATE",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ],
+          "confidence": "medium",
+          "source_role": "cinematography.shot_size.v2"
+        },
+        "angle": {
+          "value": "viewpoint=subjective_uncertain",
+          "confidence": "medium",
+          "evidence_state": "APPROXIMATE",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ],
+          "source_role": "cinematography.angle_viewpoint.v2"
+        },
+        "camera_motion": {
+          "value": null,
+          "evidence_state": "NOT_INSPECTED",
+          "evidence_refs": [],
+          "confidence": "low",
+          "source_role": "cinematography.camera_motion.explicit.v1"
+        },
+        "composition": {
+          "value": "Face and mirror edge divide the frame into unequal planes",
+          "evidence_state": "APPROXIMATE",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ],
+          "confidence": "medium",
+          "source_role": "cinematography.composition.v2"
+        },
+        "lighting": {
+          "value": "cool reflected edge light",
+          "evidence_state": "APPROXIMATE",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ],
+          "confidence": "medium",
+          "source_role": "cinematography.lighting.v2"
+        },
+        "color": {
+          "value": "desaturated blue and graphite",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ],
+          "confidence": "high",
+          "source_role": "cinematography.color.v2"
+        }
+      },
+      "text_in_frame": {
+        "status": "absent",
+        "exact_text": null,
+        "language": null,
+        "confidence": "high",
+        "evidence_refs": [
+          "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+        ]
+      },
+      "speech": {
+        "status": "not_inspected",
+        "exact_transcript": null,
+        "evidence_refs": []
+      },
+      "audio": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "music": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "interpretation": {
+        "story_function_candidate": {
+          "value": "Shot 5 advances the bounded synthetic visual progression.",
+          "evidence_state": "INFERRED",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ]
+        },
+        "uncertainty": "Interpretive function only; no source identity or target timing is inferred.",
+        "evidence_refs": [
+          "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+        ]
+      },
+      "evidence": {
+        "provenance": "synthetic_cinematic_frame_review",
+        "evidence_state": "OBSERVED",
+        "confidence": "high",
+        "evidence_refs": [
+          "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+        ]
+      }
+    },
+    {
+      "row_id": "source-row-0006",
+      "source_start_ms": 7010,
+      "source_end_ms": 8375,
+      "source_timecode_display": "00:07.010–00:08.375",
+      "observation": {
+        "visible_subject": {
+          "value": "A dark doorway and an indistinct figure",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+          ]
+        },
+        "visible_object": {
+          "value": "A narrow band of light at floor level",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+          ]
+        },
+        "place_environment": {
+          "value": "An under-exposed terminal frame",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+          ]
+        },
+        "frame_description": {
+          "value": "The final frame shows an indistinct figure near a dark doorway; cinematography details are unavailable.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+          ]
+        },
+        "action": {
+          "value": "The figure remains indistinct as the passage ends.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+          ]
+        },
+        "visible_change": {
+          "value": "The sequence ends without inventing unavailable visual detail.",
+          "evidence_state": "OBSERVED",
+          "evidence_refs": [
+            "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+          ]
+        }
+      },
+      "cinematography": {
+        "shot_size": {
+          "value": null,
+          "evidence_state": "UNAVAILABLE",
+          "evidence_refs": [],
+          "confidence": "low",
+          "source_role": "cinematography.shot_size.v2"
+        },
+        "angle": {
+          "value": null,
+          "confidence": "low",
+          "evidence_state": "UNAVAILABLE",
+          "evidence_refs": [],
+          "source_role": "cinematography.angle_viewpoint.v2"
+        },
+        "camera_motion": {
+          "value": null,
+          "evidence_state": "NOT_INSPECTED",
+          "evidence_refs": [],
+          "confidence": "low",
+          "source_role": "cinematography.camera_motion.explicit.v1"
+        },
+        "composition": {
+          "value": null,
+          "evidence_state": "UNAVAILABLE",
+          "evidence_refs": [],
+          "confidence": "low",
+          "source_role": "cinematography.composition.v2"
+        },
+        "lighting": {
+          "value": null,
+          "evidence_state": "UNAVAILABLE",
+          "evidence_refs": [],
+          "confidence": "low",
+          "source_role": "cinematography.lighting.v2"
+        },
+        "color": {
+          "value": null,
+          "evidence_state": "UNAVAILABLE",
+          "evidence_refs": [],
+          "confidence": "low",
+          "source_role": "cinematography.color.v2"
+        }
+      },
+      "text_in_frame": {
+        "status": "unavailable",
+        "exact_text": null,
+        "language": null,
+        "confidence": "low",
+        "evidence_refs": []
+      },
+      "speech": {
+        "status": "not_inspected",
+        "exact_transcript": null,
+        "evidence_refs": []
+      },
+      "audio": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "music": {
+        "status": "not_inspected",
+        "proven_cues": [],
+        "evidence_refs": []
+      },
+      "interpretation": {
+        "story_function_candidate": {
+          "value": "Shot 6 advances the bounded synthetic visual progression.",
+          "evidence_state": "INFERRED",
+          "evidence_refs": [
+            "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+          ]
+        },
+        "uncertainty": "Interpretive function only; no source identity or target timing is inferred.",
+        "evidence_refs": [
+          "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+        ]
+      },
+      "evidence": {
+        "provenance": "synthetic_cinematic_frame_review",
+        "evidence_state": "OBSERVED",
+        "confidence": "high",
+        "evidence_refs": [
+          "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+        ]
+      }
+    }
+  ],
+  "dense_timed_action_map": [
+    {
+      "source_start_ms": 0,
+      "source_end_ms": 1375,
+      "source_row_ids": [
+        "source-row-0001"
+      ],
+      "action_state": "OBSERVED"
+    },
+    {
+      "source_start_ms": 1375,
+      "source_end_ms": 2860,
+      "source_row_ids": [
+        "source-row-0002"
+      ],
+      "action_state": "OBSERVED"
+    },
+    {
+      "source_start_ms": 2860,
+      "source_end_ms": 4125,
+      "source_row_ids": [
+        "source-row-0003"
+      ],
+      "action_state": "OBSERVED"
+    },
+    {
+      "source_start_ms": 4125,
+      "source_end_ms": 5630,
+      "source_row_ids": [
+        "source-row-0004"
+      ],
+      "action_state": "OBSERVED"
+    },
+    {
+      "source_start_ms": 5630,
+      "source_end_ms": 7010,
+      "source_row_ids": [
+        "source-row-0005"
+      ],
+      "action_state": "OBSERVED"
+    },
+    {
+      "source_start_ms": 7010,
+      "source_end_ms": 8375,
+      "source_row_ids": [
+        "source-row-0006"
+      ],
+      "action_state": "OBSERVED"
+    }
+  ],
+  "canonical_scenario_plan": {
+    "scope": "source_structure_only",
+    "opening": {
+      "value": "Warm close-up establishes the viewer-position detail",
+      "evidence_state": "INFERRED",
+      "evidence_refs": [
+        "ev_v1_je5wbamapgxkaujomobqztjkhi"
+      ]
+    },
+    "escalation": {
+      "value": "Wide daylight scale gives way to a backlit macro detail",
+      "evidence_state": "INFERRED",
+      "evidence_refs": [
+        "ev_v1_pumfuphbz5jhijqcffif4w4via",
+        "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+      ]
+    },
+    "reveal": {
+      "value": "Layered depth exposes the reader and exit",
+      "evidence_state": "INFERRED",
+      "evidence_refs": [
+        "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+      ]
+    },
+    "payoff": {
+      "value": "A bounded uncertain reflection changes the viewpoint",
+      "evidence_state": "INFERRED",
+      "evidence_refs": [
+        "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+      ]
+    },
+    "ending": {
+      "value": "The final under-exposed frame remains deliberately unresolved",
+      "evidence_state": "INFERRED",
+      "evidence_refs": [
+        "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+      ]
+    }
+  },
+  "full_timed_script_candidate_or_context": {
+    "role": "source_context_only",
+    "source_row_ids": [
+      "source-row-0001",
+      "source-row-0002",
+      "source-row-0003",
+      "source-row-0004",
+      "source-row-0005",
+      "source-row-0006"
+    ],
+    "target_timing": null,
+    "evidence_state": "OBSERVED"
+  },
+  "controlled_segment_plan": {
+    "role": "source_grouping_only",
+    "segments": [
+      {
+        "segment_id": "source-segment-0001",
+        "source_start_ms": 0,
+        "source_end_ms": 1375,
+        "source_row_ids": [
+          "source-row-0001"
+        ]
+      },
+      {
+        "segment_id": "source-segment-0002",
+        "source_start_ms": 1375,
+        "source_end_ms": 2860,
+        "source_row_ids": [
+          "source-row-0002"
+        ]
+      },
+      {
+        "segment_id": "source-segment-0003",
+        "source_start_ms": 2860,
+        "source_end_ms": 4125,
+        "source_row_ids": [
+          "source-row-0003"
+        ]
+      },
+      {
+        "segment_id": "source-segment-0004",
+        "source_start_ms": 4125,
+        "source_end_ms": 5630,
+        "source_row_ids": [
+          "source-row-0004"
+        ]
+      },
+      {
+        "segment_id": "source-segment-0005",
+        "source_start_ms": 5630,
+        "source_end_ms": 7010,
+        "source_row_ids": [
+          "source-row-0005"
+        ]
+      },
+      {
+        "segment_id": "source-segment-0006",
+        "source_start_ms": 7010,
+        "source_end_ms": 8375,
+        "source_row_ids": [
+          "source-row-0006"
+        ]
+      }
+    ]
+  },
+  "frame_spec_motion_grammar": {
+    "hook": {
+      "value": "Intimate warm close-up with supported POV",
+      "evidence_state": "INFERRED",
+      "evidence_refs": [
+        "ev_v1_je5wbamapgxkaujomobqztjkhi"
+      ]
+    },
+    "escalation": {
+      "value": "Wide daylight scale followed by macro silhouette",
+      "evidence_state": "INFERRED",
+      "evidence_refs": [
+        "ev_v1_pumfuphbz5jhijqcffif4w4via",
+        "ev_v1_l2iwb52pxwirlbel6xgdx7mgim"
+      ]
+    },
+    "reveal_payoff": {
+      "value": "Layered depth and uncertain reflection",
+      "evidence_state": "INFERRED",
+      "evidence_refs": [
+        "ev_v1_wys6hptwrfrmgnbw4fivjfmtie",
+        "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+      ]
+    },
+    "shot_density": {
+      "value": "Six contiguous source intervals over an arbitrary 8.375-second duration",
+      "evidence_state": "OBSERVED",
+      "evidence_refs": [
+        "ev_v1_je5wbamapgxkaujomobqztjkhi",
+        "ev_v1_pumfuphbz5jhijqcffif4w4via",
+        "ev_v1_l2iwb52pxwirlbel6xgdx7mgim",
+        "ev_v1_wys6hptwrfrmgnbw4fivjfmtie",
+        "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq",
+        "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+      ]
+    },
+    "camera": {
+      "value": "Shot size, angle, viewpoint and composition only where supported; movement uninspected",
+      "evidence_state": "OBSERVED",
+      "evidence_refs": [
+        "ev_v1_je5wbamapgxkaujomobqztjkhi",
+        "ev_v1_pumfuphbz5jhijqcffif4w4via",
+        "ev_v1_l2iwb52pxwirlbel6xgdx7mgim",
+        "ev_v1_wys6hptwrfrmgnbw4fivjfmtie",
+        "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq",
+        "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+      ]
+    },
+    "lighting_color": {
+      "value": "Warm side light, daylight, backlight silhouette, and cool reflected edge light",
+      "evidence_state": "OBSERVED",
+      "evidence_refs": [
+        "ev_v1_je5wbamapgxkaujomobqztjkhi",
+        "ev_v1_pumfuphbz5jhijqcffif4w4via",
+        "ev_v1_l2iwb52pxwirlbel6xgdx7mgim",
+        "ev_v1_wys6hptwrfrmgnbw4fivjfmtie",
+        "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+      ]
+    },
+    "transitions": {
+      "value": "Cut order is observed; transition mechanics are not inferred",
+      "evidence_state": "APPROXIMATE",
+      "evidence_refs": [
+        "ev_v1_je5wbamapgxkaujomobqztjkhi",
+        "ev_v1_pumfuphbz5jhijqcffif4w4via",
+        "ev_v1_l2iwb52pxwirlbel6xgdx7mgim",
+        "ev_v1_wys6hptwrfrmgnbw4fivjfmtie",
+        "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq",
+        "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+      ]
+    },
+    "sound_music_relationship": {
+      "value": null,
+      "evidence_state": "NOT_INSPECTED",
+      "evidence_refs": []
+    },
+    "reusable_pattern": {
+      "value": "Move from intimate detail through scale and depth to bounded uncertainty",
+      "evidence_state": "INFERRED",
+      "evidence_refs": [
+        "ev_v1_je5wbamapgxkaujomobqztjkhi",
+        "ev_v1_pumfuphbz5jhijqcffif4w4via",
+        "ev_v1_l2iwb52pxwirlbel6xgdx7mgim",
+        "ev_v1_wys6hptwrfrmgnbw4fivjfmtie",
+        "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq",
+        "ev_v1_vru5fpet4msfwv3wc63mu7fvka"
+      ]
+    }
+  },
+  "adaptation_brief": {
+    "role": "consumer_neutral_source_guidance",
+    "target_brief_status": "required_before_new_story",
+    "source_is_not_target_script": true
+  },
+  "prompt_magic_context": {
+    "role": "bounded_source_context_only",
+    "prompt_body": null
+  },
+  "adaptation_boundary": {
+    "allowed": [
+      "story mechanics",
+      "rhythm",
+      "shot density",
+      "camera grammar",
+      "lighting/color grammar",
+      "transition language",
+      "abstract action progression"
+    ],
+    "reusable_mechanics": [
+      "intimate-to-wide scale change",
+      "layered depth reveal",
+      "bounded uncertain viewpoint"
+    ],
+    "forbidden": [
+      "unproven identity",
+      "unread OCR",
+      "untranscribed speech",
+      "uninspected audio/music",
+      "legal/rightsholder status",
+      "source timestamps as target timing"
+    ],
+    "blocked_claims": [
+      "No title, brand, person, official status, or rightsholder is proven."
+    ],
+    "protected_content_limits": [
+      "Use only abstract structure and visual grammar; do not copy a protected identity or scene."
+    ],
+    "literal_copy_allowed": false,
+    "create_new_story_required": true
+  },
+  "source_proof": {
+    "status": "sampled_synthetic_evidence",
+    "evidence_ref_index": [
+      {
+        "evidence_ref": "ev_v1_je5wbamapgxkaujomobqztjkhi",
+        "kind": "synthetic_cinematic_frame_review",
+        "source_start_ms": 0,
+        "source_end_ms": 1375,
+        "frame_ordinal": 1,
+        "evidence_state": "OBSERVED"
+      },
+      {
+        "evidence_ref": "ev_v1_pumfuphbz5jhijqcffif4w4via",
+        "kind": "synthetic_cinematic_frame_review",
+        "source_start_ms": 1375,
+        "source_end_ms": 2860,
+        "frame_ordinal": 2,
+        "evidence_state": "OBSERVED"
+      },
+      {
+        "evidence_ref": "ev_v1_l2iwb52pxwirlbel6xgdx7mgim",
+        "kind": "synthetic_cinematic_frame_review",
+        "source_start_ms": 2860,
+        "source_end_ms": 4125,
+        "frame_ordinal": 3,
+        "evidence_state": "OBSERVED"
+      },
+      {
+        "evidence_ref": "ev_v1_wys6hptwrfrmgnbw4fivjfmtie",
+        "kind": "synthetic_cinematic_frame_review",
+        "source_start_ms": 4125,
+        "source_end_ms": 5630,
+        "frame_ordinal": 4,
+        "evidence_state": "OBSERVED"
+      },
+      {
+        "evidence_ref": "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq",
+        "kind": "synthetic_cinematic_frame_review",
+        "source_start_ms": 5630,
+        "source_end_ms": 7010,
+        "frame_ordinal": 5,
+        "evidence_state": "OBSERVED"
+      },
+      {
+        "evidence_ref": "ev_v1_vru5fpet4msfwv3wc63mu7fvka",
+        "kind": "synthetic_cinematic_frame_review",
+        "source_start_ms": 7010,
+        "source_end_ms": 8375,
+        "frame_ordinal": 6,
+        "evidence_state": "OBSERVED"
+      }
+    ],
+    "cinematography_component_ancestry": {
+      "source-row-0001": {
+        "angle": {
+          "value": "eye_level",
+          "confidence": "high",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ]
+        },
+        "viewpoint": {
+          "value": "pov",
+          "confidence": "medium",
+          "evidence_refs": [
+            "ev_v1_je5wbamapgxkaujomobqztjkhi"
+          ]
+        }
+      },
+      "source-row-0002": {
+        "angle": {
+          "value": "high_angle",
+          "confidence": "high",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ]
+        },
+        "viewpoint": {
+          "value": "objective",
+          "confidence": "high",
+          "evidence_refs": [
+            "ev_v1_pumfuphbz5jhijqcffif4w4via"
+          ]
+        }
+      },
+      "source-row-0003": {
+        "angle": {
+          "value": null,
+          "confidence": "low",
+          "evidence_refs": []
+        },
+        "viewpoint": {
+          "value": null,
+          "confidence": "low",
+          "evidence_refs": []
+        }
+      },
+      "source-row-0004": {
+        "angle": {
+          "value": "eye_level",
+          "confidence": "high",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ]
+        },
+        "viewpoint": {
+          "value": "objective",
+          "confidence": "high",
+          "evidence_refs": [
+            "ev_v1_wys6hptwrfrmgnbw4fivjfmtie"
+          ]
+        }
+      },
+      "source-row-0005": {
+        "angle": {
+          "value": "dutch_angle",
+          "confidence": "low",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ]
+        },
+        "viewpoint": {
+          "value": "subjective_uncertain",
+          "confidence": "medium",
+          "evidence_refs": [
+            "ev_v1_mgkqxknmxhdrk4opb2xf4jeofq"
+          ]
+        }
+      },
+      "source-row-0006": {
+        "angle": {
+          "value": null,
+          "confidence": "low",
+          "evidence_refs": []
+        },
+        "viewpoint": {
+          "value": null,
+          "confidence": "low",
+          "evidence_refs": []
+        }
+      }
+    }
+  },
+  "missing_evidence": [
+    {
+      "category": "speech_STT",
+      "evidence_state": "NOT_INSPECTED",
+      "description": "Speech and transcript were not inspected."
+    },
+    {
+      "category": "audio_music",
+      "evidence_state": "NOT_INSPECTED",
+      "description": "Audio and music semantics were not inspected."
+    },
+    {
+      "category": "identity_rightsholder",
+      "evidence_state": "UNPROVEN",
+      "description": "Identity and rightsholder status are unproven."
+    },
+    {
+      "category": "cinematography_terminal_frame",
+      "evidence_state": "UNAVAILABLE",
+      "description": "Final-frame cinematography detail is unavailable."
+    }
+  ],
+  "validation_notes": {
+    "source_evidence_status": "bounded_synthetic_fixture",
+    "shot_boundary_status": "approximate",
+    "source_target_timing_separated": true,
+    "publication_authority": false,
+    "duration_authority": "max_source_end_ms",
+    "arbitrary_duration_ms": 8375
+  },
+  "publish_pack_input": {
+    "status": "not_requested",
+    "publication_copy": null,
+    "publishing_authority": false
+  },
+  "ai_studio_handoff": {
+    "intended_consumer": "AI Studio 3",
+    "primary_intake": "AI3-CELL-01_SOURCE_EVIDENCE",
+    "document_role": "source_reference_evidence",
+    "source_timestamps_are_target_timestamps": false,
+    "create_new_story_required": true,
+    "literal_copy_allowed": false,
+    "allowed_adaptation_dimensions": [
+      "story mechanics",
+      "rhythm",
+      "shot density",
+      "camera grammar",
+      "lighting/color grammar",
+      "transition language",
+      "abstract action progression"
+    ],
+    "forbidden_as_creative_fact": [
+      "unproven identity",
+      "unread OCR",
+      "untranscribed speech",
+      "uninspected audio/music",
+      "legal/rightsholder status",
+      "source timestamps as target timing"
+    ],
+    "ignored_by_ai_studio": [
+      "publishing_implications",
+      "publish_bridge_summary",
+      "publish_pack_input"
+    ],
+    "required_target_brief": [
+      "new_video_goal",
+      "target_duration_or_NEEDS_TIMING",
+      "target_aspect",
+      "audience",
+      "tone_or_style",
+      "invention_boundary",
+      "protected_content_restrictions"
+    ]
+  },
+  "parity_metadata": {
+    "algorithm": "SHA-256",
+    "canonicalization": "RFC8785",
+    "digest_scope": "canonical_normalized_analysis.v1",
+    "source_row_count": 6,
+    "source_row_order_digest": "2460842a4d73e41b17376afd6806dc142e30851e9d274d98ca1aa4258c36fca2",
+    "human_view_projection": "01_VIDEO_ANALYSIS_TIMESCRIPT.md"
+  }
+}

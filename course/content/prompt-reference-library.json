@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/prompt-reference-library.html",
   "content_url": "./content/prompt-reference-library.md",
   "content_json_url": "./content/prompt-reference-library.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/prompt-reference-library.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/prompt-reference-library.html",
   "citation": "AIS FLOWS AI-video course, “Библиотека примеров промптов”, 0.1.0-local-preview.",
   "license": {
     "name": null,

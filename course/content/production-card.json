@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/production-card.html",
   "content_url": "./content/production-card.md",
   "content_json_url": "./content/production-card.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/production-card.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/production-card.html",
   "citation": "AIS FLOWS AI-video course, “Production Card до промпта”, 0.1.0-local-preview.",
   "license": {
     "name": null,

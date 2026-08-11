@@ -12,8 +12,8 @@
   },
   "version": "0.1.0-local-preview",
   "source_file": "06_MODEL_WORKFLOWS_AND_ADAPTATION.md",
-  "source_sha256": "23947045a77e467916dc7a6dbfb096030502a03b08c035e8ebff2fed45c98633",
-  "content_sha256": "23947045a77e467916dc7a6dbfb096030502a03b08c035e8ebff2fed45c98633",
+  "source_sha256": "7f68fca30d8d0c7b83e3e6e6dbadf50a999f0060745cce55e46e72fcabba0825",
+  "content_sha256": "7f68fca30d8d0c7b83e3e6e6dbadf50a999f0060745cce55e46e72fcabba0825",
   "language": [
     "ru"
   ],
@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/generation-routes.html",
   "content_url": "./content/generation-routes.md",
   "content_json_url": "./content/generation-routes.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/generation-routes.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/generation-routes.html",
   "citation": "AIS FLOWS AI-video course, “Маршруты моделей и генерации”, 0.1.0-local-preview.",
   "license": {
     "name": null,
@@ -46,12 +46,13 @@
       "06.7. Как Использовать Чужой Сильный Промпт",
       "06.8. Улучшение Качества",
       "06.9. Остановка: Режим Модели И Адаптация",
-      "06.10. Сначала Универсальная Задача, Потом Конкретный Сервис"
+      "06.10. Сначала Универсальная Задача, Потом Конкретный Сервис",
+      "06.11. Следующий Шаг: Собрать Сегмент"
     ],
-    "heading_count": 13,
+    "heading_count": 14,
     "unordered_list_item_count": 38,
     "ordered_list_item_count": 0,
-    "code_fence_count": 14,
+    "code_fence_count": 15,
     "blockquote_count": 0,
     "image_count": 0,
     "link_count": 0

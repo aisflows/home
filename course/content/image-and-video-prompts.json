@@ -12,8 +12,8 @@
   },
   "version": "0.1.0-local-preview",
   "source_file": "05_IMAGE_AND_VIDEO_PROMPTS.md",
-  "source_sha256": "1e2b55a56b4d229049a900ae3b607349ba0b67dccf31112da90d30dfa389e148",
-  "content_sha256": "1e2b55a56b4d229049a900ae3b607349ba0b67dccf31112da90d30dfa389e148",
+  "source_sha256": "3df353d10941c88d9839766489a61b93cb333f2d39dfa9738e9345b48242fa00",
+  "content_sha256": "3df353d10941c88d9839766489a61b93cb333f2d39dfa9738e9345b48242fa00",
   "language": [
     "ru"
   ],
@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/image-and-video-prompts.html",
   "content_url": "./content/image-and-video-prompts.md",
   "content_json_url": "./content/image-and-video-prompts.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/image-and-video-prompts.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/image-and-video-prompts.html",
   "citation": "AIS FLOWS AI-video course, “Промпты изображения и видео”, 0.1.0-local-preview.",
   "license": {
     "name": null,
@@ -46,12 +46,13 @@
       "05.6. Нормальный Пример",
       "05.7. Остановка: Промпт Кадра И Промпт Движения",
       "05.8. Где Смотреть Больше Примеров",
-      "05.10. Промпт Не Заменяет Производственный План"
+      "05.10. Промпт Не Заменяет Производственный План",
+      "05.11. Куда Идти После Этого Различия"
     ],
-    "heading_count": 13,
+    "heading_count": 14,
     "unordered_list_item_count": 41,
     "ordered_list_item_count": 0,
-    "code_fence_count": 24,
+    "code_fence_count": 25,
     "blockquote_count": 0,
     "image_count": 0,
     "link_count": 0

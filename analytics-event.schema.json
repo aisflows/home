@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://aisflows.github.io/home/analytics-event.schema.json",
+  "$id": "https://aisflows-home-preview.pages.dev/analytics-event.schema.json",
   "title": "AIS FLOWS privacy-safe browser runtime event",
   "description": "Exact allowlisted event object emitted to window.AIS_FLOWS_ANALYTICS_EVENTS and aisflows:event by analytics.js. Umami browser collection is verified from the public Home; browser analytics do not observe direct agent fetches.",
   "type": "object",

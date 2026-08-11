@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/source-backed-lessons.html",
   "content_url": "./content/source-backed-lessons.md",
   "content_json_url": "./content/source-backed-lessons.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/source-backed-lessons.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/source-backed-lessons.html",
   "citation": "AIS FLOWS AI-video course, “Производственные уроки и личная библиотека”, 0.1.0-local-preview.",
   "license": {
     "name": null,

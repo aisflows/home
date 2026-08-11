@@ -4,8 +4,8 @@
   "deployment_status": "public",
   "current_public_home_status": "public",
   "catalog_routes": {
-    "en": "https://aisflows.github.io/home/media/index.html",
-    "ru": "https://aisflows.github.io/home/ru/media/index.html"
+    "en": "https://aisflows-home-preview.pages.dev/media/index.html",
+    "ru": "https://aisflows-home-preview.pages.dev/ru/media/index.html"
   },
   "featured_trailer": {
     "id": "featured-youtube-trailer",
@@ -17,7 +17,7 @@
     "media_kind": "youtube",
     "mime_type": null,
     "asset_url": null,
-    "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-youtube-trailer-poster.jpg",
+    "poster_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-youtube-trailer-poster.jpg",
     "width": 1280,
     "height": 720,
     "aspect_ratio": "16:9",
@@ -43,8 +43,8 @@
       "tiktok": null
     },
     "order": -1,
-    "human_page_url_en": "https://aisflows.github.io/home/media/featured-youtube-trailer/",
-    "human_page_url_ru": "https://aisflows.github.io/home/ru/media/featured-youtube-trailer/"
+    "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/featured-youtube-trailer/",
+    "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/featured-youtube-trailer/"
   },
   "works": [
     {
@@ -56,8 +56,8 @@
       "description_ru": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-jbl-jurassic-park-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-media-jbl-jurassic-park-poster.jpg",
+      "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-jbl-jurassic-park-web.mp4",
+      "poster_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-jbl-jurassic-park-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
@@ -85,8 +85,8 @@
         "tiktok": "https://www.tiktok.com/@aisflows/video/7667387333196434708"
       },
       "order": 0,
-      "human_page_url_en": "https://aisflows.github.io/home/media/jbl-jurassic-park/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/jbl-jurassic-park/"
+      "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/jbl-jurassic-park/",
+      "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/jbl-jurassic-park/"
     },
     {
       "id": "interstellar-millers-planet",
@@ -97,8 +97,8 @@
       "description_ru": "Interstellar: Miller's Planet Is the Worst Resort in the Universe | AI Fan Trailer",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-interstellar-millers-planet-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-media-interstellar-millers-planet-poster.jpg",
+      "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-interstellar-millers-planet-web.mp4",
+      "poster_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-interstellar-millers-planet-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
@@ -126,8 +126,8 @@
         "tiktok": "https://www.tiktok.com/@aisflows/video/7665036218937167125"
       },
       "order": 1,
-      "human_page_url_en": "https://aisflows.github.io/home/media/interstellar-millers-planet/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/interstellar-millers-planet/"
+      "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/interstellar-millers-planet/",
+      "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/interstellar-millers-planet/"
     },
     {
       "id": "doom-battlefield-earth",
@@ -138,8 +138,8 @@
       "description_ru": "DOOM: THE BATTLEFIELD IS EARTH | AI Fan Trailer",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-doom-battlefield-earth-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-media-doom-battlefield-earth-poster.jpg",
+      "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-doom-battlefield-earth-web.mp4",
+      "poster_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-doom-battlefield-earth-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
@@ -167,8 +167,8 @@
         "tiktok": "https://www.tiktok.com/@aisflows/video/7608327208469417236"
       },
       "order": 2,
-      "human_page_url_en": "https://aisflows.github.io/home/media/doom-battlefield-earth/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/doom-battlefield-earth/"
+      "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/doom-battlefield-earth/",
+      "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/doom-battlefield-earth/"
     },
     {
       "id": "witcher-monsters-men",
@@ -179,8 +179,8 @@
       "description_ru": "THE WITCHER: Monsters & Men | AI Fan Trailer",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-witcher-monsters-men-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-media-witcher-monsters-men-poster.jpg",
+      "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-witcher-monsters-men-web.mp4",
+      "poster_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-witcher-monsters-men-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
@@ -208,8 +208,8 @@
         "tiktok": "https://www.tiktok.com/@aisflows/video/7616440679534726420"
       },
       "order": 3,
-      "human_page_url_en": "https://aisflows.github.io/home/media/witcher-monsters-men/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/witcher-monsters-men/"
+      "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/witcher-monsters-men/",
+      "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/witcher-monsters-men/"
     },
     {
       "id": "28-days-later",
@@ -220,8 +220,8 @@
       "description_ru": "Вертикальное AI-медиапревью",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-28-days-later-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-28-days-later-poster.jpg",
+      "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-28-days-later-web.mp4",
+      "poster_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-28-days-later-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
@@ -249,8 +249,8 @@
         "tiktok": "https://www.tiktok.com/@aisflows/video/7601510848963579157"
       },
       "order": 4,
-      "human_page_url_en": "https://aisflows.github.io/home/media/28-days-later/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/28-days-later/"
+      "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/28-days-later/",
+      "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/28-days-later/"
     },
     {
       "id": "dead-space",
@@ -261,8 +261,8 @@
       "description_ru": "Вертикальное AI-медиапревью",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-dead-space-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-dead-space-poster.jpg",
+      "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-dead-space-web.mp4",
+      "poster_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-dead-space-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
@@ -290,8 +290,8 @@
         "tiktok": "https://www.tiktok.com/@aisflows/photo/7560619174192581900"
       },
       "order": 5,
-      "human_page_url_en": "https://aisflows.github.io/home/media/dead-space/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/dead-space/"
+      "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/dead-space/",
+      "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/dead-space/"
     },
     {
       "id": "godzilla",
@@ -302,8 +302,8 @@
       "description_ru": "Вертикальное AI-медиапревью",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-godzilla-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-godzilla-poster.jpg",
+      "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-godzilla-web.mp4",
+      "poster_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-godzilla-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
@@ -331,8 +331,8 @@
         "tiktok": "https://www.tiktok.com/@aisflows/video/7594633448740900108"
       },
       "order": 6,
-      "human_page_url_en": "https://aisflows.github.io/home/media/godzilla/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/godzilla/"
+      "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/godzilla/",
+      "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/godzilla/"
     },
     {
       "id": "predator",
@@ -343,8 +343,8 @@
       "description_ru": "Вертикальное AI-медиапревью",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-predator-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-predator-poster.jpg",
+      "asset_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-predator-web.mp4",
+      "poster_url": "https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-predator-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
@@ -372,8 +372,8 @@
         "tiktok": "https://www.tiktok.com/@aisflows/video/7556656857746574603"
       },
       "order": 7,
-      "human_page_url_en": "https://aisflows.github.io/home/media/predator/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/predator/"
+      "human_page_url_en": "https://aisflows-home-preview.pages.dev/media/predator/",
+      "human_page_url_ru": "https://aisflows-home-preview.pages.dev/ru/media/predator/"
     }
   ]
 }

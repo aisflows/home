@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/full-case-study.html",
   "content_url": "./content/full-case-study.md",
   "content_json_url": "./content/full-case-study.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/full-case-study.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/full-case-study.html",
   "citation": "AIS FLOWS AI-video course, “Полный кейс: от идеи до финала”, 0.1.0-local-preview.",
   "license": {
     "name": null,

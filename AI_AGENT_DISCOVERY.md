@@ -33,14 +33,14 @@ Machine index: [media/media-index.json](./media/media-index.json)
 
 | id | kind | dimensions | status | action | EN route | direct media |
 | --- | --- | --- | --- | --- | --- | --- |
-| jbl-jurassic-park | local_video | 720x1280 | published | playback | https://aisflows.github.io/home/media/jbl-jurassic-park/ | https://aisflows.github.io/home/assets/media/aisflows-media-jbl-jurassic-park-web.mp4 |
-| interstellar-millers-planet | local_video | 720x1280 | published | playback | https://aisflows.github.io/home/media/interstellar-millers-planet/ | https://aisflows.github.io/home/assets/media/aisflows-media-interstellar-millers-planet-web.mp4 |
-| doom-battlefield-earth | local_video | 720x1280 | published | playback | https://aisflows.github.io/home/media/doom-battlefield-earth/ | https://aisflows.github.io/home/assets/media/aisflows-media-doom-battlefield-earth-web.mp4 |
-| witcher-monsters-men | local_video | 720x1280 | published | playback | https://aisflows.github.io/home/media/witcher-monsters-men/ | https://aisflows.github.io/home/assets/media/aisflows-media-witcher-monsters-men-web.mp4 |
-| 28-days-later | local_video | 720x1280 | published | playback | https://aisflows.github.io/home/media/28-days-later/ | https://aisflows.github.io/home/assets/media/aisflows-preview-28-days-later-web.mp4 |
-| dead-space | local_video | 720x1280 | published | playback | https://aisflows.github.io/home/media/dead-space/ | https://aisflows.github.io/home/assets/media/aisflows-preview-dead-space-web.mp4 |
-| godzilla | local_video | 720x1280 | published | playback | https://aisflows.github.io/home/media/godzilla/ | https://aisflows.github.io/home/assets/media/aisflows-preview-godzilla-web.mp4 |
-| predator | local_video | 720x1280 | published | playback | https://aisflows.github.io/home/media/predator/ | https://aisflows.github.io/home/assets/media/aisflows-preview-predator-web.mp4 |
+| jbl-jurassic-park | local_video | 720x1280 | published | playback | https://aisflows-home-preview.pages.dev/media/jbl-jurassic-park/ | https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-jbl-jurassic-park-web.mp4 |
+| interstellar-millers-planet | local_video | 720x1280 | published | playback | https://aisflows-home-preview.pages.dev/media/interstellar-millers-planet/ | https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-interstellar-millers-planet-web.mp4 |
+| doom-battlefield-earth | local_video | 720x1280 | published | playback | https://aisflows-home-preview.pages.dev/media/doom-battlefield-earth/ | https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-doom-battlefield-earth-web.mp4 |
+| witcher-monsters-men | local_video | 720x1280 | published | playback | https://aisflows-home-preview.pages.dev/media/witcher-monsters-men/ | https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-witcher-monsters-men-web.mp4 |
+| 28-days-later | local_video | 720x1280 | published | playback | https://aisflows-home-preview.pages.dev/media/28-days-later/ | https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-28-days-later-web.mp4 |
+| dead-space | local_video | 720x1280 | published | playback | https://aisflows-home-preview.pages.dev/media/dead-space/ | https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-dead-space-web.mp4 |
+| godzilla | local_video | 720x1280 | published | playback | https://aisflows-home-preview.pages.dev/media/godzilla/ | https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-godzilla-web.mp4 |
+| predator | local_video | 720x1280 | published | playback | https://aisflows-home-preview.pages.dev/media/predator/ | https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-predator-web.mp4 |
 
 ## Direct indexes
 

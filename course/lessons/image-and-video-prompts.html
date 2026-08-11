@@ -8,22 +8,23 @@
     <link rel="icon" href="data:,">
     <link rel="alternate" type="text/markdown" title="Direct lesson content" href="../content/image-and-video-prompts.md">
     <link rel="alternate" type="application/json" title="Lesson metadata" href="../content/image-and-video-prompts.json">
+    <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="../styles.css">
     <script src="../app.js" defer></script>
   </head>
   <body data-page="static-lesson" data-lesson-id="image-and-video-prompts">
     <a class="skip-link" href="#lesson-content">Перейти к уроку</a>
-    <header class="site-header"><div class="shell header-inner"><a class="brand" href="../index.html"><span>AIS FLOWS</span><small>AI-video course</small></a><nav class="main-nav" aria-label="Навигация курса"><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Home</a></nav></div></header>
+    <header class="shell topbar media-page-topbar course-page-topbar" aria-label="Основная навигация"><a class="brand" href="../../index.html">AIS FLOWS</a><nav class="nav" aria-label="Навигация курса"><a href="../index.html">Курс</a><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Главная</a></nav><button class="mobile-menu-toggle" type="button" aria-label="Открыть меню" aria-controls="mobile-nav-menu" aria-expanded="false" data-mobile-menu-toggle><span class="mobile-menu-icon" aria-hidden="true"></span></button><div class="mobile-nav-panel" id="mobile-nav-menu" data-mobile-menu hidden><a href="../index.html">Курс</a><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Главная</a></div></header>
     <main id="lesson-content" class="shell source-lesson-main">
       <nav class="lesson-breadcrumbs" aria-label="Хлебные крошки"><a href="../index.html">Курс</a><span>/</span><span>Урок 06</span></nav>
-      <header class="source-lesson-header"><p class="eyebrow">Полный текст · рабочий preview</p><p class="source-lesson-display-title">Промпты изображения и видео</p><p>Разделить описание статичного кадра и изменение во времени, а затем выдать модели чистую инструкцию для каждого артефакта.</p><div class="source-route-links"><a href="../content/image-and-video-prompts.md">Markdown</a><a href="../content/image-and-video-prompts.json">JSON</a><button class="text-button" type="button" data-static-complete aria-pressed="false">Отметить как пройденный</button></div></header>
-      <article class="source-markdown"><h1>05. Промпт Для Изображения И Промпт Для Видео</h1>
-<p>Статус: черновик урока v3 / добавлен вход через ловушку одного большого промпта.</p>
+      <header class="source-lesson-header" data-motion="section-head"><p class="eyebrow">Полный текст · рабочий preview</p><h1 class="source-lesson-display-title">Промпты изображения и видео</h1><p>Разделить описание статичного кадра и изменение во времени, а затем выдать модели чистую инструкцию для каждого артефакта.</p><div class="source-route-links"><a href="../content/image-and-video-prompts.md">Markdown</a><a href="../content/image-and-video-prompts.json">JSON</a><button class="text-button" type="button" data-static-complete aria-pressed="false">Отметить как пройденный</button></div></header>
+      <article class="source-markdown"><p>Статус: учебный мост v4 / базовое различие; глубокая практика разведена в 05A и 06A.</p>
 <h2>05.0. Карта Урока</h2>
 <p>Сначала кажется: можно написать один большой промпт, и модель сама поймёт, где картинка, где движение, где монтаж, а где финальный титр.</p>
 <p>Иногда повезёт. Но курс не строится на &quot;вдруг повезёт&quot;.</p>
 <p>В этой главе разделяем две разные инструкции:</p>
 <ul><li><strong>промпт для изображения</strong> - получить один кадр;</li><li><strong>промпт для видео</strong> - заставить кадр измениться во времени.</li></ul>
+<p>Это короткий мост между этапами. Полное производство статичных кадров находится в <code>05A_IMAGE_AND_FRAME_CONTROL.md</code>, а карточка управляемого сегмента и чистый видеопромпт — в <code>06A_VIDEO_PROMPTS_AND_CONTROLLED_SEGMENTS.md</code>.</p>
 <p>🎬 <strong>Мини-пример.</strong> Флакон духов на чёрной воде - это задача изображения. Капля падает, круги расходятся, камера чуть приближается - это уже задача видео.</p>
 <pre><code class="language-text">05.1 главное различие
 05.2 промпт для изображения
@@ -218,9 +219,20 @@ security camera, documentary handheld, trailer shot, macro product shot.</code><
 Что особенно легко сломать:</code></pre>
 <p>🎬 <strong>Мини-пример.</strong> Машина стоит целой, затем её панели складываются, в конце на дороге уже другой объект. Это одно главное изменение. Если одновременно попросить сменить погоду, город, цвет, камеру и персонажа, модель начнёт выбирать, что забыть.</p>
 <p>Запреты в конце промпта должны защищать конкретный риск: <code>не менять лицо</code>, <code>не добавлять логотип</code>, <code>не ломать геометрию</code>. Длинный список всего плохого на свете только размывает задачу.</p>
-<p>Стартовый или финальный кадр считается рабочим не потому, что он красивый. В нём должны читаться нужный объект, состояние, ракурс, свет и детали, которые понадобятся следующему шагу.</p></article>
+<p>Стартовый или финальный кадр считается рабочим не потому, что он красивый. В нём должны читаться нужный объект, состояние, ракурс, свет и детали, которые понадобятся следующему шагу.</p>
+<h2>05.11. Куда Идти После Этого Различия</h2>
+<pre><code class="language-text">Если нужно получить и проверить статичный производственный кадр
+-&gt; 05A_IMAGE_AND_FRAME_CONTROL.md
+
+Если нужно выбрать модель и реальный режим работы
+-&gt; 06_MODEL_WORKFLOWS_AND_ADAPTATION.md
+
+Если нужно собрать один генерируемый видеоклип с карточкой и чистым prompt body
+-&gt; 06A_VIDEO_PROMPTS_AND_CONTROLLED_SEGMENTS.md</code></pre>
+<p>📌 Эта глава отвечает на вопрос «какой тип инструкции я сейчас пишу». Следующие главы отвечают «как сделать её производственной и проверяемой».</p></article>
       <nav class="lesson-navigation" aria-label="Переходы между уроками"><a class="lesson-nav-link" href="./references-and-visual-control.html"><span>Назад</span><strong>Референсы и контроль внешнего вида</strong></a><a class="lesson-nav-link next" href="./generation-routes.html"><span>Дальше</span><strong>Маршруты моделей и генерации</strong></a></nav>
     </main>
-    <footer class="site-footer"><div class="shell"><strong>AIS FLOWS</strong><p>Локальный рабочий preview. Публичный deploy не выполнен.</p></div></footer>
+    <footer class="shell footer course-footer" data-motion="footer"><nav class="footer-routes" aria-label="Разделы курса"><a href="../index.html">Курс</a><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Главная</a></nav><p><strong>AIS FLOWS</strong> · Курс по AI-видео · рабочий черновик</p></footer>
+    <script src="../../motion.js"></script>
   </body>
 </html>

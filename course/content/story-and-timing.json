@@ -3,7 +3,7 @@
   "id": "story-and-timing",
   "course_id": "ais-flows-ai-video-course",
   "title_ru": "История, тайминг и управляемые сегменты",
-  "summary_ru": "03. История, Тайминг И Управляемые Сегменты",
+  "summary_ru": "03. История И Тайминг: Главная Карта Ролика",
   "lifecycle": "draft",
   "visibility": "public_preview",
   "access": {
@@ -12,8 +12,8 @@
   },
   "version": "0.1.0-local-preview",
   "source_file": "03_STORY_AND_TIMING.md",
-  "source_sha256": "e39bc4fa61796407ce74aec74fbe933fb567c90c80fc6031a594cf474f854550",
-  "content_sha256": "e39bc4fa61796407ce74aec74fbe933fb567c90c80fc6031a594cf474f854550",
+  "source_sha256": "bd6646bef11649fb2c7f1899504f4903d92ebf13d84823ed80438784becfca31",
+  "content_sha256": "bd6646bef11649fb2c7f1899504f4903d92ebf13d84823ed80438784becfca31",
   "language": [
     "ru"
   ],
@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/story-and-timing.html",
   "content_url": "./content/story-and-timing.md",
   "content_json_url": "./content/story-and-timing.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/story-and-timing.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/story-and-timing.html",
   "citation": "AIS FLOWS AI-video course, “История, тайминг и управляемые сегменты”, 0.1.0-local-preview.",
   "license": {
     "name": null,
@@ -34,12 +34,14 @@
   },
   "structure": {
     "headings": [
-      "03. История, Тайминг И Управляемые Сегменты",
+      "03. История И Тайминг: Главная Карта Ролика",
       "03.0. Карта Урока",
       "03.1. Сценарий Не Равен Промпту",
       "03.2. Что Такое Точки Тайминга",
+      "03.2A. Full Timed Script — Главная Правда Истории",
+      "03.2B. Camera Timing Map — Камера Отдельным Слоем",
       "03.3. Почему Точки Тайминга Не Равны Генерациям",
-      "03.4. Что Такое Управляемый Сегмент",
+      "03.4. Предварительное Знакомство С Управляемым Сегментом",
       "03.5. Когда Объединять, А Когда Делить",
       "03.5.1. Можно Объединять",
       "03.5.2. Лучше Делить",
@@ -47,13 +49,13 @@
       "03.5.3. Film Stills Для Расстановки Кадров",
       "03.6. Таблица Сегмента",
       "03.7. Пример Сегмента",
-      "03.8. Остановка: Тайминг И Отрезки",
+      "03.8. Остановка: Тайминг И Производственная Граница",
       "03.11. Если Сценарий Собирается Из Готового Видео"
     ],
-    "heading_count": 15,
-    "unordered_list_item_count": 42,
+    "heading_count": 17,
+    "unordered_list_item_count": 54,
     "ordered_list_item_count": 0,
-    "code_fence_count": 17,
+    "code_fence_count": 20,
     "blockquote_count": 0,
     "image_count": 0,
     "link_count": 0

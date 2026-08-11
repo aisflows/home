@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://aisflows.github.io/home/course/course-schema.json",
+  "$id": "https://aisflows-home-preview.pages.dev/course/course-schema.json",
   "title": "AIS FLOWS course content schema",
   "type": "object",
   "required": ["version", "updated", "locale", "course", "blocks", "lessons", "glossary"],

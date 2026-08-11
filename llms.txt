@@ -29,7 +29,7 @@ Human discovery guide: ./AI_AGENT_DISCOVERY.md
 - Request delivery: formspree_public_home_delivery_verified.
 - Browser analytics: umami_public_home_collection_verified.
 - No payment or public write API is active.
-- Direct agent GET requests are not observable by browser JavaScript on static GitHub Pages.
+- Direct agent GET requests are not observable by browser JavaScript on the static site host.
 
 ## Objects
 
@@ -52,11 +52,11 @@ Human discovery guide: ./AI_AGENT_DISCOVERY.md
 
 ## Media works
 
-- jbl-jurassic-park: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/jbl-jurassic-park/; asset=https://aisflows.github.io/home/assets/media/aisflows-media-jbl-jurassic-park-web.mp4
-- interstellar-millers-planet: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/interstellar-millers-planet/; asset=https://aisflows.github.io/home/assets/media/aisflows-media-interstellar-millers-planet-web.mp4
-- doom-battlefield-earth: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/doom-battlefield-earth/; asset=https://aisflows.github.io/home/assets/media/aisflows-media-doom-battlefield-earth-web.mp4
-- witcher-monsters-men: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/witcher-monsters-men/; asset=https://aisflows.github.io/home/assets/media/aisflows-media-witcher-monsters-men-web.mp4
-- 28-days-later: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/28-days-later/; asset=https://aisflows.github.io/home/assets/media/aisflows-preview-28-days-later-web.mp4
-- dead-space: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/dead-space/; asset=https://aisflows.github.io/home/assets/media/aisflows-preview-dead-space-web.mp4
-- godzilla: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/godzilla/; asset=https://aisflows.github.io/home/assets/media/aisflows-preview-godzilla-web.mp4
-- predator: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/predator/; asset=https://aisflows.github.io/home/assets/media/aisflows-preview-predator-web.mp4
+- jbl-jurassic-park: local_video; 720x1280; action=playback; route=https://aisflows-home-preview.pages.dev/media/jbl-jurassic-park/; asset=https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-jbl-jurassic-park-web.mp4
+- interstellar-millers-planet: local_video; 720x1280; action=playback; route=https://aisflows-home-preview.pages.dev/media/interstellar-millers-planet/; asset=https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-interstellar-millers-planet-web.mp4
+- doom-battlefield-earth: local_video; 720x1280; action=playback; route=https://aisflows-home-preview.pages.dev/media/doom-battlefield-earth/; asset=https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-doom-battlefield-earth-web.mp4
+- witcher-monsters-men: local_video; 720x1280; action=playback; route=https://aisflows-home-preview.pages.dev/media/witcher-monsters-men/; asset=https://aisflows-home-preview.pages.dev/assets/media/aisflows-media-witcher-monsters-men-web.mp4
+- 28-days-later: local_video; 720x1280; action=playback; route=https://aisflows-home-preview.pages.dev/media/28-days-later/; asset=https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-28-days-later-web.mp4
+- dead-space: local_video; 720x1280; action=playback; route=https://aisflows-home-preview.pages.dev/media/dead-space/; asset=https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-dead-space-web.mp4
+- godzilla: local_video; 720x1280; action=playback; route=https://aisflows-home-preview.pages.dev/media/godzilla/; asset=https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-godzilla-web.mp4
+- predator: local_video; 720x1280; action=playback; route=https://aisflows-home-preview.pages.dev/media/predator/; asset=https://aisflows-home-preview.pages.dev/assets/media/aisflows-preview-predator-web.mp4

@@ -180,7 +180,7 @@
       "human_lesson_url": "./lessons/workspace-and-preparation.html",
       "content_url": "./content/workspace-and-preparation.md",
       "content_json_url": "./content/workspace-and-preparation.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/workspace-and-preparation.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/workspace-and-preparation.html"
     },
     {
       "id": "start-with-intent",
@@ -235,7 +235,7 @@
       "human_lesson_url": "./lessons/start-with-intent.html",
       "content_url": "./content/start-with-intent.md",
       "content_json_url": "./content/start-with-intent.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/start-with-intent.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/start-with-intent.html"
     },
     {
       "id": "production-card",
@@ -288,7 +288,7 @@
       "human_lesson_url": "./lessons/production-card.html",
       "content_url": "./content/production-card.md",
       "content_json_url": "./content/production-card.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/production-card.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/production-card.html"
     },
     {
       "id": "story-and-timing",
@@ -338,12 +338,12 @@
       "visibility": "public_preview",
       "source_file": "03_STORY_AND_TIMING.md",
       "source_version": "0.1.0-local-preview",
-      "source_sha256": "e39bc4fa61796407ce74aec74fbe933fb567c90c80fc6031a594cf474f854550",
-      "content_sha256": "e39bc4fa61796407ce74aec74fbe933fb567c90c80fc6031a594cf474f854550",
+      "source_sha256": "bd6646bef11649fb2c7f1899504f4903d92ebf13d84823ed80438784becfca31",
+      "content_sha256": "bd6646bef11649fb2c7f1899504f4903d92ebf13d84823ed80438784becfca31",
       "human_lesson_url": "./lessons/story-and-timing.html",
       "content_url": "./content/story-and-timing.md",
       "content_json_url": "./content/story-and-timing.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/story-and-timing.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/story-and-timing.html"
     },
     {
       "id": "references-and-visual-control",
@@ -392,12 +392,12 @@
       "visibility": "public_preview",
       "source_file": "04_REFERENCES_AND_VISUAL_CONTROL.md",
       "source_version": "0.1.0-local-preview",
-      "source_sha256": "99ec75c2b21c2d99069dab785d2597d9570d38b7f5b155170d6421354af194b1",
-      "content_sha256": "99ec75c2b21c2d99069dab785d2597d9570d38b7f5b155170d6421354af194b1",
+      "source_sha256": "431aacdd153f2b555dd0d6bbb0e1f97ffaa96c7a91dbecf962c1e962a74946ba",
+      "content_sha256": "431aacdd153f2b555dd0d6bbb0e1f97ffaa96c7a91dbecf962c1e962a74946ba",
       "human_lesson_url": "./lessons/references-and-visual-control.html",
       "content_url": "./content/references-and-visual-control.md",
       "content_json_url": "./content/references-and-visual-control.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/references-and-visual-control.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/references-and-visual-control.html"
     },
     {
       "id": "image-and-video-prompts",
@@ -447,12 +447,12 @@
       "visibility": "public_preview",
       "source_file": "05_IMAGE_AND_VIDEO_PROMPTS.md",
       "source_version": "0.1.0-local-preview",
-      "source_sha256": "1e2b55a56b4d229049a900ae3b607349ba0b67dccf31112da90d30dfa389e148",
-      "content_sha256": "1e2b55a56b4d229049a900ae3b607349ba0b67dccf31112da90d30dfa389e148",
+      "source_sha256": "3df353d10941c88d9839766489a61b93cb333f2d39dfa9738e9345b48242fa00",
+      "content_sha256": "3df353d10941c88d9839766489a61b93cb333f2d39dfa9738e9345b48242fa00",
       "human_lesson_url": "./lessons/image-and-video-prompts.html",
       "content_url": "./content/image-and-video-prompts.md",
       "content_json_url": "./content/image-and-video-prompts.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/image-and-video-prompts.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/image-and-video-prompts.html"
     },
     {
       "id": "generation-routes",
@@ -502,12 +502,12 @@
       "visibility": "public_preview",
       "source_file": "06_MODEL_WORKFLOWS_AND_ADAPTATION.md",
       "source_version": "0.1.0-local-preview",
-      "source_sha256": "23947045a77e467916dc7a6dbfb096030502a03b08c035e8ebff2fed45c98633",
-      "content_sha256": "23947045a77e467916dc7a6dbfb096030502a03b08c035e8ebff2fed45c98633",
+      "source_sha256": "7f68fca30d8d0c7b83e3e6e6dbadf50a999f0060745cce55e46e72fcabba0825",
+      "content_sha256": "7f68fca30d8d0c7b83e3e6e6dbadf50a999f0060745cce55e46e72fcabba0825",
       "human_lesson_url": "./lessons/generation-routes.html",
       "content_url": "./content/generation-routes.md",
       "content_json_url": "./content/generation-routes.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/generation-routes.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/generation-routes.html"
     },
     {
       "id": "prompt-reference-library",
@@ -562,7 +562,7 @@
       "human_lesson_url": "./lessons/prompt-reference-library.html",
       "content_url": "./content/prompt-reference-library.md",
       "content_json_url": "./content/prompt-reference-library.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/prompt-reference-library.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/prompt-reference-library.html"
     },
     {
       "id": "failure-diagnosis",
@@ -617,7 +617,7 @@
       "human_lesson_url": "./lessons/failure-diagnosis.html",
       "content_url": "./content/failure-diagnosis.md",
       "content_json_url": "./content/failure-diagnosis.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/failure-diagnosis.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/failure-diagnosis.html"
     },
     {
       "id": "final-production",
@@ -672,7 +672,7 @@
       "human_lesson_url": "./lessons/final-production.html",
       "content_url": "./content/final-production.md",
       "content_json_url": "./content/final-production.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/final-production.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/final-production.html"
     },
     {
       "id": "tool-stack",
@@ -727,7 +727,7 @@
       "human_lesson_url": "./lessons/tool-stack.html",
       "content_url": "./content/tool-stack.md",
       "content_json_url": "./content/tool-stack.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/tool-stack.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/tool-stack.html"
     },
     {
       "id": "templates-and-worksheets",
@@ -776,12 +776,12 @@
       "visibility": "public_preview",
       "source_file": "10_TEMPLATES_AND_WORKSHEETS.md",
       "source_version": "0.1.0-local-preview",
-      "source_sha256": "50e3d6d07668bf03213207931c27cf68172bee4a20010794b121f83b7c89fa82",
-      "content_sha256": "50e3d6d07668bf03213207931c27cf68172bee4a20010794b121f83b7c89fa82",
+      "source_sha256": "4fea648b24db2de9e60233dce0852998c6916831de537eced37fe97d970441a9",
+      "content_sha256": "4fea648b24db2de9e60233dce0852998c6916831de537eced37fe97d970441a9",
       "human_lesson_url": "./lessons/templates-and-worksheets.html",
       "content_url": "./content/templates-and-worksheets.md",
       "content_json_url": "./content/templates-and-worksheets.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/templates-and-worksheets.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/templates-and-worksheets.html"
     },
     {
       "id": "full-case-study",
@@ -833,7 +833,7 @@
       "human_lesson_url": "./lessons/full-case-study.html",
       "content_url": "./content/full-case-study.md",
       "content_json_url": "./content/full-case-study.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/full-case-study.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/full-case-study.html"
     },
     {
       "id": "course-packaging",
@@ -943,7 +943,7 @@
       "human_lesson_url": "./lessons/source-backed-lessons.html",
       "content_url": "./content/source-backed-lessons.md",
       "content_json_url": "./content/source-backed-lessons.json",
-      "canonical_human_url": "https://aisflows.github.io/home/course/lessons/source-backed-lessons.html"
+      "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/source-backed-lessons.html"
     }
   ],
   "glossary": [

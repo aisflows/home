@@ -4,8 +4,8 @@
   "deployment_status": "public",
   "current_public_home_status": "public",
   "catalog_routes": {
-    "en": "https://aisflows.github.io/home/skills/index.html",
-    "ru": "https://aisflows.github.io/home/ru/skills/index.html"
+    "en": "https://aisflows-home-preview.pages.dev/skills/index.html",
+    "ru": "https://aisflows-home-preview.pages.dev/ru/skills/index.html"
   },
   "skills": [
     {
@@ -31,7 +31,7 @@
         "download_url": null,
         "purchase_url": "No purchase route is available; this release candidate is not for sale on Home."
       },
-      "image_url": "https://aisflows.github.io/home/assets/cards/skill-operations-pack-release-cover-16x9.png",
+      "image_url": "https://aisflows-home-preview.pages.dev/assets/cards/skill-operations-pack-release-cover-16x9.png",
       "image_alt_en": "AIS FLOWS Skill Operations Pack release cover.",
       "image_alt_ru": "Обложка релиза AIS FLOWS Skill Operations Pack.",
       "image_metadata": {
@@ -70,7 +70,7 @@
         "download_url": "No verified public route is available for this field.",
         "purchase_url": "No verified public route is available for this field."
       },
-      "image_url": "https://aisflows.github.io/home/assets/cards/skill-cleaner-github-preview.jpg",
+      "image_url": "https://aisflows-home-preview.pages.dev/assets/cards/skill-cleaner-github-preview.jpg",
       "image_alt_en": "AIS FLOWS Skill Cleaner release cover.",
       "image_alt_ru": "Обложка релиза AIS FLOWS Skill Cleaner.",
       "image_metadata": {
@@ -109,7 +109,7 @@
         "download_url": null,
         "purchase_url": "No verified public route is available for this field."
       },
-      "image_url": "https://aisflows.github.io/home/assets/cards/ready-gate-release-cover-16x9.jpeg",
+      "image_url": "https://aisflows-home-preview.pages.dev/assets/cards/ready-gate-release-cover-16x9.jpeg",
       "image_alt_en": "AIS FLOWS Ready Gate release cover.",
       "image_alt_ru": "Обложка релиза AIS FLOWS Ready Gate.",
       "image_metadata": {
@@ -148,7 +148,7 @@
         "download_url": "No verified public route is available for this field.",
         "purchase_url": "No verified public route is available for this field."
       },
-      "image_url": "https://aisflows.github.io/home/assets/proofline-square.png",
+      "image_url": "https://aisflows-home-preview.pages.dev/assets/proofline-square.png",
       "image_alt_en": "AIS FLOWS Proofline release cover.",
       "image_alt_ru": "Обложка релиза AIS FLOWS Proofline.",
       "image_metadata": {

@@ -986,6 +986,53 @@ h1,
   color: var(--accent-2);
 }
 
+.release-actions {
+  display: grid;
+  min-width: 108px;
+  gap: 6px;
+  justify-items: stretch;
+}
+
+.release-actions a {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 5px 8px;
+  text-align: center;
+}
+
+.release-primary-action {
+  border: 1px solid var(--line-strong);
+}
+
+.release-row .release-download {
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #06110d;
+}
+
+.release-row .release-download:hover,
+.release-row .release-download:focus-visible {
+  border-color: var(--accent-2);
+  background: var(--accent-2);
+  color: #06110d;
+}
+
+.release-row .release-license {
+  display: inline;
+  margin-top: 4px;
+  color: var(--faint);
+  font-size: 11px;
+  font-weight: 620;
+  line-height: 1.35;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.24);
+  text-underline-offset: 3px;
+  white-space: normal;
+}
+
 .systems-card {
   justify-content: center;
 }
@@ -2716,6 +2763,12 @@ h1,
     align-items: center;
   }
 
+  .release-row .release-name {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+  }
+
   .system-row {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -2726,14 +2779,15 @@ h1,
     width: 82px;
   }
 
-  .release-row .release-copy,
-  .release-row a,
-  .release-row .release-status {
+  .release-row > .release-copy,
+  .release-row > .release-actions,
+  .release-row > a,
+  .release-row > .release-status {
     grid-column: 2;
   }
 
-  .system-row .release-copy,
-  .system-row .release-status {
+  .system-row > .release-copy,
+  .system-row > .release-status {
     grid-column: 1;
   }
 
@@ -3874,6 +3928,13 @@ h1,
   justify-content: flex-end;
 }
 
+.skills-catalog-actions {
+  display: grid;
+  width: 100%;
+  max-width: 168px;
+  gap: var(--space-1);
+}
+
 .skills-catalog-action {
   display: inline-flex;
   min-height: 40px;
@@ -3897,6 +3958,31 @@ h1,
 
 .skills-catalog-action:focus-visible {
   box-shadow: 0 0 0 3px rgba(159, 255, 224, 0.14);
+}
+
+.skills-catalog-download {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #06110d;
+}
+
+.skills-catalog-download:hover,
+.skills-catalog-download:focus-visible {
+  border-color: var(--accent-2);
+  background: var(--accent-2);
+  color: #06110d;
+}
+
+.skills-catalog-license {
+  display: inline-block;
+  margin-top: var(--space-2);
+  color: var(--faint);
+  font-size: 12px;
+  font-weight: 620;
+  line-height: 1.45;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.24);
+  text-underline-offset: 3px;
 }
 
 .skills-catalog-status {

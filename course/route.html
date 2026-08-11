@@ -2,18 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Маршрут и зависимости шести блоков курса AIS FLOWS по AI-видео.">
-    <title>Маршрут курса · AIS FLOWS</title><link rel="icon" href="data:,"><link rel="stylesheet" href="./styles.css"><script src="./app.js" defer></script>
+    <title>Маршрут курса · AIS FLOWS</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="./styles.css"><script src="./app.js" defer></script>
   </head>
   <body data-page="route">
     <a class="skip-link" href="#main-content">Перейти к маршруту</a>
-    <header class="site-header"><div class="shell header-inner"><a class="brand" href="./index.html"><span>AIS FLOWS</span><small>AI-video course</small></a><nav class="main-nav" aria-label="Навигация курса"><a href="./catalog.html">Каталог</a><a aria-current="page" href="./route.html">Маршрут</a><a href="./glossary.html">Словарь</a><a href="../index.html">Home</a></nav></div></header>
+    <header class="shell topbar media-page-topbar course-page-topbar" aria-label="Основная навигация"><a class="brand" href="../index.html">AIS FLOWS</a><nav class="nav" aria-label="Навигация курса"><a href="./index.html">Курс</a><a href="./catalog.html">Каталог</a><a aria-current="page" href="./route.html">Маршрут</a><a href="./glossary.html">Словарь</a><a href="../index.html">Главная</a></nav><button class="mobile-menu-toggle" type="button" aria-label="Открыть меню" aria-controls="mobile-nav-menu" aria-expanded="false" data-mobile-menu-toggle><span class="mobile-menu-icon" aria-hidden="true"></span></button><div class="mobile-nav-panel" id="mobile-nav-menu" data-mobile-menu hidden><a href="./index.html">Курс</a><a href="./catalog.html">Каталог</a><a aria-current="page" href="./route.html">Маршрут</a><a href="./glossary.html">Словарь</a><a href="../index.html">Главная</a></div></header>
     <main id="main-content" class="shell page-main">
-      <header class="page-intro"><p class="eyebrow">Путь от идеи до готового видео</p><h1>Шесть этапов курса</h1><p>Выберите этап слева. Справа сразу видно, зачем он нужен, что предстоит сделать и с какого урока начать.</p></header>
+      <header class="page-intro" data-motion="section-head"><p class="eyebrow">Путь от идеи до готового видео</p><h1>Шесть этапов курса</h1><p>Выберите этап слева. Справа сразу видно, зачем он нужен, что предстоит сделать и с какого урока начать.</p></header>
       <div class="route-layout">
         <nav class="route-blocks" aria-label="Шесть блоков курса" data-route-blocks></nav>
         <section class="route-detail" aria-live="polite" data-route-detail></section>
       </div>
     </main>
-    <footer class="site-footer"><div class="shell"><strong>AIS FLOWS</strong><p data-progress-summary>0 из 15 уроков пройдено</p></div></footer>
+    <footer class="shell footer course-footer" data-motion="footer"><nav class="footer-routes" aria-label="Разделы курса"><a href="./index.html">Курс</a><a href="./catalog.html">Каталог</a><a href="./route.html">Маршрут</a><a href="./glossary.html">Словарь</a><a href="../index.html">Главная</a></nav><p><strong>AIS FLOWS</strong> · Курс по AI-видео · рабочий черновик</p></footer>
+    <script src="../motion.js"></script>
   </body>
 </html>

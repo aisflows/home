@@ -8,17 +8,17 @@
     <link rel="icon" href="data:,">
     <link rel="alternate" type="text/markdown" title="Direct lesson content" href="../content/references-and-visual-control.md">
     <link rel="alternate" type="application/json" title="Lesson metadata" href="../content/references-and-visual-control.json">
+    <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="../styles.css">
     <script src="../app.js" defer></script>
   </head>
   <body data-page="static-lesson" data-lesson-id="references-and-visual-control">
     <a class="skip-link" href="#lesson-content">Перейти к уроку</a>
-    <header class="site-header"><div class="shell header-inner"><a class="brand" href="../index.html"><span>AIS FLOWS</span><small>AI-video course</small></a><nav class="main-nav" aria-label="Навигация курса"><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Home</a></nav></div></header>
+    <header class="shell topbar media-page-topbar course-page-topbar" aria-label="Основная навигация"><a class="brand" href="../../index.html">AIS FLOWS</a><nav class="nav" aria-label="Навигация курса"><a href="../index.html">Курс</a><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Главная</a></nav><button class="mobile-menu-toggle" type="button" aria-label="Открыть меню" aria-controls="mobile-nav-menu" aria-expanded="false" data-mobile-menu-toggle><span class="mobile-menu-icon" aria-hidden="true"></span></button><div class="mobile-nav-panel" id="mobile-nav-menu" data-mobile-menu hidden><a href="../index.html">Курс</a><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Главная</a></div></header>
     <main id="lesson-content" class="shell source-lesson-main">
       <nav class="lesson-breadcrumbs" aria-label="Хлебные крошки"><a href="../index.html">Курс</a><span>/</span><span>Урок 05</span></nav>
-      <header class="source-lesson-header"><p class="eyebrow">Полный текст · рабочий preview</p><p class="source-lesson-display-title">Референсы и контроль внешнего вида</p><p>Собрать визуальные опоры так, чтобы разные сегменты оставались частью одного ролика.</p><div class="source-route-links"><a href="../content/references-and-visual-control.md">Markdown</a><a href="../content/references-and-visual-control.json">JSON</a><button class="text-button" type="button" data-static-complete aria-pressed="false">Отметить как пройденный</button></div></header>
-      <article class="source-markdown"><h1>04. Референсы И Контроль Внешнего Вида</h1>
-<p>Статус: черновик урока v10 / абстрактные слова заземлены в видимые детали.</p>
+      <header class="source-lesson-header" data-motion="section-head"><p class="eyebrow">Полный текст · рабочий preview</p><h1 class="source-lesson-display-title">Референсы и контроль внешнего вида</h1><p>Собрать визуальные опоры так, чтобы разные сегменты оставались частью одного ролика.</p><div class="source-route-links"><a href="../content/references-and-visual-control.md">Markdown</a><a href="../content/references-and-visual-control.json">JSON</a><button class="text-button" type="button" data-static-complete aria-pressed="false">Отметить как пройденный</button></div></header>
+      <article class="source-markdown"><p>Статус: учебный кандидат v11 / Reference System отделена от геометрии сцены, Shot Plan и Frame Pack.</p>
 <h2>04.0. Карта Урока</h2>
 <p>В прошлой главе мы разложили ролик на управляемые сегменты.</p>
 <p>Теперь вопрос: как сделать так, чтобы эти сегменты выглядели как один ролик, а не как пять разных попыток из разных миров?</p>
@@ -287,9 +287,20 @@ Input reference role-line - строка вида @Image1 = [тип файла] 
 Что нельзя затронуть:
 Что можно изменить:
 Как проверить результат:</code></pre>
-<p>Так вы видите, из-за чего результат стал лучше или хуже. Если одновременно менять лицо, одежду, фон и свет, причину уже не определить.</p></article>
+<p>Так вы видите, из-за чего результат стал лучше или хуже. Если одновременно менять лицо, одежду, фон и свет, причину уже не определить.</p>
+<h2>04.13. Переход К Пространству И Карте Кадров</h2>
+<p>После этой главы у вас есть <strong>Reference System</strong>: понятно, какие материалы отвечают за лицо, объект, локацию, свет, материал и стиль.</p>
+<p>Но референс локации ещё не определяет автоматически:</p>
+<ul><li>где стоят герои в конкретной сцене;</li><li>где проходит ось действия;</li><li>что находится слева и справа для зрителя;</li><li>какой ракурс нужен в каждый момент;</li><li>какие статичные кадры надо сгенерировать.</li></ul>
+<p>Поэтому следующий порядок такой:</p>
+<pre><code class="language-text">04A — геометрия сцены и пространственная непрерывность;
+04B — Shot Plan / Storyboard Map;
+05 — короткая граница между image prompt и video prompt;
+05A — производство и проверка Frame Pack.</code></pre>
+<p>📌 <strong>Итог главы:</strong> референсы получили роли. Они больше не являются кучей красивых картинок, которые одновременно спорят за лицо, свет и композицию.</p></article>
       <nav class="lesson-navigation" aria-label="Переходы между уроками"><a class="lesson-nav-link" href="./story-and-timing.html"><span>Назад</span><strong>История, тайминг и управляемые сегменты</strong></a><a class="lesson-nav-link next" href="./image-and-video-prompts.html"><span>Дальше</span><strong>Промпты изображения и видео</strong></a></nav>
     </main>
-    <footer class="site-footer"><div class="shell"><strong>AIS FLOWS</strong><p>Локальный рабочий preview. Публичный deploy не выполнен.</p></div></footer>
+    <footer class="shell footer course-footer" data-motion="footer"><nav class="footer-routes" aria-label="Разделы курса"><a href="../index.html">Курс</a><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Главная</a></nav><p><strong>AIS FLOWS</strong> · Курс по AI-видео · рабочий черновик</p></footer>
+    <script src="../../motion.js"></script>
   </body>
 </html>

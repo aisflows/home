@@ -12,8 +12,8 @@
   },
   "version": "0.1.0-local-preview",
   "source_file": "10_TEMPLATES_AND_WORKSHEETS.md",
-  "source_sha256": "50e3d6d07668bf03213207931c27cf68172bee4a20010794b121f83b7c89fa82",
-  "content_sha256": "50e3d6d07668bf03213207931c27cf68172bee4a20010794b121f83b7c89fa82",
+  "source_sha256": "4fea648b24db2de9e60233dce0852998c6916831de537eced37fe97d970441a9",
+  "content_sha256": "4fea648b24db2de9e60233dce0852998c6916831de537eced37fe97d970441a9",
   "language": [
     "ru"
   ],
@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/templates-and-worksheets.html",
   "content_url": "./content/templates-and-worksheets.md",
   "content_json_url": "./content/templates-and-worksheets.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/templates-and-worksheets.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/templates-and-worksheets.html",
   "citation": "AIS FLOWS AI-video course, “Шаблоны и рабочие листы”, 0.1.0-local-preview.",
   "license": {
     "name": null,
@@ -40,6 +40,8 @@
       "2. Подготовительный Пакет Проекта",
       "3. Смысловая Правда Сцены",
       "4. Таблица Точек Тайминга",
+      "4A. Full Timed Script",
+      "4B. Camera Timing Map",
       "5. Лист Управляемого Отрезка",
       "5A. Shot Plan / Storyboard Map",
       "6. Чеклист Референсов",
@@ -60,12 +62,14 @@
       "10.16. Лист Фактов И Неясностей",
       "10.17. Лист Ролей Референсов",
       "10.18. Лист Одной Правки",
-      "10.19. Лист Сценария Из Готового Видео"
+      "10.19. Лист Сценария Из Готового Видео",
+      "10.20. Карта Геометрии Сцены",
+      "10.21. Карточка Frame Pack"
     ],
-    "heading_count": 27,
+    "heading_count": 31,
     "unordered_list_item_count": 30,
     "ordered_list_item_count": 0,
-    "code_fence_count": 41,
+    "code_fence_count": 45,
     "blockquote_count": 0,
     "image_count": 0,
     "link_count": 0

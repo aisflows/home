@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/final-production.html",
   "content_url": "./content/final-production.md",
   "content_json_url": "./content/final-production.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/final-production.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/final-production.html",
   "citation": "AIS FLOWS AI-video course, “Winners, монтаж и финальная проверка”, 0.1.0-local-preview.",
   "license": {
     "name": null,

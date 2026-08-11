@@ -12,8 +12,8 @@
   },
   "version": "0.1.0-local-preview",
   "source_file": "04_REFERENCES_AND_VISUAL_CONTROL.md",
-  "source_sha256": "99ec75c2b21c2d99069dab785d2597d9570d38b7f5b155170d6421354af194b1",
-  "content_sha256": "99ec75c2b21c2d99069dab785d2597d9570d38b7f5b155170d6421354af194b1",
+  "source_sha256": "431aacdd153f2b555dd0d6bbb0e1f97ffaa96c7a91dbecf962c1e962a74946ba",
+  "content_sha256": "431aacdd153f2b555dd0d6bbb0e1f97ffaa96c7a91dbecf962c1e962a74946ba",
   "language": [
     "ru"
   ],
@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/references-and-visual-control.html",
   "content_url": "./content/references-and-visual-control.md",
   "content_json_url": "./content/references-and-visual-control.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/references-and-visual-control.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/references-and-visual-control.html",
   "citation": "AIS FLOWS AI-video course, “Референсы и контроль внешнего вида”, 0.1.0-local-preview.",
   "license": {
     "name": null,
@@ -47,12 +47,13 @@
       "04.8. Визуальная Склейка",
       "04.9. Уровни контроля видео",
       "04.10. Проверка Перед Промптами",
-      "04.12. Кто За Что Отвечает В Наборе Референсов"
+      "04.12. Кто За Что Отвечает В Наборе Референсов",
+      "04.13. Переход К Пространству И Карте Кадров"
     ],
-    "heading_count": 14,
-    "unordered_list_item_count": 74,
+    "heading_count": 15,
+    "unordered_list_item_count": 79,
     "ordered_list_item_count": 9,
-    "code_fence_count": 15,
+    "code_fence_count": 16,
     "blockquote_count": 0,
     "image_count": 0,
     "link_count": 0

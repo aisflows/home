@@ -4,7 +4,7 @@
   "updated_at": "2026-07-22T12:00:00Z",
   "name": "AIS FLOWS AI-video course",
   "locale": "ru",
-  "canonical_base_url": "https://aisflows.github.io/home/course/",
+  "canonical_base_url": "https://aisflows-home-preview.pages.dev/course/",
   "deployment_status": "public",
   "course_status": "draft",
   "access": {
@@ -83,7 +83,7 @@
       "human_lesson_url": "./lessons/story-and-timing.html",
       "content_url": "./content/story-and-timing.md",
       "content_json_url": "./content/story-and-timing.json",
-      "source_sha256": "e39bc4fa61796407ce74aec74fbe933fb567c90c80fc6031a594cf474f854550",
+      "source_sha256": "bd6646bef11649fb2c7f1899504f4903d92ebf13d84823ed80438784becfca31",
       "access": {
         "mode": "public_preview",
         "purchase_url": null
@@ -98,7 +98,7 @@
       "human_lesson_url": "./lessons/references-and-visual-control.html",
       "content_url": "./content/references-and-visual-control.md",
       "content_json_url": "./content/references-and-visual-control.json",
-      "source_sha256": "99ec75c2b21c2d99069dab785d2597d9570d38b7f5b155170d6421354af194b1",
+      "source_sha256": "431aacdd153f2b555dd0d6bbb0e1f97ffaa96c7a91dbecf962c1e962a74946ba",
       "access": {
         "mode": "public_preview",
         "purchase_url": null
@@ -113,7 +113,7 @@
       "human_lesson_url": "./lessons/image-and-video-prompts.html",
       "content_url": "./content/image-and-video-prompts.md",
       "content_json_url": "./content/image-and-video-prompts.json",
-      "source_sha256": "1e2b55a56b4d229049a900ae3b607349ba0b67dccf31112da90d30dfa389e148",
+      "source_sha256": "3df353d10941c88d9839766489a61b93cb333f2d39dfa9738e9345b48242fa00",
       "access": {
         "mode": "public_preview",
         "purchase_url": null
@@ -128,7 +128,7 @@
       "human_lesson_url": "./lessons/generation-routes.html",
       "content_url": "./content/generation-routes.md",
       "content_json_url": "./content/generation-routes.json",
-      "source_sha256": "23947045a77e467916dc7a6dbfb096030502a03b08c035e8ebff2fed45c98633",
+      "source_sha256": "7f68fca30d8d0c7b83e3e6e6dbadf50a999f0060745cce55e46e72fcabba0825",
       "access": {
         "mode": "public_preview",
         "purchase_url": null
@@ -203,7 +203,7 @@
       "human_lesson_url": "./lessons/templates-and-worksheets.html",
       "content_url": "./content/templates-and-worksheets.md",
       "content_json_url": "./content/templates-and-worksheets.json",
-      "source_sha256": "50e3d6d07668bf03213207931c27cf68172bee4a20010794b121f83b7c89fa82",
+      "source_sha256": "4fea648b24db2de9e60233dce0852998c6916831de537eced37fe97d970441a9",
       "access": {
         "mode": "public_preview",
         "purchase_url": null

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://aisflows.github.io/home/content-model.schema.json",
+  "$id": "https://aisflows-home-preview.pages.dev/content-model.schema.json",
   "title": "AIS FLOWS Home canonical content model",
   "type": "object",
   "additionalProperties": false,
@@ -71,7 +71,7 @@
     },
     "supportAction": {
       "type": "object", "additionalProperties": false, "required": ["id", "label_en", "label_ru", "url", "requires_user_confirmation"],
-      "properties": {"id": {"type": "string", "pattern": "^[a-z0-9-]+$"}, "label_en": {"type": "string"}, "label_ru": {"type": "string"}, "url": {"type": "string"}, "requires_user_confirmation": {"type": "boolean"}}
+      "properties": {"id": {"type": "string", "pattern": "^[a-z0-9-]+$"}, "label_en": {"type": "string", "minLength": 1}, "label_ru": {"type": "string", "minLength": 1}, "url": {"type": "string", "minLength": 1}, "requires_user_confirmation": {"type": "boolean"}}
     },
     "display": {
       "type": "object", "additionalProperties": false,
@@ -83,6 +83,7 @@
         "tags_en": {"type": "array", "items": {"type": "string"}}, "tags_ru": {"type": "array", "items": {"type": "string"}},
         "image": {"type": ["string", "null"]}, "image_alt_en": {"type": "string"}, "image_alt_ru": {"type": "string"},
         "image_metadata": {"oneOf": [{"$ref": "#/$defs/publicImageMetadata"}, {"type": "null"}]},
+        "license_label_en": {"type": "string", "minLength": 1}, "license_label_ru": {"type": "string", "minLength": 1},
         "flow_en": {"type": "array", "items": {"type": "string"}}, "flow_ru": {"type": "array", "items": {"type": "string"}}
       }
     },
@@ -202,11 +203,11 @@
       "type": "object", "additionalProperties": false,
       "required": ["public_deploy", "request_receiver", "analytics_provider", "payment_and_delivery", "production_base_url", "server_agent_analytics"],
       "properties": {
-        "public_deploy": {"const": "github_pages_public_live_verified"},
+        "public_deploy": {"const": "cloudflare_pages_preview_deployed_not_cutover"},
         "request_receiver": {"const": "formspree_public_home_delivery_verified"},
         "analytics_provider": {"const": "umami_public_home_collection_verified"},
         "payment_and_delivery": {"const": "not_selected_not_proven"},
-        "production_base_url": {"const": "https://aisflows.github.io/home/"},
+        "production_base_url": {"const": "https://aisflows-home-preview.pages.dev/"},
         "server_agent_analytics": {"const": "unavailable_static_host_does_not_observe_direct_agent_fetches"}
       }
     },

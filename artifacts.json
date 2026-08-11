@@ -26,7 +26,7 @@
       "size_bytes": 1873018,
       "sha256": "9533e4d4cddfaab24bc8421cff522e60d696782c253a7659e66a9059cf0b6ddf",
       "download_url": "https://github.com/aisflows/skill-operations-pack/releases/download/v0.1.0-rc6/ais-flows-skill-operations-pack-0.1.0-rc6.zip",
-      "license_url": null,
+      "license_url": "https://github.com/aisflows/skill-operations-pack/blob/main/LICENSE",
       "published_at": "2026-08-09T13:37:52Z",
       "last_verified": "2026-08-09"
     },

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://aisflows.github.io/home/updates.schema.json",
+  "$id": "https://aisflows-home-preview.pages.dev/updates.schema.json",
   "title": "AIS FLOWS public updates",
   "type": "object",
   "additionalProperties": false,

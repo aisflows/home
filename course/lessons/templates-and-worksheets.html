@@ -8,17 +8,17 @@
     <link rel="icon" href="data:,">
     <link rel="alternate" type="text/markdown" title="Direct lesson content" href="../content/templates-and-worksheets.md">
     <link rel="alternate" type="application/json" title="Lesson metadata" href="../content/templates-and-worksheets.json">
+    <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="../styles.css">
     <script src="../app.js" defer></script>
   </head>
   <body data-page="static-lesson" data-lesson-id="templates-and-worksheets">
     <a class="skip-link" href="#lesson-content">Перейти к уроку</a>
-    <header class="site-header"><div class="shell header-inner"><a class="brand" href="../index.html"><span>AIS FLOWS</span><small>AI-video course</small></a><nav class="main-nav" aria-label="Навигация курса"><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Home</a></nav></div></header>
+    <header class="shell topbar media-page-topbar course-page-topbar" aria-label="Основная навигация"><a class="brand" href="../../index.html">AIS FLOWS</a><nav class="nav" aria-label="Навигация курса"><a href="../index.html">Курс</a><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Главная</a></nav><button class="mobile-menu-toggle" type="button" aria-label="Открыть меню" aria-controls="mobile-nav-menu" aria-expanded="false" data-mobile-menu-toggle><span class="mobile-menu-icon" aria-hidden="true"></span></button><div class="mobile-nav-panel" id="mobile-nav-menu" data-mobile-menu hidden><a href="../index.html">Курс</a><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Главная</a></div></header>
     <main id="lesson-content" class="shell source-lesson-main">
       <nav class="lesson-breadcrumbs" aria-label="Хлебные крошки"><a href="../index.html">Курс</a><span>/</span><span>Урок 12</span></nav>
-      <header class="source-lesson-header"><p class="eyebrow">Полный текст · рабочий preview</p><p class="source-lesson-display-title">Шаблоны и рабочие листы</p><p>Превратить решения курса в короткие формы, которые можно заполнять самому или вместе с AI-чатом.</p><div class="source-route-links"><a href="../content/templates-and-worksheets.md">Markdown</a><a href="../content/templates-and-worksheets.json">JSON</a><button class="text-button" type="button" data-static-complete aria-pressed="false">Отметить как пройденный</button></div></header>
-      <article class="source-markdown"><h1>10. Шаблоны И Рабочие Листы</h1>
-<p>Статус: черновик v6 / усилена роль рабочей тетради как действия, а не бюрократии.</p>
+      <header class="source-lesson-header" data-motion="section-head"><p class="eyebrow">Полный текст · рабочий preview</p><h1 class="source-lesson-display-title">Шаблоны и рабочие листы</h1><p>Превратить решения курса в короткие формы, которые можно заполнять самому или вместе с AI-чатом.</p><div class="source-route-links"><a href="../content/templates-and-worksheets.md">Markdown</a><a href="../content/templates-and-worksheets.json">JSON</a><button class="text-button" type="button" data-static-complete aria-pressed="false">Отметить как пройденный</button></div></header>
+      <article class="source-markdown"><p>Статус: черновик v6 / усилена роль рабочей тетради как действия, а не бюрократии.</p>
 <p>Эта глава - рабочая тетрадь курса.</p>
 <p>Здесь собраны шаблоны и контрольные вопросы, к которым можно возвращаться по ходу курса.</p>
 <p>Сначала кажется: шаблоны - это скучная бюрократия.</p>
@@ -77,6 +77,25 @@
 <p>Правило:</p>
 <p>Точки тайминга управляют монтажом и смыслом. Они не задают обязательное количество генераций.</p>
 <p>🎬 <strong>Мини-пример.</strong> Три строки тайминга могут быть одним видео-фрагментом, если это одно непрерывное действие. А одна строка тайминга может потребовать отдельной генерации, если там точный знак, текст, продукт или сложный финал. Тайминг - это карта, а не кандалы.</p>
+<h3>4A. Full Timed Script</h3>
+<p>Для диалога, трейлера, рекламы, связного монтажа или точной производственной работы используйте полную таблицу вместо равной сетки условных точек.</p>
+<p>| Время | Кадр / экран | Диалог / закадровый голос / текст / звук сцены | |---|---|---| |  |  |  |</p>
+<p>Правила:</p>
+<pre><code class="language-text">покрыть всю принятую длительность без дыр;
+создавать новую строку по реальному изменению действия, состояния, речи, текста, звука или смысла;
+не делать строки одинаковыми только ради порядка;
+музыку хранить отдельно от звука сцены;
+не превращать каждую строку автоматически в отдельную генерацию.</code></pre>
+<h3>4B. Camera Timing Map</h3>
+<p>Заполняется на тех же экранных битах, но отдельно от истории.</p>
+<p>| Время | Поведение камеры | Назначение камеры | |---|---|---| |  |  |  |</p>
+<p>Проверка каждой строки:</p>
+<pre><code class="language-text">главный объект внимания;
+функция кадра;
+причина удержания или склейки;
+связь с предыдущим и следующим кадром;
+ось, направление движения и взгляда;
+точное конечное положение камеры, если она движется.</code></pre>
 <h2>5. Лист Управляемого Отрезка</h2>
 <pre><code class="language-text">Отрезок:
 Какие точки тайминга покрывает:
@@ -616,9 +635,41 @@ video prompt должен явно разделять: нет музыки / с�
 CTA актуален:
 Права и территория:
 Технически исполнимо:
-Готово к публикации:</code></pre></article>
+Готово к публикации:</code></pre>
+<h2>10.20. Карта Геометрии Сцены</h2>
+<p>Используйте для повторяющейся, диалоговой или пространственно сложной сцены.</p>
+<pre><code class="language-text">Сцена:
+Постоянные ориентиры:
+Позиция персонажа A:
+Позиция персонажа B:
+Позиция главного предмета:
+Линия действия:
+Сторона камеры:
+Направления взглядов:
+Направление света:
+Ограниченная зона взаимодействия:
+Что не меняется между кадрами:
+Что уже изменилось действием:</code></pre>
+<p>Не требуйте отдельную карту для одного простого кадра без повторяющейся географии.</p>
+<h2>10.21. Карточка Frame Pack</h2>
+<p>Заполняется только для кадра, выведенного из принятого Shot Plan.</p>
+<pre><code class="language-text">ID кадра:
+Роль: стартовый / ключевой / финальный / монтажный ориентир
+Строки тайминга:
+Функция кадра:
+Мир сцены:
+Что видно в этом кадре:
+Текущее состояние героев и предметов:
+Референсы и их отдельные роли:
+Принятый image prompt:
+Фактический выбранный файл:
+Что подтверждено глазами:
+Что ещё не доказано:
+Пригодность для анимации: да / нет / нужна правка</code></pre>
+<p>Хороший prompt без проверенного фактического кадра не закрывает эту карточку.</p></article>
       <nav class="lesson-navigation" aria-label="Переходы между уроками"><a class="lesson-nav-link" href="./tool-stack.html"><span>Назад</span><strong>Минимальный набор инструментов</strong></a><a class="lesson-nav-link next" href="./full-case-study.html"><span>Дальше</span><strong>Полный кейс: от идеи до финала</strong></a></nav>
     </main>
-    <footer class="site-footer"><div class="shell"><strong>AIS FLOWS</strong><p>Локальный рабочий preview. Публичный deploy не выполнен.</p></div></footer>
+    <footer class="shell footer course-footer" data-motion="footer"><nav class="footer-routes" aria-label="Разделы курса"><a href="../index.html">Курс</a><a href="../catalog.html">Каталог</a><a href="../route.html">Маршрут</a><a href="../glossary.html">Словарь</a><a href="../../index.html">Главная</a></nav><p><strong>AIS FLOWS</strong> · Курс по AI-видео · рабочий черновик</p></footer>
+    <script src="../../motion.js"></script>
   </body>
 </html>

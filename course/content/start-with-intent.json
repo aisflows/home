@@ -25,7 +25,7 @@
   "human_lesson_url": "./lessons/start-with-intent.html",
   "content_url": "./content/start-with-intent.md",
   "content_json_url": "./content/start-with-intent.json",
-  "canonical_human_url": "https://aisflows.github.io/home/course/lessons/start-with-intent.html",
+  "canonical_human_url": "https://aisflows-home-preview.pages.dev/course/lessons/start-with-intent.html",
   "citation": "AIS FLOWS AI-video course, “С чего начинается AI-видео”, 0.1.0-local-preview.",
   "license": {
     "name": null,

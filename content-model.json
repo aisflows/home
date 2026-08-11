@@ -4,7 +4,7 @@
   "deployment": {
     "status": "public",
     "public_deploy_allowed": false,
-    "base_url": "https://aisflows.github.io/home/"
+    "base_url": "https://aisflows-home-preview.pages.dev/"
   },
   "routes": {
     "en": "./index.html",
@@ -85,7 +85,15 @@
         "changelog_url": "./CHANGELOG_PUBLIC.md",
         "feed_url": "./feed.xml"
       },
-      "support_actions": [],
+      "support_actions": [
+        {
+          "id": "download-zip",
+          "label_en": "Download ZIP",
+          "label_ru": "Скачать ZIP",
+          "url": "https://github.com/aisflows/proofline/releases/download/v0.2.0-rc5/ais-flows-proofline-0.2.0-rc5.zip",
+          "requires_user_confirmation": false
+        }
+      ],
       "primary_action": "open_release",
       "action_url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5",
       "action_target": "_blank",
@@ -184,7 +192,15 @@
         "changelog_url": "./CHANGELOG_PUBLIC.md",
         "feed_url": "./feed.xml"
       },
-      "support_actions": [],
+      "support_actions": [
+        {
+          "id": "download-zip",
+          "label_en": "Download ZIP",
+          "label_ru": "Скачать ZIP",
+          "url": "https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip",
+          "requires_user_confirmation": false
+        }
+      ],
       "primary_action": "open_release",
       "action_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1",
       "action_target": "_blank",
@@ -283,7 +299,15 @@
         "changelog_url": "./CHANGELOG_PUBLIC.md",
         "feed_url": "./feed.xml"
       },
-      "support_actions": [],
+      "support_actions": [
+        {
+          "id": "download-zip",
+          "label_en": "Download ZIP",
+          "label_ru": "Скачать ZIP",
+          "url": "https://github.com/aisflows/skill-cleaner/releases/download/v0.1.0-release-001/ais-flows-skill-library-cleaner-0.1.0-release-001-final-candidate.zip",
+          "requires_user_confirmation": false
+        }
+      ],
       "primary_action": "open_release",
       "action_url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001",
       "action_target": "_blank",
@@ -370,8 +394,8 @@
         "user_confirmation_required": false
       },
       "license": {
-        "name": null,
-        "url": null,
+        "name": "Permissioned",
+        "url": "https://github.com/aisflows/skill-operations-pack/blob/main/LICENSE",
         "summary": "Permissioned, all rights reserved; not open source. No public reuse license is granted from Home."
       },
       "citation": {
@@ -382,7 +406,15 @@
         "changelog_url": "./CHANGELOG_PUBLIC.md",
         "feed_url": "./feed.xml"
       },
-      "support_actions": [],
+      "support_actions": [
+        {
+          "id": "download-zip",
+          "label_en": "Download ZIP",
+          "label_ru": "Скачать ZIP",
+          "url": "https://github.com/aisflows/skill-operations-pack/releases/download/v0.1.0-rc6/ais-flows-skill-operations-pack-0.1.0-rc6.zip",
+          "requires_user_confirmation": false
+        }
+      ],
       "primary_action": "open_release",
       "action_url": "https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6",
       "action_target": "_blank",
@@ -415,6 +447,8 @@
           "credit": "AIS FLOWS / Andrei Spirydovich",
           "license": "All rights reserved; no public reuse license is granted."
         },
+        "license_label_en": "Permissioned • All rights reserved • Not open source",
+        "license_label_ru": "Только по разрешению • Все права защищены • Не open source",
         "flow_en": [],
         "flow_ru": []
       },
@@ -474,7 +508,7 @@
         "summary": "No public reuse license has been independently verified."
       },
       "citation": {
-        "canonical_url": "https://aisflows.github.io/home/#products",
+        "canonical_url": "https://aisflows-home-preview.pages.dev/#products",
         "attribution_text": "AIS FLOWS Video Builder Pack status by Andrei Spirydovich."
       },
       "updates": {
@@ -567,7 +601,7 @@
         "summary": "No public reuse license has been independently verified."
       },
       "citation": {
-        "canonical_url": "https://aisflows.github.io/home/#products",
+        "canonical_url": "https://aisflows-home-preview.pages.dev/#products",
         "attribution_text": "AIS FLOWS Local AI Gateway development status by Andrei Spirydovich."
       },
       "updates": {
@@ -660,7 +694,7 @@
         "summary": "No public reuse license has been independently verified."
       },
       "citation": {
-        "canonical_url": "https://aisflows.github.io/home/media/featured-youtube-trailer/",
+        "canonical_url": "https://aisflows-home-preview.pages.dev/media/featured-youtube-trailer/",
         "attribution_text": "AIS FLOWS media by Andrei Spirydovich."
       },
       "updates": {
@@ -1147,7 +1181,7 @@
         "summary": "No public reuse license has been independently verified."
       },
       "citation": {
-        "canonical_url": "https://aisflows.github.io/home/request/",
+        "canonical_url": "https://aisflows-home-preview.pages.dev/request/",
         "attribution_text": "AIS FLOWS project request route."
       },
       "updates": {
@@ -1238,7 +1272,7 @@
         "summary": "No public reuse license has been independently verified."
       },
       "citation": {
-        "canonical_url": "https://aisflows.github.io/home/course/",
+        "canonical_url": "https://aisflows-home-preview.pages.dev/course/",
         "attribution_text": "AIS FLOWS AI-video course by Andrei Spirydovich."
       },
       "updates": {
@@ -1337,17 +1371,17 @@
       "id": "tiktok-profile",
       "type": "link",
       "title": "TikTok",
-      "url": "https://www.tiktok.com/@alt.trailers?lang=ru-RU",
+      "url": "https://www.tiktok.com/@aisflows",
       "status": "published",
       "order": 9
     }
   ],
   "constraints": {
-    "public_deploy": "github_pages_public_live_verified",
+    "public_deploy": "cloudflare_pages_preview_deployed_not_cutover",
     "request_receiver": "formspree_public_home_delivery_verified",
     "analytics_provider": "umami_public_home_collection_verified",
     "payment_and_delivery": "not_selected_not_proven",
-    "production_base_url": "https://aisflows.github.io/home/",
+    "production_base_url": "https://aisflows-home-preview.pages.dev/",
     "server_agent_analytics": "unavailable_static_host_does_not_observe_direct_agent_fetches"
   },
   "state_machines": {
@@ -1406,7 +1440,7 @@
       "summary_en": "Added canonical EN/RU Media catalog and stable work routes for the five confirmed AIS FLOWS media works.",
       "summary_ru": "Добавлены канонические EN/RU каталоги Media и стабильные маршруты пяти подтверждённых медиаработ AIS FLOWS.",
       "content_url": "./media/media-index.json",
-      "canonical_url": "https://aisflows.github.io/home/media/"
+      "canonical_url": "https://aisflows-home-preview.pages.dev/media/"
     },
     {
       "id": "update-2026-08-03-skill-operations-pack-rc6-prepared",
@@ -1418,7 +1452,7 @@
       "summary_en": "Added AIS FLOWS Skill Operations Pack 0.1.0-rc6 as a prepared local public release candidate without a public download route.",
       "summary_ru": "Добавлен AIS FLOWS Skill Operations Pack 0.1.0-rc6 как подготовленный локальный кандидат публичного релиза без публичного маршрута скачивания.",
       "content_url": null,
-      "canonical_url": "https://aisflows.github.io/home/#products"
+      "canonical_url": "https://aisflows-home-preview.pages.dev/#products"
     },
     {
       "id": "update-2026-07-28-home-visual-evidence",
@@ -1430,7 +1464,7 @@
       "summary_en": "Added factual labels for the four Home media previews and direct EN/RU privacy routes.",
       "summary_ru": "Добавлены фактические подписи четырёх медиапревью Home и прямые EN/RU маршруты privacy.",
       "content_url": null,
-      "canonical_url": "https://aisflows.github.io/home/#media"
+      "canonical_url": "https://aisflows-home-preview.pages.dev/#media"
     },
     {
       "id": "update-2026-07-27-public-home-live",
@@ -1442,7 +1476,7 @@
       "summary_en": "Published AIS FLOWS Home and verified the public Formspree request route, Umami browser events, agent discovery chain, and downloadable artifact integrity.",
       "summary_ru": "Опубликован AIS FLOWS Home; на публичном сайте проверены заявка Formspree, браузерные события Umami, агентный маршрут обнаружения и целостность скачиваемого артефакта.",
       "content_url": "./agent-manifest.json",
-      "canonical_url": "https://aisflows.github.io/home/"
+      "canonical_url": "https://aisflows-home-preview.pages.dev/"
     },
     {
       "id": "update-2026-07-26-request-analytics-truth",
@@ -1454,7 +1488,7 @@
       "summary_en": "Recorded the configured Formspree receiver and privacy-safe Umami browser contract as locally accepted, while keeping the Home candidate explicitly not deployed.",
       "summary_ru": "Зафиксированы настроенный Formspree и privacy-safe контракт браузерной аналитики Umami как локально принятые; кандидат Home явно остаётся неразвёрнутым.",
       "content_url": "./request-schema.json",
-      "canonical_url": "https://aisflows.github.io/home/request/"
+      "canonical_url": "https://aisflows-home-preview.pages.dev/request/"
     },
     {
       "id": "update-2026-07-22-course-preview",
@@ -1466,7 +1500,7 @@
       "summary_en": "Added a local agent-readable course candidate with direct lesson routes.",
       "summary_ru": "Добавлен локальный агент-читаемый кандидат курса с прямыми маршрутами уроков.",
       "content_url": "./course/course-content.json",
-      "canonical_url": "https://aisflows.github.io/home/course/"
+      "canonical_url": "https://aisflows-home-preview.pages.dev/course/"
     },
     {
       "id": "update-2026-07-22-ready-gate-artifact",
@@ -1490,7 +1524,7 @@
       "summary_en": "Added four web-safe media works, exact social metadata and a dense curated wall.",
       "summary_ru": "Добавлены четыре web-safe работы, точные социальные ссылки и плотная curated-стена.",
       "content_url": "./media/media-index.json",
-      "canonical_url": "https://aisflows.github.io/home/media/"
+      "canonical_url": "https://aisflows-home-preview.pages.dev/media/"
     },
     {
       "id": "update-2026-08-09-skills-catalog-local",
@@ -1502,7 +1536,7 @@
       "summary_en": "Added local EN/RU Skills catalogs and one machine-readable Skills index without changing release availability.",
       "summary_ru": "Добавлены локальные EN/RU каталоги Skills и единый машиночитаемый индекс без изменения доступности релизов.",
       "content_url": "./skills/skills-index.json",
-      "canonical_url": "https://aisflows.github.io/home/skills/"
+      "canonical_url": "https://aisflows-home-preview.pages.dev/skills/"
     },
     {
       "id": "update-2026-08-09-skill-operations-pack-rc6-released",

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://aisflows.github.io/home/request-schema.json",
+  "$id": "https://aisflows-home-preview.pages.dev/request-schema.json",
   "title": "AIS FLOWS public request contract",
   "description": "Public fields sent by the AIS FLOWS request form. The Formspree receiver and delivery from the public AIS FLOWS Home are verified.",
   "type": "object",
