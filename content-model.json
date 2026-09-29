@@ -1,10 +1,10 @@
 {
-  "schema_version": "3.0.0",
+  "schema_version": "4.0.0",
   "canonical_brand": "AIS FLOWS",
   "deployment": {
-    "status": "public",
-    "public_deploy_allowed": true,
-    "base_url": "https://aisflows.github.io/home/"
+    "content_status": "public_content",
+    "public_deploy_allowed": false,
+    "base_url": "https://aisflows.com/"
   },
   "routes": {
     "en": "./index.html",
@@ -13,6 +13,8 @@
     "skills_ru": "./ru/skills/index.html",
     "media_en": "./media/index.html",
     "media_ru": "./ru/media/index.html",
+    "prompts_en": "./prompts/index.html",
+    "prompts_ru": null,
     "request_en": "./request/index.html",
     "request_ru": "./ru/request/index.html",
     "privacy_en": "./privacy/index.html",
@@ -24,6 +26,117 @@
     "feed": "./feed.xml"
   },
   "entities": [
+    {
+      "id": "course-writer",
+      "type": "skill",
+      "title_en": "AIS FLOWS Course Writer",
+      "title_ru": "AIS FLOWS Course Writer",
+      "short_description_en": "Turns dense source-backed material into clear, page-ready teaching material.",
+      "short_description_ru": "Превращает плотный материал с опорой на источники в ясный учебный материал, готовый для страницы.",
+      "description_en": "Turns dense source-backed material into a clear course, instruction, document, or page-ready teaching material. It does not render HTML/CSS, design a visual mockup, deploy, or publish.",
+      "description_ru": "Превращает плотный материал с опорой на источники в ясный курс, инструкцию, документ или учебный материал, готовый для страницы. Не рендерит HTML/CSS, не создаёт визуальный макет, не деплоит и не публикует.",
+      "lifecycle": "released",
+      "status": "released",
+      "route_status": "verified",
+      "version": "1.0",
+      "updated_at": "2026-09-05T00:00:00Z",
+      "last_verified": "2026-09-05",
+      "language": [
+        "en",
+        "ru"
+      ],
+      "available_languages": [
+        "en",
+        "ru"
+      ],
+      "human_page_url": null,
+      "page_url": null,
+      "machine_index_url": null,
+      "content_url": null,
+      "release_url": "https://github.com/aisflows/course-writer/releases/tag/v1.0",
+      "artifact_manifest_url": "./artifacts.json",
+      "download_url": "https://github.com/aisflows/course-writer/releases/download/v1.0/ais-flows-course-writer-1.0.zip",
+      "payment_url": null,
+      "contact_url": null,
+      "route_unavailable_reasons": {
+        "human_page_url": "No dedicated public product page is available yet.",
+        "machine_index_url": "No dedicated machine index is available yet.",
+        "content_url": "No dedicated public content route is available yet.",
+        "release_url": null,
+        "artifact_manifest_url": null,
+        "download_url": null,
+        "purchase_url": "No purchase route is available; this permissioned release is not for sale on Home."
+      },
+      "access": {
+        "mode": "public_free",
+        "purchase_url": null,
+        "price": null,
+        "currency": null,
+        "user_confirmation_required": false
+      },
+      "license": {
+        "name": "Permissioned",
+        "url": null,
+        "summary": "Permissioned, all rights reserved; not open source. No public reuse license is granted from Home."
+      },
+      "citation": {
+        "canonical_url": "https://github.com/aisflows/course-writer/releases/tag/v1.0",
+        "attribution_text": "AIS FLOWS Course Writer 1.0 by Andrei Spirydovich."
+      },
+      "updates": {
+        "changelog_url": "./CHANGELOG_PUBLIC.md",
+        "feed_url": "./feed.xml"
+      },
+      "support_actions": [
+        {
+          "id": "download-zip",
+          "label_en": "Download ZIP",
+          "label_ru": "Скачать ZIP",
+          "url": "https://github.com/aisflows/course-writer/releases/download/v1.0/ais-flows-course-writer-1.0.zip",
+          "requires_user_confirmation": false
+        }
+      ],
+      "primary_action": "open_release",
+      "action_url": "https://github.com/aisflows/course-writer/releases/tag/v1.0",
+      "action_target": "_blank",
+      "display": {
+        "category": "skills",
+        "order": 0,
+        "status_label_en": "Release",
+        "status_label_ru": "Релиз",
+        "action_label_en": "Open Release",
+        "action_label_ru": "Открыть релиз",
+        "tags_en": [
+          "Release",
+          "v1.0",
+          "Teaching material"
+        ],
+        "tags_ru": [
+          "Релиз",
+          "v1.0",
+          "Учебный материал"
+        ],
+        "image": "./assets/cards/course-writer-release-cover-16x9.png",
+        "image_alt_en": "AIS FLOWS Course Writer release cover.",
+        "image_alt_ru": "Обложка релиза AIS FLOWS Course Writer.",
+        "image_metadata": {
+          "classification": "public_media",
+          "width": 1672,
+          "height": 941,
+          "size_bytes": 2003477,
+          "sha256": "56d40a8d114265bc4b79fc4410e7922fde67f8874bd282e14c2bd9b708885ee1",
+          "caption_en": "AIS FLOWS Course Writer release cover.",
+          "caption_ru": "Обложка релиза AIS FLOWS Course Writer.",
+          "credit": "AIS FLOWS / Andrei Spirydovich",
+          "license": "All rights reserved; no public reuse license is granted."
+        },
+        "license_label_en": "Permissioned • All rights reserved • Not open source",
+        "license_label_ru": "Только по разрешению • Все права защищены • Не open source",
+        "flow_en": [],
+        "flow_ru": []
+      },
+      "media": null
+    },
     {
       "id": "proofline",
       "type": "skill",
@@ -52,8 +165,8 @@
       "machine_index_url": null,
       "content_url": null,
       "release_url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5",
-      "artifact_manifest_url": null,
-      "download_url": null,
+      "artifact_manifest_url": "./artifacts.json",
+      "download_url": "https://github.com/aisflows/proofline/releases/download/v0.2.0-rc5/ais-flows-proofline-0.2.0-rc5.zip",
       "payment_url": null,
       "contact_url": null,
       "route_unavailable_reasons": {
@@ -61,8 +174,8 @@
         "machine_index_url": "No verified public route is available for this field.",
         "content_url": "No verified public route is available for this field.",
         "release_url": null,
-        "artifact_manifest_url": "No verified public route is available for this field.",
-        "download_url": "No verified public route is available for this field.",
+        "artifact_manifest_url": null,
+        "download_url": null,
         "purchase_url": "No verified public route is available for this field."
       },
       "access": {
@@ -266,8 +379,8 @@
       "machine_index_url": null,
       "content_url": null,
       "release_url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001",
-      "artifact_manifest_url": null,
-      "download_url": null,
+      "artifact_manifest_url": "./artifacts.json",
+      "download_url": "https://github.com/aisflows/skill-cleaner/releases/download/v0.1.0-release-001/ais-flows-skill-library-cleaner-0.1.0-release-001-final-candidate.zip",
       "payment_url": null,
       "contact_url": null,
       "route_unavailable_reasons": {
@@ -275,8 +388,8 @@
         "machine_index_url": "No verified public route is available for this field.",
         "content_url": "No verified public route is available for this field.",
         "release_url": null,
-        "artifact_manifest_url": "No verified public route is available for this field.",
-        "download_url": "No verified public route is available for this field.",
+        "artifact_manifest_url": null,
+        "download_url": null,
         "purchase_url": "No verified public route is available for this field."
       },
       "access": {
@@ -508,7 +621,7 @@
         "summary": "No public reuse license has been independently verified."
       },
       "citation": {
-        "canonical_url": "https://aisflows.github.io/home/#products",
+        "canonical_url": "https://aisflows.com/#products",
         "attribution_text": "AIS FLOWS Video Builder Pack status by Andrei Spirydovich."
       },
       "updates": {
@@ -601,7 +714,7 @@
         "summary": "No public reuse license has been independently verified."
       },
       "citation": {
-        "canonical_url": "https://aisflows.github.io/home/#products",
+        "canonical_url": "https://aisflows.com/#products",
         "attribution_text": "AIS FLOWS Local AI Gateway development status by Andrei Spirydovich."
       },
       "updates": {
@@ -645,16 +758,16 @@
       "type": "media",
       "title_en": "AIS FLOWS trailer",
       "title_ru": "Трейлер AIS FLOWS",
-      "short_description_en": "Featured trailer and eight confirmed AIS FLOWS media works.",
-      "short_description_ru": "Главный трейлер и восемь подтверждённых медиаработ AIS FLOWS.",
-      "description_en": "Compact featured trailer plus an eight-work Media Wall.",
-      "description_ru": "Компактный главный трейлер и Media Wall из восьми работ.",
+      "short_description_en": "Featured trailer and confirmed AIS FLOWS media works.",
+      "short_description_ru": "Главный трейлер и подтверждённые медиаработы AIS FLOWS.",
+      "description_en": "Compact featured trailer plus a curated Media Wall.",
+      "description_ru": "Компактный главный трейлер и curated Media Wall.",
       "lifecycle": "published",
       "status": "published_on_provider",
       "route_status": "verified",
       "version": null,
-      "updated_at": "2026-08-09T00:00:00Z",
-      "last_verified": "2026-08-09",
+      "updated_at": "2026-09-09T00:00:00Z",
+      "last_verified": "2026-09-09",
       "language": [
         "en",
         "ru"
@@ -694,7 +807,7 @@
         "summary": "No public reuse license has been independently verified."
       },
       "citation": {
-        "canonical_url": "https://aisflows.github.io/home/media/featured-youtube-trailer/",
+        "canonical_url": "https://aisflows.com/media/featured-youtube-trailer/",
         "attribution_text": "AIS FLOWS media by Andrei Spirydovich."
       },
       "updates": {
@@ -741,40 +854,40 @@
         "primary_action": "provider",
         "previews": [
           {
-            "id": "jbl-jurassic-park",
-            "route_slug": "jbl-jurassic-park",
-            "title": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising",
+            "id": "mortal-kombat-dont-wake-the-champion",
+            "route_slug": "mortal-kombat-dont-wake-the-champion",
+            "title": "🐉 MORTAL KOMBAT — Don't Wake the Champion | AI Fan Trailer",
             "role_en": null,
             "role_ru": null,
-            "poster": "./assets/media/aisflows-media-jbl-jurassic-park-poster.jpg",
-            "poster_alt_en": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising poster.",
-            "poster_alt_ru": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising poster.",
+            "poster": "./assets/media/aisflows-media-mortal-kombat-dont-wake-the-champion-poster.jpg",
+            "poster_alt_en": "A blue-clad fighter faces an opponent in an arena beneath a giant serpent.",
+            "poster_alt_ru": "Боец в синем противостоит сопернику на арене под гигантским змеем.",
             "poster_metadata": {
               "classification": "public_media",
               "width": 720,
               "height": 1280,
-              "size_bytes": 116642,
-              "sha256": "542cc1eeeb3621dc095da37b9ca51abd5ef721f8e10bfe5e55821265aa021795",
-              "caption_en": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising poster.",
-              "caption_ru": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising poster.",
+              "size_bytes": 188490,
+              "sha256": "c2850ed6b43d65952f28cfe178a0637b3d1b84c1a5510897f6a60b9fae69d9e3",
+              "caption_en": "🐉 MORTAL KOMBAT — Don't Wake the Champion | AI Fan Trailer poster.",
+              "caption_ru": "Постер к 🐉 MORTAL KOMBAT — Don't Wake the Champion | AI Fan Trailer.",
               "credit": "AIS FLOWS / Andrei Spirydovich",
               "license": "All rights reserved; no public reuse license is granted."
             },
-            "preview_media_url": "./assets/media/aisflows-media-jbl-jurassic-park-web.mp4",
+            "preview_media_url": "./assets/media/aisflows-media-mortal-kombat-dont-wake-the-champion-web.mp4",
             "format": "vertical",
             "media_kind": "local_video",
             "mime_type": "video/mp4",
-            "width": 720,
-            "height": 1280,
+            "width": 1080,
+            "height": 1920,
             "aspect_ratio": "9:16",
-            "duration_ms": 41215,
+            "duration_ms": 72910,
             "lifecycle": "published",
             "status": "published",
             "public_or_private": "public",
             "provider_url": null,
             "download_url": null,
-            "size_bytes": 10396901,
-            "sha256": "4e759327daf5113babb0a9e15486136cb432f96ff12826b53d6682428adc19e9",
+            "size_bytes": 21716951,
+            "sha256": "573053d94a74d36594521338d8fb384b1624f3ae59dc15435f0b945ce2f2b0d6",
             "attribution": "AIS FLOWS / Andrei Spirydovich",
             "license_boundary": "All rights reserved; no public reuse license is granted.",
             "primary_action": "playback",
@@ -783,9 +896,105 @@
             ],
             "prompt_url": null,
             "social_urls": {
-              "youtube": "https://youtube.com/shorts/dCX4VlgEkk8",
-              "instagram": "https://www.instagram.com/p/DbUUtnpK1yq/",
-              "tiktok": "https://www.tiktok.com/@aisflows/video/7667387333196434708"
+              "youtube": null,
+              "instagram": null,
+              "tiktok": null
+            }
+          },
+          {
+            "id": "ghostbusters-first-day-on-the-job",
+            "route_slug": "ghostbusters-first-day-on-the-job",
+            "title": "👻 GHOSTBUSTERS — First Day on the Job | AI Fan Trailer",
+            "role_en": null,
+            "role_ru": null,
+            "poster": "./assets/media/aisflows-media-ghostbusters-first-day-on-the-job-poster.jpg",
+            "poster_alt_en": "A person points toward a large creature head in a dark hallway.",
+            "poster_alt_ru": "Человек указывает на большую голову существа в тёмном коридоре.",
+            "poster_metadata": {
+              "classification": "public_media",
+              "width": 720,
+              "height": 1280,
+              "size_bytes": 164274,
+              "sha256": "d3a730d467aca2415ecade00d4d1373ce171e1bac9faefc31c40884d9ed8f391",
+              "caption_en": "👻 GHOSTBUSTERS — First Day on the Job | AI Fan Trailer poster.",
+              "caption_ru": "Постер к 👻 GHOSTBUSTERS — First Day on the Job | AI Fan Trailer.",
+              "credit": "AIS FLOWS / Andrei Spirydovich",
+              "license": "All rights reserved; no public reuse license is granted."
+            },
+            "preview_media_url": "./assets/media/aisflows-media-ghostbusters-first-day-on-the-job-web.mp4",
+            "format": "vertical",
+            "media_kind": "local_video",
+            "mime_type": "video/mp4",
+            "width": 1080,
+            "height": 1920,
+            "aspect_ratio": "9:16",
+            "duration_ms": 62949,
+            "lifecycle": "published",
+            "status": "published",
+            "public_or_private": "public",
+            "provider_url": null,
+            "download_url": null,
+            "size_bytes": 22340548,
+            "sha256": "c179484200dc02ad043c7a8dd73ecb633dfabd0f18ea0d0c21b13f4eef62f307",
+            "attribution": "AIS FLOWS / Andrei Spirydovich",
+            "license_boundary": "All rights reserved; no public reuse license is granted.",
+            "primary_action": "playback",
+            "markers": [
+              "FULL"
+            ],
+            "prompt_url": null,
+            "social_urls": {
+              "youtube": null,
+              "instagram": null,
+              "tiktok": null
+            }
+          },
+          {
+            "id": "monster-island-mutants",
+            "route_slug": "monster-island-mutants",
+            "title": "Monster Island: Mutants | AI Fan Trailer",
+            "role_en": null,
+            "role_ru": null,
+            "poster": "./assets/media/aisflows-media-monster-island-mutants-poster.jpg",
+            "poster_alt_en": "Monster Island: Mutants | AI Fan Trailer poster.",
+            "poster_alt_ru": "Постер к Monster Island: Mutants | AI Fan Trailer.",
+            "poster_metadata": {
+              "classification": "public_media",
+              "width": 720,
+              "height": 1280,
+              "size_bytes": 100167,
+              "sha256": "79d97248ad008fdc8250f8a77a3dd9f91be59d9b56ce0255e3552464eb6720b1",
+              "caption_en": "Monster Island: Mutants | AI Fan Trailer poster.",
+              "caption_ru": "Постер к Monster Island: Mutants | AI Fan Trailer.",
+              "credit": "AIS FLOWS / Andrei Spirydovich",
+              "license": "All rights reserved; no public reuse license is granted."
+            },
+            "preview_media_url": "./assets/media/aisflows-media-monster-island-mutants-web.mp4",
+            "format": "vertical",
+            "media_kind": "local_video",
+            "mime_type": "video/mp4",
+            "width": 1080,
+            "height": 1920,
+            "aspect_ratio": "9:16",
+            "duration_ms": 53592,
+            "lifecycle": "published",
+            "status": "published",
+            "public_or_private": "public",
+            "provider_url": null,
+            "download_url": null,
+            "size_bytes": 24090364,
+            "sha256": "d41e5d23c87e9e9d90ebbd3c9bb9f26f7c91d690c9d3efb4902a37827df5b193",
+            "attribution": "AIS FLOWS / Andrei Spirydovich",
+            "license_boundary": "All rights reserved; no public reuse license is granted.",
+            "primary_action": "playback",
+            "markers": [
+              "FULL"
+            ],
+            "prompt_url": null,
+            "social_urls": {
+              "youtube": null,
+              "instagram": null,
+              "tiktok": null
             }
           },
           {
@@ -959,7 +1168,7 @@
             "width": 720,
             "height": 1280,
             "aspect_ratio": "9:16",
-            "duration_ms": 46200,
+            "duration_ms": 46208,
             "lifecycle": "published",
             "status": "published",
             "public_or_private": "public",
@@ -1007,7 +1216,7 @@
             "width": 720,
             "height": 1280,
             "aspect_ratio": "9:16",
-            "duration_ms": 67800,
+            "duration_ms": 67802,
             "lifecycle": "published",
             "status": "published",
             "public_or_private": "public",
@@ -1055,7 +1264,7 @@
             "width": 720,
             "height": 1280,
             "aspect_ratio": "9:16",
-            "duration_ms": 51767,
+            "duration_ms": 51780,
             "lifecycle": "published",
             "status": "published",
             "public_or_private": "public",
@@ -1079,20 +1288,20 @@
           {
             "id": "predator",
             "route_slug": "predator",
-            "title": "PREDATOR: ABYSS | AI Fan Traile",
+            "title": "PREDATOR: ABYSS | AI Fan Trailer",
             "role_en": "Vertical AI media preview",
             "role_ru": "Вертикальное AI-медиапревью",
             "poster": "./assets/media/aisflows-preview-predator-poster.jpg",
-            "poster_alt_en": "PREDATOR: ABYSS | AI Fan Traile poster.",
-            "poster_alt_ru": "PREDATOR: ABYSS | AI Fan Traile poster.",
+            "poster_alt_en": "PREDATOR: ABYSS | AI Fan Trailer poster.",
+            "poster_alt_ru": "PREDATOR: ABYSS | AI Fan Trailer poster.",
             "poster_metadata": {
               "classification": "public_media",
               "width": 720,
               "height": 1280,
               "size_bytes": 26932,
               "sha256": "03d5ac49360f172925dbcbd333fa2418156b2dc4a0ea65b42b7726c887f9a37a",
-              "caption_en": "PREDATOR: ABYSS | AI Fan Traile poster.",
-              "caption_ru": "PREDATOR: ABYSS | AI Fan Traile poster.",
+              "caption_en": "PREDATOR: ABYSS | AI Fan Trailer poster.",
+              "caption_ru": "PREDATOR: ABYSS | AI Fan Trailer poster.",
               "credit": "AIS FLOWS / Andrei Spirydovich",
               "license": "All rights reserved; no public reuse license is granted."
             },
@@ -1103,7 +1312,7 @@
             "width": 720,
             "height": 1280,
             "aspect_ratio": "9:16",
-            "duration_ms": 62400,
+            "duration_ms": 62415,
             "lifecycle": "published",
             "status": "published",
             "public_or_private": "public",
@@ -1130,18 +1339,18 @@
     {
       "id": "request",
       "type": "contact",
-      "title_en": "Start a Project",
-      "title_ru": "Оставить заявку",
-      "short_description_en": "Short project request form with an email fallback.",
-      "short_description_ru": "Короткая форма заявки с запасным email-маршрутом.",
-      "description_en": "The Formspree receiver is configured and verified from the public Home. Email remains the explicit fallback.",
-      "description_ru": "Получатель Formspree настроен и проверен с публичного Home. Email остаётся явным запасным маршрутом.",
+      "title_en": "Personal Contact",
+      "title_ru": "Личный контакт",
+      "short_description_en": "Three personal contact routes with an email fallback.",
+      "short_description_ru": "Три личных маршрута связи с запасным email-маршрутом.",
+      "description_en": "The Formspree receiver is configured and verified from the public Home. Choose an AI video or visual project, a personal review or consultation, or collaboration. Email remains the explicit fallback.",
+      "description_ru": "Получатель Formspree настроен и проверен с публичного Home. Выберите AI-видео или визуальный проект, личный разбор или консультацию либо сотрудничество. Email остаётся явным запасным маршрутом.",
       "lifecycle": "published",
       "status": "receiver_public_home_delivery_verified",
       "route_status": "verified",
       "version": null,
-      "updated_at": "2026-07-27T10:53:18Z",
-      "last_verified": "2026-07-27",
+      "updated_at": "2026-09-06T00:00:00Z",
+      "last_verified": "2026-09-06",
       "language": [
         "en",
         "ru"
@@ -1181,14 +1390,35 @@
         "summary": "No public reuse license has been independently verified."
       },
       "citation": {
-        "canonical_url": "https://aisflows.github.io/home/request/",
-        "attribution_text": "AIS FLOWS project request route."
+        "canonical_url": "https://aisflows.com/request/",
+        "attribution_text": "AIS FLOWS personal contact routes."
       },
       "updates": {
         "changelog_url": "./CHANGELOG_PUBLIC.md",
         "feed_url": "./feed.xml"
       },
       "support_actions": [
+        {
+          "id": "ai-video-visual-project",
+          "label_en": "Order an AI video or visual project",
+          "label_ru": "Заказать AI-видео или визуальный проект",
+          "url": "./request/index.html?type=ai_video_visual_project",
+          "requires_user_confirmation": true
+        },
+        {
+          "id": "personal-review-consultation",
+          "label_en": "Request a personal review or consultation",
+          "label_ru": "Запросить личный разбор или консультацию",
+          "url": "./request/index.html?type=personal_review_consultation",
+          "requires_user_confirmation": true
+        },
+        {
+          "id": "collaboration",
+          "label_en": "Propose a collaboration",
+          "label_ru": "Предложить сотрудничество",
+          "url": "./request/index.html?type=collaboration",
+          "requires_user_confirmation": true
+        },
         {
           "id": "email-fallback",
           "label_en": "Use email",
@@ -1221,18 +1451,18 @@
     {
       "id": "ais-flows-ai-video-course",
       "type": "course",
-      "title_en": "AIS FLOWS AI-video course",
-      "title_ru": "Курс AIS FLOWS по AI-видео",
+      "title_en": "AI tools course",
+      "title_ru": "Курс по AI-инструментам",
       "short_description_en": "Working course route from intent to assembled AI-video.",
       "short_description_ru": "Рабочий маршрут курса от замысла до собранного AI-видео.",
-      "description_en": "Local candidate of the working AIS FLOWS course with direct no-JS lesson routes. It is not a finished SaaS or paid pack.",
-      "description_ru": "Локальный кандидат рабочего курса AIS FLOWS с прямыми no-JS маршрутами уроков. Это не готовый SaaS и не опубликованный платный набор.",
+      "description_en": "Open materials in Russian and English: lessons, examples, and files for self-study.",
+      "description_ru": "Открытые материалы на русском и английском: уроки, примеры и файлы для самостоятельного изучения.",
       "lifecycle": "draft",
-      "status": "draft",
+      "status": "local_release_candidate",
       "route_status": "verified",
-      "version": "0.1.0-local-preview",
-      "updated_at": "2026-07-22T12:00:00Z",
-      "last_verified": "2026-07-22",
+      "version": "0.2.0-local-rc",
+      "updated_at": "2026-08-25T00:00:00Z",
+      "last_verified": "2026-08-25",
       "language": [
         "en",
         "ru"
@@ -1241,12 +1471,31 @@
         "en",
         "ru"
       ],
+      "course_release": {
+        "revision": "fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b",
+        "release_status": "local_release_candidate",
+        "lesson_count": 23,
+        "track_count": 9,
+        "locales": {
+          "ru": {
+            "status": "complete",
+            "route": "./course/index.html",
+            "unavailable_reason": null
+          },
+          "en": {
+            "status": "complete",
+            "route": "./course/en/index.html",
+            "revision": "79cbdb210a0b15afbabc3f23409b803eda3cc7fb99ededc2987195762300903b",
+            "unavailable_reason": null
+          }
+        }
+      },
       "human_page_url": "./course/index.html",
       "page_url": "./course/index.html",
-      "machine_index_url": "./course/course-agent-manifest.json",
-      "content_url": "./course/course-content.json",
+      "machine_index_url": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-agent-manifest.json",
+      "content_url": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-content.json",
       "release_url": null,
-      "artifact_manifest_url": "./course/artifacts.json",
+      "artifact_manifest_url": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/artifacts.json",
       "download_url": null,
       "payment_url": null,
       "contact_url": null,
@@ -1272,7 +1521,7 @@
         "summary": "No public reuse license has been independently verified."
       },
       "citation": {
-        "canonical_url": "https://aisflows.github.io/home/course/",
+        "canonical_url": "https://aisflows.com/course/",
         "attribution_text": "AIS FLOWS AI-video course by Andrei Spirydovich."
       },
       "updates": {
@@ -1286,8 +1535,8 @@
       "display": {
         "category": "course",
         "order": 1,
-        "status_label_en": "Working draft",
-        "status_label_ru": "Рабочий черновик",
+        "status_label_en": "EN and RU materials",
+        "status_label_ru": "Материалы на RU и EN",
         "action_label_en": "Open course",
         "action_label_ru": "Открыть курс",
         "tags_en": [],
@@ -1377,11 +1626,11 @@
     }
   ],
   "constraints": {
-    "public_deploy": "github_pages_public_deployed",
+    "public_deploy": "public",
     "request_receiver": "formspree_public_home_delivery_verified",
     "analytics_provider": "umami_public_home_collection_verified",
     "payment_and_delivery": "not_selected_not_proven",
-    "production_base_url": "https://aisflows.github.io/home/",
+    "production_base_url": "https://aisflows.com/",
     "server_agent_analytics": "unavailable_static_host_does_not_observe_direct_agent_fetches"
   },
   "state_machines": {
@@ -1431,6 +1680,54 @@
   },
   "change_log": [
     {
+      "id": "update-2026-09-29-mortal-kombat-dont-wake-the-champion-added",
+      "object_id": "featured-youtube-trailer",
+      "item_id": "mortal-kombat-dont-wake-the-champion",
+      "change_type": "created",
+      "version": null,
+      "updated_at": "2026-09-29T19:56:02Z",
+      "summary_en": "Added the owner-supplied Mortal Kombat AI fan trailer to Home Media with full-length local H.264/AAC playback.",
+      "summary_ru": "В Home Media добавлен предоставленный владельцем AI fan trailer Mortal Kombat с полноразмерным локальным воспроизведением H.264/AAC.",
+      "content_url": "./media/media-index.json",
+      "canonical_url": "https://aisflows.com/media/"
+    },
+    {
+      "id": "update-2026-09-29-ghostbusters-first-day-on-the-job-added",
+      "object_id": "featured-youtube-trailer",
+      "item_id": "ghostbusters-first-day-on-the-job",
+      "change_type": "created",
+      "version": null,
+      "updated_at": "2026-09-29T16:40:33Z",
+      "summary_en": "Added the supplied Ghostbusters AI fan trailer to Home Media with local H.264/AAC playback.",
+      "summary_ru": "В Home Media добавлен предоставленный AI fan trailer про охотников за привидениями с локальным воспроизведением H.264/AAC.",
+      "content_url": "./media/media-index.json",
+      "canonical_url": "https://aisflows.com/media/"
+    },
+    {
+      "id": "update-2026-09-29-monster-island-media-replacement",
+      "object_id": "featured-youtube-trailer",
+      "item_id": "monster-island-mutants",
+      "change_type": "updated",
+      "version": null,
+      "updated_at": "2026-09-29T04:40:09Z",
+      "summary_en": "Replaced the first Home Media preview with the owner-supplied Monster Island: Mutants | AI Fan Trailer and its web-ready H.264/AAC derivative.",
+      "summary_ru": "Первое превью Media Wall заменено на предоставленный владельцем Monster Island: Mutants | AI Fan Trailer и web-версию H.264/AAC.",
+      "content_url": "./media/media-index.json",
+      "canonical_url": "https://aisflows.com/media/"
+    },
+    {
+      "id": "update-2026-09-05-course-writer-v1-release",
+      "object_id": "course-writer",
+      "item_id": "course-writer-v1-zip",
+      "change_type": "created",
+      "version": "1.0",
+      "updated_at": "2026-09-05T00:00:00Z",
+      "summary_en": "Added AIS FLOWS Course Writer 1.0 release and its verified public download metadata.",
+      "summary_ru": "Добавлен релиз AIS FLOWS Course Writer 1.0 и его подтверждённые публичные метаданные скачивания.",
+      "content_url": "https://github.com/aisflows/course-writer/releases/tag/v1.0",
+      "canonical_url": "https://github.com/aisflows/course-writer/releases/tag/v1.0"
+    },
+    {
       "id": "update-2026-08-09-media-catalog-routes",
       "object_id": "featured-youtube-trailer",
       "item_id": null,
@@ -1440,7 +1737,7 @@
       "summary_en": "Added canonical EN/RU Media catalog and stable work routes for the five confirmed AIS FLOWS media works.",
       "summary_ru": "Добавлены канонические EN/RU каталоги Media и стабильные маршруты пяти подтверждённых медиаработ AIS FLOWS.",
       "content_url": "./media/media-index.json",
-      "canonical_url": "https://aisflows.github.io/home/media/"
+      "canonical_url": "https://aisflows.com/media/"
     },
     {
       "id": "update-2026-08-03-skill-operations-pack-rc6-prepared",
@@ -1452,7 +1749,7 @@
       "summary_en": "Added AIS FLOWS Skill Operations Pack 0.1.0-rc6 as a prepared local public release candidate without a public download route.",
       "summary_ru": "Добавлен AIS FLOWS Skill Operations Pack 0.1.0-rc6 как подготовленный локальный кандидат публичного релиза без публичного маршрута скачивания.",
       "content_url": null,
-      "canonical_url": "https://aisflows.github.io/home/#products"
+      "canonical_url": "https://aisflows.com/#products"
     },
     {
       "id": "update-2026-07-28-home-visual-evidence",
@@ -1464,7 +1761,7 @@
       "summary_en": "Added factual labels for the four Home media previews and direct EN/RU privacy routes.",
       "summary_ru": "Добавлены фактические подписи четырёх медиапревью Home и прямые EN/RU маршруты privacy.",
       "content_url": null,
-      "canonical_url": "https://aisflows.github.io/home/#media"
+      "canonical_url": "https://aisflows.com/#media"
     },
     {
       "id": "update-2026-07-27-public-home-live",
@@ -1476,7 +1773,7 @@
       "summary_en": "Published AIS FLOWS Home and verified the public Formspree request route, Umami browser events, agent discovery chain, and downloadable artifact integrity.",
       "summary_ru": "Опубликован AIS FLOWS Home; на публичном сайте проверены заявка Formspree, браузерные события Umami, агентный маршрут обнаружения и целостность скачиваемого артефакта.",
       "content_url": "./agent-manifest.json",
-      "canonical_url": "https://aisflows.github.io/home/"
+      "canonical_url": "https://aisflows.com/"
     },
     {
       "id": "update-2026-07-26-request-analytics-truth",
@@ -1488,7 +1785,19 @@
       "summary_en": "Recorded the configured Formspree receiver and privacy-safe Umami browser contract as locally accepted, while keeping the Home candidate explicitly not deployed.",
       "summary_ru": "Зафиксированы настроенный Formspree и privacy-safe контракт браузерной аналитики Umami как локально принятые; кандидат Home явно остаётся неразвёрнутым.",
       "content_url": "./request-schema.json",
-      "canonical_url": "https://aisflows.github.io/home/request/"
+      "canonical_url": "https://aisflows.com/request/"
+    },
+    {
+      "id": "update-2026-08-25-course-current-parity",
+      "object_id": "ais-flows-ai-video-course",
+      "item_id": null,
+      "change_type": "updated",
+      "version": "0.2.0-local-rc",
+      "updated_at": "2026-08-25T00:00:00Z",
+      "summary_en": "Synchronized Home Course metadata with the accepted 24-lesson, 10-track Russian local release candidate; English remains unavailable until a complete package is integrated.",
+      "summary_ru": "Метаданные курса Home синхронизированы с принятым русским локальным кандидатом из 24 уроков и 10 разделов; EN остаётся недоступным до интеграции полного пакета.",
+      "content_url": "./course/course-content.json",
+      "canonical_url": "https://aisflows.com/course/"
     },
     {
       "id": "update-2026-07-22-course-preview",
@@ -1500,7 +1809,7 @@
       "summary_en": "Added a local agent-readable course candidate with direct lesson routes.",
       "summary_ru": "Добавлен локальный агент-читаемый кандидат курса с прямыми маршрутами уроков.",
       "content_url": "./course/course-content.json",
-      "canonical_url": "https://aisflows.github.io/home/course/"
+      "canonical_url": "https://aisflows.com/course/"
     },
     {
       "id": "update-2026-07-22-ready-gate-artifact",
@@ -1524,7 +1833,7 @@
       "summary_en": "Added four web-safe media works, exact social metadata and a dense curated wall.",
       "summary_ru": "Добавлены четыре web-safe работы, точные социальные ссылки и плотная curated-стена.",
       "content_url": "./media/media-index.json",
-      "canonical_url": "https://aisflows.github.io/home/media/"
+      "canonical_url": "https://aisflows.com/media/"
     },
     {
       "id": "update-2026-08-09-skills-catalog-local",
@@ -1536,7 +1845,7 @@
       "summary_en": "Added local EN/RU Skills catalogs and one machine-readable Skills index without changing release availability.",
       "summary_ru": "Добавлены локальные EN/RU каталоги Skills и единый машиночитаемый индекс без изменения доступности релизов.",
       "content_url": "./skills/skills-index.json",
-      "canonical_url": "https://aisflows.github.io/home/skills/"
+      "canonical_url": "https://aisflows.com/skills/"
     },
     {
       "id": "update-2026-08-09-skill-operations-pack-rc6-released",

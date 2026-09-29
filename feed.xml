@@ -1,74 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://aisflows.github.io/home/feed.xml</id>
+  <id>https://aisflows.com/feed.xml</id>
   <title>AIS FLOWS public updates</title>
-  <updated>2026-08-09T13:37:52Z</updated>
-  <link href="https://aisflows.github.io/home/feed.xml" rel="self"/>
+  <updated>2026-09-29T19:56:02Z</updated>
+  <link href="https://aisflows.com/feed.xml" rel="self"/>
   <entry>
-    <id>https://aisflows.github.io/home/#update-2026-08-09-skill-operations-pack-rc6-released</id>
+    <id>https://aisflows.com/#update-2026-09-29-mortal-kombat-dont-wake-the-champion-added</id>
+    <title>Added the owner-supplied Mortal Kombat AI fan trailer to Home Media with full-length local H.264/AAC playback.</title>
+    <updated>2026-09-29T19:56:02Z</updated>
+    <link href="https://aisflows.com/media/"/>
+    <summary>Added the owner-supplied Mortal Kombat AI fan trailer to Home Media with full-length local H.264/AAC playback.</summary>
+  </entry>
+  <entry>
+    <id>https://aisflows.com/#update-2026-09-29-ghostbusters-first-day-on-the-job-added</id>
+    <title>Added the supplied Ghostbusters AI fan trailer to Home Media with local H.264/AAC playback.</title>
+    <updated>2026-09-29T16:40:33Z</updated>
+    <link href="https://aisflows.com/media/"/>
+    <summary>Added the supplied Ghostbusters AI fan trailer to Home Media with local H.264/AAC playback.</summary>
+  </entry>
+  <entry>
+    <id>https://aisflows.com/#update-2026-09-29-monster-island-media-replacement</id>
+    <title>Replaced the first Home Media preview with the owner-supplied Monster Island: Mutants | AI Fan Trailer and its web-ready H.264/AAC derivative.</title>
+    <updated>2026-09-29T04:40:09Z</updated>
+    <link href="https://aisflows.com/media/"/>
+    <summary>Replaced the first Home Media preview with the owner-supplied Monster Island: Mutants | AI Fan Trailer and its web-ready H.264/AAC derivative.</summary>
+  </entry>
+  <entry>
+    <id>https://aisflows.com/#update-2026-09-05-course-writer-v1-release</id>
+    <title>Added AIS FLOWS Course Writer 1.0 release and its verified public download metadata.</title>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <link href="https://github.com/aisflows/course-writer/releases/tag/v1.0"/>
+    <summary>Added AIS FLOWS Course Writer 1.0 release and its verified public download metadata.</summary>
+  </entry>
+  <entry>
+    <id>https://aisflows.com/#update-2026-08-25-course-current-parity</id>
+    <title>Synchronized Home Course metadata with the accepted 24-lesson, 10-track Russian local release candidate; English remains unavailable until a complete package is integrated.</title>
+    <updated>2026-08-25T00:00:00Z</updated>
+    <link href="https://aisflows.com/course/"/>
+    <summary>Synchronized Home Course metadata with the accepted 24-lesson, 10-track Russian local release candidate; English remains unavailable until a complete package is integrated.</summary>
+  </entry>
+  <entry>
+    <id>https://aisflows.com/#update-2026-08-09-skill-operations-pack-rc6-released</id>
     <title>Published AIS FLOWS Skill Operations Pack 0.1.0-rc6 on GitHub with a verified ZIP and SHA256.</title>
     <updated>2026-08-09T13:37:52Z</updated>
     <link href="https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6"/>
     <summary>Published AIS FLOWS Skill Operations Pack 0.1.0-rc6 on GitHub with a verified ZIP and SHA256.</summary>
   </entry>
   <entry>
-    <id>https://aisflows.github.io/home/#update-2026-08-09-media-catalog-routes</id>
+    <id>https://aisflows.com/#update-2026-08-09-media-catalog-routes</id>
     <title>Added canonical EN/RU Media catalog and stable work routes for the five confirmed AIS FLOWS media works.</title>
     <updated>2026-08-09T00:00:00Z</updated>
-    <link href="https://aisflows.github.io/home/media/"/>
+    <link href="https://aisflows.com/media/"/>
     <summary>Added canonical EN/RU Media catalog and stable work routes for the five confirmed AIS FLOWS media works.</summary>
   </entry>
   <entry>
-    <id>https://aisflows.github.io/home/#update-2026-08-09-media-wall-revision</id>
+    <id>https://aisflows.com/#update-2026-08-09-media-wall-revision</id>
     <title>Added four web-safe media works, exact social metadata and a dense curated wall.</title>
     <updated>2026-08-09T00:00:00Z</updated>
-    <link href="https://aisflows.github.io/home/media/"/>
+    <link href="https://aisflows.com/media/"/>
     <summary>Added four web-safe media works, exact social metadata and a dense curated wall.</summary>
   </entry>
   <entry>
-    <id>https://aisflows.github.io/home/#update-2026-08-09-skills-catalog-local</id>
+    <id>https://aisflows.com/#update-2026-08-09-skills-catalog-local</id>
     <title>Added local EN/RU Skills catalogs and one machine-readable Skills index without changing release availability.</title>
     <updated>2026-08-09T00:00:00Z</updated>
-    <link href="https://aisflows.github.io/home/skills/"/>
+    <link href="https://aisflows.com/skills/"/>
     <summary>Added local EN/RU Skills catalogs and one machine-readable Skills index without changing release availability.</summary>
   </entry>
   <entry>
-    <id>https://aisflows.github.io/home/#update-2026-08-03-skill-operations-pack-rc6-prepared</id>
+    <id>https://aisflows.com/#update-2026-08-03-skill-operations-pack-rc6-prepared</id>
     <title>Added AIS FLOWS Skill Operations Pack 0.1.0-rc6 as a prepared local public release candidate without a public download route.</title>
     <updated>2026-08-03T00:00:00Z</updated>
-    <link href="https://aisflows.github.io/home/#products"/>
+    <link href="https://aisflows.com/#products"/>
     <summary>Added AIS FLOWS Skill Operations Pack 0.1.0-rc6 as a prepared local public release candidate without a public download route.</summary>
   </entry>
   <entry>
-    <id>https://aisflows.github.io/home/#update-2026-07-28-home-visual-evidence</id>
+    <id>https://aisflows.com/#update-2026-07-28-home-visual-evidence</id>
     <title>Added factual labels for the four Home media previews and direct EN/RU privacy routes.</title>
     <updated>2026-07-28T18:00:00Z</updated>
-    <link href="https://aisflows.github.io/home/#media"/>
+    <link href="https://aisflows.com/#media"/>
     <summary>Added factual labels for the four Home media previews and direct EN/RU privacy routes.</summary>
   </entry>
   <entry>
-    <id>https://aisflows.github.io/home/#update-2026-07-27-public-home-live</id>
+    <id>https://aisflows.com/#update-2026-07-27-public-home-live</id>
     <title>Published AIS FLOWS Home and verified the public Formspree request route, Umami browser events, agent discovery chain, and downloadable artifact integrity.</title>
     <updated>2026-07-27T10:53:18Z</updated>
-    <link href="https://aisflows.github.io/home/"/>
+    <link href="https://aisflows.com/"/>
     <summary>Published AIS FLOWS Home and verified the public Formspree request route, Umami browser events, agent discovery chain, and downloadable artifact integrity.</summary>
   </entry>
   <entry>
-    <id>https://aisflows.github.io/home/#update-2026-07-26-request-analytics-truth</id>
+    <id>https://aisflows.com/#update-2026-07-26-request-analytics-truth</id>
     <title>Recorded the configured Formspree receiver and privacy-safe Umami browser contract as locally accepted, while keeping the Home candidate explicitly not deployed.</title>
     <updated>2026-07-26T16:01:40Z</updated>
-    <link href="https://aisflows.github.io/home/request/"/>
+    <link href="https://aisflows.com/request/"/>
     <summary>Recorded the configured Formspree receiver and privacy-safe Umami browser contract as locally accepted, while keeping the Home candidate explicitly not deployed.</summary>
   </entry>
   <entry>
-    <id>https://aisflows.github.io/home/#update-2026-07-22-course-preview</id>
+    <id>https://aisflows.com/#update-2026-07-22-course-preview</id>
     <title>Added a local agent-readable course candidate with direct lesson routes.</title>
     <updated>2026-07-22T12:00:00Z</updated>
-    <link href="https://aisflows.github.io/home/course/"/>
+    <link href="https://aisflows.com/course/"/>
     <summary>Added a local agent-readable course candidate with direct lesson routes.</summary>
   </entry>
   <entry>
-    <id>https://aisflows.github.io/home/#update-2026-07-22-ready-gate-artifact</id>
+    <id>https://aisflows.com/#update-2026-07-22-ready-gate-artifact</id>
     <title>Verified Ready Gate artifact size and SHA256 for the local candidate.</title>
     <updated>2026-07-22T12:00:00Z</updated>
     <link href="https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1"/>

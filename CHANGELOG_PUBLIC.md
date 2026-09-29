@@ -2,6 +2,46 @@
 
 Deployment status: `public`.
 
+## 2026-09-29 · update-2026-09-29-mortal-kombat-dont-wake-the-champion-added
+
+- Object: `featured-youtube-trailer` / `mortal-kombat-dont-wake-the-champion`
+- Change: `created`
+- Version: `unversioned`
+- EN: Added the owner-supplied Mortal Kombat AI fan trailer to Home Media with full-length local H.264/AAC playback.
+- RU: В Home Media добавлен предоставленный владельцем AI fan trailer Mortal Kombat с полноразмерным локальным воспроизведением H.264/AAC.
+
+## 2026-09-29 · update-2026-09-29-ghostbusters-first-day-on-the-job-added
+
+- Object: `featured-youtube-trailer` / `ghostbusters-first-day-on-the-job`
+- Change: `created`
+- Version: `unversioned`
+- EN: Added the supplied Ghostbusters AI fan trailer to Home Media with local H.264/AAC playback.
+- RU: В Home Media добавлен предоставленный AI fan trailer про охотников за привидениями с локальным воспроизведением H.264/AAC.
+
+## 2026-09-29 · update-2026-09-29-monster-island-media-replacement
+
+- Object: `featured-youtube-trailer` / `monster-island-mutants`
+- Change: `updated`
+- Version: `unversioned`
+- EN: Replaced the first Home Media preview with the owner-supplied Monster Island: Mutants | AI Fan Trailer and its web-ready H.264/AAC derivative.
+- RU: Первое превью Media Wall заменено на предоставленный владельцем Monster Island: Mutants | AI Fan Trailer и web-версию H.264/AAC.
+
+## 2026-09-05 · update-2026-09-05-course-writer-v1-release
+
+- Object: `course-writer` / `course-writer-v1-zip`
+- Change: `created`
+- Version: `1.0`
+- EN: Added AIS FLOWS Course Writer 1.0 release and its verified public download metadata.
+- RU: Добавлен релиз AIS FLOWS Course Writer 1.0 и его подтверждённые публичные метаданные скачивания.
+
+## 2026-08-25 · update-2026-08-25-course-current-parity
+
+- Object: `ais-flows-ai-video-course`
+- Change: `updated`
+- Version: `0.2.0-local-rc`
+- EN: Synchronized Home Course metadata with the accepted 24-lesson, 10-track Russian local release candidate; English remains unavailable until a complete package is integrated.
+- RU: Метаданные курса Home синхронизированы с принятым русским локальным кандидатом из 24 уроков и 10 разделов; EN остаётся недоступным до интеграции полного пакета.
+
 ## 2026-08-09 · update-2026-08-09-skill-operations-pack-rc6-released
 
 - Object: `skill-operations-pack` / `v0.1.0-rc6`

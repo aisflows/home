@@ -4,20 +4,20 @@
   "deployment_status": "public",
   "current_public_home_status": "public",
   "catalog_routes": {
-    "en": "https://aisflows.github.io/home/media/index.html",
-    "ru": "https://aisflows.github.io/home/ru/media/index.html"
+    "en": "https://aisflows.com/media/index.html",
+    "ru": "https://aisflows.com/ru/media/index.html"
   },
   "featured_trailer": {
     "id": "featured-youtube-trailer",
     "route_slug": "featured-youtube-trailer",
     "title_en": "AIS FLOWS trailer",
     "title_ru": "Трейлер AIS FLOWS",
-    "description_en": "Featured trailer and eight confirmed AIS FLOWS media works.",
-    "description_ru": "Главный трейлер и восемь подтверждённых медиаработ AIS FLOWS.",
+    "description_en": "Featured trailer and confirmed AIS FLOWS media works.",
+    "description_ru": "Главный трейлер и подтверждённые медиаработы AIS FLOWS.",
     "media_kind": "youtube",
     "mime_type": null,
     "asset_url": null,
-    "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-youtube-trailer-poster.jpg",
+    "poster_url": "https://aisflows.com/assets/media/aisflows-youtube-trailer-poster.jpg",
     "width": 1280,
     "height": 720,
     "aspect_ratio": "16:9",
@@ -42,36 +42,39 @@
       "instagram": null,
       "tiktok": null
     },
+    "artifacts": {
+      "poster_id": "media-featured-youtube-trailer-poster"
+    },
     "order": -1,
-    "human_page_url_en": "https://aisflows.github.io/home/media/featured-youtube-trailer/",
-    "human_page_url_ru": "https://aisflows.github.io/home/ru/media/featured-youtube-trailer/"
+    "human_page_url_en": "https://aisflows.com/media/featured-youtube-trailer/",
+    "human_page_url_ru": "https://aisflows.com/ru/media/featured-youtube-trailer/"
   },
   "works": [
     {
-      "id": "jbl-jurassic-park",
-      "route_slug": "jbl-jurassic-park",
-      "title_en": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising",
-      "title_ru": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising",
-      "description_en": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising",
-      "description_ru": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising",
+      "id": "mortal-kombat-dont-wake-the-champion",
+      "route_slug": "mortal-kombat-dont-wake-the-champion",
+      "title_en": "🐉 MORTAL KOMBAT — Don't Wake the Champion | AI Fan Trailer",
+      "title_ru": "🐉 MORTAL KOMBAT — Don't Wake the Champion | AI Fan Trailer",
+      "description_en": "🐉 MORTAL KOMBAT — Don't Wake the Champion | AI Fan Trailer",
+      "description_ru": "🐉 MORTAL KOMBAT — Don't Wake the Champion | AI Fan Trailer",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-jbl-jurassic-park-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-media-jbl-jurassic-park-poster.jpg",
-      "width": 720,
-      "height": 1280,
+      "asset_url": "https://aisflows.com/assets/media/aisflows-media-mortal-kombat-dont-wake-the-champion-web.mp4",
+      "poster_url": "https://aisflows.com/assets/media/aisflows-media-mortal-kombat-dont-wake-the-champion-poster.jpg",
+      "width": 1080,
+      "height": 1920,
       "aspect_ratio": "9:16",
-      "duration_ms": 41215,
+      "duration_ms": 72910,
       "lifecycle": "published",
       "status": "published",
       "public_or_private": "public",
       "provider_url": null,
       "provider_id": null,
       "download_url": null,
-      "size_bytes": 10396901,
-      "sha256": "4e759327daf5113babb0a9e15486136cb432f96ff12826b53d6682428adc19e9",
-      "alt_en": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising poster.",
-      "alt_ru": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising poster.",
+      "size_bytes": 21716951,
+      "sha256": "573053d94a74d36594521338d8fb384b1624f3ae59dc15435f0b945ce2f2b0d6",
+      "alt_en": "A blue-clad fighter faces an opponent in an arena beneath a giant serpent.",
+      "alt_ru": "Боец в синем противостоит сопернику на арене под гигантским змеем.",
       "attribution": "AIS FLOWS / Andrei Spirydovich",
       "license_boundary": "All rights reserved; no public reuse license is granted.",
       "primary_action": "playback",
@@ -80,13 +83,107 @@
       ],
       "prompt_url": null,
       "social_urls": {
-        "youtube": "https://youtube.com/shorts/dCX4VlgEkk8",
-        "instagram": "https://www.instagram.com/p/DbUUtnpK1yq/",
-        "tiktok": "https://www.tiktok.com/@aisflows/video/7667387333196434708"
+        "youtube": null,
+        "instagram": null,
+        "tiktok": null
+      },
+      "artifacts": {
+        "video_id": "media-mortal-kombat-dont-wake-the-champion-mp4",
+        "poster_id": "media-mortal-kombat-dont-wake-the-champion-poster"
       },
       "order": 0,
-      "human_page_url_en": "https://aisflows.github.io/home/media/jbl-jurassic-park/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/jbl-jurassic-park/"
+      "human_page_url_en": "https://aisflows.com/media/mortal-kombat-dont-wake-the-champion/",
+      "human_page_url_ru": "https://aisflows.com/ru/media/mortal-kombat-dont-wake-the-champion/"
+    },
+    {
+      "id": "ghostbusters-first-day-on-the-job",
+      "route_slug": "ghostbusters-first-day-on-the-job",
+      "title_en": "👻 GHOSTBUSTERS — First Day on the Job | AI Fan Trailer",
+      "title_ru": "👻 GHOSTBUSTERS — First Day on the Job | AI Fan Trailer",
+      "description_en": "👻 GHOSTBUSTERS — First Day on the Job | AI Fan Trailer",
+      "description_ru": "👻 GHOSTBUSTERS — First Day on the Job | AI Fan Trailer",
+      "media_kind": "local_video",
+      "mime_type": "video/mp4",
+      "asset_url": "https://aisflows.com/assets/media/aisflows-media-ghostbusters-first-day-on-the-job-web.mp4",
+      "poster_url": "https://aisflows.com/assets/media/aisflows-media-ghostbusters-first-day-on-the-job-poster.jpg",
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": "9:16",
+      "duration_ms": 62949,
+      "lifecycle": "published",
+      "status": "published",
+      "public_or_private": "public",
+      "provider_url": null,
+      "provider_id": null,
+      "download_url": null,
+      "size_bytes": 22340548,
+      "sha256": "c179484200dc02ad043c7a8dd73ecb633dfabd0f18ea0d0c21b13f4eef62f307",
+      "alt_en": "A person points toward a large creature head in a dark hallway.",
+      "alt_ru": "Человек указывает на большую голову существа в тёмном коридоре.",
+      "attribution": "AIS FLOWS / Andrei Spirydovich",
+      "license_boundary": "All rights reserved; no public reuse license is granted.",
+      "primary_action": "playback",
+      "markers": [
+        "FULL"
+      ],
+      "prompt_url": null,
+      "social_urls": {
+        "youtube": null,
+        "instagram": null,
+        "tiktok": null
+      },
+      "artifacts": {
+        "video_id": "media-ghostbusters-first-day-on-the-job-mp4",
+        "poster_id": "media-ghostbusters-first-day-on-the-job-poster"
+      },
+      "order": 1,
+      "human_page_url_en": "https://aisflows.com/media/ghostbusters-first-day-on-the-job/",
+      "human_page_url_ru": "https://aisflows.com/ru/media/ghostbusters-first-day-on-the-job/"
+    },
+    {
+      "id": "monster-island-mutants",
+      "route_slug": "monster-island-mutants",
+      "title_en": "Monster Island: Mutants | AI Fan Trailer",
+      "title_ru": "Monster Island: Mutants | AI Fan Trailer",
+      "description_en": "Monster Island: Mutants | AI Fan Trailer",
+      "description_ru": "Monster Island: Mutants | AI Fan Trailer",
+      "media_kind": "local_video",
+      "mime_type": "video/mp4",
+      "asset_url": "https://aisflows.com/assets/media/aisflows-media-monster-island-mutants-web.mp4",
+      "poster_url": "https://aisflows.com/assets/media/aisflows-media-monster-island-mutants-poster.jpg",
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": "9:16",
+      "duration_ms": 53592,
+      "lifecycle": "published",
+      "status": "published",
+      "public_or_private": "public",
+      "provider_url": null,
+      "provider_id": null,
+      "download_url": null,
+      "size_bytes": 24090364,
+      "sha256": "d41e5d23c87e9e9d90ebbd3c9bb9f26f7c91d690c9d3efb4902a37827df5b193",
+      "alt_en": "Monster Island: Mutants | AI Fan Trailer poster.",
+      "alt_ru": "Постер к Monster Island: Mutants | AI Fan Trailer.",
+      "attribution": "AIS FLOWS / Andrei Spirydovich",
+      "license_boundary": "All rights reserved; no public reuse license is granted.",
+      "primary_action": "playback",
+      "markers": [
+        "FULL"
+      ],
+      "prompt_url": null,
+      "social_urls": {
+        "youtube": null,
+        "instagram": null,
+        "tiktok": null
+      },
+      "artifacts": {
+        "video_id": "media-monster-island-mutants-mp4",
+        "poster_id": "media-monster-island-mutants-poster"
+      },
+      "order": 2,
+      "human_page_url_en": "https://aisflows.com/media/monster-island-mutants/",
+      "human_page_url_ru": "https://aisflows.com/ru/media/monster-island-mutants/"
     },
     {
       "id": "interstellar-millers-planet",
@@ -97,8 +194,8 @@
       "description_ru": "Interstellar: Miller's Planet Is the Worst Resort in the Universe | AI Fan Trailer",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-interstellar-millers-planet-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-media-interstellar-millers-planet-poster.jpg",
+      "asset_url": "https://aisflows.com/assets/media/aisflows-media-interstellar-millers-planet-web.mp4",
+      "poster_url": "https://aisflows.com/assets/media/aisflows-media-interstellar-millers-planet-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
@@ -125,9 +222,13 @@
         "instagram": "https://www.instagram.com/p/DbEDQq2KJHB/",
         "tiktok": "https://www.tiktok.com/@aisflows/video/7665036218937167125"
       },
-      "order": 1,
-      "human_page_url_en": "https://aisflows.github.io/home/media/interstellar-millers-planet/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/interstellar-millers-planet/"
+      "artifacts": {
+        "video_id": "media-interstellar-millers-planet-mp4",
+        "poster_id": "media-interstellar-millers-planet-poster"
+      },
+      "order": 3,
+      "human_page_url_en": "https://aisflows.com/media/interstellar-millers-planet/",
+      "human_page_url_ru": "https://aisflows.com/ru/media/interstellar-millers-planet/"
     },
     {
       "id": "doom-battlefield-earth",
@@ -138,8 +239,8 @@
       "description_ru": "DOOM: THE BATTLEFIELD IS EARTH | AI Fan Trailer",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-doom-battlefield-earth-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-media-doom-battlefield-earth-poster.jpg",
+      "asset_url": "https://aisflows.com/assets/media/aisflows-media-doom-battlefield-earth-web.mp4",
+      "poster_url": "https://aisflows.com/assets/media/aisflows-media-doom-battlefield-earth-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
@@ -166,9 +267,13 @@
         "instagram": "https://www.instagram.com/p/DU6gNXRim2Y/",
         "tiktok": "https://www.tiktok.com/@aisflows/video/7608327208469417236"
       },
-      "order": 2,
-      "human_page_url_en": "https://aisflows.github.io/home/media/doom-battlefield-earth/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/doom-battlefield-earth/"
+      "artifacts": {
+        "video_id": "media-doom-battlefield-earth-mp4",
+        "poster_id": "media-doom-battlefield-earth-poster"
+      },
+      "order": 4,
+      "human_page_url_en": "https://aisflows.com/media/doom-battlefield-earth/",
+      "human_page_url_ru": "https://aisflows.com/ru/media/doom-battlefield-earth/"
     },
     {
       "id": "witcher-monsters-men",
@@ -179,8 +284,8 @@
       "description_ru": "THE WITCHER: Monsters & Men | AI Fan Trailer",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-witcher-monsters-men-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-media-witcher-monsters-men-poster.jpg",
+      "asset_url": "https://aisflows.com/assets/media/aisflows-media-witcher-monsters-men-web.mp4",
+      "poster_url": "https://aisflows.com/assets/media/aisflows-media-witcher-monsters-men-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
@@ -207,9 +312,13 @@
         "instagram": "https://www.instagram.com/p/DVyzeVsig2q/",
         "tiktok": "https://www.tiktok.com/@aisflows/video/7616440679534726420"
       },
-      "order": 3,
-      "human_page_url_en": "https://aisflows.github.io/home/media/witcher-monsters-men/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/witcher-monsters-men/"
+      "artifacts": {
+        "video_id": "media-witcher-monsters-men-mp4",
+        "poster_id": "media-witcher-monsters-men-poster"
+      },
+      "order": 5,
+      "human_page_url_en": "https://aisflows.com/media/witcher-monsters-men/",
+      "human_page_url_ru": "https://aisflows.com/ru/media/witcher-monsters-men/"
     },
     {
       "id": "28-days-later",
@@ -220,12 +329,12 @@
       "description_ru": "Вертикальное AI-медиапревью",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-28-days-later-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-28-days-later-poster.jpg",
+      "asset_url": "https://aisflows.com/assets/media/aisflows-preview-28-days-later-web.mp4",
+      "poster_url": "https://aisflows.com/assets/media/aisflows-preview-28-days-later-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
-      "duration_ms": 46200,
+      "duration_ms": 46208,
       "lifecycle": "published",
       "status": "published",
       "public_or_private": "public",
@@ -248,9 +357,13 @@
         "instagram": "https://www.instagram.com/p/DULPeiuioZ9/",
         "tiktok": "https://www.tiktok.com/@aisflows/video/7601510848963579157"
       },
-      "order": 4,
-      "human_page_url_en": "https://aisflows.github.io/home/media/28-days-later/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/28-days-later/"
+      "artifacts": {
+        "video_id": "media-28-days-later-mp4",
+        "poster_id": "media-28-days-later-poster"
+      },
+      "order": 6,
+      "human_page_url_en": "https://aisflows.com/media/28-days-later/",
+      "human_page_url_ru": "https://aisflows.com/ru/media/28-days-later/"
     },
     {
       "id": "dead-space",
@@ -261,12 +374,12 @@
       "description_ru": "Вертикальное AI-медиапревью",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-dead-space-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-dead-space-poster.jpg",
+      "asset_url": "https://aisflows.com/assets/media/aisflows-preview-dead-space-web.mp4",
+      "poster_url": "https://aisflows.com/assets/media/aisflows-preview-dead-space-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
-      "duration_ms": 67800,
+      "duration_ms": 67802,
       "lifecycle": "published",
       "status": "published",
       "public_or_private": "public",
@@ -289,9 +402,13 @@
         "instagram": "https://www.instagram.com/p/DPl9pu9CkWm/",
         "tiktok": "https://www.tiktok.com/@aisflows/photo/7560619174192581900"
       },
-      "order": 5,
-      "human_page_url_en": "https://aisflows.github.io/home/media/dead-space/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/dead-space/"
+      "artifacts": {
+        "video_id": "media-dead-space-mp4",
+        "poster_id": "media-dead-space-poster"
+      },
+      "order": 7,
+      "human_page_url_en": "https://aisflows.com/media/dead-space/",
+      "human_page_url_ru": "https://aisflows.com/ru/media/dead-space/"
     },
     {
       "id": "godzilla",
@@ -302,12 +419,12 @@
       "description_ru": "Вертикальное AI-медиапревью",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-godzilla-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-godzilla-poster.jpg",
+      "asset_url": "https://aisflows.com/assets/media/aisflows-preview-godzilla-web.mp4",
+      "poster_url": "https://aisflows.com/assets/media/aisflows-preview-godzilla-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
-      "duration_ms": 51767,
+      "duration_ms": 51780,
       "lifecycle": "published",
       "status": "published",
       "public_or_private": "public",
@@ -330,25 +447,29 @@
         "instagram": "https://www.instagram.com/p/DTbg-CSipB4/",
         "tiktok": "https://www.tiktok.com/@aisflows/video/7594633448740900108"
       },
-      "order": 6,
-      "human_page_url_en": "https://aisflows.github.io/home/media/godzilla/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/godzilla/"
+      "artifacts": {
+        "video_id": "media-godzilla-mp4",
+        "poster_id": "media-godzilla-poster"
+      },
+      "order": 8,
+      "human_page_url_en": "https://aisflows.com/media/godzilla/",
+      "human_page_url_ru": "https://aisflows.com/ru/media/godzilla/"
     },
     {
       "id": "predator",
       "route_slug": "predator",
-      "title_en": "PREDATOR: ABYSS | AI Fan Traile",
-      "title_ru": "PREDATOR: ABYSS | AI Fan Traile",
+      "title_en": "PREDATOR: ABYSS | AI Fan Trailer",
+      "title_ru": "PREDATOR: ABYSS | AI Fan Trailer",
       "description_en": "Vertical AI media preview",
       "description_ru": "Вертикальное AI-медиапревью",
       "media_kind": "local_video",
       "mime_type": "video/mp4",
-      "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-predator-web.mp4",
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-predator-poster.jpg",
+      "asset_url": "https://aisflows.com/assets/media/aisflows-preview-predator-web.mp4",
+      "poster_url": "https://aisflows.com/assets/media/aisflows-preview-predator-poster.jpg",
       "width": 720,
       "height": 1280,
       "aspect_ratio": "9:16",
-      "duration_ms": 62400,
+      "duration_ms": 62415,
       "lifecycle": "published",
       "status": "published",
       "public_or_private": "public",
@@ -357,8 +478,8 @@
       "download_url": null,
       "size_bytes": 9735844,
       "sha256": "9c4dde43e6b5e48f7b77616793d9d9355ea3c8b8f72614392e140a3bee4c1809",
-      "alt_en": "PREDATOR: ABYSS | AI Fan Traile poster.",
-      "alt_ru": "PREDATOR: ABYSS | AI Fan Traile poster.",
+      "alt_en": "PREDATOR: ABYSS | AI Fan Trailer poster.",
+      "alt_ru": "PREDATOR: ABYSS | AI Fan Trailer poster.",
       "attribution": "AIS FLOWS / Andrei Spirydovich",
       "license_boundary": "All rights reserved; no public reuse license is granted.",
       "primary_action": "playback",
@@ -371,9 +492,13 @@
         "instagram": "https://www.instagram.com/p/DPUBM3vDM_O/",
         "tiktok": "https://www.tiktok.com/@aisflows/video/7556656857746574603"
       },
-      "order": 7,
-      "human_page_url_en": "https://aisflows.github.io/home/media/predator/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/predator/"
+      "artifacts": {
+        "video_id": "media-predator-mp4",
+        "poster_id": "media-predator-poster"
+      },
+      "order": 9,
+      "human_page_url_en": "https://aisflows.com/media/predator/",
+      "human_page_url_ru": "https://aisflows.com/ru/media/predator/"
     }
   ]
 }

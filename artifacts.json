@@ -3,6 +3,34 @@
   "deployment_status": "public",
   "artifacts": [
     {
+      "id": "course-writer-v1-zip",
+      "owner_object_id": "course-writer",
+      "status": "published",
+      "version": "1.0",
+      "file_name": "ais-flows-course-writer-1.0.zip",
+      "content_type": "application/zip",
+      "size_bytes": 118154,
+      "sha256": "0455ad6440fba40e3a2d24dbbed9ecb15f474e648a2d5fca46bf79d5a80110af",
+      "download_url": "https://github.com/aisflows/course-writer/releases/download/v1.0/ais-flows-course-writer-1.0.zip",
+      "license_url": null,
+      "published_at": "2026-09-05T00:00:00Z",
+      "last_verified": "2026-09-05"
+    },
+    {
+      "id": "skill-cleaner-release-001-zip",
+      "owner_object_id": "skill-cleaner",
+      "status": "published",
+      "version": "v0.1.0-release-001",
+      "file_name": "ais-flows-skill-library-cleaner-0.1.0-release-001-final-candidate.zip",
+      "content_type": "application/zip",
+      "size_bytes": 198623,
+      "sha256": "e71703f0078d77e78950482785df481ad5b2275646dde715bf301a8366aa5b4e",
+      "download_url": "https://github.com/aisflows/skill-cleaner/releases/download/v0.1.0-release-001/ais-flows-skill-library-cleaner-0.1.0-release-001-final-candidate.zip",
+      "license_url": null,
+      "published_at": "2026-06-05T00:00:00Z",
+      "last_verified": "2026-06-05"
+    },
+    {
       "id": "ready-gate-rc1-zip",
       "owner_object_id": "ready-gate",
       "status": "published",
@@ -15,6 +43,20 @@
       "license_url": null,
       "published_at": "2026-06-02T00:00:00Z",
       "last_verified": "2026-07-22"
+    },
+    {
+      "id": "proofline-rc5-zip",
+      "owner_object_id": "proofline",
+      "status": "published",
+      "version": "v0.2.0-rc5",
+      "file_name": "ais-flows-proofline-0.2.0-rc5.zip",
+      "content_type": "application/zip",
+      "size_bytes": 58022,
+      "sha256": "97f8d2a464e7857cb9dc04b5ab3766e295900fce6bdca562ffabe98f4e56cdbf",
+      "download_url": "https://github.com/aisflows/proofline/releases/download/v0.2.0-rc5/ais-flows-proofline-0.2.0-rc5.zip",
+      "license_url": null,
+      "published_at": "2026-06-17T16:16:11Z",
+      "last_verified": "2026-09-06"
     },
     {
       "id": "skill-operations-pack-rc6-zip",
@@ -31,6 +73,188 @@
       "last_verified": "2026-08-09"
     },
     {
+      "id": "media-featured-youtube-trailer-poster",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-06-18",
+      "file_name": "aisflows-youtube-trailer-poster.jpg",
+      "content_type": "image/jpeg",
+      "size_bytes": 182387,
+      "sha256": "dcd7d652a61e825cce140d257cbed3a8b500930de5fa1ae2ca0046f8f2b0ca5b",
+      "download_url": "./assets/media/aisflows-youtube-trailer-poster.jpg",
+      "license_url": null,
+      "published_at": "2026-06-18T00:00:00Z",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "media-mortal-kombat-dont-wake-the-champion-mp4",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-09-29",
+      "file_name": "aisflows-media-mortal-kombat-dont-wake-the-champion-web.mp4",
+      "content_type": "video/mp4",
+      "size_bytes": 21716951,
+      "sha256": "573053d94a74d36594521338d8fb384b1624f3ae59dc15435f0b945ce2f2b0d6",
+      "download_url": "./assets/media/aisflows-media-mortal-kombat-dont-wake-the-champion-web.mp4",
+      "license_url": null,
+      "published_at": "2026-09-29T19:56:02Z",
+      "last_verified": "2026-09-29"
+    },
+    {
+      "id": "media-mortal-kombat-dont-wake-the-champion-poster",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-09-29",
+      "file_name": "aisflows-media-mortal-kombat-dont-wake-the-champion-poster.jpg",
+      "content_type": "image/jpeg",
+      "size_bytes": 188490,
+      "sha256": "c2850ed6b43d65952f28cfe178a0637b3d1b84c1a5510897f6a60b9fae69d9e3",
+      "download_url": "./assets/media/aisflows-media-mortal-kombat-dont-wake-the-champion-poster.jpg",
+      "license_url": null,
+      "published_at": "2026-09-29T19:56:02Z",
+      "last_verified": "2026-09-29"
+    },
+    {
+      "id": "media-ghostbusters-first-day-on-the-job-mp4",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-09-29",
+      "file_name": "aisflows-media-ghostbusters-first-day-on-the-job-web.mp4",
+      "content_type": "video/mp4",
+      "size_bytes": 22340548,
+      "sha256": "c179484200dc02ad043c7a8dd73ecb633dfabd0f18ea0d0c21b13f4eef62f307",
+      "download_url": "./assets/media/aisflows-media-ghostbusters-first-day-on-the-job-web.mp4",
+      "license_url": null,
+      "published_at": "2026-09-29T16:40:33Z",
+      "last_verified": "2026-09-29"
+    },
+    {
+      "id": "media-ghostbusters-first-day-on-the-job-poster",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-09-29",
+      "file_name": "aisflows-media-ghostbusters-first-day-on-the-job-poster.jpg",
+      "content_type": "image/jpeg",
+      "size_bytes": 164274,
+      "sha256": "d3a730d467aca2415ecade00d4d1373ce171e1bac9faefc31c40884d9ed8f391",
+      "download_url": "./assets/media/aisflows-media-ghostbusters-first-day-on-the-job-poster.jpg",
+      "license_url": null,
+      "published_at": "2026-09-29T16:40:33Z",
+      "last_verified": "2026-09-29"
+    },
+    {
+      "id": "media-monster-island-mutants-mp4",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-09-29",
+      "file_name": "aisflows-media-monster-island-mutants-web.mp4",
+      "content_type": "video/mp4",
+      "size_bytes": 24090364,
+      "sha256": "d41e5d23c87e9e9d90ebbd3c9bb9f26f7c91d690c9d3efb4902a37827df5b193",
+      "download_url": "./assets/media/aisflows-media-monster-island-mutants-web.mp4",
+      "license_url": null,
+      "published_at": "2026-09-29T04:40:09Z",
+      "last_verified": "2026-09-29"
+    },
+    {
+      "id": "media-monster-island-mutants-poster",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-09-29",
+      "file_name": "aisflows-media-monster-island-mutants-poster.jpg",
+      "content_type": "image/jpeg",
+      "size_bytes": 100167,
+      "sha256": "79d97248ad008fdc8250f8a77a3dd9f91be59d9b56ce0255e3552464eb6720b1",
+      "download_url": "./assets/media/aisflows-media-monster-island-mutants-poster.jpg",
+      "license_url": null,
+      "published_at": "2026-09-29T04:40:09Z",
+      "last_verified": "2026-09-29"
+    },
+    {
+      "id": "media-interstellar-millers-planet-mp4",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-08-09",
+      "file_name": "aisflows-media-interstellar-millers-planet-web.mp4",
+      "content_type": "video/mp4",
+      "size_bytes": 16975706,
+      "sha256": "3900c887bb82b245c50e43adf3683ebee28a3a3b02934fec0dd24c07e2127c56",
+      "download_url": "./assets/media/aisflows-media-interstellar-millers-planet-web.mp4",
+      "license_url": null,
+      "published_at": "2026-08-09T00:00:00Z",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "media-interstellar-millers-planet-poster",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-08-09",
+      "file_name": "aisflows-media-interstellar-millers-planet-poster.jpg",
+      "content_type": "image/jpeg",
+      "size_bytes": 120382,
+      "sha256": "3c9b95f0f2524200c3973c7a78c9f55efb50a09f4e9e593275589296169ca284",
+      "download_url": "./assets/media/aisflows-media-interstellar-millers-planet-poster.jpg",
+      "license_url": null,
+      "published_at": "2026-08-09T00:00:00Z",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "media-doom-battlefield-earth-mp4",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-08-09",
+      "file_name": "aisflows-media-doom-battlefield-earth-web.mp4",
+      "content_type": "video/mp4",
+      "size_bytes": 26037193,
+      "sha256": "03fca296c4dd74588fa9fb25fba729a4f82a68de2fcbdc7eae4cbc0d3b16c60d",
+      "download_url": "./assets/media/aisflows-media-doom-battlefield-earth-web.mp4",
+      "license_url": null,
+      "published_at": "2026-08-09T00:00:00Z",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "media-doom-battlefield-earth-poster",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-08-09",
+      "file_name": "aisflows-media-doom-battlefield-earth-poster.jpg",
+      "content_type": "image/jpeg",
+      "size_bytes": 105734,
+      "sha256": "4061e971365695a99b78905ebeeaa89a8c0a989b86a7433a5203fd240942aef3",
+      "download_url": "./assets/media/aisflows-media-doom-battlefield-earth-poster.jpg",
+      "license_url": null,
+      "published_at": "2026-08-09T00:00:00Z",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "media-witcher-monsters-men-mp4",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-08-09",
+      "file_name": "aisflows-media-witcher-monsters-men-web.mp4",
+      "content_type": "video/mp4",
+      "size_bytes": 24124578,
+      "sha256": "4b9d5a1abe3052aeb02f8212020382231f582af920acecc3363457c4d6b0126a",
+      "download_url": "./assets/media/aisflows-media-witcher-monsters-men-web.mp4",
+      "license_url": null,
+      "published_at": "2026-08-09T00:00:00Z",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "media-witcher-monsters-men-poster",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-08-09",
+      "file_name": "aisflows-media-witcher-monsters-men-poster.jpg",
+      "content_type": "image/jpeg",
+      "size_bytes": 127475,
+      "sha256": "c3071f2bac0f1b1d3259fb27608a4f3877f6149b5d188018b8adc3e28180e816",
+      "download_url": "./assets/media/aisflows-media-witcher-monsters-men-poster.jpg",
+      "license_url": null,
+      "published_at": "2026-08-09T00:00:00Z",
+      "last_verified": "2026-08-26"
+    },
+    {
       "id": "media-28-days-later-mp4",
       "owner_object_id": "featured-youtube-trailer",
       "status": "published",
@@ -42,7 +266,21 @@
       "download_url": "./assets/media/aisflows-preview-28-days-later-web.mp4",
       "license_url": null,
       "published_at": "2026-06-18T00:00:00Z",
-      "last_verified": "2026-07-22"
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "media-28-days-later-poster",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-06-18",
+      "file_name": "aisflows-preview-28-days-later-poster.jpg",
+      "content_type": "image/jpeg",
+      "size_bytes": 94116,
+      "sha256": "0713e28d0205a87f17b90ea4c5c7dabbb09e1bd5784bba40ee9bbf18fbc3c122",
+      "download_url": "./assets/media/aisflows-preview-28-days-later-poster.jpg",
+      "license_url": null,
+      "published_at": "2026-06-18T00:00:00Z",
+      "last_verified": "2026-08-26"
     },
     {
       "id": "media-dead-space-mp4",
@@ -56,7 +294,21 @@
       "download_url": "./assets/media/aisflows-preview-dead-space-web.mp4",
       "license_url": null,
       "published_at": "2026-06-18T00:00:00Z",
-      "last_verified": "2026-07-22"
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "media-dead-space-poster",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-06-18",
+      "file_name": "aisflows-preview-dead-space-poster.jpg",
+      "content_type": "image/jpeg",
+      "size_bytes": 54933,
+      "sha256": "05c74e595db2b00d59777cb469a868e31b4af4c24c8b7d0da85bde5b654bac30",
+      "download_url": "./assets/media/aisflows-preview-dead-space-poster.jpg",
+      "license_url": null,
+      "published_at": "2026-06-18T00:00:00Z",
+      "last_verified": "2026-08-26"
     },
     {
       "id": "media-godzilla-mp4",
@@ -70,7 +322,21 @@
       "download_url": "./assets/media/aisflows-preview-godzilla-web.mp4",
       "license_url": null,
       "published_at": "2026-06-18T00:00:00Z",
-      "last_verified": "2026-07-22"
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "media-godzilla-poster",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-06-18",
+      "file_name": "aisflows-preview-godzilla-poster.jpg",
+      "content_type": "image/jpeg",
+      "size_bytes": 91709,
+      "sha256": "c0b5b717716977463494df5f12c7e07cfaebce99071aff4822a5d2d26ea363d2",
+      "download_url": "./assets/media/aisflows-preview-godzilla-poster.jpg",
+      "license_url": null,
+      "published_at": "2026-06-18T00:00:00Z",
+      "last_verified": "2026-08-26"
     },
     {
       "id": "media-predator-mp4",
@@ -84,7 +350,21 @@
       "download_url": "./assets/media/aisflows-preview-predator-web.mp4",
       "license_url": null,
       "published_at": "2026-06-18T00:00:00Z",
-      "last_verified": "2026-07-22"
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "media-predator-poster",
+      "owner_object_id": "featured-youtube-trailer",
+      "status": "published",
+      "version": "2026-06-18",
+      "file_name": "aisflows-preview-predator-poster.jpg",
+      "content_type": "image/jpeg",
+      "size_bytes": 26932,
+      "sha256": "03d5ac49360f172925dbcbd333fa2418156b2dc4a0ea65b42b7726c887f9a37a",
+      "download_url": "./assets/media/aisflows-preview-predator-poster.jpg",
+      "license_url": null,
+      "published_at": "2026-06-18T00:00:00Z",
+      "last_verified": "2026-08-26"
     }
   ]
 }

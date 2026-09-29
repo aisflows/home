@@ -2,18 +2,20 @@
   "schema_version": "2.0.0",
   "site": {
     "name": "AIS FLOWS",
-    "canonical_url": "https://aisflows.github.io/home/",
+    "canonical_url": "https://aisflows.com/",
     "languages": [
       "en",
       "ru"
     ],
-    "deployment_status": "public"
+    "content_status": "public_content",
+    "runtime_status": "public"
   },
   "discovery": {
     "canonical_catalog": "./content-model.json",
     "catalog_schema": "./content-model.schema.json",
     "skills_catalog": "./skills/skills-index.json",
     "media_catalog": "./media/media-index.json",
+    "prompt_library": "./prompts/prompts-index.json",
     "artifacts": "./artifacts.json",
     "artifact_schema": "./artifacts.schema.json",
     "updates": "./updates.json",
@@ -27,13 +29,14 @@
     "request_schema": "./request-schema.json",
     "privacy_en": "./privacy/index.html",
     "privacy_ru": "./ru/privacy/index.html",
-    "course_manifest": "./course/course-agent-manifest.json",
+    "course_manifest": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-agent-manifest.json",
     "sitemap": "./sitemap.xml"
   },
   "public_capabilities": [
     "read_catalog",
     "read_skills_catalog",
     "read_media_catalog",
+    "read_prompt_library",
     "search_entities",
     "read_direct_content_when_non_null",
     "read_updates",
@@ -48,6 +51,36 @@
     "machine_index": "./skills/skills-index.json",
     "skills": [
       {
+        "id": "course-writer",
+        "title_en": "AIS FLOWS Course Writer",
+        "title_ru": "AIS FLOWS Course Writer",
+        "version": "1.0",
+        "lifecycle": "released",
+        "status": "released",
+        "route_status": "verified",
+        "primary_action": "open_release",
+        "release_url": "https://github.com/aisflows/course-writer/releases/tag/v1.0",
+        "action_url": "https://github.com/aisflows/course-writer/releases/tag/v1.0",
+        "download_url": "https://github.com/aisflows/course-writer/releases/download/v1.0/ais-flows-course-writer-1.0.zip",
+        "artifact": {
+          "id": "course-writer-v1-zip",
+          "version": "1.0",
+          "file_name": "ais-flows-course-writer-1.0.zip",
+          "mime": "application/zip",
+          "bytes": 118154,
+          "sha256": "0455ad6440fba40e3a2d24dbbed9ecb15f474e648a2d5fca46bf79d5a80110af",
+          "download_url": "https://github.com/aisflows/course-writer/releases/download/v1.0/ais-flows-course-writer-1.0.zip",
+          "status": "published"
+        },
+        "license": {
+          "name": "Permissioned",
+          "url": null,
+          "summary": "Permissioned, all rights reserved; not open source. No public reuse license is granted from Home."
+        },
+        "image_url": "https://aisflows.com/assets/cards/course-writer-release-cover-16x9.png",
+        "unavailable_reason": null
+      },
+      {
         "id": "skill-operations-pack",
         "title_en": "Skill Operations Pack",
         "title_ru": "Skill Operations Pack",
@@ -59,7 +92,22 @@
         "release_url": "https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6",
         "action_url": "https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6",
         "download_url": "https://github.com/aisflows/skill-operations-pack/releases/download/v0.1.0-rc6/ais-flows-skill-operations-pack-0.1.0-rc6.zip",
-        "image_url": "https://aisflows.github.io/home/assets/cards/skill-operations-pack-release-cover-16x9.png",
+        "artifact": {
+          "id": "skill-operations-pack-rc6-zip",
+          "version": "0.1.0-rc6",
+          "file_name": "ais-flows-skill-operations-pack-0.1.0-rc6.zip",
+          "mime": "application/zip",
+          "bytes": 1873018,
+          "sha256": "9533e4d4cddfaab24bc8421cff522e60d696782c253a7659e66a9059cf0b6ddf",
+          "download_url": "https://github.com/aisflows/skill-operations-pack/releases/download/v0.1.0-rc6/ais-flows-skill-operations-pack-0.1.0-rc6.zip",
+          "status": "published"
+        },
+        "license": {
+          "name": "Permissioned",
+          "url": "https://github.com/aisflows/skill-operations-pack/blob/main/LICENSE",
+          "summary": "Permissioned, all rights reserved; not open source. No public reuse license is granted from Home."
+        },
+        "image_url": "https://aisflows.com/assets/cards/skill-operations-pack-release-cover-16x9.png",
         "unavailable_reason": null
       },
       {
@@ -73,8 +121,19 @@
         "primary_action": "open_release",
         "release_url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001",
         "action_url": "https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001",
-        "download_url": null,
-        "image_url": "https://aisflows.github.io/home/assets/cards/skill-cleaner-github-preview.jpg",
+        "download_url": "https://github.com/aisflows/skill-cleaner/releases/download/v0.1.0-release-001/ais-flows-skill-library-cleaner-0.1.0-release-001-final-candidate.zip",
+        "artifact": {
+          "id": "skill-cleaner-release-001-zip",
+          "version": "v0.1.0-release-001",
+          "file_name": "ais-flows-skill-library-cleaner-0.1.0-release-001-final-candidate.zip",
+          "mime": "application/zip",
+          "bytes": 198623,
+          "sha256": "e71703f0078d77e78950482785df481ad5b2275646dde715bf301a8366aa5b4e",
+          "download_url": "https://github.com/aisflows/skill-cleaner/releases/download/v0.1.0-release-001/ais-flows-skill-library-cleaner-0.1.0-release-001-final-candidate.zip",
+          "status": "published"
+        },
+        "license": null,
+        "image_url": "https://aisflows.com/assets/cards/skill-cleaner-github-preview.jpg",
         "unavailable_reason": null
       },
       {
@@ -89,7 +148,18 @@
         "release_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1",
         "action_url": "https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1",
         "download_url": "https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip",
-        "image_url": "https://aisflows.github.io/home/assets/cards/ready-gate-release-cover-16x9.jpeg",
+        "artifact": {
+          "id": "ready-gate-rc1-zip",
+          "version": "v0.1.0-ready-gate-rc1",
+          "file_name": "ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip",
+          "mime": "application/zip",
+          "bytes": 30297,
+          "sha256": "ecd790ad2a0cfe77feb168dbc9c48bc89cb041cffbb9bf397dfa83240f8ed1f5",
+          "download_url": "https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip",
+          "status": "published"
+        },
+        "license": null,
+        "image_url": "https://aisflows.com/assets/cards/ready-gate-release-cover-16x9.jpeg",
         "unavailable_reason": null
       },
       {
@@ -103,8 +173,19 @@
         "primary_action": "open_release",
         "release_url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5",
         "action_url": "https://github.com/aisflows/proofline/releases/tag/v0.2.0-rc5",
-        "download_url": null,
-        "image_url": "https://aisflows.github.io/home/assets/proofline-square.png",
+        "download_url": "https://github.com/aisflows/proofline/releases/download/v0.2.0-rc5/ais-flows-proofline-0.2.0-rc5.zip",
+        "artifact": {
+          "id": "proofline-rc5-zip",
+          "version": "v0.2.0-rc5",
+          "file_name": "ais-flows-proofline-0.2.0-rc5.zip",
+          "mime": "application/zip",
+          "bytes": 58022,
+          "sha256": "97f8d2a464e7857cb9dc04b5ab3766e295900fce6bdca562ffabe98f4e56cdbf",
+          "download_url": "https://github.com/aisflows/proofline/releases/download/v0.2.0-rc5/ais-flows-proofline-0.2.0-rc5.zip",
+          "status": "published"
+        },
+        "license": null,
+        "image_url": "https://aisflows.com/assets/proofline-square.png",
         "unavailable_reason": null
       }
     ]
@@ -119,12 +200,12 @@
       "route_slug": "featured-youtube-trailer",
       "title_en": "AIS FLOWS trailer",
       "title_ru": "Трейлер AIS FLOWS",
-      "description_en": "Featured trailer and eight confirmed AIS FLOWS media works.",
-      "description_ru": "Главный трейлер и восемь подтверждённых медиаработ AIS FLOWS.",
+      "description_en": "Featured trailer and confirmed AIS FLOWS media works.",
+      "description_ru": "Главный трейлер и подтверждённые медиаработы AIS FLOWS.",
       "media_kind": "youtube",
       "mime_type": null,
       "asset_url": null,
-      "poster_url": "https://aisflows.github.io/home/assets/media/aisflows-youtube-trailer-poster.jpg",
+      "poster_url": "https://aisflows.com/assets/media/aisflows-youtube-trailer-poster.jpg",
       "width": 1280,
       "height": 720,
       "aspect_ratio": "16:9",
@@ -149,33 +230,94 @@
         "instagram": null,
         "tiktok": null
       },
+      "artifacts": {
+        "poster_id": "media-featured-youtube-trailer-poster"
+      },
       "order": -1,
-      "human_page_url_en": "https://aisflows.github.io/home/media/featured-youtube-trailer/",
-      "human_page_url_ru": "https://aisflows.github.io/home/ru/media/featured-youtube-trailer/"
+      "human_page_url_en": "https://aisflows.com/media/featured-youtube-trailer/",
+      "human_page_url_ru": "https://aisflows.com/ru/media/featured-youtube-trailer/"
     },
     "works": [
       {
-        "id": "jbl-jurassic-park",
-        "title_en": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising",
-        "title_ru": "JBL. Jurassic Park? Never heard of it. 🦖🎧 | AI advertising",
+        "id": "mortal-kombat-dont-wake-the-champion",
+        "title_en": "🐉 MORTAL KOMBAT — Don't Wake the Champion | AI Fan Trailer",
+        "title_ru": "🐉 MORTAL KOMBAT — Don't Wake the Champion | AI Fan Trailer",
         "media_kind": "local_video",
         "status": "published",
-        "dimensions": "720x1280",
-        "duration_ms": 41215,
+        "dimensions": "1080x1920",
+        "duration_ms": 72910,
         "markers": [
           "FULL"
         ],
         "social_urls": {
-          "youtube": "https://youtube.com/shorts/dCX4VlgEkk8",
-          "instagram": "https://www.instagram.com/p/DbUUtnpK1yq/",
-          "tiktok": "https://www.tiktok.com/@aisflows/video/7667387333196434708"
+          "youtube": null,
+          "instagram": null,
+          "tiktok": null
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows.github.io/home/media/jbl-jurassic-park/",
-        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/jbl-jurassic-park/",
-        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-jbl-jurassic-park-web.mp4",
+        "human_page_url_en": "https://aisflows.com/media/mortal-kombat-dont-wake-the-champion/",
+        "human_page_url_ru": "https://aisflows.com/ru/media/mortal-kombat-dont-wake-the-champion/",
+        "asset_url": "https://aisflows.com/assets/media/aisflows-media-mortal-kombat-dont-wake-the-champion-web.mp4",
         "provider_url": null,
-        "download_url": null
+        "download_url": null,
+        "artifacts": {
+          "video_id": "media-mortal-kombat-dont-wake-the-champion-mp4",
+          "poster_id": "media-mortal-kombat-dont-wake-the-champion-poster"
+        }
+      },
+      {
+        "id": "ghostbusters-first-day-on-the-job",
+        "title_en": "👻 GHOSTBUSTERS — First Day on the Job | AI Fan Trailer",
+        "title_ru": "👻 GHOSTBUSTERS — First Day on the Job | AI Fan Trailer",
+        "media_kind": "local_video",
+        "status": "published",
+        "dimensions": "1080x1920",
+        "duration_ms": 62949,
+        "markers": [
+          "FULL"
+        ],
+        "social_urls": {
+          "youtube": null,
+          "instagram": null,
+          "tiktok": null
+        },
+        "primary_action": "playback",
+        "human_page_url_en": "https://aisflows.com/media/ghostbusters-first-day-on-the-job/",
+        "human_page_url_ru": "https://aisflows.com/ru/media/ghostbusters-first-day-on-the-job/",
+        "asset_url": "https://aisflows.com/assets/media/aisflows-media-ghostbusters-first-day-on-the-job-web.mp4",
+        "provider_url": null,
+        "download_url": null,
+        "artifacts": {
+          "video_id": "media-ghostbusters-first-day-on-the-job-mp4",
+          "poster_id": "media-ghostbusters-first-day-on-the-job-poster"
+        }
+      },
+      {
+        "id": "monster-island-mutants",
+        "title_en": "Monster Island: Mutants | AI Fan Trailer",
+        "title_ru": "Monster Island: Mutants | AI Fan Trailer",
+        "media_kind": "local_video",
+        "status": "published",
+        "dimensions": "1080x1920",
+        "duration_ms": 53592,
+        "markers": [
+          "FULL"
+        ],
+        "social_urls": {
+          "youtube": null,
+          "instagram": null,
+          "tiktok": null
+        },
+        "primary_action": "playback",
+        "human_page_url_en": "https://aisflows.com/media/monster-island-mutants/",
+        "human_page_url_ru": "https://aisflows.com/ru/media/monster-island-mutants/",
+        "asset_url": "https://aisflows.com/assets/media/aisflows-media-monster-island-mutants-web.mp4",
+        "provider_url": null,
+        "download_url": null,
+        "artifacts": {
+          "video_id": "media-monster-island-mutants-mp4",
+          "poster_id": "media-monster-island-mutants-poster"
+        }
       },
       {
         "id": "interstellar-millers-planet",
@@ -194,11 +336,15 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7665036218937167125"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows.github.io/home/media/interstellar-millers-planet/",
-        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/interstellar-millers-planet/",
-        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-interstellar-millers-planet-web.mp4",
+        "human_page_url_en": "https://aisflows.com/media/interstellar-millers-planet/",
+        "human_page_url_ru": "https://aisflows.com/ru/media/interstellar-millers-planet/",
+        "asset_url": "https://aisflows.com/assets/media/aisflows-media-interstellar-millers-planet-web.mp4",
         "provider_url": null,
-        "download_url": null
+        "download_url": null,
+        "artifacts": {
+          "video_id": "media-interstellar-millers-planet-mp4",
+          "poster_id": "media-interstellar-millers-planet-poster"
+        }
       },
       {
         "id": "doom-battlefield-earth",
@@ -217,11 +363,15 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7608327208469417236"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows.github.io/home/media/doom-battlefield-earth/",
-        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/doom-battlefield-earth/",
-        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-doom-battlefield-earth-web.mp4",
+        "human_page_url_en": "https://aisflows.com/media/doom-battlefield-earth/",
+        "human_page_url_ru": "https://aisflows.com/ru/media/doom-battlefield-earth/",
+        "asset_url": "https://aisflows.com/assets/media/aisflows-media-doom-battlefield-earth-web.mp4",
         "provider_url": null,
-        "download_url": null
+        "download_url": null,
+        "artifacts": {
+          "video_id": "media-doom-battlefield-earth-mp4",
+          "poster_id": "media-doom-battlefield-earth-poster"
+        }
       },
       {
         "id": "witcher-monsters-men",
@@ -240,11 +390,15 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7616440679534726420"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows.github.io/home/media/witcher-monsters-men/",
-        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/witcher-monsters-men/",
-        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-media-witcher-monsters-men-web.mp4",
+        "human_page_url_en": "https://aisflows.com/media/witcher-monsters-men/",
+        "human_page_url_ru": "https://aisflows.com/ru/media/witcher-monsters-men/",
+        "asset_url": "https://aisflows.com/assets/media/aisflows-media-witcher-monsters-men-web.mp4",
         "provider_url": null,
-        "download_url": null
+        "download_url": null,
+        "artifacts": {
+          "video_id": "media-witcher-monsters-men-mp4",
+          "poster_id": "media-witcher-monsters-men-poster"
+        }
       },
       {
         "id": "28-days-later",
@@ -253,7 +407,7 @@
         "media_kind": "local_video",
         "status": "published",
         "dimensions": "720x1280",
-        "duration_ms": 46200,
+        "duration_ms": 46208,
         "markers": [
           "FULL"
         ],
@@ -263,11 +417,15 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7601510848963579157"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows.github.io/home/media/28-days-later/",
-        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/28-days-later/",
-        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-28-days-later-web.mp4",
+        "human_page_url_en": "https://aisflows.com/media/28-days-later/",
+        "human_page_url_ru": "https://aisflows.com/ru/media/28-days-later/",
+        "asset_url": "https://aisflows.com/assets/media/aisflows-preview-28-days-later-web.mp4",
         "provider_url": null,
-        "download_url": null
+        "download_url": null,
+        "artifacts": {
+          "video_id": "media-28-days-later-mp4",
+          "poster_id": "media-28-days-later-poster"
+        }
       },
       {
         "id": "dead-space",
@@ -276,7 +434,7 @@
         "media_kind": "local_video",
         "status": "published",
         "dimensions": "720x1280",
-        "duration_ms": 67800,
+        "duration_ms": 67802,
         "markers": [
           "FULL"
         ],
@@ -286,11 +444,15 @@
           "tiktok": "https://www.tiktok.com/@aisflows/photo/7560619174192581900"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows.github.io/home/media/dead-space/",
-        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/dead-space/",
-        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-dead-space-web.mp4",
+        "human_page_url_en": "https://aisflows.com/media/dead-space/",
+        "human_page_url_ru": "https://aisflows.com/ru/media/dead-space/",
+        "asset_url": "https://aisflows.com/assets/media/aisflows-preview-dead-space-web.mp4",
         "provider_url": null,
-        "download_url": null
+        "download_url": null,
+        "artifacts": {
+          "video_id": "media-dead-space-mp4",
+          "poster_id": "media-dead-space-poster"
+        }
       },
       {
         "id": "godzilla",
@@ -299,7 +461,7 @@
         "media_kind": "local_video",
         "status": "published",
         "dimensions": "720x1280",
-        "duration_ms": 51767,
+        "duration_ms": 51780,
         "markers": [
           "FULL"
         ],
@@ -309,20 +471,24 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7594633448740900108"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows.github.io/home/media/godzilla/",
-        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/godzilla/",
-        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-godzilla-web.mp4",
+        "human_page_url_en": "https://aisflows.com/media/godzilla/",
+        "human_page_url_ru": "https://aisflows.com/ru/media/godzilla/",
+        "asset_url": "https://aisflows.com/assets/media/aisflows-preview-godzilla-web.mp4",
         "provider_url": null,
-        "download_url": null
+        "download_url": null,
+        "artifacts": {
+          "video_id": "media-godzilla-mp4",
+          "poster_id": "media-godzilla-poster"
+        }
       },
       {
         "id": "predator",
-        "title_en": "PREDATOR: ABYSS | AI Fan Traile",
-        "title_ru": "PREDATOR: ABYSS | AI Fan Traile",
+        "title_en": "PREDATOR: ABYSS | AI Fan Trailer",
+        "title_ru": "PREDATOR: ABYSS | AI Fan Trailer",
         "media_kind": "local_video",
         "status": "published",
         "dimensions": "720x1280",
-        "duration_ms": 62400,
+        "duration_ms": 62415,
         "markers": [
           "FULL"
         ],
@@ -332,13 +498,252 @@
           "tiktok": "https://www.tiktok.com/@aisflows/video/7556656857746574603"
         },
         "primary_action": "playback",
-        "human_page_url_en": "https://aisflows.github.io/home/media/predator/",
-        "human_page_url_ru": "https://aisflows.github.io/home/ru/media/predator/",
-        "asset_url": "https://aisflows.github.io/home/assets/media/aisflows-preview-predator-web.mp4",
+        "human_page_url_en": "https://aisflows.com/media/predator/",
+        "human_page_url_ru": "https://aisflows.com/ru/media/predator/",
+        "asset_url": "https://aisflows.com/assets/media/aisflows-preview-predator-web.mp4",
         "provider_url": null,
-        "download_url": null
+        "download_url": null,
+        "artifacts": {
+          "video_id": "media-predator-mp4",
+          "poster_id": "media-predator-poster"
+        }
       }
     ]
+  },
+  "prompt_library": {
+    "deployment_status": "public",
+    "catalog_status": "published_owner_records",
+    "public_locale": "en",
+    "locales": [
+      "en"
+    ],
+    "catalog_en": "./prompts/index.html",
+    "catalog_ru": null,
+    "machine_index": "./prompts/prompts-index.json",
+    "public_record_count": 6,
+    "test_fixtures_excluded": true,
+    "records": [
+      {
+        "id": "box-1080",
+        "slug": "box-1080",
+        "title_en": "Box 1080",
+        "description_en": "Owner-provided prompt for a continuous, realistic boxing sequence.",
+        "author": "AIS FLOWS / Andrei Spirydovich",
+        "status": "published",
+        "model": "Seedance 2.5",
+        "category": "Fighting",
+        "tags": [
+          "boxing",
+          "live-action",
+          "16:9"
+        ],
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": "16:9",
+        "preview": {
+          "video_url": "https://aisflows.com/assets/media/aisflows-media-box-1080-web.mp4",
+          "poster_url": "https://aisflows.com/assets/media/aisflows-media-box-1080-poster.jpg",
+          "mime_type": "video/mp4"
+        },
+        "duration_ms": 8064,
+        "date": "2026-09-09",
+        "prompt_language": "en",
+        "prompt_access": "public",
+        "prompt_text": "@image1 is the exact visual and spatial authority for the realistic boxing ring. Preserve the ring geometry, ropes, canvas, lighting, posters, audience, photographers, and all existing details exactly as shown. All spectators and photographers remain outside the ropes. Only the two fighters are inside the ring. Do not add a referee, camera operators, trainers, medics, or any other person inside the ring.\n\n@image2 is the strict identity reference for the attacking boxer. @image3 is the strict identity reference for the receiving boxer. Preserve both fighters’ exact faces, skin, body proportions, hairstyles, gloves, trunks, and physical appearance. Do not swap their identities or alter their anatomy.\n\nCreate one continuous, high-intensity live-action boxing sequence with no cuts. The very first frame must already begin in the middle of an active exchange: one boxer is already throwing a committed punch while the other boxer is already blocking, slipping, or countering. Start with immediate physical action. No introduction, no warm-up, no posing, no staring, no walking into position, no idle circling, no empty setup, and no slow opening movement.\n\nThe fighters remain continuously active from the first frame. Show realistic footwork, rapid repositioning, circling under pressure, feints combined with attacks, breathing, shoulder movement, hip rotation, changing balance, and constantly changing guard positions. They must feel alive and physically present, never frozen in static poses. Their hands and arms naturally shift with breathing, fatigue, balance, attack preparation, defense, and recovery.\n\nThe two fighters engage in a dense, aggressive exchange of punches. The attacking boxer throws fast jabs, crosses, hooks, body shots, and uppercuts. The receiving boxer actively blocks, parries, slips, ducks, retreats, counters, and immediately answers with his own punches. Continue with several rapid combinations exchanged between both fighters. Every strike must create a visible physical reaction: weight transfer through the feet, twisting shoulders, rotating hips, recoil, staggered balance, defensive recovery, tightened muscles, heavy breathing, and natural fatigue. Punches affect the gloves, arms, shoulders, chest, body, and head realistically. Sweat shakes loose from their skin and gloves during the exchanges.\n\nThe fight escalates continuously without pauses or dead moments. Neither boxer stands still or waits for the other. The attacking boxer gradually creates an angle and takes control. He throws a compact final combination ending with one decisive uppercut that lands directly on the receiving boxer’s face.\n\nAt the exact impact, the camera moves extremely close toward the receiving boxer’s face. The final contact enters a brief, controlled slow-motion moment only around the impact and its immediate aftermath. Show the glove physically compressing the cheek, realistic temporary distortion of the lips and facial skin, sharp recoil of the head and neck, hair reacting to the force, and the upper body being driven backward by the punch. A small amount of sweat, saliva, and subtle blood spray away from the point of impact. The face may briefly look naturally distorted from the force, but it must remain anatomically coherent and must not morph, melt, or break apart.\n\nThe camera stays active throughout the fight with purposeful handheld tracking, lateral movement, short push-ins, slight pullbacks, and changing distance around the fighters. Follow the physical exchange closely, then move into an extreme close-up of the receiving boxer’s face at the final uppercut. Do not cut away or move back before the impact is clearly visible.\n\nEnd on the close-up of the receiving boxer’s face recoiling and moving away from the final punch. Do not show him falling, collapsing, or lying on the canvas. Do not add a victory pose or a new scene. Do not freeze the entire image, do not use global slow motion, and do not hold a static frame after the impact. Preserve the exact ring environment and keep all background people outside the ring. No new text, no new logos, no identity changes, no extra limbs, no body deformation, no excessive gore. No music.\n",
+        "copy_prompt": true,
+        "download_access": "unavailable",
+        "license_boundary": "All rights reserved; no public reuse license is granted.",
+        "related_ids": [],
+        "human_page_url_en": "https://aisflows.com/prompts/box-1080/"
+      },
+      {
+        "id": "robot-fight-in-a-warehouse-1080",
+        "slug": "robot-fight-in-a-warehouse-1080",
+        "title_en": "Robot Fight in a Warehouse 1080",
+        "description_en": "Owner-provided prompt for a continuous robot fight in a warehouse.",
+        "author": "AIS FLOWS / Andrei Spirydovich",
+        "status": "published",
+        "model": "Seedance 2.5",
+        "category": "Fighting",
+        "tags": [
+          "robot-fight",
+          "combat",
+          "warehouse",
+          "16:9"
+        ],
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": "16:9",
+        "preview": {
+          "video_url": "https://aisflows.com/assets/media/aisflows-media-robot-fight-in-a-warehouse-web.mp4",
+          "poster_url": "https://aisflows.com/assets/media/aisflows-media-robot-fight-in-a-warehouse-poster.jpg",
+          "mime_type": "video/mp4"
+        },
+        "duration_ms": 7072,
+        "date": "2026-09-09",
+        "prompt_language": "en",
+        "prompt_access": "public",
+        "prompt_text": "Use [@image1] as the exact starting frame, exact location, and fixed visual world. Preserve the warehouse geography, shelving, wooden crates, cardboard boxes, concrete floor, warm hanging lamps, deep shadows, dusty industrial atmosphere, and the exact identities and starting positions of both robots. The yellow/orange robot begins on the left holding the metal bat. The white robot begins on the right beside the storage shelves.\n\nThe fight starts immediately from the first frame with no idle movement, no hesitation, no staring, and no waiting. Both robots fight with explosive, superhuman mechanical speed, much faster than human fighters. Create a dense, continuous, highly energetic combat sequence: rapid left-right punches, heavy body strikes, fast kicks, lunges, knee strikes, blocks, parries, slips, sidesteps, counters, shoulder impacts, and short combinations chained together without pauses. The yellow robot attacks in fast punching combinations; the white robot answers with powerful kicks, blocks, counters, and sudden forward pressure. Their movements must feel physically connected and forceful, with clear weight transfer, rotating shoulders and hips, bending joints, shifting feet, recoil, loss of balance, and visible impact on the opponent’s body and armor.\n\nEvery hit produces a readable physical reaction. Armor compresses and vibrates on impact, panels dent and crack, paint scrapes away, exposed mechanisms shake loose, fragments break off, and sparks burst from damaged joints. Use exaggerated but controlled cartoon-action effects: compact impact flashes, directional shockwaves, vibrating air, and brief electrical armor flares when a strike is blocked. Effects must be caused by contact and must follow the direction of the force. No random effects and no giant explosions.\n\nThe fight progressively drives the white robot toward the rear shelving while preserving the exact warehouse layout. The white robot is struck backward into the stacked crates, collides hard with the shelving, rebounds from the boxes, and collides with the crates again. Several boxes shift, fall, split open, and spill loose contents onto the floor. Dust and small fragments rise from the impacts. The white robot struggles to stand, but the yellow robot immediately closes the distance and delivers one devastating full-force final strike with the metal bat to the white robot’s upper body and head armor. The blow visibly transfers force through the entire body and launches the white robot backward into the shelving. The robot crashes through the stacked boxes; crates break apart, shelves shake, dust and fragments fill the air, and falling boxes land on and around the white robot as it collapses among the debris. The yellow robot remains standing in the center of the fight, holding the bat with realistic follow-through and recoil.\n\nThe camera moves actively and energetically throughout the continuous shot: track the fighters closely during the rapid exchanges, push toward major impacts, pull back briefly to reveal the full warehouse geography, and follow the white robot’s final trajectory into the shelving. Keep the final bat strike, collision, and collapse clearly visible. Preserve screen-left/screen-right geography, character identity, robot proportions, wardrobe, materials, and lighting.\n\nNo global slow motion, no speed ramp, no frozen pauses, no idle opening, no weak contact, no weightless movement, no teleportation, no character morphing, no fused limbs, no duplicate limbs, no extra robots, no extra people, no extra weapons, no unrelated objects, no fire, no gore, no melting metal, no text, no subtitles, no logos, no watermark. No music.\n",
+        "copy_prompt": true,
+        "download_access": "unavailable",
+        "license_boundary": "All rights reserved; no public reuse license is granted.",
+        "related_ids": [],
+        "human_page_url_en": "https://aisflows.com/prompts/robot-fight-in-a-warehouse-1080/"
+      },
+      {
+        "id": "robot-fight-at-a-gas-station-1080",
+        "slug": "robot-fight-at-a-gas-station-1080",
+        "title_en": "Robot Fight at a Gas Station 1080",
+        "description_en": "Owner-provided prompt for a continuous robot fight at an abandoned gas-station forecourt.",
+        "author": "AIS FLOWS / Andrei Spirydovich",
+        "status": "published",
+        "model": "Seedance 2.5",
+        "category": "Fighting",
+        "tags": [
+          "robot-fight",
+          "combat",
+          "gas-station",
+          "16:9"
+        ],
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": "16:9",
+        "preview": {
+          "video_url": "https://aisflows.com/assets/media/aisflows-media-robot-fight-at-a-gas-station-web.mp4",
+          "poster_url": "https://aisflows.com/assets/media/aisflows-media-robot-fight-at-a-gas-station-poster.jpg",
+          "mime_type": "video/mp4"
+        },
+        "duration_ms": 6048,
+        "date": "2026-09-10",
+        "prompt_language": "en",
+        "prompt_access": "public",
+        "prompt_text": "Use the attached image as the exact first frame, robot-design lock, location-geometry lock, lighting lock, and composition reference. Create one continuous fast 6-second cinematic 16:9 action shot.\n\nKeep exactly the same two robots, their clothing, proportions, materials, the abandoned gas-station forecourt, rusted canopy, the two existing rusted fuel pumps on frame left, wrecked cars in the background, cracked asphalt, dead weeds, utility poles, cold overcast light, and spatial layout from the input image. No extra characters, weapons, vehicles, furniture, plants, buildings, fuel pumps, or new geometry.\n\nThe action starts instantly on the first frame. The two robots are already within striking distance and immediately launch into a brutal close-range mechanical brawl. No blocking poses, no defensive pauses, no circling, no anticipation.\n\nRobot A, the handyman robot on frame left wearing brown work shorts and boots, throws a heavy straight metal fist into Robot B’s torso. The impact turns Robot B’s upper body and slides one shoe across the cracked asphalt. Robot B, the taller dishwasher robot on frame right with the black cap, white apron and yellow gloves, immediately answers with a tight two-punch combination: one hard punch to Robot A’s chest, then a short cross-body punch into Robot A’s side. Each hit separately jolts Robot A’s torso and shifts its balance leftward.\n\nRobot A instantly snaps forward with a hard metal headbutt into Robot B’s head, forcing Robot B’s neck column and shoulders backward, then lands a short elbow into Robot B’s upper torso. Robot B answers immediately with a low kick into Robot A’s front leg. Robot A’s knee buckles, its hips dip off-axis and one boot scrapes across loose gravel. There is no pause after the kick.\n\nRobot A recovers through the same falling motion and rushes in with a heavy shoulder check. Robot B twists with the impact, then answers at once with a compact forearm strike into Robot A’s chest and a final full-body driving body strike that sends Robot A backward into the nearest existing rusted fuel pump on frame left.\n\nRobot A hits the fuel pump with real mass. The corroded metal casing dents only at the contact point, the pump shudders on its base, its old rubber hose swings loose, a rusted access panel breaks away and drops onto the asphalt. Robot A loses footing and falls heavily sideways at the base of the pump. Loose gravel, dead leaves, small broken bricks and rust flakes scatter outward with gravity. End with Robot A fully down against the damaged pump, one arm extended on the asphalt; Robot B remains upright several steps away in the frame-right foreground, apron and yellow gloves unchanged, still facing the defeated robot.\n\nEvery strike must have a complete physical chain: exact contact point, visible body rotation or loss of balance, then a material consequence. Each impact changes momentum, body orientation, footing and distance between the robots. The choreography is a dense uninterrupted mechanical chain: straight punch, two-punch counter, headbutt, elbow, low kick, shoulder check, forearm hit, decisive driving body strike, fuel-pump collision. No hit is decorative and neither robot returns instantly to a neutral pose.\n\nCAMERA: one continuous active grounded handheld camera, never a cut. Start in the exact input composition. Track tightly alongside the fighters at torso height with fast reactive lateral adjustments as the impacts push them toward the frame-left fuel pumps. Push in briefly during the headbutt and elbow exchange, then move with Robot A during the final driving strike. Pull back only enough to reveal the fuel-pump impact, detached panel, scattered debris and completed aftermath. No orbit, whip-pan, floating camera, wild shake, slow motion, freeze frame, or camera teleportation.\n\nPHYSICS AND LOOK: premium grounded cinematic realism. Heavy robot mass, realistic joint resistance, visible inertia, precise impact recoil, mechanical balance recovery, localized deformation, realistic debris gravity, dust and rust reacting to impacts, detailed worn metal, fabric, apron and asphalt, controlled motion blur only on the fastest limbs. No cartoon physics, no superhero powers, no glowing energy, no blood, no human injury detail, no dismemberment, no morphing, no extra limbs, and no duplicate robots.\n\nAUDIO: cold outdoor gas-station ambience, distant wind through dead weeds, rapid heavy metal body impacts, short synthetic mechanical exertion sounds, servo strain, boot and shoe scrapes on asphalt, brief air displacement from punches and kicks, fuel pump casing vibrating on impact, loose hose swinging, rusted metal panel striking the ground, gravel and broken brick scattering, debris settling after the final crash. No dialogue. No music.\n",
+        "copy_prompt": true,
+        "download_access": "unavailable",
+        "license_boundary": "All rights reserved; no public reuse license is granted.",
+        "related_ids": [],
+        "human_page_url_en": "https://aisflows.com/prompts/robot-fight-at-a-gas-station-1080/"
+      },
+      {
+        "id": "monsters-in-the-jungle-1080",
+        "slug": "monsters-in-the-jungle-1080",
+        "title_en": "Monsters in the Jungle 1080",
+        "description_en": "Owner-provided prompt for a photorealistic five-shot jungle action sequence.",
+        "author": "AIS FLOWS / Andrei Spirydovich",
+        "status": "published",
+        "model": "Seedance 2.5",
+        "category": "Action",
+        "tags": [
+          "jungle",
+          "monsters",
+          "combat",
+          "live-action",
+          "9:16"
+        ],
+        "width": 1080,
+        "height": 1920,
+        "aspect_ratio": "9:16",
+        "preview": {
+          "video_url": "https://aisflows.com/assets/media/aisflows-media-monsters-in-the-jungle-1080-web.mp4",
+          "poster_url": "https://aisflows.com/assets/media/aisflows-media-monsters-in-the-jungle-1080-poster.jpg",
+          "mime_type": "video/mp4"
+        },
+        "duration_ms": 10080,
+        "date": "2026-09-10",
+        "prompt_language": "en",
+        "prompt_access": "public",
+        "prompt_text": "Generate each shot as a separate photorealistic live-action video clip. Every action is already happening from the first frame. Use realistic biological weight, physical contact, inertia, mechanical destruction, moving smoke and active camera movement. Avoid plastic CGI, toy-like creatures, static framing, frozen smoke and weightless objects.\r\n\r\nSHOT 1 — <<<https://r2.syntx.ai/user_151745780250309747/uploaded/6f895af7765b0ae5002e4f2490f9e1a7_28df7259-81eb-4b73-96ba-2c73d270c824.jpg>>> — giant frog crushing a military Jeep  \r\nDuration: 2 seconds\r\n\r\nAnimate <<<https://r2.syntx.ai/user_151745780250309747/uploaded/6f895af7765b0ae5002e4f2490f9e1a7_28df7259-81eb-4b73-96ba-2c73d270c824.jpg>>> as a photorealistic live-action jungle action shot. From the first frame, the enormous frog is already pressing its full body weight down onto the military Jeep. Its front limbs and heavy torso force the roof and hood inward. The metal bends under extreme pressure with visible resistance, the windshield cracks and bursts, the doors twist, the suspension collapses and the tires flatten against the wet muddy ground.\r\n\r\nThe frog shifts its weight through its limbs, causing the vehicle to sink lower with each movement. The hood buckles, the roof caves down and detached mechanical parts break away from the vehicle, travel outward with heavy momentum and fall onto the mud. The destruction must feel caused by the frog’s mass, not by a random explosion.\r\n\r\nFire burns from the crushed engine compartment and damaged fuel lines. Dense smoke and steam billow from the Jeep, roll upward and drift sideways through the jungle air. The smoke must constantly move and change shape. Flames bend around the frog’s limbs as the metal collapses.\r\n\r\nThe camera starts low near the damaged Jeep and performs a strong controlled push-in toward the frog’s body and the collapsing vehicle. At the moment of maximum pressure, the camera receives a heavy impact jolt and a brief handheld shake. Preserve realistic frog anatomy, wet skin, muscular weight and grounded contact with the vehicle. No toy-like frog, no rubber-looking metal, no weightless destruction, no random flying debris, no static camera.\r\n\r\nSHOT 2 — <<<https://r2.syntx.ai/user_151745780250309747/uploaded/e9a8601a38891a350512b7eaf059027b_2b9dcab0-6bf9-4ced-9bf2-d52b1e068c00.png>>> — two soldiers firing from the helicopter  \r\nDuration: 2 seconds\r\n\r\nAnimate <<<https://r2.syntx.ai/user_151745780250309747/uploaded/e9a8601a38891a350512b7eaf059027b_2b9dcab0-6bf9-4ced-9bf2-d52b1e068c00.png>>> as a photorealistic live-action combat shot. Exactly two soldiers are already firing a sustained, intense automatic burst from the open side doorway of the military helicopter. They are not calmly posing. Their faces show panic, rage, fear and physical strain. Both soldiers shout while firing, their mouths open and their facial muscles tightened by exertion.\r\n\r\nMultiple muzzle flashes erupt rapidly from both rifles. The weapons cycle continuously during the burst. Shell casings eject repeatedly from the rifles, bounce against the helicopter floor and fall through the open doorway. Smoke streams from the barrels and is pulled sideways by the helicopter’s rotor wash.\r\n\r\nEvery burst drives the rifles backward into the soldiers’ shoulders. Their elbows flex, their forearms tense and their torsos rock from the repeated recoil. They brace their legs and tighten their grips to keep the weapons aimed outside the helicopter. Their clothing, straps and equipment shift with the recoil and rotor turbulence.\r\n\r\nThe camera continuously pushes closer from the helicopter doorway toward the soldiers’ faces and upper bodies. The movement is fast but controlled, with restrained handheld vibration from the rotor wash, automatic gunfire and unstable helicopter movement. The camera must not remain static. The final moment holds on their desperate faces while they continue firing.\r\n\r\nNo single isolated shot, no neutral expressions, no frozen shell casings, no static smoke, no static camera. No music. Use only rotor noise, sustained automatic gunfire, shouted exertion, muzzle blasts, weapon recoil and metallic shell casings.\r\n\r\nSHOT 3 — <<<https://r2.syntx.ai/user_151745780250309747/uploaded/58a8e7d4864b5c6a826e224534b57d46_d0bf31c0-0553-48f7-9993-9b115fbd7994.png>>> — moss-covered monster jumping onto and crushing the burning Jeep  \r\nDuration: 2 seconds\r\n\r\nAnimate <<<https://r2.syntx.ai/user_151745780250309747/uploaded/58a8e7d4864b5c6a826e224534b57d46_d0bf31c0-0553-48f7-9993-9b115fbd7994.png>>> as a photorealistic live-action impact shot. From the first frame, the moss-covered monster is already descending through the final phase of a powerful jump toward the burning military Jeep. Its body has real mass and momentum. The legs are extended downward and the feet are already about to make forceful contact with the roof and hood.\r\n\r\nThe camera tracks the monster’s downward movement and tilts with its trajectory. The monster’s feet slam into the Jeep. The roof caves inward immediately, the hood folds and collapses, the windshield bursts outward, the doors twist in their frames, the suspension drops violently and the tires flatten against the ground.\r\n\r\nThe force of the landing tears mechanical components and body panels loose. These parts travel outward from the point of impact with heavy, believable trajectories, then fall onto the muddy ground. Nothing floats or moves without a physical cause. The Jeep visibly collapses under the monster’s weight.\r\n\r\nThe flames are already burning before the impact. When the monster lands, the fire bends away from the pressure, smoke is displaced in a rolling wave and steam bursts from crushed hot metal and wet surfaces. Smoke continues to billow and drift after the impact. The monster remains grounded and heavy after landing, its feet pressing deeper into the destroyed vehicle.\r\n\r\nThe camera follows the landing with a strong impact jolt and a short downward shake, then continues a close push toward the crushed roof and the monster’s aggressive body. Preserve the exact moss-covered creature, its biological texture and realistic weight. No toy-like monster, no soft rubber vehicle, no weightless debris, no new explosion, no static camera.\r\n\r\nSHOT 4 — <<<https://r2.syntx.ai/user_151745780250309747/uploaded/0f5a07d298f67495f8d908b714cf2177_b21b56e1-1cb5-4e6f-b4b1-05fb71d4f133.png>>> — three soldiers running from the explosion  \r\nDuration: 2 seconds\r\n\r\nAnimate <<<https://r2.syntx.ai/user_151745780250309747/uploaded/0f5a07d298f67495f8d908b714cf2177_b21b56e1-1cb5-4e6f-b4b1-05fb71d4f133.png>>> as a photorealistic live-action escape shot. Exactly three soldiers are already sprinting toward the camera while the explosion burns behind them. The front soldier is already driving one boot into the wet ground. The impact throws mud and water outward from beneath his foot. His body leans forward under the force of the run, his arms pump aggressively and his face is distorted by panic and physical exertion.\r\n\r\nThe two soldiers behind him are already running at full speed. They duck and shout as the blast wave pushes hot smoke, dust and pressure through the camp. Their uniforms, straps, loose equipment and weapon slings react to their movement and the force of the explosion. Their feet strike the ground unevenly as they fight to keep balance.\r\n\r\nThe fireball behind them expands through the damaged camp while dense smoke rolls upward and outward. Heat distortion ripples between the soldiers and the flames. The explosion creates a visible pressure wave in the smoke and surrounding vegetation, but no random objects fly weightlessly through the frame.\r\n\r\nThe camera moves backward at the soldiers’ running speed, maintaining their framing while physically shaking from footfalls, blast pressure and uneven ground. The camera must travel through the environment rather than remain locked in place. Keep exactly three soldiers visible. No extra people, no static camera, no frozen smoke, no weightless movement.\r\n\r\nSHOT 5 — <<<https://r2.syntx.ai/user_151745780250309747/uploaded/0b443b1810d30fc19736c1b0f8f28505_79e69723-acd2-4a2a-8444-69aca6b45f64.png>>> — final monster roar in the burning ruins  \r\nDuration: 2 seconds\r\n\r\nAnimate <<<https://r2.syntx.ai/user_151745780250309747/uploaded/0b443b1810d30fc19736c1b0f8f28505_79e69723-acd2-4a2a-8444-69aca6b45f64.png>>> as a photorealistic live-action final shot. From the first frame, the monster is already roaring at maximum force in the center of the burning ruins. Its head is already thrown upward, its mouth is fully open and its jaw, throat and neck muscles are visibly engaged. The roar is continuous and violent, not a silent pose.\r\n\r\nThe monster’s chest and abdomen expand with a powerful breath. Its throat contracts, saliva and moisture vibrate around the mouth and the clawed hands remain tightly tensed. The body reacts to the force of the roar with subtle muscular vibration.\r\n\r\nThe camera continuously pushes closer toward the monster’s face, open mouth and throat. The push-in is deliberate and intense, with restrained handheld vibration caused by the roar, nearby fire and collapsing structures. The camera must never remain completely static.\r\n\r\nThe roar creates a physical pressure effect in the environment. Smoke shudders and curls around the monster, flames bend outward from the sound pressure, heat haze ripples around the head and shoulders, and nearby loose fabric reacts to the vibration. Burning structures continue to crackle and collapse naturally in the background.\r\n\r\nPreserve the monster’s exact anatomy, grounded stance, fallen body, foreground Jeep and burning camp. End with the monster still standing firmly in the ruins, still roaring, with fire and dense moving smoke surrounding it. No new explosion, no random flying debris, no extra creatures, no extra people, no text, no logos, no watermark, no cheap CGI.\r\n\r\nAUDIO / SOUND DESIGN\r\n\r\nNo music.\r\n\r\nUse only natural diegetic sound: heavy frog weight and metal deformation, cracking glass, collapsing vehicle parts, fire, steam, rolling smoke, helicopter rotor wash, sustained automatic gunfire, shouted exertion, muzzle blasts, shell casings, running footsteps, mud and water impacts, explosion pressure, structural cracking, monster breathing and an extremely powerful roar.",
+        "copy_prompt": true,
+        "download_access": "unavailable",
+        "license_boundary": "All rights reserved; no public reuse license is granted.",
+        "related_ids": [],
+        "human_page_url_en": "https://aisflows.com/prompts/monsters-in-the-jungle-1080/"
+      },
+      {
+        "id": "haunted-manor-proton-chase-1080",
+        "slug": "haunted-manor-proton-chase-1080",
+        "title_en": "Haunted Manor Proton Chase 1080",
+        "description_en": "Owner-provided prompt for a vertical handheld ghost chase through an abandoned manor.",
+        "author": "AIS FLOWS / Andrei Spirydovich",
+        "status": "published",
+        "model": "Seedance 2.5",
+        "category": "Horror",
+        "tags": [
+          "ghost",
+          "proton-stream",
+          "haunted-manor",
+          "9:16"
+        ],
+        "width": 1080,
+        "height": 1920,
+        "aspect_ratio": "9:16",
+        "preview": {
+          "video_url": "https://aisflows.com/assets/media/aisflows-media-haunted-manor-proton-chase-1080-web.mp4",
+          "poster_url": "https://aisflows.com/assets/media/aisflows-media-haunted-manor-proton-chase-1080-poster.jpg",
+          "mime_type": "video/mp4"
+        },
+        "duration_ms": 8083,
+        "date": "2026-09-19",
+        "prompt_language": "en",
+        "prompt_access": "public",
+        "prompt_text": "Use @img1 as the exclusive room/location authority. Preserve the exact room geometry, wide open floor area, balcony levels, skylight beam, wall lamps, doors, architectural proportions, floor material, perspective and abandoned haunted-manor atmosphere. Do not replace @img1 with another building, corridor, tunnel, alley or unrelated architecture.\r\n\r\nUse @img2 as the hero identity authority. Preserve the same face, body proportions, hairstyle, tan work suit, boots and overall appearance.\r\n\r\nUse @img3 as the EXCLUSIVE proton-equipment authority. Preserve the exact proton pack and exact handheld wand shown in @img3 as one fixed physical object. Keep the same wand silhouette, black housing, ribbed handgrip, control placement, hoses/cables and exact silver cylindrical front emitter.\r\n\r\nThe same physical wand remains unchanged before firing, during firing, between shots and after firing. Firing changes ONLY the energy emitted from the correct silver front emitter. Do not redesign, enlarge, simplify, elongate or morph the wand into another gun.\r\n\r\nUse @img4 as the exclusive ghost identity/anatomy authority. Preserve the same small white cartoon-like ghost, large expressive orange eyes, open expressive mouth, small arms/hands and soft flowing tail-like lower body. No legs. Do not redesign it.\r\n\r\nThese are modular visual references, not temporal Start Images.\r\n\r\nFORMAT:\r\nVertical 9:16 only. Fill the full frame. No black bars or letterboxing.\r\n\r\nSCENE:\r\nA handheld operator-filmed ghost-hunting chase inside the exact wide abandoned manor hall from @img1.\r\n\r\nThe action is already underway immediately.\r\n\r\nThe hero is pursuing the ghost across the open room while firing several short proton-stream attempts.\r\n\r\nThe ghost is genuinely trying to ESCAPE from the hero.\r\n\r\nCRITICAL SPATIAL BEHAVIOR:\r\n\r\nThe ghost must maintain clear physical distance from the hero.\r\n\r\nIt does NOT circle closely around him.\r\nIt does NOT fly toward him.\r\nIt does NOT hover beside his body.\r\nIt does NOT repeatedly enter arm’s reach.\r\nIt does NOT behave as if tethered to him.\r\n\r\nWhenever the hero approaches, the ghost immediately moves AWAY from him.\r\n\r\nMaintain several human body lengths of separation whenever the room allows. The ghost should normally remain several meters away in the mid-ground while the hero stays foreground / mid-foreground.\r\n\r\nIts movement logic is:\r\n\r\nhero approaches -> ghost accelerates away -> distance increases -> hero fires across the visible gap -> ghost changes direction and continues fleeing.\r\n\r\nThe ghost repeatedly tries to open more distance between itself and the hero.\r\n\r\nUse the width of the room. Let the ghost dart toward the opposite side, across the open floor, then sharply change direction when a proton shot approaches.\r\n\r\nThe chase should visibly travel through space rather than both characters moving together as one cluster.\r\n\r\nCAMERA:\r\n\r\nExternal third-person handheld consumer MiniDV-style camera operated by another person. Never POV.\r\n\r\nThe operator remains near one edge of the room and follows the chase from a diagonal observational angle.\r\n\r\nUse:\r\n- slight body sway;\r\n- mild handheld shake;\r\n- small framing drift;\r\n- tiny horizon imperfections;\r\n- delayed corrective pans;\r\n- natural reframing after sudden ghost movement.\r\n\r\nThe camera should sometimes need to catch up because the ghost suddenly accelerates away.\r\n\r\nNo dolly.\r\nNo orbit.\r\nNo crane.\r\nNo gimbal-smooth tracking.\r\n\r\nHERO:\r\n\r\nThe hero actively pursues the ghost with urgency.\r\n\r\nHe uses quick steps, footing changes, torso rotation, shoulder movement and active weapon tracking.\r\n\r\nThe wand remains held with a firm two-handed grip.\r\n\r\nHis eyes, head, chest and weapon remain directed toward the fleeing ghost.\r\n\r\nHe must physically react to the firing load:\r\nhands brace -> forearms tighten -> shoulders compensate -> torso absorbs the wand vibration.\r\n\r\nHe never becomes a static firing pose.\r\n\r\nGHOST ESCAPE PERFORMANCE:\r\n\r\nThe ghost is fast, evasive and strongly motivated to get away.\r\n\r\nIts movement includes:\r\n- fast lateral escape;\r\n- sudden direction changes;\r\n- quick backward acceleration away from the hero;\r\n- short rises/drops;\r\n- evasive body twists;\r\n- flowing tail movement caused by acceleration.\r\n\r\nThe ghost should repeatedly look as if it narrowly escapes being caught.\r\n\r\nIt never voluntarily closes distance with the hero.\r\n\r\nPROTON-FIRING MECHANICS:\r\n\r\nThe hero fires several short, powerful proton-stream bursts from ONLY the exact silver front emitter of the unchanged wand from @img3.\r\n\r\nEach firing attempt follows a clear physical chain:\r\n\r\nhero tracks ghost\r\n-> hero braces the wand\r\n-> strong proton energy erupts from the exact front emitter\r\n-> the stream visibly travels across the open distance\r\n-> either misses or physically strikes the ghost\r\n-> the ghost reacts to the impact\r\n-> stream breaks\r\n-> ghost accelerates farther away\r\n-> hero corrects aim\r\n-> next firing attempt.\r\n\r\nThe shots must feel POWERFUL.\r\n\r\nUse:\r\n- bright energetic core;\r\n- thick unstable proton stream;\r\n- violent electrical turbulence;\r\n- crackling energetic edges;\r\n- visible vibration through the wand;\r\n- brief light spill onto nearby floor/walls;\r\n- strong firing sound with real energy weight.\r\n\r\nDo NOT make the proton fire look like a weak thin laser line.\r\n\r\nDo NOT let it disappear before visually reaching the ghost.\r\n\r\nThe viewer must clearly see the energy travel from the emitter across the distance toward the ghost.\r\n\r\nHIT PHYSICS:\r\n\r\nSeveral shots must visibly HIT the ghost.\r\n\r\nEvery successful hit must have strong readable physical interaction.\r\n\r\nAt the exact contact point:\r\n- bright electrical impact flash;\r\n- turbulent proton energy briefly clings to the ghost;\r\n- the ghost’s entire body receives a sudden force impulse.\r\n\r\nThe ghost reacts immediately:\r\n- sharp full-body jolt;\r\n- violent brief electrical shudder;\r\n- rapid involuntary trembling / shaking;\r\n- flowing body ripples from the point of impact;\r\n- arms jerk;\r\n- head/body snap slightly;\r\n- the ghost is pushed or deflected AWAY from the hero.\r\n\r\nThe hit must feel like a powerful electrical shock passing through a soft supernatural body.\r\n\r\nIt does NOT freeze.\r\nIt does NOT become rigid.\r\nIt does NOT stop moving completely.\r\n\r\nInstead:\r\nimpact -> hard jolt -> brief rapid shaking -> body ripples -> ghost tears free -> immediately accelerates away.\r\n\r\nThe hit reaction lasts only briefly, but it must be unmistakable.\r\n\r\nThe ghost should look physically affected by every successful proton hit, not merely make a sound.\r\n\r\nSome shots miss because the ghost dodges.\r\nSome shots connect briefly and violently.\r\nNo shot creates permanent containment.\r\n\r\nDIALOGUE AND TIMING:\r\n\r\nThe hero begins speaking immediately while already chasing and firing.\r\n\r\nNo silent opening pause.\r\n\r\nDuring an early firing attempt:\r\n“Ты куда?”\r\n\r\nThe ghost dodges and accelerates away.\r\n\r\nThe hero rapidly corrects his aim and fires again while continuing:\r\n“Твоя мамка тебя уже ждёт!”\r\n\r\nThe dialogue overlaps naturally with the chase and firing.\r\n\r\nHe does not stop moving to speak.\r\nHe does not lower the wand.\r\nHe does not address the operator.\r\n\r\nDelivery is breathy, irritated-comic and spontaneous.\r\n\r\nNo additional dialogue during the chase.\r\n\r\nGHOST SOUND:\r\n\r\nOnly nonverbal reactions:\r\nshort squeaks, startled ghost sounds, sharp yelps and brief electrically strained cries when hit.\r\n\r\nNo intelligible speech.\r\n\r\nENDING:\r\n\r\nAfter several firing attempts and several brief physical hits, the ghost makes one final rapid escape move and gets too far away to continue the immediate pursuit.\r\n\r\nThe hero tries one final shot, misses, then stops running.\r\n\r\nThe ghost keeps moving away and exits immediate reach.\r\n\r\nThe hero comes to a complete stop.\r\n\r\nHe lowers the wand slightly but keeps the same unchanged wand in his hands.\r\n\r\nHe is visibly exhausted:\r\n- heavy breathing;\r\n- shoulders rising and falling;\r\n- chest heaving;\r\n- slight forward lean;\r\n- tired recovery posture.\r\n\r\nHe first watches the direction where the ghost escaped.\r\n\r\nThen he gives one short exhausted glance toward the operator / camera and says:\r\n\r\n“А, чёрт с ним.”\r\n\r\nShort, annoyed, resigned and tired.\r\n\r\nHold that recovery beat briefly and end.\r\n\r\nCAPTURE CHARACTER:\r\n\r\nEarly-2000s consumer MiniDV / DV home-video feel over a clean detailed source.\r\n\r\nMild handheld micro-shake, natural framing drift, restrained motion blur, slight exposure breathing, brief autofocus hesitation during fast motion and moderate early-digital compression.\r\n\r\nNo timestamp.\r\nNo REC overlay.\r\nNo VHS tracking.\r\nNo heavy signal damage.\r\n\r\nSOUND:\r\n\r\nNatural room ambience.\r\nHero footsteps.\r\nClothing and proton-equipment movement.\r\nStrong turbulent proton firing sounds.\r\nSharp electrical impact crackle when shots connect.\r\nGhost nonverbal impact reactions.\r\nHero breathing/exertion.\r\nClear Russian dialogue.\r\nNatural camera handling noise.\r\n\r\nNo music.\r\nAbsolutely no score or musical sting.\r\n\r\nMUST PRESERVE:\r\n\r\n- exact room from @img1;\r\n- hero identity from @img2;\r\n- exact pack and exact handheld wand from @img3;\r\n- same wand geometry in every frame;\r\n- ghost identity from @img4;\r\n- vertical 9:16;\r\n- ghost stays several body lengths away whenever possible;\r\n- ghost constantly tries to increase distance from hero;\r\n- ghost never circles close around hero;\r\n- hero actively pursues;\r\n- several strong short proton firing attempts;\r\n- proton stream visibly travels across the gap to ghost;\r\n- several shots physically connect;\r\n- every hit causes strong jolt + electrical shudder + body ripple + brief displacement away;\r\n- ghost never freezes;\r\n- after each hit ghost immediately tries to escape farther;\r\n- dialogue begins immediately:\r\n“Ты куда?” / “Твоя мамка тебя уже ждёт!”;\r\n- no trap;\r\n- no completed capture;\r\n- clear final stop;\r\n- heavy breathing;\r\n- final line:\r\n“А, чёрт с ним.”;\r\n- no music.\r\n\r\nEND STATE:\r\n\r\nThe ghost has successfully increased distance and escaped the immediate chase.\r\n\r\nThe hero has stopped, still holding the exact unchanged wand from @img3.\r\n\r\nHe breathes heavily, watches where the ghost escaped, briefly looks toward the operator and says:\r\n\r\n“А, чёрт с ним.”\r\n\r\nEnd.\r\n",
+        "copy_prompt": true,
+        "download_access": "unavailable",
+        "license_boundary": "All rights reserved; no public reuse license is granted.",
+        "related_ids": [],
+        "human_page_url_en": "https://aisflows.com/prompts/haunted-manor-proton-chase-1080/"
+      },
+      {
+        "id": "swamp-fight-06",
+        "slug": "swamp-fight-06",
+        "title_en": "Swamp Fight 06",
+        "description_en": "Owner-provided prompt for a vertical swamp fight ending with a decisive spinning kick.",
+        "author": "AIS FLOWS / Andrei Spirydovich",
+        "status": "published",
+        "model": "Wan 3.0",
+        "category": "Fighting",
+        "tags": [
+          "swamp",
+          "fight",
+          "martial-arts",
+          "live-action",
+          "9:16"
+        ],
+        "width": 1440,
+        "height": 2560,
+        "aspect_ratio": "9:16",
+        "preview": {
+          "video_url": "https://aisflows.com/assets/media/aisflows-media-swamp-fight-06-web.mp4",
+          "poster_url": "https://aisflows.com/assets/media/aisflows-media-swamp-fight-06-poster.jpg",
+          "mime_type": "video/mp4"
+        },
+        "duration_ms": 8011,
+        "date": "2026-09-27",
+        "prompt_language": "en",
+        "prompt_access": "public",
+        "prompt_text": "Use @img1 as the authoritative Start Image and scene reference for composition, camera, fighter positions, distance, environment geometry, lighting, scale, and cinematic treatment. Start exactly from @img1: protagonist left, Reptile right, dead tree behind them, wet muddy ground, low mist, cold muted daylight.\r\n\r\nUse @img2 for the protagonist’s full body, blue-black costume, bandaged hands, footwear, proportions, and fighter silhouette.\r\nUse @img3 for the protagonist’s exact face, haircut, skin, age, facial structure, and identity, especially in the final ground-level close-up.\r\nUse @img4 for Reptile’s exact head, hood, mask, armor, claws, proportions, costume, movement character, and creature identity.\r\n\r\nAuthority:\r\n@img1 = scene, Start Image, staging, camera, distance, lighting, environment.\r\n@img2 = protagonist body and wardrobe.\r\n@img3 = protagonist face and identity.\r\n@img4 = Reptile identity and design.\r\n\r\nCreate one continuous single-shot fight with no cuts.\r\nFormat: 9:16.\r\n\r\nSCENE\r\nA very fast, aggressive, dense flashback fight. Both fighters are dangerous; the protagonist ultimately loses. Grounded live-action cinematic realism, not a game cutscene: real body weight, contact, balance shifts, mud response, natural motion blur, skin/fabric texture, wet-ground reflections, and physically motivated cold daylight. Preserve the dead-tree location and all geometry from @img1. No extra people, weapons, or new objects.\r\n\r\nCAMERA\r\nBegin exactly from @img1 at roughly stomach/lower-chest height, slightly side-on, maintaining the readable axis: protagonist left, Reptile right. The camera is reactive but controlled: short physical pushes on major contacts, small lateral tracking during exchanges, slight opening when distance increases, and full commitment to the protagonist’s fall at the end. No orbiting, chaotic handheld, random reframing, or zoom-like movement.\r\n\r\nSTART\r\nBoth fighters are already ready. No posing or circling. Combat starts almost immediately.\r\n\r\nOPENING ATTACK — PROTAGONIST\r\nThe protagonist explodes forward first with a short run-up and launches into a two-foot jumping front kick aimed into Reptile’s upper torso.\r\n\r\nReptile braces and blocks the two-foot impact with both forearms/arms across his torso. The collision has real force:\r\n- Reptile is driven slightly backward and leans away under the impact;\r\n- his boots adjust or slide on the wet ground;\r\n- his torso absorbs the force through the guard;\r\n- the protagonist’s momentum visibly stops against the block.\r\n\r\nThe protagonist does not crash after being blocked. While still airborne he quickly tucks and regroups his legs, restores body alignment, drops his feet underneath himself, and lands cleanly back into a balanced fighting stance. The landing compresses knees and hips naturally, with a small wet-ground reaction. He immediately continues fighting.\r\n\r\nCONTINUOUS CHOREOGRAPHY\r\nThe fight must not become repetitive left-right boxing. Use different levels, trajectories, blocks, kicks, slips, elbows, uppercuts, and balance changes. Every meaningful hit or block physically affects posture, footing, distance, or guard.\r\n\r\nAfter landing, the protagonist immediately throws a fast varied combination:\r\n1. short left hand toward the head;\r\n2. right hand into the ribs/upper abdomen;\r\n3. rising uppercut from below toward the chin;\r\n4. strong straight front kick into the torso.\r\n\r\nReptile actively responds rather than receiving four clean hits. He blocks or deflects the first, partially absorbs the body shot, narrowly reacts to the uppercut with his head/guard displaced upward, then catches part of the front kick on his arms but is still pushed backward by its force.\r\n\r\nThe front kick creates a brief gap. Reptile immediately re-enters.\r\n\r\nREPTILE COUNTER\r\nReptile fires a quick straight hand toward the protagonist’s head. The protagonist blocks with the forearm, but the guard is physically driven inward and his shoulder shifts back.\r\n\r\nReptile follows with a compact hook from the opposite side. The protagonist partly slips it, but Reptile continues into a low kick against the protagonist’s lead leg.\r\n\r\nThe low kick visibly affects balance:\r\n- shin/leg displaced;\r\n- knee buckles slightly;\r\n- hips drop;\r\n- protagonist must re-step to remain upright.\r\n\r\nReptile then attacks high again. The protagonist redirects the strike with elbow/forearm and answers immediately with a short body punch.\r\n\r\nDENSE CLOSE EXCHANGE\r\nThey collide into close range. Keep the choreography fast and varied:\r\n- Reptile punches short into the body;\r\n- protagonist catches it on elbow/forearm;\r\n- protagonist drives an elbow into shoulder/upper chest;\r\n- Reptile turns with the impact and returns a short hook;\r\n- protagonist ducks;\r\n- protagonist rises from below with another compact uppercut/body-to-chin trajectory;\r\n- Reptile blocks late and is forced half a step back;\r\n- protagonist follows with a hard side/front kick into Reptile’s body.\r\n\r\nThe kick drives Reptile backward. His torso bends, guard absorbs part of the strike, feet slide, and distance opens.\r\n\r\nAll impacts must produce believable reactions. A block is not static: arms recoil, shoulders move, torso rotates, stance compresses. A body hit folds the body. A head hit moves head first, then neck/shoulders. A leg kick changes footing. Strong kicks alter distance.\r\n\r\nREPTILE CHANGES RHYTHM\r\nReptile abruptly closes again and uses a fast jumping knee or short jumping kick into the protagonist’s upper body. The protagonist gets both arms up but the force drives his forearms into his chest and pushes him backward across the wet ground.\r\n\r\nReptile lands and keeps pressure on him.\r\n\r\nThe protagonist tries another hook toward Reptile’s head. Reptile ducks beneath it and immediately sweeps/attacks low at the lead leg, forcing another quick balance recovery.\r\n\r\nThe protagonist answers from the recovery with a short left-right-uppercut sequence, but each strike has a different trajectory and physical response:\r\n- left probes/strikes high;\r\n- right drives into the body;\r\n- uppercut rises from below and forces Reptile’s posture upward.\r\nHe then finishes the sequence with a powerful straight front kick to the torso, pushing Reptile away again.\r\n\r\nDo not repeat identical punch loops. The exchanges should feel improvised, dangerous, and continuously evolving.\r\n\r\nCREATE FINISHING DISTANCE\r\nAfter being driven back, Reptile deliberately retreats several quick steps, not fleeing but creating space. The protagonist remains standing but is visibly damaged and recovering.\r\n\r\nCamera opens enough to show protagonist left, Reptile right, and several meters of clear run-up space between them.\r\n\r\nREPTILE RUN-UP\r\nReptile suddenly accelerates:\r\nfirst step,\r\nsecond step,\r\nthird explosive step.\r\n\r\nCamera initially stays wide enough to read the run-up, then rapidly closes with the action.\r\n\r\nFINISHING STRIKE\r\nOn the final step Reptile launches forward and upward while rotating his body, delivering a powerful jumping spinning heel kick / spinning round kick directly into the protagonist’s jaw.\r\n\r\nThis is the decisive blow.\r\n\r\nCamera makes its strongest physical compression of the shot, positioning so the protagonist’s face, Reptile’s incoming leg, and the point of contact are readable.\r\n\r\nImpact physics:\r\n- kick lands cleanly on the jaw;\r\n- cheek/lip deform slightly;\r\n- head whips sideways and back first;\r\n- neck follows;\r\n- shoulders and torso follow a beat later;\r\n- one foot completely loses traction;\r\n- the other cannot recover the center of gravity.\r\n\r\nThe hit must feel devastating and final.\r\n\r\nFALL\r\nFrom this instant camera abandons Reptile as the main subject and commits to the protagonist.\r\n\r\nThe protagonist is thrown backward and slightly sideways. He attempts one recovery step but fails. Camera swings with his trajectory, drops lower, and moves closer.\r\n\r\nThe fall is heavy:\r\nhips go,\r\nside of thigh hits,\r\nshoulder follows,\r\nthen full body weight reaches the wet ground.\r\n\r\nMud, damp debris, leaves, and low mist react naturally.\r\n\r\nFINAL FACE CLOSE-UP\r\nCamera keeps moving after impact and settles almost at ground level beside the protagonist’s head.\r\n\r\nFinal angle: very low side 3/4 close-up. One cheek is near the wet earth. The face fills a significant part of frame. Preserve exact identity from @img3. Reptile may remain deep in the background, very soft and secondary.\r\n\r\nThe protagonist is barely conscious:\r\nheavy breathing,\r\ndirt,\r\nsweat,\r\nminor blood if natural,\r\neyes trying to hold focus.\r\n\r\nThen his gaze stops tracking, eyelids grow heavy, facial tension releases, and his head settles slightly.\r\n\r\nSuggest fading consciousness subtly. Keep the face readable and the location intact. No bright glow, white vignette, dreamy halo, washed-out border, geometry distortion, or stylized blur-frame effect.\r\n\r\nFINAL STATE\r\nProtagonist lies defeated in the mud; Reptile has won. Low close-up on the protagonist’s face, eyes closing or almost closed, breathing heavy, consciousness fading.\r\n\r\nStrict ending:\r\njumping spinning kick to jaw → violent knockback → heavy fall → very low face close-up → fading consciousness.\r\n\r\nCONTINUITY\r\nKeep protagonist body/wardrobe consistent with @img2 and face with @img3. Keep Reptile consistent with @img4. Preserve scene geometry and visual language from @img1. Fight remains fast, readable, physically continuous, and varied. Do not turn into repetitive mirrored boxing.\r\n\r\nAUDIO\r\nContinuous fight soundscape: wet footwork, mud slides, body impacts, cloth/leather movement, sharp exhales, grunts, Reptile snarls and aggressive exertion, low swamp ambience and distant wind. Impact sounds match contact weight.\r\n\r\nNo dialogue.\r\nNo voice-over.\r\nNo narration.\r\nNo music dominating the scene.\r\n",
+        "copy_prompt": true,
+        "download_access": "unavailable",
+        "license_boundary": "All rights reserved; no public reuse license is granted.",
+        "related_ids": [],
+        "human_page_url_en": "https://aisflows.com/prompts/swamp-fight-06/"
+      }
+    ]
+  },
+  "course_catalog": {
+    "deployment_status": "public",
+    "catalog_ru": "./course/index.html",
+    "catalog_en": "./course/en/index.html",
+    "machine_index_ru": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-agent-manifest.json",
+    "content_index_ru": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-content.json",
+    "download_manifest_ru": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-download-manifest.json",
+    "artifact_manifest_ru": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/artifacts.json",
+    "machine_index_en": "./course/en/releases/79cbdb210a0b15afbabc3f23409b803eda3cc7fb99ededc2987195762300903b/course-agent-manifest.json",
+    "locale_manifest": "./course/en/course-locale-manifest.json",
+    "ru_revision": "fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b",
+    "en_revision": "79cbdb210a0b15afbabc3f23409b803eda3cc7fb99ededc2987195762300903b",
+    "lessons": 23,
+    "tracks": 9
   },
   "measurement_capabilities": {
     "browser_events": "umami_public_home_collection_verified",
@@ -360,19 +765,22 @@
     "source_of_truth": "./content-model.json",
     "command": "node home-tools/site-content.mjs build",
     "validation": "node home-tools/site-content.mjs validate",
+    "receipt_transition_validator": "node home-tools/operation-receipt-transition.mjs validate",
     "required_state_before_deploy": "approved",
-    "current_state": "live_verified",
+    "current_state": "public",
+    "deployment_proof": null,
     "deploy_requires_explicit_owner_approval": true,
     "object_hashes": {
-      "ais-flows-ai-video-course": "5de12c796bb5230888e55c52c6943e14131a78446e8aaeb6318c30272574d721",
-      "featured-youtube-trailer": "8a20dd2f45d5c42399162b1d3aeb623a51f9083cd8eabe81f93dadbc008a61ac",
-      "local-ai-gateway": "7215b5fcacd680dcae3efb983196440798df064dd818728a20adfb4790e51313",
-      "proofline": "41567b03129a561321f1fa7a06dd55590a656fd6340e0593d2b1a8fe92690d61",
+      "ais-flows-ai-video-course": "3b26ac1f9d682c969c38e364e13ed0a1ab0857630af183ecf3d39dcb164ad7cd",
+      "course-writer": "834c180a6ffa73798b37e1075f3d977cb554180bbd802c4967b5f5627a79cb6c",
+      "featured-youtube-trailer": "4918610e1da053bd4fd0e06b800b2efe7540d66d7b44e2558a1b11ba93b8ba46",
+      "local-ai-gateway": "a4011843fae03a60de1df8004c2d5d5adec79bbaf9c4331f09fd94aa7fd3fd31",
+      "proofline": "48c668bf15cebb015b33b1a21203aafede9585d986022ec99a6f1418f39408a2",
       "ready-gate": "4a5b4a7f4afe00b20a3c1f5eae741f411c66181ca46b956a92b6d41da4f5d4db",
-      "request": "8bff4c685c9232b59a8c302fc2cd7c449290bed74dcb009ad9fdfc7a45a04882",
-      "skill-cleaner": "d825e582f064e6336270b870b938427088f16ab1d576090b0512519ecf115189",
-      "skill-operations-pack": "2f797b7ac1daf81afee4ff48c2840bab158ba3ac1546ef9e67bdfd45795093c5",
-      "video-builder-pack": "dc6865583755ab90baf9b3587624dd67905e18a08275ae375ec96b3441cad166"
+      "request": "3e2c0b0c0c875450a324e5141ba245c1a4d6f8dc8508e8bd128cf4e7d5adeff9",
+      "skill-cleaner": "d18516fc67e64d5ac169451df846ed202b923bf8cc6085274fd95de99131ecfb",
+      "skill-operations-pack": "a8781a63b195b1a3d7d2d5926869f1a4bced6475c206561022a59055c0574633",
+      "video-builder-pack": "0111779274b9f1db4a572d919220681fffe66a4f883cea0d11e25c3ac4ca6520"
     }
   },
   "state_machines": {
@@ -420,5 +828,5 @@
       "access_verified"
     ]
   },
-  "updated_at": "2026-08-09T13:37:52Z"
+  "updated_at": "2026-09-29T19:56:02Z"
 }

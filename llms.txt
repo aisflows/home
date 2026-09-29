@@ -12,8 +12,12 @@ Media RU: ./ru/media/index.html
 Artifacts: ./artifacts.json
 Updates: ./updates.json
 Feed: ./feed.xml
-Course manifest: ./course/course-agent-manifest.json
-Course lesson index: ./course/course-content.json
+Course RU machine manifest: ./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-agent-manifest.json
+Course RU content index: ./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-content.json
+Course RU download manifest: ./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-download-manifest.json
+Course RU artifact manifest: ./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/artifacts.json
+Course EN entry: ./course/en/index.html
+Course EN locale manifest: ./course/en/course-locale-manifest.json
 Privacy EN: ./privacy/index.html
 Privacy RU: ./ru/privacy/index.html
 Human discovery guide: ./AI_AGENT_DISCOVERY.md
@@ -23,9 +27,11 @@ Human discovery guide: ./AI_AGENT_DISCOVERY.md
 - Follow only verified non-null routes.
 - Use skills/skills-index.json for stable Skills order, action states, release URLs, and unavailable reasons.
 - Use media/media-index.json for stable Media work routes and direct assets.
+- Use locale-bound Course manifests and downloads; do not mix RU and EN artifacts.
 - Validate artifact version, MIME, size, and SHA256 before download.
 - No account is required for public reading or verified free downloads.
-- Deployment status: public.
+- Content status: public_content.
+- Runtime deployment status: public.
 - Request delivery: formspree_public_home_delivery_verified.
 - Browser analytics: umami_public_home_collection_verified.
 - No payment or public write API is active.
@@ -33,18 +39,20 @@ Human discovery guide: ./AI_AGENT_DISCOVERY.md
 
 ## Objects
 
-- proofline: Proofline; released; public_free; content=null; download=null
+- course-writer: AIS FLOWS Course Writer; released; public_free; content=null; download=https://github.com/aisflows/course-writer/releases/download/v1.0/ais-flows-course-writer-1.0.zip
+- proofline: Proofline; released; public_free; content=null; download=https://github.com/aisflows/proofline/releases/download/v0.2.0-rc5/ais-flows-proofline-0.2.0-rc5.zip
 - ready-gate: Ready Gate; released; public_free; content=null; download=https://github.com/aisflows/ready-gate/releases/download/v0.1.0-ready-gate-rc1/ais-flows-ready-gate-0.1.0-ready-gate-rc1.zip
-- skill-cleaner: Skill Cleaner; released; public_free; content=null; download=null
+- skill-cleaner: Skill Cleaner; released; public_free; content=null; download=https://github.com/aisflows/skill-cleaner/releases/download/v0.1.0-release-001/ais-flows-skill-library-cleaner-0.1.0-release-001-final-candidate.zip
 - skill-operations-pack: Skill Operations Pack; released; public_free; content=null; download=https://github.com/aisflows/skill-operations-pack/releases/download/v0.1.0-rc6/ais-flows-skill-operations-pack-0.1.0-rc6.zip
 - video-builder-pack: Video Builder Pack; draft; unavailable; content=null; download=null
 - local-ai-gateway: Local AI Gateway; in_development; unavailable; content=null; download=null
 - featured-youtube-trailer: AIS FLOWS trailer; published; public_free; content=./media/media-index.json; download=null
-- request: Start a Project; published; public_free; content=null; download=null
-- ais-flows-ai-video-course: AIS FLOWS AI-video course; draft; public_preview; content=./course/course-content.json; download=null
+- request: Personal Contact; published; public_free; content=null; download=null
+- ais-flows-ai-video-course: AI tools course; draft; public_preview; content=./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-content.json; download=null
 
 ## Skills
 
+- course-writer: 1.0; released; action=open_release; release=https://github.com/aisflows/course-writer/releases/tag/v1.0
 - skill-operations-pack: 0.1.0-rc6; released; action=open_release; release=https://github.com/aisflows/skill-operations-pack/releases/tag/v0.1.0-rc6
 - skill-cleaner: v0.1.0-release-001; released; action=open_release; release=https://github.com/aisflows/skill-cleaner/releases/tag/v0.1.0-release-001
 - ready-gate: v0.1.0-ready-gate-rc1; released; action=open_release; release=https://github.com/aisflows/ready-gate/releases/tag/v0.1.0-ready-gate-rc1
@@ -52,11 +60,23 @@ Human discovery guide: ./AI_AGENT_DISCOVERY.md
 
 ## Media works
 
-- jbl-jurassic-park: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/jbl-jurassic-park/; asset=https://aisflows.github.io/home/assets/media/aisflows-media-jbl-jurassic-park-web.mp4
-- interstellar-millers-planet: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/interstellar-millers-planet/; asset=https://aisflows.github.io/home/assets/media/aisflows-media-interstellar-millers-planet-web.mp4
-- doom-battlefield-earth: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/doom-battlefield-earth/; asset=https://aisflows.github.io/home/assets/media/aisflows-media-doom-battlefield-earth-web.mp4
-- witcher-monsters-men: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/witcher-monsters-men/; asset=https://aisflows.github.io/home/assets/media/aisflows-media-witcher-monsters-men-web.mp4
-- 28-days-later: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/28-days-later/; asset=https://aisflows.github.io/home/assets/media/aisflows-preview-28-days-later-web.mp4
-- dead-space: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/dead-space/; asset=https://aisflows.github.io/home/assets/media/aisflows-preview-dead-space-web.mp4
-- godzilla: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/godzilla/; asset=https://aisflows.github.io/home/assets/media/aisflows-preview-godzilla-web.mp4
-- predator: local_video; 720x1280; action=playback; route=https://aisflows.github.io/home/media/predator/; asset=https://aisflows.github.io/home/assets/media/aisflows-preview-predator-web.mp4
+- mortal-kombat-dont-wake-the-champion: local_video; 1080x1920; action=playback; route=https://aisflows.com/media/mortal-kombat-dont-wake-the-champion/; asset=https://aisflows.com/assets/media/aisflows-media-mortal-kombat-dont-wake-the-champion-web.mp4
+- ghostbusters-first-day-on-the-job: local_video; 1080x1920; action=playback; route=https://aisflows.com/media/ghostbusters-first-day-on-the-job/; asset=https://aisflows.com/assets/media/aisflows-media-ghostbusters-first-day-on-the-job-web.mp4
+- monster-island-mutants: local_video; 1080x1920; action=playback; route=https://aisflows.com/media/monster-island-mutants/; asset=https://aisflows.com/assets/media/aisflows-media-monster-island-mutants-web.mp4
+- interstellar-millers-planet: local_video; 720x1280; action=playback; route=https://aisflows.com/media/interstellar-millers-planet/; asset=https://aisflows.com/assets/media/aisflows-media-interstellar-millers-planet-web.mp4
+- doom-battlefield-earth: local_video; 720x1280; action=playback; route=https://aisflows.com/media/doom-battlefield-earth/; asset=https://aisflows.com/assets/media/aisflows-media-doom-battlefield-earth-web.mp4
+- witcher-monsters-men: local_video; 720x1280; action=playback; route=https://aisflows.com/media/witcher-monsters-men/; asset=https://aisflows.com/assets/media/aisflows-media-witcher-monsters-men-web.mp4
+- 28-days-later: local_video; 720x1280; action=playback; route=https://aisflows.com/media/28-days-later/; asset=https://aisflows.com/assets/media/aisflows-preview-28-days-later-web.mp4
+- dead-space: local_video; 720x1280; action=playback; route=https://aisflows.com/media/dead-space/; asset=https://aisflows.com/assets/media/aisflows-preview-dead-space-web.mp4
+- godzilla: local_video; 720x1280; action=playback; route=https://aisflows.com/media/godzilla/; asset=https://aisflows.com/assets/media/aisflows-preview-godzilla-web.mp4
+- predator: local_video; 720x1280; action=playback; route=https://aisflows.com/media/predator/; asset=https://aisflows.com/assets/media/aisflows-preview-predator-web.mp4
+
+## Prompt Library
+
+- Public locale: English (en)
+- Index: ./prompts/prompts-index.json
+- EN catalog: ./prompts/index.html
+- State: published_owner_records
+- Public records: 6
+- Read or copy only a record whose prompt_access is public. No account, payment, generation, save, download or write route is active.
+- Test fixtures are not public records and are excluded from this index.

@@ -7,91 +7,127 @@
       "id": "en",
       "label": "en",
       "url": "./index.html",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "ru",
       "label": "ru",
       "url": "./ru/index.html",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "skills-en",
       "label": "skills_en",
       "url": "./skills/index.html",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "skills-ru",
       "label": "skills_ru",
       "url": "./ru/skills/index.html",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "media-en",
       "label": "media_en",
       "url": "./media/index.html",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "media-ru",
       "label": "media_ru",
       "url": "./ru/media/index.html",
-      "status": "verified"
+      "status": "public"
+    },
+    {
+      "id": "prompts-en",
+      "label": "prompts_en",
+      "url": "./prompts/index.html",
+      "status": "public"
     },
     {
       "id": "request-en",
       "label": "request_en",
       "url": "./request/index.html",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "request-ru",
       "label": "request_ru",
       "url": "./ru/request/index.html",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "privacy-en",
       "label": "privacy_en",
       "url": "./privacy/index.html",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "privacy-ru",
       "label": "privacy_ru",
       "url": "./ru/privacy/index.html",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "course",
       "label": "course",
       "url": "./course/index.html",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "manifest",
       "label": "manifest",
       "url": "./agent-manifest.json",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "artifacts",
       "label": "artifacts",
       "url": "./artifacts.json",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "updates",
       "label": "updates",
       "url": "./updates.json",
-      "status": "verified"
+      "status": "public"
     },
     {
       "id": "feed",
       "label": "feed",
       "url": "./feed.xml",
-      "status": "verified"
+      "status": "public"
+    },
+    {
+      "id": "course-en",
+      "label": "course_en",
+      "url": "./course/en/index.html",
+      "status": "public"
+    },
+    {
+      "id": "course-ru-machine-index",
+      "label": "course_ru_machine_index",
+      "url": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-agent-manifest.json",
+      "status": "public"
+    },
+    {
+      "id": "course-ru-content-index",
+      "label": "course_ru_content_index",
+      "url": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-content.json",
+      "status": "public"
+    },
+    {
+      "id": "course-ru-download-manifest",
+      "label": "course_ru_download_manifest",
+      "url": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/course-download-manifest.json",
+      "status": "public"
+    },
+    {
+      "id": "course-ru-artifact-manifest",
+      "label": "course_ru_artifact_manifest",
+      "url": "./course/releases/fead99dcc1f7192632f4945dc201b3edae1cf02944ebe57c7c95771175efae2b/artifacts.json",
+      "status": "public"
     },
     {
       "id": "media-featured-youtube-trailer-en",
@@ -106,15 +142,39 @@
       "status": "verified"
     },
     {
-      "id": "media-jbl-jurassic-park-en",
-      "label": "jbl-jurassic-park EN",
-      "url": "./media/jbl-jurassic-park/",
+      "id": "media-mortal-kombat-dont-wake-the-champion-en",
+      "label": "mortal-kombat-dont-wake-the-champion EN",
+      "url": "./media/mortal-kombat-dont-wake-the-champion/",
       "status": "verified"
     },
     {
-      "id": "media-jbl-jurassic-park-ru",
-      "label": "jbl-jurassic-park RU",
-      "url": "./ru/media/jbl-jurassic-park/",
+      "id": "media-mortal-kombat-dont-wake-the-champion-ru",
+      "label": "mortal-kombat-dont-wake-the-champion RU",
+      "url": "./ru/media/mortal-kombat-dont-wake-the-champion/",
+      "status": "verified"
+    },
+    {
+      "id": "media-ghostbusters-first-day-on-the-job-en",
+      "label": "ghostbusters-first-day-on-the-job EN",
+      "url": "./media/ghostbusters-first-day-on-the-job/",
+      "status": "verified"
+    },
+    {
+      "id": "media-ghostbusters-first-day-on-the-job-ru",
+      "label": "ghostbusters-first-day-on-the-job RU",
+      "url": "./ru/media/ghostbusters-first-day-on-the-job/",
+      "status": "verified"
+    },
+    {
+      "id": "media-monster-island-mutants-en",
+      "label": "monster-island-mutants EN",
+      "url": "./media/monster-island-mutants/",
+      "status": "verified"
+    },
+    {
+      "id": "media-monster-island-mutants-ru",
+      "label": "monster-island-mutants RU",
+      "url": "./ru/media/monster-island-mutants/",
       "status": "verified"
     },
     {
@@ -199,6 +259,42 @@
       "id": "media-predator-ru",
       "label": "predator RU",
       "url": "./ru/media/predator/",
+      "status": "verified"
+    },
+    {
+      "id": "prompt-box-1080-en",
+      "label": "box-1080 EN",
+      "url": "./prompts/box-1080/",
+      "status": "verified"
+    },
+    {
+      "id": "prompt-robot-fight-in-a-warehouse-1080-en",
+      "label": "robot-fight-in-a-warehouse-1080 EN",
+      "url": "./prompts/robot-fight-in-a-warehouse-1080/",
+      "status": "verified"
+    },
+    {
+      "id": "prompt-robot-fight-at-a-gas-station-1080-en",
+      "label": "robot-fight-at-a-gas-station-1080 EN",
+      "url": "./prompts/robot-fight-at-a-gas-station-1080/",
+      "status": "verified"
+    },
+    {
+      "id": "prompt-monsters-in-the-jungle-1080-en",
+      "label": "monsters-in-the-jungle-1080 EN",
+      "url": "./prompts/monsters-in-the-jungle-1080/",
+      "status": "verified"
+    },
+    {
+      "id": "prompt-haunted-manor-proton-chase-1080-en",
+      "label": "haunted-manor-proton-chase-1080 EN",
+      "url": "./prompts/haunted-manor-proton-chase-1080/",
+      "status": "verified"
+    },
+    {
+      "id": "prompt-swamp-fight-06-en",
+      "label": "swamp-fight-06 EN",
+      "url": "./prompts/swamp-fight-06/",
       "status": "verified"
     }
   ],
